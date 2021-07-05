@@ -1,11 +1,12 @@
+import React from "react";
 import { Trans } from "@lingui/react";
 import Link from "next/link";
 
-import ConunLogo from "@/assets/icons/conun-logo-big.svg";
+import ConunLogo from "@/assets/icons/conun-logo.svg";
+
+import LanguageSwitcher from "./LanguageSwitcher";
 
 import styles from "./Navbar.module.scss";
-import React from "react";
-import LanguageSwitcher from "./LanguageSwitcher";
 
 const PAGES = [
   {
@@ -39,7 +40,7 @@ const PAGES = [
 function Navbar() {
   return (
     <div className={styles.Navbar}>
-      <Link href="/" passHref>
+      <Link href="/#home" passHref>
         <ConunLogo className={styles.ConunLogo} />
       </Link>
 

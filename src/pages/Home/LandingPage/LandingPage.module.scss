@@ -1,0 +1,56 @@
+.LandingPage {
+  background-image: url("../../../../public/assets/bg-1.png");
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  min-height: calc(100vh - 70px);
+  padding: 0 200px;
+
+  & .RightSide {
+    align-self: center;
+
+    & .Title {
+      color: #76f1bd;
+      font-family: "Teko", sans-serif;
+      font-size: 70px;
+      font-weight: 600;
+    }
+
+    & .ConunDescription {
+      color: #fff;
+      font-size: 26px;
+      width: 737px;
+    }
+  }
+
+  & .LeftSide {
+    display: flex;
+    height: fit-content;
+    margin-top: 75px;
+    & .Sections {
+      align-self: flex-end;
+      display: flex;
+      flex-direction: column;
+      margin-right: 75px;
+
+      & > :not(:last-child) {
+        margin-bottom: 40px;
+      }
+
+      & .Section {
+        color: #fff;
+        font-size: 16px;
+      }
+    }
+
+    & .VerticalText {
+      color: #fff;
+      font-size: 24px;
+      letter-spacing: 0.5rem;
+      text-orientation: sideways;
+      text-transform: uppercase;
+      writing-mode: vertical-rl;
+    }
+  }
+}
