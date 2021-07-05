@@ -1,5 +1,6 @@
 import React from "react";
 
+import { Trans } from "@lingui/react";
 import Link from "next/link";
 
 import styles from "./Navbar.module.scss";
@@ -7,28 +8,28 @@ import styles from "./Navbar.module.scss";
 const PAGES = [
   {
     id: "whitepaper",
-    label: "Whitepaper",
+    label: <Trans id="Whitepaper" />,
     path: "/whitepaper",
   },
   {
     id: "news",
-    label: "News",
+    label: <Trans id="News" />,
     path: "/news",
   },
   {
     id: "team",
-    label: "Team",
+    label: <Trans id="Team" />,
     path: "/team",
   },
   {
     id: "github",
-    label: "Github",
+    label: <Trans id="Github" />,
     path: "https://github.com/CONUN-Global/",
     isExternal: true,
   },
   {
     id: "roadmap",
-    label: "Roadmap",
+    label: <Trans id="Roadmap" />,
     path: "/roadmap",
   },
 ];
@@ -36,7 +37,9 @@ const PAGES = [
 function Navbar() {
   return (
     <div className={styles.Navbar}>
-      <span>Conun Logo</span>
+      <span>
+        <Trans id="Logo" />
+      </span>
       <div className={styles.Pages}>
         {PAGES.map((page) => {
           if (page?.isExternal) {
