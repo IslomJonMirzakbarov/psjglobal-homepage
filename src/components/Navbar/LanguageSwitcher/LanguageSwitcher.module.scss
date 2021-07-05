@@ -1,0 +1,16 @@
+.LanguageSwitcher {
+  display: flex;
+
+  & .WorldIcon {
+    margin-right: 10px;
+    width: 20px;
+  }
+
+  & .LocaleSelect {
+    background: transparent;
+    border: none;
+    color: var(--conun-blue);
+    cursor: pointer;
+    outline: none;
+  }
+}

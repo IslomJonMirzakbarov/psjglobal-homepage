@@ -6,7 +6,7 @@ import { I18nProvider } from "@lingui/react";
 
 import Layout from "@/components/Layout";
 
-import detectLocale from "@/helpers/localeDetector";
+import useStore from "@/store/store";
 
 import "./styles/globals.scss";
 
@@ -19,10 +19,11 @@ export async function dynamicActivate(locale: string) {
 }
 
 function App({ Component, pageProps }: AppProps) {
+  const locale = useStore((state) => state.currentLocale);
+
   useEffect(() => {
-    const locale = detectLocale();
     dynamicActivate(locale);
-  }, []);
+  }, [locale]);
 
   return (
     <I18nProvider i18n={i18n}>

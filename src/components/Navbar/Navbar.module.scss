@@ -6,11 +6,36 @@
   justify-content: space-between;
   padding: 1rem;
 
+  & .ConunLogo {
+    cursor: pointer;
+    width: 70px;
+  }
+
   & .Pages {
+    align-items: center;
+    color: var(--conun-blue);
     display: flex;
 
-    & :not(:last-child) {
-      margin-right: 75px;
+    & > :not(:last-child) {
+      margin-right: 30px;
+    }
+
+    & .Page {
+      &:hover {
+        filter: opacity(75%);
+      }
+    }
+
+    & .ProductsButton {
+      border: solid 1px var(--conun-blue);
+      border-radius: 4px;
+      padding: 5px 15px;
+      transition: all 0.2s ease-in;
+
+      &:hover {
+        background-color: var(--conun-blue);
+        color: #fff;
+      }
     }
   }
 }

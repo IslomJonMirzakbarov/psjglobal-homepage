@@ -6,11 +6,17 @@ import {
 } from "@lingui/detect-locale";
 
 function detectLocale() {
-  const locale = detect(fromUrl("lang"), fromStorage("lang"), fromNavigator());
+  if (process.browser) {
+    const locale = detect(
+      fromUrl("lang"),
+      fromStorage("lang"),
+      fromNavigator()
+    );
 
-  console.log(`fromNavigator()`, fromNavigator());
+    return locale?.slice(0, 2) || "en";
+  }
 
-  return locale?.slice(0, 2) || "en";
+  return "en";
 }
 
 export default detectLocale;

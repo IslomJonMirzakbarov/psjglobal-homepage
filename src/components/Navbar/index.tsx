@@ -1,9 +1,11 @@
-import React from "react";
-
 import { Trans } from "@lingui/react";
 import Link from "next/link";
 
+import ConunLogo from "@/assets/icons/conun-logo-big.svg";
+
 import styles from "./Navbar.module.scss";
+import React from "react";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const PAGES = [
   {
@@ -37,9 +39,10 @@ const PAGES = [
 function Navbar() {
   return (
     <div className={styles.Navbar}>
-      <span>
-        <Trans id="Logo" />
-      </span>
+      <Link href="/" passHref>
+        <ConunLogo className={styles.ConunLogo} />
+      </Link>
+
       <div className={styles.Pages}>
         {PAGES.map((page) => {
           if (page?.isExternal) {
@@ -62,6 +65,15 @@ function Navbar() {
             </Link>
           );
         })}
+        <a
+          className={styles.ProductsButton}
+          href="https://dappstore.conun.io/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Trans id="Download Products" />
+        </a>
+        <LanguageSwitcher />
       </div>
     </div>
   );
