@@ -37,17 +37,17 @@ const SOCIALS: any = [
   {
     id: "youtube",
     icon: YoutubeIcon,
-    link: "",
+    link: "https://www.youtube.com/channel/UCVbpETcXaPRZkL2HACUXOsA",
   },
   {
     id: "discord",
     icon: DiscordIcon,
-    link: "",
+    link: "https://discord.com/invite/VvXvQfa3Za",
   },
   {
     id: "github",
     icon: GithubIcon,
-    link: "",
+    link: "https://github.com/CONUN-Global",
   },
 ];
 
