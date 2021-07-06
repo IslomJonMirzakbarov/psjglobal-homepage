@@ -1,6 +1,8 @@
+import useIsMobile from "@/hooks/useIsMobile";
 import React from "react";
 
 import Navbar from "../Navbar";
+import Sidebar from "../Sidebar";
 
 import styles from "./Layout.module.scss";
 
@@ -9,11 +11,15 @@ interface Layout {
 }
 
 function Layout({ children }: Layout) {
+  const isMobile = useIsMobile();
   return (
-    <div className={styles.Layout}>
-      <Navbar />
-      {children}
-    </div>
+    <>
+      {isMobile && <Sidebar />}
+      <div className={styles.Layout}>
+        <Navbar />
+        {children}
+      </div>
+    </>
   );
 }
 

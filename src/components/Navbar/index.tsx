@@ -7,6 +7,7 @@ import LanguageSwitcher from "./LanguageSwitcher";
 import Button from "../Button";
 
 import useIsMobile from "@/hooks/useIsMobile";
+import useStore from "@/store/store";
 
 import ConunLogo from "@/assets/icons/conun-logo.svg";
 import Menu from "@/assets/icons/hamburger.svg";
@@ -29,11 +30,18 @@ const PAGES = [
 
 function Navbar() {
   const isMobile = useIsMobile();
+
+  const handleSidebar = useStore((state) => state.handleSidebar);
+
   return (
     <div className={classNames(styles.Navbar, { [styles.isMobile]: isMobile })}>
       {isMobile ? (
         <>
-          <Button noStyle className={styles.MenuButton}>
+          <Button
+            noStyle
+            className={styles.MenuButton}
+            onClick={() => handleSidebar(true)}
+          >
             <Menu className={styles.MenuIcon} />
           </Button>
           <Link href="/#home" passHref>

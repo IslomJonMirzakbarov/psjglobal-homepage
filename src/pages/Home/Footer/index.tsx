@@ -72,7 +72,7 @@ function Footer() {
         <div className={styles.Socials}>
           {SOCIALS.map((social: any) => {
             const Icon = social?.icon;
-            console.log(`Icon`, Icon);
+
             return (
               <a
                 key={social.id}
