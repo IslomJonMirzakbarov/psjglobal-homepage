@@ -3,12 +3,14 @@
 
 :root {
   --conun-blue: #1d428a;
+  --neon-green: #76f1bd;
 }
 
 html,
 body {
   font-family: "Barlow", sans-serif;
   font-weight: 500;
+  overflow-x: hidden;
 }
 
 a {
