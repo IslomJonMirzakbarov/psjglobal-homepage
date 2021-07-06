@@ -20,7 +20,7 @@ const PAGE_SECTIONS = [
 function LandingPage() {
   return (
     <section id="home" className={styles.LandingPage}>
-      <div className={styles.RightSide}>
+      <div className={styles.LeftSide}>
         <p className={styles.Title}>
           <Trans id="Distributed Super Computing Platform" />
         </p>
@@ -28,7 +28,7 @@ function LandingPage() {
           <Trans id="CONUN is a blockchain-based distributed supercomputing platform. By sharing idle resources of participants' personal computers and smartphones provided is a  service platform that enables you to handle high-performance computing resources." />
         </p>
       </div>
-      <div className={styles.LeftSide}>
+      <div className={styles.RightSide}>
         <div className={styles.Sections}>
           {PAGE_SECTIONS.map((section) => (
             <Link key={section.id} href={section.path}>

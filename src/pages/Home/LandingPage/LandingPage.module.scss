@@ -7,7 +7,7 @@
   min-height: calc(100vh - 70px);
   padding: 0 200px;
 
-  & .RightSide {
+  & .LeftSide {
     align-self: center;
 
     & .Title {
@@ -24,7 +24,7 @@
     }
   }
 
-  & .LeftSide {
+  & .RightSide {
     display: flex;
     height: fit-content;
     margin-top: 75px;

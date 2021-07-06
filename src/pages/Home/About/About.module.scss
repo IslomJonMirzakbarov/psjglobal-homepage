@@ -1,0 +1,12 @@
+.About {
+  & .Left {
+    & .Title {
+      font-size: 24px;
+    }
+
+    & .Description {
+      font-size: 20px;
+      line-height: 50px;
+    }
+  }
+}
