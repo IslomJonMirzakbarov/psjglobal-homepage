@@ -13,13 +13,14 @@
     & .Title {
       color: #76f1bd;
       font-family: "Teko", sans-serif;
-      font-size: 70px;
+      font-size: calc(30px + 2vw);
       font-weight: 600;
     }
 
     & .ConunDescription {
       color: #fff;
-      font-size: 26px;
+      font-size: calc(16px + 0.5vw);
+      line-height: 150%;
       width: 737px;
     }
   }
@@ -51,6 +52,24 @@
       text-orientation: sideways;
       text-transform: uppercase;
       writing-mode: vertical-rl;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    padding: 0 40px;
+
+    & .LeftSide {
+      align-self: center;
+
+      & .Title {
+        margin-bottom: 40px;
+        text-align: center;
+      }
+
+      & .ConunDescription {
+        text-align: justify;
+        width: auto;
+      }
     }
   }
 }

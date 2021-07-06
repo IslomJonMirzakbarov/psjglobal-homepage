@@ -1,6 +1,8 @@
 import React from "react";
+import classNames from "classnames";
 
 import useStore from "@/store/store";
+import useIsMobile from "@/hooks/useIsMobile";
 
 import WorldIcon from "@/assets/icons/world.svg";
 
@@ -20,8 +22,15 @@ const LOCALES = [
 function LanguageSwitcher() {
   const locale = useStore((state) => state.currentLocale);
   const setLocale = useStore((state) => state.setCurrentLocale);
+
+  const isMobile = useIsMobile();
+
   return (
-    <div className={styles.LanguageSwitcher}>
+    <div
+      className={classNames(styles.LanguageSwitcher, {
+        [styles.isMobile]: isMobile,
+      })}
+    >
       <WorldIcon className={styles.WorldIcon} />
       <select
         name="locale"

@@ -89,7 +89,9 @@ function Footer() {
       </div>
       <div className={styles.Copyright}>
         <p className={styles.Year}>© {DATE.getFullYear()} CONUN</p>
-        <p className={styles.Motto}>Connecting on Universal Networks</p>
+        <p className={styles.Motto}>
+          <Trans id="Connecting on Universal Networks" />
+        </p>
       </div>
     </div>
   );
