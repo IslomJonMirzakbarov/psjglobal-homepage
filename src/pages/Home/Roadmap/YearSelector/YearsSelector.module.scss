@@ -16,11 +16,13 @@
 
       & .YearButton {
         color: var(--conun-blue);
-        font-size: calc(13px + 0.6vw);
+        font-size: calc(13px + 0.7vw);
         margin-right: 1.5rem;
+        opacity: 0.8;
 
         &.isSelected {
           font-weight: bold;
+          opacity: 1;
         }
       }
 

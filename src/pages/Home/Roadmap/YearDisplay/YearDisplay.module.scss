@@ -7,23 +7,27 @@
   flex-direction: column;
   height: 470px;
   justify-content: space-between;
-  padding: 50px;
-  width: 935px;
+  padding: 50px 0;
+  width: 933px;
 
   & .EventsContainer {
     display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 311px);
     & .Event {
+      padding: 35px;
       & .Month {
         color: var(--conun-blue);
         font-size: 14px;
+        opacity: 0.9;
         text-transform: uppercase;
       }
 
       & .Title {
         font-size: 18px;
+        letter-spacing: -0.02rem;
+        line-height: 21px;
         margin-bottom: 5px;
+        text-transform: capitalize;
       }
 
       & .Subtitle {
