@@ -1,39 +1,52 @@
 .YearDisplay {
+  align-items: center;
   background: #fff;
   border-radius: 15px;
   box-shadow: var(--conun-blue-shadow);
-  display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(3, 1fr);
-  height: 500px;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: space-between;
   padding: 50px;
   width: 935px;
 
-  & .Event {
-    & .Month {
-      color: var(--conun-blue);
-      text-transform: uppercase;
-    }
+  & .EventsContainer {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    & .Event {
+      & .Month {
+        color: var(--conun-blue);
+        font-size: 14px;
+        text-transform: uppercase;
+      }
 
-    & .Title {
-      margin-bottom: 5px;
-    }
+      & .Title {
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
 
-    & .Subtitle {
-      color: #5e5d5d;
+      & .Subtitle {
+        color: #5e5d5d;
+        font-size: 16px;
+        font-weight: 400;
+      }
     }
   }
 
   @media only screen and (max-width: 800px) {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
     height: auto;
     padding: 15px;
     width: 85vw;
 
-    & .Event {
-      margin-bottom: 1rem;
+    & .EventsContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+
+      & .Event {
+        margin-bottom: 1rem;
+      }
     }
   }
 }
