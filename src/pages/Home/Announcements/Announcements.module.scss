@@ -1,0 +1,82 @@
+.Announcements {
+  background-image: url("../../../../public/assets/announcements-bg.png");
+  background-position: -30px 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 1290px;
+  justify-content: center;
+  padding: 0 200px;
+
+  & .PageTitle {
+    font-size: 30px;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    text-transform: uppercase;
+  }
+
+  & .PageSubtitle {
+    font-size: 20px;
+    margin-bottom: 120px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  & .AnnouncementsContainer {
+    display: flex;
+    gap: 95px;
+    justify-content: space-evenly;
+
+    & .Announcement {
+      background: #fff;
+      border: 2px solid var(--conun-blue);
+      display: flex;
+      flex-direction: column;
+      padding: 30px 20px;
+      width: calc(430px - 40px);
+
+      & .Date {
+        color: #15827b;
+        font-size: 18px;
+        margin-bottom: 20px;
+        text-align: center;
+        text-decoration: underline;
+        text-transform: uppercase;
+      }
+
+      & .Title {
+        color: var(--conun-blue);
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      & .Subtitle {
+        color: var(--conun-blue);
+        font-weight: 400;
+        margin-bottom: 30px;
+        text-align: justify;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    height: auto;
+    padding: 0 20px;
+
+    & .PageTitle {
+      margin-top: 15rem;
+    }
+
+    & .AnnouncementsContainer {
+      flex-direction: column;
+      gap: 50px;
+
+      & .Announcement {
+        width: 80vw;
+      }
+    }
+  }
+}
