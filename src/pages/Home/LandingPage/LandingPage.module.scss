@@ -16,7 +16,11 @@
       font-size: calc(30px + 2vw);
       font-weight: 600;
     }
-
+    & .ShortDescription {
+      color: #fff;
+      font-size: calc(13px + 0.5vw);
+      margin-bottom: 30px;
+    }
     & .ConunDescription {
       color: #fff;
       font-size: calc(16px + 0.5vw);

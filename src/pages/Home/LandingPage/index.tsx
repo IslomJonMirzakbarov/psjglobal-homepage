@@ -34,10 +34,13 @@ function LandingPage() {
     <section id="home" className={styles.LandingPage}>
       <div className={styles.LeftSide}>
         <p className={styles.Title}>
-          <Trans id="Distributed Super Computing Platform" />
+          <Trans id="Share. Earn. Explore" />
+        </p>
+        <p className={styles.ShortDescription}>
+          <Trans id="Universal Resource Sharing" />
         </p>
         <p className={styles.ConunDescription}>
-          <Trans id="CONUN is a blockchain-based distributed supercomputing platform. By sharing idle resources of participants' personal computers and smartphones provided is a  service platform that enables you to handle high-performance computing resources." />
+          <Trans id="CONUN is a blockchain-based distributed supercomputing and resource sharing platform. Together, the participants of our network forms a high-performance resource-sharing service." />
         </p>
       </div>
       {!isMobile && (

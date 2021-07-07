@@ -1,9 +1,12 @@
 .Container {
   display: flex;
   margin-bottom: 50px;
+
   &.isIconLeft {
+    color: #fff;
     flex-direction: row-reverse;
     @media only screen and (max-width: 800px) {
+      align-items: center;
       flex-direction: column;
     }
   }
@@ -16,6 +19,7 @@
       font-size: 24px;
       font-weight: 500;
       line-height: 29px;
+      margin-bottom: 20px;
     }
 
     & .Description {
@@ -25,15 +29,16 @@
     }
   }
   & .Right {
-    height: 100%;
-    margin-right: 50px;
-    width: 25%;
+    align-self: flex-end;
+    object-fit: cover;
+    text-align: center;
   }
   & .Icon {
-    height: 70%;
+    width: 70%;
   }
 
   @media only screen and (max-width: 800px) {
+    align-items: center;
     flex-direction: column;
   }
 }

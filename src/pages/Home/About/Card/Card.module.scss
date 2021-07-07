@@ -1,26 +1,29 @@
 .Card {
   background: #fff;
-  border-radius: 10px;
   border-radius: 15px;
   box-shadow: 0 4px 10px #1d428a;
-  margin: 40px;
+  margin: 30px;
   opacity: 0.7;
   padding: 20px;
   text-align: center;
-  width: 100%;
 
   & .Title {
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 500;
+    height: 60px;
     text-transform: uppercase;
-  }
-  & .Image {
-    height: 50%;
-    margin: 20px 0;
-    width: 70%;
   }
   & .Description {
     font-size: 20px;
-    // text-align: left;
+  }
+  & .Image {
+    height: 50%;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    width: 80%;
+
+    @media only screen and (max-width: 800px) {
+      width: 70%;
+    }
   }
 }
