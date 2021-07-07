@@ -26,6 +26,11 @@ function LandingPage() {
         <p className={styles.Title}>
           <Trans id="Distributed Super Computing Platform" />
         </p>
+        {isMobile && (
+          <p className={styles.Subtitle}>
+            <Trans id="Universal Resource Sharing" />
+          </p>
+        )}
         <p className={styles.ConunDescription}>
           <Trans id="CONUN is a blockchain-based distributed supercomputing platform. By sharing idle resources of participants' personal computers and smartphones provided is a  service platform that enables you to handle high-performance computing resources." />
         </p>
@@ -39,7 +44,7 @@ function LandingPage() {
               </Link>
             ))}
           </div>
-          <p className={styles.VerticalText}>SUPER COMPUTING PLATFORM</p>
+          <p className={styles.VerticalText}>Resource Sharing</p>
         </div>
       )}
     </section>
