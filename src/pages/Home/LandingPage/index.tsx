@@ -6,9 +6,19 @@ import styles from "./LandingPage.module.scss";
 
 const PAGE_SECTIONS = [
   {
-    id: "what-we-do",
+    id: "about",
     label: <Trans id="01 What We Do" />,
-    path: "/#what-we-do",
+    path: "/#about",
+  },
+  {
+    id: "distributed-super-computing",
+    label: <Trans id="02 Distributed Super Computing" />,
+    path: "/#get-started",
+  },
+  {
+    id: "get-started",
+    label: <Trans id="02 Get Started" />,
+    path: "/#get-started",
   },
   {
     id: "get-started",

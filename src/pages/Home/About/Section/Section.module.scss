@@ -1,0 +1,39 @@
+.Container {
+  display: flex;
+  margin-bottom: 50px;
+  &.isIconLeft {
+    flex-direction: row-reverse;
+    @media only screen and (max-width: 800px) {
+      flex-direction: column;
+    }
+  }
+
+  & .Left {
+    margin-right: 50px;
+    padding-bottom: 30px;
+    width: 75%;
+    & .Title {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 29px;
+    }
+
+    & .Description {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 50px;
+    }
+  }
+  & .Right {
+    height: 100%;
+    margin-right: 50px;
+    width: 25%;
+  }
+  & .Icon {
+    height: 70%;
+  }
+
+  @media only screen and (max-width: 800px) {
+    flex-direction: column;
+  }
+}
