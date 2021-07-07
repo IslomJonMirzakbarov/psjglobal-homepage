@@ -7,13 +7,13 @@ import Card from "./Card";
 import styles from "./About.module.scss";
 
 import Buildings from "@/assets/icons/buildings.svg";
-import Monetization from "@/assets/icons/monetization.svg";
+import CompWalletCoin from "@/assets/icons/comp-wallet-coin.svg";
 import Coins from "@/assets/icons/coins.svg";
 import Transaction from "@/assets/icons/transaction.svg";
 import Wallet from "@/assets/icons/wallet.svg";
 import Finance from "@/assets/icons/finance.svg";
 import Network from "@/assets/icons/network.svg";
-import WhitePaper from "@/assets/icons/white_paper.svg";
+import WhitePaper from "@/assets/icons/white-paper.svg";
 
 const SECTIONS = [
   {
@@ -32,7 +32,7 @@ const SECTIONS = [
       <Trans id="Based on desktop grid computing technology, CONUN's Distributed Super Computing Platform operates by agreement between participants and users that supports a horizontal revenue ecosystem. Participants agree to share available space with users, and users access the available space for their personal computing needs - thus creating a mutually beneficial relationship." />
     ),
     isIconLeft: true,
-    icon: Monetization,
+    icon: CompWalletCoin,
   },
   {
     id: "decentralized-finance",

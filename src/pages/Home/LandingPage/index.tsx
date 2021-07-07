@@ -16,11 +16,7 @@ const PAGE_SECTIONS = [
     label: <Trans id="02 Distributed Super Computing" />,
     path: "/#get-started",
   },
-  {
-    id: "get-started",
-    label: <Trans id="02 Get Started" />,
-    path: "/#get-started",
-  },
+
   {
     id: "get-started",
     label: <Trans id="02 Get Started" />,

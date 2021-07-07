@@ -1,6 +1,8 @@
 .Container {
   display: flex;
   margin-bottom: 50px;
+  padding: 50px;
+  width: 100%;
 
   &.isIconLeft {
     color: #fff;
@@ -25,7 +27,7 @@
     & .Description {
       font-size: 20px;
       font-weight: 400;
-      line-height: 50px;
+      line-height: 30px;
     }
   }
   & .Right {
