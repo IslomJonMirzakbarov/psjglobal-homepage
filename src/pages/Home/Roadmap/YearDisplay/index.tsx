@@ -36,6 +36,8 @@ function YearDisplay({ year }: YearDisplay) {
 
   const isMoreThanSix = year.events.length > 6;
 
+  const pages: Page[] = ["first", "second"];
+
   return (
     <div className={styles.YearDisplay}>
       <div className={styles.EventsContainer}>
@@ -57,7 +59,7 @@ function YearDisplay({ year }: YearDisplay) {
       </div>
       {isMoreThanSix && !isMobile && (
         <div>
-          {["first", "second"].map((p) => (
+          {pages.map((p) => (
             <Button key={p} type="button" onClick={() => setPage(p)} noStyle>
               {page === p ? <RoundFilledIcon /> : <RoundEmptyIcon />}
             </Button>
