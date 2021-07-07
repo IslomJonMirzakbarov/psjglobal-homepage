@@ -53,7 +53,8 @@
     & .VerticalText {
       color: #fff;
       font-size: 24px;
-      letter-spacing: 0.5rem;
+      letter-spacing: 0.625em;
+      opacity: 0.5;
       text-orientation: sideways;
       text-transform: uppercase;
       writing-mode: vertical-rl;

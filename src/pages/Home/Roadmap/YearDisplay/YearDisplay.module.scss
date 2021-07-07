@@ -14,7 +14,7 @@
     display: grid;
     grid-template-columns: repeat(3, 311px);
     & .Event {
-      padding: 35px;
+      padding: 25px 35px;
       & .Month {
         color: var(--conun-blue);
         font-size: 14px;
