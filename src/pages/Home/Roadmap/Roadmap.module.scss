@@ -1,5 +1,26 @@
 .Roadmap {
+  color: var(--conun-blue);
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-bottom: 200px;
+  padding: 0 200px;
+
+  & .PageTitle {
+    font-size: 30px;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+
+  & .PageSubtitle {
+    font-size: 20px;
+    margin-bottom: 90px;
+  }
+
+  @media only screen and (max-width: 800px) {
+    padding: 0 20px;
+
+    & .PageSubtitle {
+      margin-bottom: 30px;
+    }
+  }
 }
