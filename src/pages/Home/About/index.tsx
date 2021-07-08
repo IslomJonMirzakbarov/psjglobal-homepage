@@ -34,12 +34,19 @@ const SECTIONS = [
     icon: CompWalletCoin,
   },
   {
+    id: "drive",
+    title: <Trans id="03 DRIVE" />,
+    description: (
+      <Trans id="Conun Drive is a decentralized content sharing system. It means there is no centralized server that stores all contents. All content will be stored by Conun Drive network participants (peer nodes). As soon as a user connects to the Conun Drive network his/her computer will become a Conun Drive network participant. And participants will choose which files to store or publish. Content publishers will be rewarded by the network participants. In addition, all actions that occur on the Conun Drive network will be stored on the Conun Private Blockchain, meaning all actions are immutable and secure." />
+    ),
+  },
+  {
     id: "decentralized-finance",
-    title: <Trans id="03 DECENTRALIZED FINANCE" />,
+    title: <Trans id="04 DECENTRALIZED FINANCE" />,
     description: (
       <Trans id="Decentralized finance operates through the decentralized blockchain on a distributed public ledger, it makes all transactions transparent and trackable. With peer-to peer exchanges it eliminates the middle-man present in centralized finance and allows for more control over personal information and of finances." />
     ),
-    isIconLeft: false,
+
     icon: Finance,
   },
 ];
@@ -58,6 +65,7 @@ const GET_STARTED_CARDS = [
     description: (
       <Trans id="A peer-to-peer, decentralized  file sharing service built on our blockchain network." />
     ),
+    isIconLeft: true,
     icon: Transaction,
   },
   {
@@ -81,7 +89,7 @@ function About() {
         <div className={styles.GetStartedContainer}>
           <div className={styles.GetStartedText}>
             <p className={styles.Title}>
-              <Trans id="04 Get Started" />
+              <Trans id="05 Get Started" />
             </p>
 
             <p className={styles.Description}>
@@ -99,7 +107,7 @@ function About() {
       <section id="white-paper" className={styles.WhitePaper}>
         <div className={styles.WhitePaperText}>
           <p className={styles.Title}>
-            <Trans id="05 White Paper" />
+            <Trans id="06 White Paper" />
           </p>
           <p className={styles.Description}>
             <Trans id="Explore our white paper to learn more about CONUN as a business, our motivations, and our current and future products." />

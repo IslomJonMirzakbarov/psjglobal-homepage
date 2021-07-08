@@ -22,24 +22,29 @@ const PAGE_SECTIONS = [
     path: "/#decentralized-finance",
   },
   {
+    id: "drive",
+    label: <Trans id="04 Drive" />,
+    path: "/#get-started",
+  },
+  {
     id: "get-started",
-    label: <Trans id="04 Get Started" />,
+    label: <Trans id="05 Get Started" />,
     path: "/#get-started",
   },
   {
     id: "white-paper",
-    label: <Trans id="05 White Paper" />,
+    label: <Trans id="06 White Paper" />,
     path: "/#white-paper",
   },
   {
     id: "roadmap",
-    label: <Trans id="06 Roadmap" />,
+    label: <Trans id="07 Roadmap" />,
     path: "/#roadmap",
   },
 
   {
     id: "announcements",
-    label: <Trans id="07 Announcements" />,
+    label: <Trans id="08 Announcements" />,
     path: "/#announcements",
   },
 ];

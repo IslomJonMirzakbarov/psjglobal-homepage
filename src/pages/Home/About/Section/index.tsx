@@ -7,7 +7,7 @@ interface Section {
     id: any;
     title: any;
     description: any;
-    icon: any;
+    icon?: any;
     isIconLeft: boolean;
   };
 }
@@ -27,7 +27,7 @@ const Section = ({ section }: Section) => {
         <p className={styles.Description}>{description}</p>
       </div>
       <div className={styles.Right}>
-        <Icon className={styles.Icon} />
+        {Icon && <Icon className={styles.Icon} />}
       </div>
     </section>
   );

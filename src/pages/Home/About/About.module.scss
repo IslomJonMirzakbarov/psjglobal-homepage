@@ -8,7 +8,7 @@
 
 .WhitePaper {
   display: flex;
-  padding: 0 200px;
+  padding: 0 270px;
 
   & .WhitePaperText {
     color: var(--conun-blue);
@@ -51,12 +51,14 @@
   margin-bottom: 50px;
   width: 100%;
   & .GetStartedContainer {
-    padding: 0 200px;
+    margin-bottom: 300px;
+    padding: 0 270px;
     & .GetStartedText {
       & .Title {
         font-size: 30px;
         font-weight: 500;
         margin-bottom: 20px;
+        text-transform: uppercase;
       }
 
       & .Description {
@@ -72,8 +74,9 @@
       margin-bottom: 130px;
     }
     & .AboutBottomIcon {
-      margin-left: 50px;
-      width: 40%;
+      margin-left: -390px;
+      transform: translateY(200px);
+      width: 70%;
     }
   }
 }

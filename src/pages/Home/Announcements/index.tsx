@@ -40,7 +40,7 @@ function Announcements() {
   return (
     <section id="announcements" className={styles.Announcements}>
       <p className={styles.PageTitle}>
-        <Trans id="07 Announcements" />
+        <Trans id="08 Announcements" />
       </p>
       <p className={styles.PageSubtitle}>
         <Trans id="Ongoing project and company updates related to CONUN." />
