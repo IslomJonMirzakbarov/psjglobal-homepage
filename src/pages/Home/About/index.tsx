@@ -16,7 +16,7 @@ import styles from "./About.module.scss";
 
 const SECTIONS = [
   {
-    id: "about-conun",
+    id: "about",
     title: <Trans id="01 About CONUN" />,
     description: (
       <Trans id="With the idle processing powers of personal computers and smartphones CONUN provides a horizontal, distributed computing power sharing platform that is open to all application requesters and operators who need computing power. With focus on ease-of use and efficiency CONUN’s goal is to link our platform with on and offline services to provide users with broad benefits as we continue to dream and create from project to project. " />

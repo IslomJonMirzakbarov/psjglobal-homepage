@@ -8,7 +8,7 @@
   flex-direction: column;
   height: 1290px;
   justify-content: center;
-  padding: 0 270px;
+  padding: 0 var(--website-padding);
 
   & .PageTitle {
     font-size: 30px;
@@ -72,8 +72,8 @@
 
   @media only screen and (max-width: 800px) {
     height: auto;
-    padding: 0 10px;
-    width: calc(100vw - 20px);
+    padding: 0 2rem;
+    width: calc(100vw - 4rem);
 
     & .PageTitle {
       margin-top: 15rem;

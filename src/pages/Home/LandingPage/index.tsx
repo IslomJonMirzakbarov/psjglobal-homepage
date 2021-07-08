@@ -8,7 +8,7 @@ import styles from "./LandingPage.module.scss";
 const PAGE_SECTIONS = [
   {
     id: "about-conun",
-    label: <Trans id="01 What We Do" />,
+    label: <Trans id="01 About Us" />,
     path: "/#about",
   },
   {
@@ -17,14 +17,14 @@ const PAGE_SECTIONS = [
     path: "/#distributed-super-computing",
   },
   {
-    id: "decentralized-finance",
-    label: <Trans id="03 Decentralized Finance" />,
-    path: "/#decentralized-finance",
+    id: "drive",
+    label: <Trans id="03 Drive" />,
+    path: "/#drive",
   },
   {
-    id: "drive",
-    label: <Trans id="04 Drive" />,
-    path: "/#get-started",
+    id: "decentralized-finance",
+    label: <Trans id="04 Decentralized Finance" />,
+    path: "/#decentralized-finance",
   },
   {
     id: "get-started",

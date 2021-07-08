@@ -20,7 +20,7 @@ const ANNOUNCEMENTS: any = [
   {
     id: 1,
     date: "July 5, 2021",
-    title: "CONUN Logo Renewal",
+    title: "CONUN Branding Renewal",
     subtitle: "CONUN changed the logo to announce its new start. ",
     image: logoRenewal,
     link: "https://xangle.io/project/CON/recent-disclosure/60ded621d9d39fef9a4d9b2c",

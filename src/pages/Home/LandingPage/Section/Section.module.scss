@@ -4,4 +4,8 @@
   font-weight: 500;
   justify-items: start;
   width: 100%;
+
+  &:hover {
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+  }
 }

@@ -4,18 +4,18 @@
   background-size: cover;
   display: flex;
   justify-content: space-between;
-  padding: 200px;
+  padding: 200px var(--website-padding);
 
   & .LeftSide {
     align-self: flex-start;
-    padding-left: 20px;
-    width: 70%;
+    width: 60%;
 
     & .Title {
       color: #76f1bd;
       font-family: "Teko", sans-serif;
-      font-size: calc(35px + 1.8vw);
+      font-size: calc(35px + 1.3vw);
       font-weight: 600;
+      height: 70px;
     }
 
     & .Subtitle {
@@ -32,8 +32,9 @@
     }
     & .ConunDescription {
       color: #fff;
-      font-size: calc(16px + 0.5vw);
+      font-size: calc(16px + 0.3vw);
       line-height: 150%;
+      max-width: 800px;
     }
   }
 
@@ -42,7 +43,7 @@
     height: fit-content;
     margin-top: 75px;
     padding-right: 20px;
-    width: 30%;
+    width: 40%;
 
     & .Sections {
       align-self: flex-end;
@@ -60,13 +61,13 @@
       opacity: 0.5;
       text-orientation: sideways;
       text-transform: uppercase;
-      transform: translateY(-100px);
+      transform: translateY(-200px) translateX(270px);
       writing-mode: vertical-rl;
     }
   }
 
   @media only screen and (max-width: 800px) {
-    padding: 0 15px;
+    padding: 0 2rem;
 
     & .LeftSide {
       align-self: flex-start;
@@ -74,6 +75,7 @@
       margin-top: 60%;
       width: 90%;
       & .Title {
+        height: auto;
         text-align: center;
       }
 
