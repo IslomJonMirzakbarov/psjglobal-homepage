@@ -13,6 +13,10 @@
   & .EventsContainer {
     display: grid;
     grid-template-columns: repeat(3, 311px);
+
+    & > :not(:nth-child(3n)) {
+      border-right: solid 0.5px rgba(178, 178, 178, 0.5);
+    }
     & .Event {
       padding: 25px 35px;
       & .Month {
@@ -49,6 +53,7 @@
       gap: 0;
 
       & .Event {
+        border-right: none;
         margin-bottom: 1rem;
       }
     }
