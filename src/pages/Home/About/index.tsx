@@ -113,7 +113,7 @@ function About() {
           </p>
         </div>
         <div className={styles.WhitePaperImage}>
-          <WhitePaper className={styles.Icon} />
+          <WhitePaper className={styles.Image} />
         </div>
       </div>
       <div className={styles.Roadmap}>
