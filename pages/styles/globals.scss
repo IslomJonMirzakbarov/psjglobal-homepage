@@ -5,6 +5,9 @@
   --conun-blue: #1d428a;
   --neon-green: #76f1bd;
 
+  // shadow
+  --conun-blue-shadow: 0 4px 10px rgba(29, 66, 138, 0.5);
+
   // z-index
   --sidebar-index: 1000;
 }
@@ -22,7 +25,6 @@ a {
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 }

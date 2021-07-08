@@ -1,7 +1,7 @@
 .Container {
   display: flex;
   margin-bottom: 50px;
-  width: 90%;
+  padding: 0 200px;
 
   &.isIconLeft {
     color: #fff;
@@ -13,10 +13,11 @@
     width: 80%;
 
     & .Title {
-      font-size: 24px;
+      font-size: 30px;
       font-weight: 500;
       line-height: 29px;
       margin-bottom: 20px;
+      text-transform: uppercase;
     }
 
     & .Description {
@@ -38,12 +39,10 @@
   @media only screen and (max-width: 800px) {
     align-items: center;
     flex-direction: column;
-    margin: 0 auto;
-    padding: 0;
-    width: 100%;
+    padding: 0 1rem;
     & .Left,
     .Right {
-      width: 100%;
+      width: inherit;
     }
 
     &.isIconLeft {

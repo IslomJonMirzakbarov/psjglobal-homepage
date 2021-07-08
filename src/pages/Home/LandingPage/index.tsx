@@ -52,9 +52,16 @@ function LandingPage() {
         <p className={styles.Title}>
           <Trans id="Share. Earn. Explore" />
         </p>
-        <p className={styles.ShortDescription}>
-          <Trans id="Universal Resource Sharing" />
-        </p>
+
+        {isMobile ? (
+          <p className={styles.Subtitle}>
+            <Trans id="Universal Resource Sharing" />
+          </p>
+        ) : (
+          <p className={styles.ShortDescription}>
+            <Trans id="Universal Resource Sharing" />
+          </p>
+        )}
         <p className={styles.ConunDescription}>
           <Trans id="CONUN is a blockchain-based distributed supercomputing and resource sharing platform. Together, the participants of our network forms a high-performance resource-sharing service." />
         </p>
@@ -66,7 +73,7 @@ function LandingPage() {
               <Section key={section.id} section={section} />
             ))}
           </div>
-          <p className={styles.VerticalText}>SUPER COMPUTING PLATFORM</p>
+          <p className={styles.VerticalText}>Resource Sharing</p>
         </div>
       )}
     </section>

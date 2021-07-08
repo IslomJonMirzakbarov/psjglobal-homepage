@@ -1,7 +1,5 @@
 import { Trans } from "@lingui/react";
 
-import Link from "next/link";
-
 import Section from "./Section";
 import Card from "./Card";
 
@@ -79,7 +77,7 @@ function About() {
           <Section key={section.id} section={section} />
         ))}
       </div>
-      <section id="getStarted" className={styles.GetStarted}>
+      <section id="get-started" className={styles.GetStarted}>
         <div className={styles.GetStartedContainer}>
           <div className={styles.GetStartedText}>
             <p className={styles.Title}>
@@ -107,11 +105,13 @@ function About() {
             <Trans id="Explore our white paper to learn more about CONUN as a business, our motivations, and our current and future products." />
           </p>
           <p className={styles.LearnMore}>
-            <Link href="/learn-more">
-              <a>
-                <Trans id="Learn More" />
-              </a>
-            </Link>
+            <a
+              href="https://conun.io/whitepaper"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Trans id="Learn More" />
+            </a>
           </p>
         </div>
         <div className={styles.WhitePaperImage}>

@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 import { Trans } from "@lingui/react";
 import Link from "next/link";
 
+import MenuItem from "./MenuItem";
+
 import MenuIcon from "@/assets/icons/hamburger.svg";
 import ConunLogo from "@/assets/icons/conun-logo-horizontal.svg";
 
 import styles from "./Sidebar.module.scss";
-import React from "react";
-import MenuItem from "./MenuItem";
 
 const variants = {
   open: { x: 0 },

@@ -1,6 +1,6 @@
 .AboutConun {
   background-image: url("../../../../public/assets/midpage_land_asset.jpg");
-  background-position: center;
+  background-position: center 250px;
   background-repeat: no-repeat;
   color: var(--conun-blue);
   width: 100%;
@@ -8,15 +8,16 @@
 
 .WhitePaper {
   display: flex;
-  width: 90%;
+  padding: 0 200px;
 
   & .WhitePaperText {
     color: var(--conun-blue);
     width: 90%;
     & .Title {
-      font-size: 24px;
+      font-size: 30px;
       font-weight: 500;
       margin-bottom: 20px;
+      text-transform: uppercase;
     }
     & .Description {
       font-size: 20px;
@@ -43,17 +44,17 @@
 
 .GetStarted {
   background-image: url("../../../../public/assets/mtns.png");
-  background-position: bottom right;
+  background-position: bottom center;
   background-repeat: no-repeat;
+  background-size: contain;
   color: var(--conun-blue);
   margin-bottom: 50px;
   width: 100%;
   & .GetStartedContainer {
-    width: 90%;
-
+    padding: 0 200px;
     & .GetStartedText {
       & .Title {
-        font-size: 24px;
+        font-size: 30px;
         font-weight: 500;
         margin-bottom: 20px;
       }
@@ -77,30 +78,13 @@
   }
 }
 
-.Roadmap {
-  color: var(--conun-blue);
-  width: 90%;
-
-  & .RoadmapTitle {
-    font-size: 24px;
-    font-weight: 500;
-    margin-bottom: 20px;
-  }
-  & .RoadmapDescription {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-    margin-bottom: 30px;
-  }
-}
-
 @media only screen and (max-width: 800px) {
   .AboutConun,
-  .Roadmap,
   .GetStarted {
-    margin: 0 auto;
-    padding: 0;
-    width: 90%;
+    & .GetStartedContainer {
+      margin-bottom: 100px;
+      padding: 0 15px;
+    }
   }
   .GetStarted {
     & .GetStartedCards {
@@ -115,6 +99,7 @@
     align-items: center;
     flex-direction: column;
     margin: 0 auto;
+    margin-bottom: 100px;
     padding: 0;
     width: 100%;
     & .whitepapertext {

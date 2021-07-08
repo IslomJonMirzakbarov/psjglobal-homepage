@@ -1,0 +1,53 @@
+.YearsSelector {
+  align-items: center;
+  display: flex;
+
+  & .Years {
+    display: flex;
+    flex-direction: column;
+
+    & > :not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    & .Year {
+      align-items: center;
+      display: flex;
+
+      & .YearButton {
+        color: var(--conun-blue);
+        font-size: calc(13px + 0.7vw);
+        margin-right: 1.5rem;
+        opacity: 0.8;
+
+        &.isSelected {
+          font-weight: bold;
+          opacity: 1;
+        }
+      }
+
+      & .Line {
+        border-top: 1px solid var(--conun-blue);
+        width: 325px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    flex-direction: column;
+    & .Years {
+      flex-direction: row;
+      & .Year {
+        margin-bottom: 20px;
+
+        & .YearButton {
+          margin-right: 10px;
+        }
+
+        & .Line {
+          display: none;
+        }
+      }
+    }
+  }
+}
