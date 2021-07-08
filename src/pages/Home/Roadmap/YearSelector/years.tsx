@@ -36,7 +36,7 @@ export const YEARS: any = {
         month: <Trans id="Feb" />,
         title: <Trans id="Network Core for exchange platform" />,
         subtitle: (
-          <Trans id="Apply for network core and trading system in BTC, ETH, XRP, QTUM etc." />
+          <Trans id="Apply for network core and trading system in BTC, ETH, XRP, QTUM etc" />
         ),
       },
       {
@@ -196,7 +196,7 @@ export const YEARS: any = {
         month: <Trans id="Dec" />,
         title: <Trans id="Launch CONUN Blockchain Middleware Testnet" />,
         subtitle: (
-          <Trans id="Starting to test 'CONUN blockchain network service version 'Halla'. We pick the beautiful mountain name in Jeju island as a CONUN's first release service name." />
+          <Trans id="Starting to test 'CONUN blockchain network service version 'Halla'. We pick the beautiful mountain name in Jeju island as a CONUN's first release service name" />
         ),
       },
     ],
@@ -208,7 +208,7 @@ export const YEARS: any = {
         month: <Trans id="Feb" />,
         title: <Trans id="Complete CONUN DECENTRALIZED NETWORK" />,
         subtitle: (
-          <Trans id="CONUN p2p protocol is designed for delivering a secure network between trustless users. Security protocols." />
+          <Trans id="CONUN p2p protocol is designed for delivering a secure network between trustless users. Security protocols" />
         ),
       },
       {
@@ -226,7 +226,7 @@ export const YEARS: any = {
           <Trans id="The first release of CONUN blockchain main services 'Halla - Release'. Complete CONUN DRIVE" />
         ),
         subtitle: (
-          <Trans id="CONUN Services: CONUN Decentralized Data Storage Infrastructure SaaS. CONUN Drive Smart Contract." />
+          <Trans id="CONUN Services: CONUN Decentralized Data Storage Infrastructure SaaS. CONUN Drive Smart Contract" />
         ),
       },
       {
@@ -278,21 +278,21 @@ export const YEARS: any = {
         month: <Trans id="Apr" />,
         title: <Trans id="Release CONUN membership service" />,
         subtitle: (
-          <Trans id="Launching the CONUN membership service and CONUN Resource Monitoring allows you to configure a cost estimate and income estimate that fits your unique business or personal needs with CONUN platform." />
+          <Trans id="Launching the CONUN membership service and CONUN Resource Monitoring allows you to configure a cost estimate and income estimate that fits your unique business or personal needs with CONUN platform" />
         ),
       },
       {
         month: <Trans id="Oct" />,
         title: <Trans id="Development CONUN DappStore" />,
         subtitle: (
-          <Trans id="DappStore is a platform, which lists all popular dApps. Discover the innovative world of blockchain, plus explore the many decentralized applications in our platform." />
+          <Trans id="DappStore is a platform, which lists all popular dApps. Discover the innovative world of blockchain, plus explore the many decentralized applications in our platform" />
         ),
       },
       {
         month: <Trans id="Dec" />,
         title: <Trans id="Complete CONUN Network SDKs and APIsn" />,
         subtitle: (
-          <Trans id="Through CONUN Network SDKs, organizations can efficiently integrate their business into the CONUN Blockchain Network. With CONUN provided APIs, organizations can implement their own business applications." />
+          <Trans id="Through CONUN Network SDKs, organizations can efficiently integrate their business into the CONUN Blockchain Network. With CONUN provided APIs, organizations can implement their own business applications" />
         ),
       },
       {
