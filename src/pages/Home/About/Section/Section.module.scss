@@ -1,0 +1,55 @@
+.Container {
+  display: flex;
+  margin-bottom: 50px;
+  width: 90%;
+
+  &.isIconLeft {
+    color: #fff;
+    flex-direction: row-reverse;
+  }
+
+  & .Left {
+    padding: 30px 0;
+    width: 80%;
+
+    & .Title {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 29px;
+      margin-bottom: 20px;
+    }
+
+    & .Description {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
+    }
+  }
+  & .Right {
+    align-self: flex-end;
+    object-fit: cover;
+    text-align: center;
+    width: 20%;
+    & .Icon {
+      width: 90%;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    & .Left,
+    .Right {
+      width: 100%;
+    }
+
+    &.isIconLeft {
+      align-items: center;
+      color: var(--conun-blue);
+      flex-direction: column;
+    }
+  }
+}

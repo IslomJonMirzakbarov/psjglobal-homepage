@@ -1,20 +1,46 @@
 import useIsMobile from "@/hooks/useIsMobile";
 import { Trans } from "@lingui/react";
-import Link from "next/link";
-import React from "react";
+
+import Section from "./Section";
 
 import styles from "./LandingPage.module.scss";
 
 const PAGE_SECTIONS = [
   {
-    id: "what-we-do",
+    id: "about-conun",
     label: <Trans id="01 What We Do" />,
-    path: "/#what-we-do",
+    path: "/#about",
+  },
+  {
+    id: "distributed-super-computing",
+    label: <Trans id="02 Distributed Super Computing" />,
+    path: "/#get-started",
+  },
+  {
+    id: "decentralized-finance",
+    label: <Trans id="03 Decentralized Finance" />,
+    path: "/#decentralized-finance",
   },
   {
     id: "get-started",
-    label: <Trans id="02 Get Started" />,
+    label: <Trans id="04 Get Started" />,
     path: "/#get-started",
+  },
+  {
+    id: "white-paper",
+    label: <Trans id="05 White Paper" />,
+    path: "/#white-paper",
+  },
+  {
+    id: "roadmap",
+    label: <Trans id="06 Roadmap" />,
+    path: "/#roadmap",
+  },
+
+  {
+    id: "announcements",
+    label: <Trans id="07 Announcements" />,
+    path: "/#announcements",
   },
 ];
 
@@ -24,19 +50,20 @@ function LandingPage() {
     <section id="home" className={styles.LandingPage}>
       <div className={styles.LeftSide}>
         <p className={styles.Title}>
-          <Trans id="Distributed Super Computing Platform" />
+          <Trans id="Share. Earn. Explore" />
+        </p>
+        <p className={styles.ShortDescription}>
+          <Trans id="Universal Resource Sharing" />
         </p>
         <p className={styles.ConunDescription}>
-          <Trans id="CONUN is a blockchain-based distributed supercomputing platform. By sharing idle resources of participants' personal computers and smartphones provided is a  service platform that enables you to handle high-performance computing resources." />
+          <Trans id="CONUN is a blockchain-based distributed supercomputing and resource sharing platform. Together, the participants of our network forms a high-performance resource-sharing service." />
         </p>
       </div>
       {!isMobile && (
         <div className={styles.RightSide}>
           <div className={styles.Sections}>
             {PAGE_SECTIONS.map((section) => (
-              <Link key={section.id} href={section.path}>
-                <a className={styles.Section}>{section.label}</a>
-              </Link>
+              <Section key={section.id} section={section} />
             ))}
           </div>
           <p className={styles.VerticalText}>SUPER COMPUTING PLATFORM</p>
