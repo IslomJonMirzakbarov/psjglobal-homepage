@@ -3,13 +3,15 @@
   background-position: center;
   background-repeat: no-repeat;
   color: var(--conun-blue);
+  width: 100%;
 }
 .GetStarted {
   background-image: url("../../../../public/assets/mtns.png");
   background-position: bottom right;
   background-repeat: no-repeat;
   color: var(--conun-blue);
-  padding: 0 30px;
+  margin-bottom: 50px;
+  width: 90%;
 
   & .Title {
     font-size: 24px;
@@ -28,33 +30,19 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 130px;
-
-    @media only screen and (max-width: 800px) {
-      align-items: center;
-      flex-direction: column;
-    }
   }
   & .AboutBottomIcon {
     width: 500px;
-
-    @media only screen and (max-width: 800px) {
-      width: 300px;
-    }
   }
 }
 
 .WhitePaper {
   display: flex;
-  margin-top: 100px;
-  padding: 0 30px;
-
-  @media only screen and (max-width: 800px) {
-    align-items: center;
-    flex-direction: column;
-  }
+  width: 90%;
 
   & .WhitePaperText {
     color: var(--conun-blue);
+    width: 90%;
     & .Title {
       font-size: 24px;
       font-weight: 500;
@@ -75,16 +63,17 @@
     }
   }
   & .WhitePaperImage {
-    & .Image {
-      width: 200px;
+    width: 20%;
+    &.Icon {
+      width: 90%;
     }
   }
 }
 
 .Roadmap {
   color: var(--conun-blue);
-  margin-top: 100px;
-  padding: 0 30px;
+  width: 90%;
+
   & .RoadmapTitle {
     font-size: 24px;
     font-weight: 500;
@@ -95,5 +84,37 @@
     font-weight: 400;
     line-height: 30px;
     margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .AboutConun,
+  .Roadmap,
+  .GetStarted {
+    margin: 0 auto;
+    padding: 0;
+    width: 90%;
+  }
+  .GetStarted {
+    & .GetStartedCards {
+      align-items: center;
+      flex-direction: column;
+    }
+    & .AboutBottomIcon {
+      width: 300px;
+    }
+  }
+  .WhitePaper {
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    & .whitepapertext {
+      width: 100%;
+    }
+    & .WhitePaperImage {
+      width: 80%;
+    }
   }
 }

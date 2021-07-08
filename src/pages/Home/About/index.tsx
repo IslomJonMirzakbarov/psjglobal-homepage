@@ -1,6 +1,6 @@
 import React from "react";
 import { Trans } from "@lingui/react";
-
+import Link from "next/link";
 import Section from "./Section";
 import Card from "./Card";
 
@@ -105,11 +105,15 @@ function About() {
             <Trans id="Explore our white paper to learn more about CONUN as a business, our motivations, and our current and future products." />
           </p>
           <p className={styles.LearnMore}>
-            <Trans id="Learn More" />
+            <Link href="/learn-more">
+              <a>
+                <Trans id="Learn More" />
+              </a>
+            </Link>
           </p>
         </div>
         <div className={styles.WhitePaperImage}>
-          <WhitePaper className={styles.Image} />
+          <WhitePaper className={styles.Icon} />
         </div>
       </div>
       <div className={styles.Roadmap}>

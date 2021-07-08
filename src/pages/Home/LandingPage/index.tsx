@@ -19,7 +19,7 @@ const PAGE_SECTIONS = [
 
   {
     id: "get-started",
-    label: <Trans id="02 Get Started" />,
+    label: <Trans id="03 Get Started" />,
     path: "/#get-started",
   },
 ];
