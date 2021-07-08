@@ -4,16 +4,17 @@
   background-size: cover;
   display: flex;
   justify-content: space-between;
-  min-height: calc(100vh - 60px);
-  padding: 0 200px;
+  padding: 200px;
 
   & .LeftSide {
-    align-self: center;
+    align-self: flex-start;
+    padding-left: 20px;
+    width: 70%;
 
     & .Title {
       color: #76f1bd;
       font-family: "Teko", sans-serif;
-      font-size: calc(30px + 2vw);
+      font-size: calc(35px + 1.8vw);
       font-weight: 600;
     }
 
@@ -22,11 +23,17 @@
       font-style: italic;
     }
 
+    & .ShortDescription {
+      color: #fff;
+      font-size: calc(13px + 0.5vw);
+      font-style: italic;
+      font-weight: 400;
+      margin-bottom: 30px;
+    }
     & .ConunDescription {
       color: #fff;
       font-size: calc(16px + 0.5vw);
       line-height: 150%;
-      width: 737px;
     }
   }
 
@@ -34,20 +41,16 @@
     display: flex;
     height: fit-content;
     margin-top: 75px;
+    padding-right: 20px;
+    width: 30%;
+
     & .Sections {
       align-self: flex-end;
-      display: flex;
-      flex-direction: column;
-      margin-right: 75px;
-
-      & > :not(:last-child) {
-        margin-bottom: 40px;
-      }
-
-      & .Section {
-        color: #fff;
-        font-size: 16px;
-      }
+      display: grid;
+      font-size: 10px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 50px 50px 50px 50px;
+      margin-bottom: 50px;
     }
 
     & .VerticalText {
@@ -57,6 +60,7 @@
       opacity: 0.5;
       text-orientation: sideways;
       text-transform: uppercase;
+      transform: translateY(-100px);
       writing-mode: vertical-rl;
     }
   }
@@ -66,8 +70,9 @@
 
     & .LeftSide {
       align-self: flex-start;
+      height: 100vh;
       margin-top: 50%;
-
+      width: 90%;
       & .Title {
         text-align: center;
       }
@@ -79,7 +84,8 @@
       }
 
       & .ConunDescription {
-        text-align: justify;
+        margin-top: 30px;
+        text-align: center;
         width: auto;
       }
     }

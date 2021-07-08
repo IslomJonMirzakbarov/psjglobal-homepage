@@ -1,0 +1,29 @@
+.Card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px #1d428a;
+  margin: 30px;
+  opacity: 0.9;
+  padding: 20px;
+  text-align: center;
+
+  & .Title {
+    font-size: 20px;
+    font-weight: 500;
+    height: 60px;
+    text-transform: uppercase;
+  }
+  & .Description {
+    font-size: 20px;
+  }
+  & .Image {
+    height: 50%;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    width: 80%;
+
+    @media only screen and (max-width: 800px) {
+      width: 70%;
+    }
+  }
+}

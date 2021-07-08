@@ -1,12 +1,112 @@
-.About {
-  & .Left {
-    & .Title {
-      font-size: 24px;
-    }
+.AboutConun {
+  background-image: url("../../../../public/assets/midpage_land_asset.jpg");
+  background-position: center 250px;
+  background-repeat: no-repeat;
+  color: var(--conun-blue);
+  width: 100%;
+}
 
+.WhitePaper {
+  display: flex;
+  padding: 0 200px;
+
+  & .WhitePaperText {
+    color: var(--conun-blue);
+    width: 90%;
+    & .Title {
+      font-size: 30px;
+      font-weight: 500;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
     & .Description {
       font-size: 20px;
-      line-height: 50px;
+      font-weight: 400;
+      line-height: 30px;
+      margin-bottom: 30px;
+    }
+
+    & .LearnMore {
+      color: red;
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+  }
+  & .WhitePaperImage {
+    width: 20%;
+    &.Icon {
+      width: 90%;
+    }
+  }
+}
+
+.GetStarted {
+  background-image: url("../../../../public/assets/mtns.png");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: var(--conun-blue);
+  margin-bottom: 50px;
+  width: 100%;
+  & .GetStartedContainer {
+    padding: 0 200px;
+    & .GetStartedText {
+      & .Title {
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+
+      & .Description {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        margin-bottom: 30px;
+      }
+    }
+    & .GetStartedCards {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 130px;
+    }
+    & .AboutBottomIcon {
+      margin-left: 50px;
+      width: 40%;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .AboutConun,
+  .GetStarted {
+    & .GetStartedContainer {
+      margin-bottom: 100px;
+      padding: 0 15px;
+    }
+  }
+  .GetStarted {
+    & .GetStartedCards {
+      align-items: center;
+      flex-direction: column;
+    }
+    & .AboutBottomIcon {
+      width: 300px;
+    }
+  }
+  .WhitePaper {
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding: 0;
+    width: 100%;
+    & .whitepapertext {
+      width: 100%;
+    }
+    & .WhitePaperImage {
+      width: 80%;
     }
   }
 }

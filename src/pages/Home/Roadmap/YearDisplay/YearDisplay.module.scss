@@ -45,7 +45,7 @@
   @media only screen and (max-width: 800px) {
     height: auto;
     padding: 15px;
-    width: 85vw;
+    width: calc(85vw - 15px);
 
     & .EventsContainer {
       display: flex;

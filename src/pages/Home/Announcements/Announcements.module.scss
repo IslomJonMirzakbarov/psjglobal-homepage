@@ -64,7 +64,8 @@
 
   @media only screen and (max-width: 800px) {
     height: auto;
-    padding: 0 20px;
+    padding: 0 10px;
+    width: calc(100vw - 20px);
 
     & .PageTitle {
       margin-top: 15rem;
@@ -75,7 +76,7 @@
       gap: 50px;
 
       & .Announcement {
-        width: 80vw;
+        width: auto;
       }
     }
   }
