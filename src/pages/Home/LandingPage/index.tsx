@@ -14,7 +14,7 @@ const PAGE_SECTIONS = [
   {
     id: "distributed-super-computing",
     label: <Trans id="02 Distributed Super Computing" />,
-    path: "/#get-started",
+    path: "/#distributed-super-computing",
   },
   {
     id: "decentralized-finance",
