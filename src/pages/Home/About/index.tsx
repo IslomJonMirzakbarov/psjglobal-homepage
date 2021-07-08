@@ -1,10 +1,9 @@
-import React from "react";
 import { Trans } from "@lingui/react";
+
 import Link from "next/link";
+
 import Section from "./Section";
 import Card from "./Card";
-
-import styles from "./About.module.scss";
 
 import Buildings from "@/assets/icons/buildings.svg";
 import CompWalletCoin from "@/assets/icons/comp-wallet-coin.svg";
@@ -15,9 +14,11 @@ import Finance from "@/assets/icons/finance.svg";
 import Network from "@/assets/icons/network.svg";
 import WhitePaper from "@/assets/icons/white-paper.svg";
 
+import styles from "./About.module.scss";
+
 const SECTIONS = [
   {
-    id: "about",
+    id: "about-conun",
     title: <Trans id="01 About CONUN" />,
     description: (
       <Trans id="With the idle processing powers of personal computers and smartphones CONUN provides a horizontal, distributed computing power sharing platform that is open to all application requesters and operators who need computing power. With focus on ease-of use and efficiency CONUN’s goal is to link our platform with on and offline services to provide users with broad benefits as we continue to dream and create from project to project. " />
@@ -78,25 +79,26 @@ function About() {
           <Section key={section.id} section={section} />
         ))}
       </div>
-      <div className={styles.GetStarted}>
-        <div>
-          <p className={styles.Title}>
-            <Trans id="04 Get Started" />
-          </p>
+      <section id="getStarted" className={styles.GetStarted}>
+        <div className={styles.GetStartedContainer}>
+          <div className={styles.GetStartedText}>
+            <p className={styles.Title}>
+              <Trans id="04 Get Started" />
+            </p>
 
-          <p className={styles.Description}>
-            <Trans id="CONUN’s projects are based on blockchain technology, making them more secure and also giving you more freedom. Currently we have our wallet, drive, and coin available for public use." />
-          </p>
+            <p className={styles.Description}>
+              <Trans id="CONUN’s projects are based on blockchain technology, making them more secure and also giving you more freedom. Currently we have our wallet, drive, and coin available for public use." />
+            </p>
+          </div>
+          <div className={styles.GetStartedCards} id="get-started">
+            {GET_STARTED_CARDS.map((card) => (
+              <Card key={card.id} card={card} />
+            ))}
+          </div>
+          <Network className={styles.AboutBottomIcon} />
         </div>
-        <div className={styles.GetStartedCards} id="get-started">
-          {GET_STARTED_CARDS.map((card) => (
-            <Card key={card.id} card={card} />
-          ))}
-        </div>
-
-        <Network className={styles.AboutBottomIcon} />
-      </div>
-      <div className={styles.WhitePaper}>
+      </section>
+      <section id="white-paper" className={styles.WhitePaper}>
         <div className={styles.WhitePaperText}>
           <p className={styles.Title}>
             <Trans id="05 White Paper" />
@@ -113,17 +115,9 @@ function About() {
           </p>
         </div>
         <div className={styles.WhitePaperImage}>
-          <WhitePaper className={styles.Image} />
+          <WhitePaper />
         </div>
-      </div>
-      <div className={styles.Roadmap}>
-        <p className={styles.RoadmapTitle}>
-          <Trans id="06 Roadmap" />
-        </p>
-        <p className={styles.RoadmapDescription}>
-          <Trans id="Explore our white paper to learn more about CONUN as a business, our motivations, and our current and future products." />
-        </p>
-      </div>
+      </section>
     </>
   );
 }

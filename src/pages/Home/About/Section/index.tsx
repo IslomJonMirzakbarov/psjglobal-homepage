@@ -1,6 +1,5 @@
-import React from "react";
-
 import classNames from "classnames";
+
 import styles from "./Section.module.scss";
 
 interface Section {
@@ -17,7 +16,7 @@ const Section = ({ section }: Section) => {
   const { title, description, icon, isIconLeft } = section;
   const Icon = icon;
   return (
-    <div
+    <section
       id={section.id}
       className={classNames(styles.Container, {
         [styles.isIconLeft]: isIconLeft,
@@ -30,7 +29,7 @@ const Section = ({ section }: Section) => {
       <div className={styles.Right}>
         <Icon className={styles.Icon} />
       </div>
-    </div>
+    </section>
   );
 };
 

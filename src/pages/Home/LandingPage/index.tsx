@@ -1,13 +1,13 @@
 import useIsMobile from "@/hooks/useIsMobile";
 import { Trans } from "@lingui/react";
-import Link from "next/link";
-import React from "react";
+
+import Section from "./Section";
 
 import styles from "./LandingPage.module.scss";
 
 const PAGE_SECTIONS = [
   {
-    id: "about",
+    id: "about-conun",
     label: <Trans id="01 What We Do" />,
     path: "/#about",
   },
@@ -16,11 +16,31 @@ const PAGE_SECTIONS = [
     label: <Trans id="02 Distributed Super Computing" />,
     path: "/#get-started",
   },
-
+  {
+    id: "decentralized-finance",
+    label: <Trans id="03 Decentralized Finance" />,
+    path: "/#decentralized-finance",
+  },
   {
     id: "get-started",
-    label: <Trans id="03 Get Started" />,
+    label: <Trans id="04 Get Started" />,
     path: "/#get-started",
+  },
+  {
+    id: "white-paper",
+    label: <Trans id="05 White Paper" />,
+    path: "/#white-paper",
+  },
+  {
+    id: "roadmap",
+    label: <Trans id="06 Roadmap" />,
+    path: "/#roadmap",
+  },
+
+  {
+    id: "announcements",
+    label: <Trans id="07 Announcements" />,
+    path: "/#announcements",
   },
 ];
 
@@ -43,9 +63,7 @@ function LandingPage() {
         <div className={styles.RightSide}>
           <div className={styles.Sections}>
             {PAGE_SECTIONS.map((section) => (
-              <Link key={section.id} href={section.path}>
-                <a className={styles.Section}>{section.label}</a>
-              </Link>
+              <Section key={section.id} section={section} />
             ))}
           </div>
           <p className={styles.VerticalText}>SUPER COMPUTING PLATFORM</p>
