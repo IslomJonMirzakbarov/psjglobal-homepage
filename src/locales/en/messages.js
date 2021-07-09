@@ -2,20 +2,13 @@
   messages: {
     "01 About CONUN": "01 About CONUN",
     "01 About Us": "01 About Us",
-    "01 What We Do": "01 What We Do",
     "02 Distributed Super Computing": "02 Distributed Super Computing",
-    "03 DECENTRALIZED FINANCE": "03 DECENTRALIZED FINANCE",
     "03 DRIVE": "03 DRIVE",
-    "03 Decentralized Finance": "03 Decentralized Finance",
     "03 Drive": "03 Drive",
     "04 DECENTRALIZED FINANCE": "04 DECENTRALIZED FINANCE",
     "04 Decentralized Finance": "04 Decentralized Finance",
-    "04 Get Started": "04 Get Started",
     "05 Get Started": "05 Get Started",
-    "05 White Paper": "05 White Paper",
-    "06 Roadmap": "06 Roadmap",
     "06 White Paper": "06 White Paper",
-    "07 Announcements": "07 Announcements",
     "07 Roadmap": "07 Roadmap",
     "08 Announcements": "08 Announcements",
     "A peer-to-peer, decentralized  file sharing service built on our blockchain network.":
@@ -33,10 +26,11 @@
     "Based on desktop grid computing technology, CONUN's Distributed Super Computing Platform operates by agreement between participants and users that supports a horizontal revenue ecosystem. Participants agree to share available space with users, and users access the available space for their personal computing needs - thus creating a mutually beneficial relationship.":
       "Based on desktop grid computing technology, CONUN's Distributed Super Computing Platform operates by agreement between participants and users that supports a horizontal revenue ecosystem. Participants agree to share available space with users, and users access the available space for their personal computing needs - thus creating a mutually beneficial relationship.",
     Blogs: "Blogs",
-    "Bridge Swap": "Bridge Swap",
+    "CONUN Engine Smart Contract. Token Swap: Easily and securely swapping to CON ERC-20 Token":
+      "CONUN Engine Smart Contract. Token Swap: Easily and securely swapping to CON ERC-20 Token",
+    "CONUN Orchestration(web base)": "CONUN Orchestration(web base)",
     "CONUN Services: CONUN Decentralized Data Storage Infrastructure SaaS. CONUN Drive Smart Contract":
       "CONUN Services: CONUN Decentralized Data Storage Infrastructure SaaS. CONUN Drive Smart Contract",
-    "CONUN TOKEN SWAP": "CONUN TOKEN SWAP",
     "CONUN is a blockchain-based distributed supercomputing and resource sharing platform. Together, the participants of our network forms a high-performance resource-sharing service.":
       "CONUN is a blockchain-based distributed supercomputing and resource sharing platform. Together, the participants of our network forms a high-performance resource-sharing service.",
     "CONUN p2p protocol is designed for delivering a secure network between trustless users. Security protocols":
@@ -46,13 +40,12 @@
     "CTM Front-End": "CTM Front-End",
     "Complete CONUN DECENTRALIZED NETWORK":
       "Complete CONUN DECENTRALIZED NETWORK",
-    "Complete CONUN Network SDKs and APIsn":
-      "Complete CONUN Network SDKs and APIsn",
+    "Complete CONUN Network SDKs and APIs":
+      "Complete CONUN Network SDKs and APIs",
     "Connecting on Universal Networks": "Connecting on Universal Networks",
     "Contact Us": "Contact Us",
     "Conun Drive is a decentralized content sharing system. It means there is no centralized server that stores all contents. All content will be stored by Conun Drive network participants (peer nodes). As soon as a user connects to the Conun Drive network his/her computer will become a Conun Drive network participant. And participants will choose which files to store or publish. Content publishers will be rewarded by the network participants. In addition, all actions that occur on the Conun Drive network will be stored on the Conun Private Blockchain, meaning all actions are immutable and secure.":
       "Conun Drive is a decentralized content sharing system. It means there is no centralized server that stores all contents. All content will be stored by Conun Drive network participants (peer nodes). As soon as a user connects to the Conun Drive network his/her computer will become a Conun Drive network participant. And participants will choose which files to store or publish. Content publishers will be rewarded by the network participants. In addition, all actions that occur on the Conun Drive network will be stored on the Conun Private Blockchain, meaning all actions are immutable and secure.",
-    "Conun Wallet Web Extension": "Conun Wallet Web Extension",
     "Crowdfunding for pre-sale": "Crowdfunding for pre-sale",
     "DappStore is a platform, which lists all popular dApps. Discover the innovative world of blockchain, plus explore the many decentralized applications in our platform":
       "DappStore is a platform, which lists all popular dApps. Discover the innovative world of blockchain, plus explore the many decentralized applications in our platform",
@@ -74,6 +67,8 @@
       "Development CONUN mobile application",
     "Development CONUN platform core & wallet":
       "Development CONUN platform core & wallet",
+    "Development and launch CONUN CHAIN CODES":
+      "Development and launch CONUN CHAIN CODES",
     "Development distributed network architecture (C/S platform)":
       "Development distributed network architecture (C/S platform)",
     "Development distributed network architecture (multi-node processing)":
@@ -84,8 +79,8 @@
       "Development for CONUN mobile platform for android and iOS version",
     "Development for client interface (manager)":
       "Development for client interface (manager)",
-    "Development for total control web version management system in PC and mobile 'CONUN orchestration'":
-      "Development for total control web version management system in PC and mobile 'CONUN orchestration'",
+    "Development for total control web version management system in PC and mobile 'CONUN orchestration":
+      "Development for total control web version management system in PC and mobile 'CONUN orchestration",
     "Development project utility and portal server for CONUN market":
       "Development project utility and portal server for CONUN market",
     "Download Products": "Download Products",
@@ -103,12 +98,19 @@
     Jobs: "Jobs",
     Jul: "Jul",
     Jun: "Jun",
+    "Launch Bridge Swap, that enables asset swapping between Ethereum Blockchain and Conun Private Blockchain":
+      "Launch Bridge Swap, that enables asset swapping between Ethereum Blockchain and Conun Private Blockchain",
     "Launch CONUN Blockchain Explorer Testnet":
       "Launch CONUN Blockchain Explorer Testnet",
     "Launch CONUN Blockchain Middleware Testnet":
       "Launch CONUN Blockchain Middleware Testnet",
     "Launch CONUN Blockchain Testnet": "Launch CONUN Blockchain Testnet",
-    "Launch beta version": "Launch beta version",
+    "Launch CONUN Token Swap": "Launch CONUN Token Swap",
+    "Launch Conun Wallet Web Extension": "Launch Conun Wallet Web Extension",
+    "Launch Cross-chain SWAP": "Launch Cross-chain SWAP",
+    "Launch DSC beta version": "Launch DSC beta version",
+    "Launch browser extension version of Conun wallet":
+      "Launch browser extension version of Conun wallet",
     "Launch cryptocurrency exchange service":
       "Launch cryptocurrency exchange service",
     "Launch distributed network (client/server platform) Alpha version in GitHub and pre-trial":
@@ -198,5 +200,8 @@
     "connect with manager": "connect with manager",
     "conun finance": "conun finance",
     "explore drive": "explore drive",
+    "korean-only-sub": "korean-only-sub",
+    "korean-only-title": "korean-only-title",
+    "korean-sub-only algorithm key": "korean-sub-only algorithm key",
   },
 };

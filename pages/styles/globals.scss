@@ -16,9 +16,11 @@
 html,
 body {
   font-family: "Barlow", sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
   font-weight: 500;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  word-break: keep-all;
 }
 
 a {

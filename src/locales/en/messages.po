@@ -66,7 +66,7 @@ msgstr "08 Announcements"
 msgid "A peer-to-peer, decentralized  file sharing service built on our blockchain network."
 msgstr "A peer-to-peer, decentralized  file sharing service built on our blockchain network."
 
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:156
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:157
 msgid "Analyze for CONUN P2P platform"
 msgstr "Analyze for CONUN P2P platform"
 
@@ -83,9 +83,9 @@ msgid "Apply for network core and trading system in BTC, ETH, XRP, QTUM etc"
 msgstr "Apply for network core and trading system in BTC, ETH, XRP, QTUM etc"
 
 #: src/pages/Home/Roadmap/YearSelector/years.tsx:55
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:162
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:224
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:278
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:163
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:225
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:297
 msgid "Apr"
 msgstr "Apr"
 
@@ -101,23 +101,23 @@ msgstr "Based on desktop grid computing technology, CONUN's Distributed Super Co
 msgid "Blogs"
 msgstr "Blogs"
 
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:240
-msgid "Bridge Swap"
-msgstr "Bridge Swap"
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:249
+msgid "CONUN Engine Smart Contract. Token Swap: Easily and securely swapping to CON ERC-20 Token"
+msgstr "CONUN Engine Smart Contract. Token Swap: Easily and securely swapping to CON ERC-20 Token"
 
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:229
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:331
+msgid "CONUN Orchestration(web base)"
+msgstr "CONUN Orchestration(web base)"
+
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:230
 msgid "CONUN Services: CONUN Decentralized Data Storage Infrastructure SaaS. CONUN Drive Smart Contract"
 msgstr "CONUN Services: CONUN Decentralized Data Storage Infrastructure SaaS. CONUN Drive Smart Contract"
-
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:239
-msgid "CONUN TOKEN SWAP"
-msgstr "CONUN TOKEN SWAP"
 
 #: src/pages/Home/LandingPage/index.tsx:71
 msgid "CONUN is a blockchain-based distributed supercomputing and resource sharing platform. Together, the participants of our network forms a high-performance resource-sharing service."
 msgstr "CONUN is a blockchain-based distributed supercomputing and resource sharing platform. Together, the participants of our network forms a high-performance resource-sharing service."
 
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:211
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:212
 msgid "CONUN p2p protocol is designed for delivering a secure network between trustless users. Security protocols"
 msgstr "CONUN p2p protocol is designed for delivering a secure network between trustless users. Security protocols"
 
@@ -129,13 +129,13 @@ msgstr "CONUN’s projects are based on blockchain technology, making them more 
 msgid "CTM Front-End"
 msgstr "CTM Front-End"
 
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:209
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:210
 msgid "Complete CONUN DECENTRALIZED NETWORK"
 msgstr "Complete CONUN DECENTRALIZED NETWORK"
 
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:293
-msgid "Complete CONUN Network SDKs and APIsn"
-msgstr "Complete CONUN Network SDKs and APIsn"
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:319
+msgid "Complete CONUN Network SDKs and APIs"
+msgstr "Complete CONUN Network SDKs and APIs"
 
 #: src/pages/Home/Footer/index.tsx:93
 msgid "Connecting on Universal Networks"
@@ -149,15 +149,11 @@ msgstr "Contact Us"
 msgid "Conun Drive is a decentralized content sharing system. It means there is no centralized server that stores all contents. All content will be stored by Conun Drive network participants (peer nodes). As soon as a user connects to the Conun Drive network his/her computer will become a Conun Drive network participant. And participants will choose which files to store or publish. Content publishers will be rewarded by the network participants. In addition, all actions that occur on the Conun Drive network will be stored on the Conun Private Blockchain, meaning all actions are immutable and secure."
 msgstr "Conun Drive is a decentralized content sharing system. It means there is no centralized server that stores all contents. All content will be stored by Conun Drive network participants (peer nodes). As soon as a user connects to the Conun Drive network his/her computer will become a Conun Drive network participant. And participants will choose which files to store or publish. Content publishers will be rewarded by the network participants. In addition, all actions that occur on the Conun Drive network will be stored on the Conun Private Blockchain, meaning all actions are immutable and secure."
 
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:253
-msgid "Conun Wallet Web Extension"
-msgstr "Conun Wallet Web Extension"
-
 #: src/pages/Home/Roadmap/YearSelector/years.tsx:56
 msgid "Crowdfunding for pre-sale"
 msgstr "Crowdfunding for pre-sale"
 
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:288
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:307
 msgid "DappStore is a platform, which lists all popular dApps. Discover the innovative world of blockchain, plus explore the many decentralized applications in our platform"
 msgstr "DappStore is a platform, which lists all popular dApps. Discover the innovative world of blockchain, plus explore the many decentralized applications in our platform"
 
@@ -165,16 +161,17 @@ msgstr "DappStore is a platform, which lists all popular dApps. Discover the inn
 #: src/pages/Home/Roadmap/YearSelector/years.tsx:90
 #: src/pages/Home/Roadmap/YearSelector/years.tsx:95
 #: src/pages/Home/Roadmap/YearSelector/years.tsx:135
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:181
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:188
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:192
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:196
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:256
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:261
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:265
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:292
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:299
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:182
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:189
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:193
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:197
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:269
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:274
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:278
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:283
 #: src/pages/Home/Roadmap/YearSelector/years.tsx:311
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:318
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:330
 msgid "Dec"
 msgstr "Dec"
 
@@ -194,15 +191,15 @@ msgstr "Develop CONUN's digital currency exchange platform for trading digital c
 msgid "Develop client server for digital exchange"
 msgstr "Develop client server for digital exchange"
 
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:286
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:305
 msgid "Development CONUN DappStore"
 msgstr "Development CONUN DappStore"
 
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:177
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:178
 msgid "Development CONUN P2P core"
 msgstr "Development CONUN P2P core"
 
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:170
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:171
 msgid "Development CONUN P2P network"
 msgstr "Development CONUN P2P network"
 
@@ -210,14 +207,17 @@ msgstr "Development CONUN P2P network"
 msgid "Development CONUN digital currency exchange alpha version platform"
 msgstr "Development CONUN digital currency exchange alpha version platform"
 
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:275
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:300
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:312
 msgid "Development CONUN mobile application"
 msgstr "Development CONUN mobile application"
 
 #: src/pages/Home/Roadmap/YearSelector/years.tsx:70
 msgid "Development CONUN platform core & wallet"
 msgstr "Development CONUN platform core & wallet"
+
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:247
+msgid "Development and launch CONUN CHAIN CODES"
+msgstr "Development and launch CONUN CHAIN CODES"
 
 #: src/pages/Home/Roadmap/YearSelector/years.tsx:109
 msgid "Development distributed network architecture (C/S platform)"
@@ -231,7 +231,7 @@ msgstr "Development distributed network architecture (multi-node processing)"
 msgid "Development distributed storage(IPFS)"
 msgstr "Development distributed storage(IPFS)"
 
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:302
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:314
 msgid "Development for CONUN mobile platform for android and iOS version"
 msgstr "Development for CONUN mobile platform for android and iOS version"
 
@@ -239,11 +239,11 @@ msgstr "Development for CONUN mobile platform for android and iOS version"
 msgid "Development for client interface (manager)"
 msgstr "Development for client interface (manager)"
 
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:313
-msgid "Development for total control web version management system in PC and mobile 'CONUN orchestration'"
-msgstr "Development for total control web version management system in PC and mobile 'CONUN orchestration'"
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:333
+msgid "Development for total control web version management system in PC and mobile 'CONUN orchestration"
+msgstr "Development for total control web version management system in PC and mobile 'CONUN orchestration"
 
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:217
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:218
 msgid "Development project utility and portal server for CONUN market"
 msgstr "Development project utility and portal server for CONUN market"
 
@@ -263,8 +263,8 @@ msgstr "Explore our white paper to learn more about CONUN as a business, our mot
 
 #: src/pages/Home/Roadmap/YearSelector/years.tsx:36
 #: src/pages/Home/Roadmap/YearSelector/years.tsx:149
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:208
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:274
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:209
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:293
 msgid "Feb"
 msgstr "Feb"
 
@@ -295,44 +295,64 @@ msgstr "Jul"
 
 #: src/pages/Home/Roadmap/YearSelector/years.tsx:69
 #: src/pages/Home/Roadmap/YearSelector/years.tsx:123
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:169
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:233
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:170
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:234
 msgid "Jun"
 msgstr "Jun"
 
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:193
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:242
+msgid "Launch Bridge Swap, that enables asset swapping between Ethereum Blockchain and Conun Private Blockchain"
+msgstr "Launch Bridge Swap, that enables asset swapping between Ethereum Blockchain and Conun Private Blockchain"
+
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:194
 msgid "Launch CONUN Blockchain Explorer Testnet"
 msgstr "Launch CONUN Blockchain Explorer Testnet"
 
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:197
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:198
 msgid "Launch CONUN Blockchain Middleware Testnet"
 msgstr "Launch CONUN Blockchain Middleware Testnet"
 
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:189
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:190
 msgid "Launch CONUN Blockchain Testnet"
 msgstr "Launch CONUN Blockchain Testnet"
 
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:257
-msgid "Launch beta version"
-msgstr "Launch beta version"
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:240
+msgid "Launch CONUN Token Swap"
+msgstr "Launch CONUN Token Swap"
+
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:263
+msgid "Launch Conun Wallet Web Extension"
+msgstr "Launch Conun Wallet Web Extension"
+
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:294
+msgid "Launch Cross-chain SWAP"
+msgstr "Launch Cross-chain SWAP"
+
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:270
+msgid "Launch DSC beta version"
+msgstr "Launch DSC beta version"
+
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:265
+msgid "Launch browser extension version of Conun wallet"
+msgstr "Launch browser extension version of Conun wallet"
 
 #: src/pages/Home/Roadmap/YearSelector/years.tsx:91
 msgid "Launch cryptocurrency exchange service"
 msgstr "Launch cryptocurrency exchange service"
 
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:165
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:166
 msgid "Launch distributed network (client/server platform) Alpha version in GitHub and pre-trial"
 msgstr "Launch distributed network (client/server platform) Alpha version in GitHub and pre-trial"
 
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:184
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:185
 msgid "Launch distributed network (peer to peer) Alpha version in Github and pre-trial"
 msgstr "Launch distributed network (peer to peer) Alpha version in Github and pre-trial"
 
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:182
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:183
 msgid "Launch distributed network P2P platform"
 msgstr "Launch distributed network P2P platform"
 
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:258
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:271
 msgid "Launch distributed project beta version test"
 msgstr "Launch distributed project beta version test"
 
@@ -340,7 +360,7 @@ msgstr "Launch distributed project beta version test"
 msgid "Launching CONUN business"
 msgstr "Launching CONUN business"
 
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:281
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:300
 msgid "Launching the CONUN membership service and CONUN Resource Monitoring allows you to configure a cost estimate and income estimate that fits your unique business or personal needs with CONUN platform"
 msgstr "Launching the CONUN membership service and CONUN Resource Monitoring allows you to configure a cost estimate and income estimate that fits your unique business or personal needs with CONUN platform"
 
@@ -348,15 +368,15 @@ msgstr "Launching the CONUN membership service and CONUN Resource Monitoring all
 msgid "Learn More"
 msgstr "Learn More"
 
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:248
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:258
 msgid "Make project for CONUN platform Test application in science circulation, deep learning, big data"
 msgstr "Make project for CONUN platform Test application in science circulation, deep learning, big data"
 
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:245
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:255
 msgid "Make projects for CONUN platform Test : science circulation / deep learning / big data"
 msgstr "Make projects for CONUN platform Test : science circulation / deep learning / big data"
 
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:163
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:164
 msgid "Make public Alpha version for c/s platform"
 msgstr "Make public Alpha version for c/s platform"
 
@@ -364,7 +384,7 @@ msgstr "Make public Alpha version for c/s platform"
 msgid "Make public CONUN's core service and client wallet in data network"
 msgstr "Make public CONUN's core service and client wallet in data network"
 
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:158
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:159
 msgid "Make the architecture for Peer to Peer platform"
 msgstr "Make the architecture for Peer to Peer platform"
 
@@ -379,8 +399,8 @@ msgstr "Make virtual machine system for personal PC app UI/UX"
 #: src/pages/Home/Roadmap/YearSelector/years.tsx:43
 #: src/pages/Home/Roadmap/YearSelector/years.tsx:50
 #: src/pages/Home/Roadmap/YearSelector/years.tsx:107
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:155
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:215
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:156
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:216
 msgid "Mar"
 msgstr "Mar"
 
@@ -395,13 +415,13 @@ msgstr "Network Core for exchange platform"
 
 #: src/pages/Home/Roadmap/YearSelector/years.tsx:15
 #: src/pages/Home/Roadmap/YearSelector/years.tsx:83
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:252
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:262
 msgid "Nov"
 msgstr "Nov"
 
 #: src/pages/Home/Roadmap/YearSelector/years.tsx:76
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:243
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:285
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:253
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:304
 msgid "Oct"
 msgstr "Oct"
 
@@ -413,7 +433,7 @@ msgstr "Ongoing project and company updates related to CONUN."
 msgid "Open CONUN's whitepaper describing technical architecture and aim in details"
 msgstr "Open CONUN's whitepaper describing technical architecture and aim in details"
 
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:220
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:221
 msgid "Organize distributed computing system for CONUN's client activities monitoring system"
 msgstr "Organize distributed computing system for CONUN's client activities monitoring system"
 
@@ -441,7 +461,7 @@ msgstr "Platform development"
 msgid "Privacy Policy"
 msgstr "Privacy Policy"
 
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:178
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:179
 msgid "Proceed CONUN core(peer to peer platform)"
 msgstr "Proceed CONUN core(peer to peer platform)"
 
@@ -461,7 +481,7 @@ msgstr "Proceed exchange beta version test"
 msgid "Proceed job scheduler, task allocation process"
 msgstr "Proceed job scheduler, task allocation process"
 
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:172
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:173
 msgid "Proceed network consists of peer to peer platform"
 msgstr "Proceed network consists of peer to peer platform"
 
@@ -469,15 +489,15 @@ msgstr "Proceed network consists of peer to peer platform"
 msgid "Proceed research and development for CONUN's platform CONUN"
 msgstr "Proceed research and development for CONUN's platform CONUN"
 
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:266
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:279
 msgid "Release CONUN Blockchain Explorer Mainnet"
 msgstr "Release CONUN Blockchain Explorer Mainnet"
 
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:262
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:275
 msgid "Release CONUN Blockchain Mainnet "
 msgstr "Release CONUN Blockchain Mainnet "
 
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:279
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:298
 msgid "Release CONUN membership service"
 msgstr "Release CONUN membership service"
 
@@ -490,7 +510,7 @@ msgstr "Release CONUN whitepaper"
 msgid "Roadmap"
 msgstr "Roadmap"
 
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:176
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:177
 msgid "Sep"
 msgstr "Sep"
 
@@ -506,7 +526,7 @@ msgstr "Staring to manage CONUN algorithm finding key version"
 msgid "Start digital exchange service"
 msgstr "Start digital exchange service"
 
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:199
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:200
 msgid "Starting to test 'CONUN blockchain network service version 'Halla'. We pick the beautiful mountain name in Jeju island as a CONUN's first release service name"
 msgstr "Starting to test 'CONUN blockchain network service version 'Halla'. We pick the beautiful mountain name in Jeju island as a CONUN's first release service name"
 
@@ -518,11 +538,11 @@ msgstr "Term and Conditions"
 msgid "Test Beta version for managing digital exchange. Making the core and trading system and security enforcement"
 msgstr "Test Beta version for managing digital exchange. Making the core and trading system and security enforcement"
 
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:226
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:227
 msgid "The first release of CONUN blockchain main services 'Halla - Release'. Complete CONUN DRIVE"
 msgstr "The first release of CONUN blockchain main services 'Halla - Release'. Complete CONUN DRIVE"
 
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:295
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:321
 msgid "Through CONUN Network SDKs, organizations can efficiently integrate their business into the CONUN Blockchain Network. With CONUN provided APIs, organizations can implement their own business applications"
 msgstr "Through CONUN Network SDKs, organizations can efficiently integrate their business into the CONUN Blockchain Network. With CONUN provided APIs, organizations can implement their own business applications"
 
@@ -531,8 +551,8 @@ msgstr "Through CONUN Network SDKs, organizations can efficiently integrate thei
 msgid "Universal Resource Sharing"
 msgstr "Universal Resource Sharing"
 
-#: src/pages/Home/Roadmap/YearSelector/years.tsx:234
 #: src/pages/Home/Roadmap/YearSelector/years.tsx:235
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:236
 msgid "Update CONUN p2p network traffic"
 msgstr "Update CONUN p2p network traffic"
 
@@ -551,3 +571,15 @@ msgstr "conun finance"
 #: src/pages/Home/About/index.tsx:67
 msgid "explore drive"
 msgstr "explore drive"
+
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:285
+msgid "korean-only-sub"
+msgstr "korean-only-sub"
+
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:284
+msgid "korean-only-title"
+msgstr "korean-only-title"
+
+#: src/pages/Home/Roadmap/YearSelector/years.tsx:153
+msgid "korean-sub-only algorithm key"
+msgstr "korean-sub-only algorithm key"
