@@ -13,7 +13,7 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/pages/Home/About/index.tsx:20
+#: src/pages/Home/About/index.tsx:21
 msgid "01 About CONUN"
 msgstr "CONUN 소개"
 
@@ -21,32 +21,20 @@ msgstr "CONUN 소개"
 msgid "01 About Us"
 msgstr ""
 
-#: src/pages/Home/LandingPage/index.tsx:11
-#~ msgid "01 What We Do"
-#~ msgstr ""
-
-#: src/pages/Home/About/index.tsx:29
+#: src/pages/Home/About/index.tsx:30
 #: src/pages/Home/LandingPage/index.tsx:16
 msgid "02 Distributed Super Computing"
 msgstr "분산 슈퍼 컴퓨팅"
 
-#: src/pages/Home/About/index.tsx:38
-#~ msgid "03 DECENTRALIZED FINANCE"
-#~ msgstr "탈중앙화 금융"
-
-#: src/pages/Home/About/index.tsx:38
+#: src/pages/Home/About/index.tsx:40
 msgid "03 DRIVE"
 msgstr ""
-
-#: src/pages/Home/LandingPage/index.tsx:21
-#~ msgid "03 Decentralized Finance"
-#~ msgstr "탈중앙화 금융"
 
 #: src/pages/Home/LandingPage/index.tsx:21
 msgid "03 Drive"
 msgstr ""
 
-#: src/pages/Home/About/index.tsx:45
+#: src/pages/Home/About/index.tsx:48
 msgid "04 DECENTRALIZED FINANCE"
 msgstr ""
 
@@ -54,47 +42,27 @@ msgstr ""
 msgid "04 Decentralized Finance"
 msgstr ""
 
-#: src/pages/Home/About/index.tsx:84
-#: src/pages/Home/LandingPage/index.tsx:26
-#~ msgid "04 Get Started"
-#~ msgstr "시작하기"
-
-#: src/pages/Home/About/index.tsx:92
+#: src/pages/Home/About/index.tsx:95
 #: src/pages/Home/LandingPage/index.tsx:31
 msgid "05 Get Started"
 msgstr ""
 
-#: src/pages/Home/About/index.tsx:102
-#: src/pages/Home/LandingPage/index.tsx:31
-#~ msgid "05 White Paper"
-#~ msgstr "화이트페이퍼"
-
-#: src/pages/Home/LandingPage/index.tsx:36
-#: src/pages/Home/Roadmap/index.tsx:12
-#~ msgid "06 Roadmap"
-#~ msgstr "로드맵"
-
-#: src/pages/Home/About/index.tsx:110
+#: src/pages/Home/About/index.tsx:113
 #: src/pages/Home/LandingPage/index.tsx:36
 msgid "06 White Paper"
 msgstr ""
-
-#: src/pages/Home/Announcements/index.tsx:38
-#: src/pages/Home/LandingPage/index.tsx:42
-#~ msgid "07 Announcements"
-#~ msgstr "공지사항"
 
 #: src/pages/Home/LandingPage/index.tsx:41
 #: src/pages/Home/Roadmap/index.tsx:12
 msgid "07 Roadmap"
 msgstr ""
 
-#: src/pages/Home/Announcements/index.tsx:43
+#: src/pages/Home/Announcements/index.tsx:42
 #: src/pages/Home/LandingPage/index.tsx:47
 msgid "08 Announcements"
 msgstr ""
 
-#: src/pages/Home/About/index.tsx:66
+#: src/pages/Home/About/index.tsx:69
 msgid "A peer-to-peer, decentralized  file sharing service built on our blockchain network."
 msgstr "CONUN의 블록 체인 네트워크에 구축 된 P2P, 분산 파일 공유 서비스를 제공합니다"
 
@@ -125,7 +93,7 @@ msgstr ""
 msgid "Architect for smartcontrat and mining algorithm for managing trading"
 msgstr "거래트랜잭션을 관리하는 스마트 컨트랙트와 마이닝 알고리즘을 구현합니다."
 
-#: src/pages/Home/About/index.tsx:31
+#: src/pages/Home/About/index.tsx:32
 msgid "Based on desktop grid computing technology, CONUN's Distributed Super Computing Platform operates by agreement between participants and users that supports a horizontal revenue ecosystem. Participants agree to share available space with users, and users access the available space for their personal computing needs - thus creating a mutually beneficial relationship."
 msgstr "사용의 용이성과 효율성에 중점을 둔 CONUN의 목표는 자사의 플랫폼을 온 / 오프라인 서비스와 연결하여 프로젝트에서 프로젝트로 이어지는 개발을 끊임없이 꿈꾸고 만들어서 사용자에게 광범위한 이점을 제공하는 것입니다"
 
@@ -153,7 +121,7 @@ msgstr ""
 msgid "CONUN p2p protocol is designed for delivering a secure network between trustless users. Security protocols"
 msgstr "CONUN P2P 탈중앙 네트워크에서의 서로를 신뢰할 수 있는 강력한 보안을 제공하도록 설계합니다."
 
-#: src/pages/Home/About/index.tsx:96
+#: src/pages/Home/About/index.tsx:99
 msgid "CONUN’s projects are based on blockchain technology, making them more secure and also giving you more freedom. Currently we have our wallet, drive, and coin available for public use."
 msgstr ""
 
@@ -177,7 +145,7 @@ msgstr ""
 msgid "Contact Us"
 msgstr "연락처"
 
-#: src/pages/Home/About/index.tsx:40
+#: src/pages/Home/About/index.tsx:42
 msgid "Conun Drive is a decentralized content sharing system. It means there is no centralized server that stores all contents. All content will be stored by Conun Drive network participants (peer nodes). As soon as a user connects to the Conun Drive network his/her computer will become a Conun Drive network participant. And participants will choose which files to store or publish. Content publishers will be rewarded by the network participants. In addition, all actions that occur on the Conun Drive network will be stored on the Conun Private Blockchain, meaning all actions are immutable and secure."
 msgstr ""
 
@@ -210,7 +178,7 @@ msgstr "코넌의 디앱스토어에서는 모든 인기있는 dApp을 나열하
 msgid "Dec"
 msgstr "12월"
 
-#: src/pages/Home/About/index.tsx:47
+#: src/pages/Home/About/index.tsx:50
 msgid "Decentralized finance operates through the decentralized blockchain on a distributed public ledger, it makes all transactions transparent and trackable. With peer-to peer exchanges it eliminates the middle-man present in centralized finance and allows for more control over personal information and of finances."
 msgstr "Conun Drive는 분산 형 콘텐츠 공유 시스템입니다. 이는 모든 콘텐츠를 저장하는 중앙 집중식 서버가 없음을 의미합니다. 모든 콘텐츠는 Conun Drive 네트워크 참가자 (피어 노드)에 의해 저장됩니다. 사용자가 Conun Drive 네트워크에 연결하는 순간 사용자의 컴퓨터는 Conun Drive 네트워크의 참여자가 됩니다. 이 참가자는 저장하거나 게시 할 파일을 선택 할 수 있으며, 콘텐츠 게시한 참가자는 네트워크 참가자로부터 보상을받습니다. 또한 Conun Drive 네트워크에서 발생하는 모든 작업은 Conun Private Blockchain에 저장되며 변경 불가능합니다 그러므로 안전이 보장됩니다"
 
@@ -284,11 +252,11 @@ msgstr "CONUN market을 위한 project utility 및 포털 서버 구축"
 msgid "Download Products"
 msgstr "제품 다운로드"
 
-#: src/pages/Home/About/index.tsx:75
+#: src/pages/Home/About/index.tsx:78
 msgid "Easily swap, exchange, and buy with CON coin through our wallet application."
 msgstr ""
 
-#: src/pages/Home/About/index.tsx:113
+#: src/pages/Home/About/index.tsx:116
 #: src/pages/Home/Roadmap/index.tsx:15
 msgid "Explore our white paper to learn more about CONUN as a business, our motivations, and our current and future products."
 msgstr "비즈니스로서의 CONUN, 동기 부여, 현재 및 미래의 제품에 대해 자세히 알아 보려면 백서를 살펴보십시오."
@@ -376,7 +344,7 @@ msgstr "CONUN 플래닝"
 msgid "Launching the CONUN membership service and CONUN Resource Monitoring allows you to configure a cost estimate and income estimate that fits your unique business or personal needs with CONUN platform"
 msgstr ""
 
-#: src/pages/Home/About/index.tsx:121
+#: src/pages/Home/About/index.tsx:123
 msgid "Learn More"
 msgstr "상세보기"
 
@@ -437,7 +405,7 @@ msgstr "11월"
 msgid "Oct"
 msgstr "10월"
 
-#: src/pages/Home/Announcements/index.tsx:46
+#: src/pages/Home/Announcements/index.tsx:45
 msgid "Ongoing project and company updates related to CONUN."
 msgstr "CONUN에서 진행중인 프로젝트 및 업데이트 소개"
 
@@ -449,7 +417,7 @@ msgstr "CONUN의 기술적 목표와 방향성을 기술하며 아키텍쳐 및 
 msgid "Organize distributed computing system for CONUN's client activities monitoring system"
 msgstr "CONUN 사용자의 활동 및 작업처리 상황을 모니터링 및 사용자의 분산 컴퓨팅 요청을 처리할 수 있는 관리체제를 구축합니다"
 
-#: src/pages/Home/About/index.tsx:58
+#: src/pages/Home/About/index.tsx:61
 msgid "Our new cryptocurrency manager keeps your existing wallets together securely."
 msgstr ""
 
@@ -568,18 +536,18 @@ msgstr "범용 리소스 공유"
 msgid "Update CONUN p2p network traffic"
 msgstr "CONUN p2p network traffic 개선작업"
 
-#: src/pages/Home/About/index.tsx:22
+#: src/pages/Home/About/index.tsx:23
 msgid "With the idle processing powers of personal computers and smartphones CONUN provides a horizontal, distributed computing power sharing platform that is open to all application requesters and operators who need computing power. With focus on ease-of use and efficiency CONUN’s goal is to link our platform with on and offline services to provide users with broad benefits as we continue to dream and create from project to project. "
 msgstr "개인용 컴퓨터의 유휴 처리 능력으로 CONUN은 컴퓨팅 능력을 필요로하는 모든 애플리케이션 요청자와 운영자에게 개방 된 수평 분산 컴퓨팅 전력 공유할 수 있는 플랫폼을 제공합니다. "
 
-#: src/pages/Home/About/index.tsx:56
+#: src/pages/Home/About/index.tsx:59
 msgid "connect with manager"
 msgstr "관리자와 연결"
 
-#: src/pages/Home/About/index.tsx:73
+#: src/pages/Home/About/index.tsx:76
 msgid "conun finance"
 msgstr "CONUN 금융"
 
-#: src/pages/Home/About/index.tsx:64
+#: src/pages/Home/About/index.tsx:67
 msgid "explore drive"
 msgstr "드라이브 탐색"
