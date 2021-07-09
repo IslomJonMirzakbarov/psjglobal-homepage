@@ -16,6 +16,12 @@ import styles from "./Navbar.module.scss";
 
 const PAGES = [
   {
+    id: "explorer",
+    label: <Trans id="Explorer" />,
+    path: "https://conscan.conun.io/",
+    isExternal: true,
+  },
+  {
     id: "github",
     label: <Trans id="Github" />,
     path: "https://github.com/CONUN-Global/",

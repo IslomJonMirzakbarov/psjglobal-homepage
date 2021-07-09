@@ -34,6 +34,7 @@ const SECTIONS = [
     isIconLeft: true,
     isWhiteColor: true,
     icon: CompWalletCoin,
+    className: styles.DSC,
   },
   {
     id: "drive",

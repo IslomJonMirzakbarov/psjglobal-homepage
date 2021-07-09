@@ -2,7 +2,6 @@
   background-image: url("../../../../public/assets/announcements-bg.png");
   background-position: -30px 50%;
   background-repeat: no-repeat;
-  background-size: cover;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -31,7 +30,7 @@
     & .Announcement {
       background: #fff;
       border-radius: 15px;
-      box-shadow: 0 4px 10px var(--conun-blue);
+      box-shadow: var(--conun-blue-shadow);
       display: flex;
       flex-direction: column;
       height: 380px;
@@ -44,6 +43,11 @@
         font-size: 18px;
         text-align: left;
         text-transform: uppercase;
+      }
+
+      & .Image {
+        margin: 0 auto;
+        width: 266px;
       }
 
       & .Title {
@@ -62,6 +66,7 @@
   }
 
   @media only screen and (max-width: 800px) {
+    background-size: cover;
     height: auto;
     padding: 0 2rem;
     width: calc(100vw - 4rem);

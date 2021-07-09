@@ -1,7 +1,4 @@
 .AboutConun {
-  background-image: url("../../../../public/assets/midpage_land_asset.jpg");
-  background-position: center 340px;
-  background-repeat: no-repeat;
   color: var(--conun-blue);
   width: 100%;
 }
@@ -61,6 +58,18 @@
       transform: translateY(200px);
       width: 70%;
     }
+  }
+}
+
+.DSC {
+  background-image: url("../../../../public/assets/midpage_land_asset.jpg");
+  background-repeat: no-repeat;
+  height: 500px;
+
+  @media only screen and (max-width: 800px) {
+    background-position: top;
+    background-size: cover;
+    height: auto;
   }
 }
 

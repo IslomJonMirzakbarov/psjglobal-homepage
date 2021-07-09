@@ -22,6 +22,12 @@ const transition = {
 
 const MENU_ITEMS = [
   {
+    id: "explorer",
+    title: <Trans id="Explorer" />,
+    path: "https://conscan.conun.io/",
+    isExternal: true,
+  },
+  {
     id: "github",
     title: <Trans id="Github" />,
     isExternal: true,
