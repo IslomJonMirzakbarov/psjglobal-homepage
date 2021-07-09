@@ -35,7 +35,7 @@
     "CONUN changed the logo to announce its new start":
       "CONUN이 리브랜딩하며 새롭게 시작합니다",
     "CONUN is a blockchain-based distributed supercomputing and resource sharing platform. Together, the participants of our network forms a high-performance resource-sharing service.":
-      "CONUN은 블록 체인 기반의 분산 형 슈퍼 컴퓨팅 플랫폼입니다. 참여자의 쉬고 있는 개인용 컴퓨터의 유휴 자원을 공유하여 고성능 컴퓨팅 자원의 능력을 처리 할 수 있도록 하는 서비스 입니다",
+      "CONUN은 블록 체인 기반의 분산 형 슈퍼 컴퓨팅 및 자원 공유 플랫폼입니다. 참여자의 쉬고 있는 개인용 컴퓨터의 유휴 자원을 공유하여 고성능 컴퓨팅 자원의 능력을 처리 할 수 있도록 하는 서비스 입니다",
     "CONUN p2p protocol is designed for delivering a secure network between trustless users. Security protocols":
       "CONUN P2P 탈중앙 네트워크에서의 서로를 신뢰할 수 있는 강력한 보안을 제공하도록 설계합니다.",
     "CONUN’s projects are based on blockchain technology, making them more secure and also giving you more freedom. Currently we have our wallet, drive, and coin available for public use.":
