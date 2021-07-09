@@ -8,7 +8,7 @@ import styles from "./LandingPage.module.scss";
 const PAGE_SECTIONS = [
   {
     id: "about-conun",
-    label: <Trans id="01 About Us" />,
+    label: <Trans id="01 About Conun" />,
     path: "/#about",
   },
   {
