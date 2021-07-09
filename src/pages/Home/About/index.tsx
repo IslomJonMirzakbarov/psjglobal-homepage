@@ -14,6 +14,7 @@ import WhitePaper from "@/assets/icons/white-paper.svg";
 import Key from "@/assets/icons/key.svg";
 
 import styles from "./About.module.scss";
+import useStore from "@/store/store";
 
 const SECTIONS = [
   {
@@ -82,6 +83,7 @@ const GET_STARTED_CARDS = [
   },
 ];
 function About() {
+  const locale = useStore((state) => state.currentLocale);
   return (
     <>
       <div className={styles.AboutConun}>
@@ -116,7 +118,11 @@ function About() {
             <div className={styles.WhitePaperDescription}>
               <Trans id="Explore our white paper to learn more about CONUN as a business, our motivations, and our current and future products." />
               <a
-                href="https://conun.io/whitepaper"
+                href={
+                  locale === "en"
+                    ? "./assets/whitepaper/en.pdf"
+                    : "./assets/whitepaper/ko.pdf"
+                }
                 className={styles.LearnMoreLink}
                 target="_blank"
                 rel="noreferrer"
