@@ -28,9 +28,8 @@ const ANNOUNCEMENTS: any = [
   {
     id: 2,
     date: "July 5, 2021",
-    title: "Conun Manager and Drive Beta-Versions",
-    subtitle:
-      "Conun blockchain has launched two of its DApp services, Conun Manager and Conun Drive",
+    title: "Conun Manager and Drive",
+    subtitle: "Conun blockchain has beta launched two of its DApp services",
     image: driveManager,
     link: "https://xangle.io/project/CON/recent-disclosure/6094d7b9e141e6daca481242",
   },
@@ -47,25 +46,20 @@ function Announcements() {
       </p>
       <div className={styles.AnnouncementsContainer}>
         {ANNOUNCEMENTS.map((a: any) => (
-          <div className={styles.Announcement} key={a.id}>
+          <a
+            className={styles.Announcement}
+            href={a.link}
+            key={a.id}
+            target="_blank"
+            rel="noreferrer"
+          >
             <p className={styles.Date}>{a.date}</p>
+
+            <Image src={a.image} width={370} height={344} alt={a.title} />
+
             <p className={styles.Title}>{a.title}</p>
             <p className={styles.Subtitle}>{a.subtitle}</p>
-            <a
-              href={a.link}
-              className={styles.Link}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Image
-                className={styles.Image}
-                src={a.image}
-                width={370}
-                height={344}
-                alt={a.title}
-              />
-            </a>
-          </div>
+          </a>
         ))}
       </div>
     </section>

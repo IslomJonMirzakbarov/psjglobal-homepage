@@ -1,18 +1,15 @@
 .Container {
+  align-items: center;
   display: flex;
   margin-bottom: 150px;
   padding: 0 var(--website-padding);
 
-  &.isIconLeft {
-    color: #fff;
-    flex-direction: row-reverse;
-
-    & .Title {
-      text-shadow: 0 2px 4px rgb(0 0 0 / 25%);
-    }
-
-    & .Description {
-      text-shadow: 0 2px 4px rgb(0 0 0 / 25%);
+  & .Right {
+    object-fit: cover;
+    text-align: center;
+    width: 20%;
+    & .Icon {
+      width: 90%;
     }
   }
 
@@ -35,13 +32,24 @@
       max-width: 850px;
     }
   }
-  & .Right {
-    align-self: flex-end;
-    object-fit: cover;
-    text-align: center;
-    width: 20%;
-    & .Icon {
-      width: 90%;
+
+  &.isIconLeft {
+    flex-direction: row-reverse;
+
+    & .Right {
+      margin-right: 50px;
+    }
+
+    &.isWhiteColor {
+      & .Title {
+        color: #fff;
+        text-shadow: 0 2px 4px rgb(0 0 0 / 25%);
+      }
+
+      & .Description {
+        color: #fff;
+        text-shadow: 0 2px 4px rgb(0 0 0 / 25%);
+      }
     }
   }
 
@@ -58,6 +66,22 @@
       align-items: center;
       color: var(--conun-blue);
       flex-direction: column;
+
+      &.isWhiteColor {
+        & .Title {
+          color: var(--conun-blue);
+          text-shadow: none;
+        }
+
+        & .Description {
+          color: var(--conun-blue);
+          text-shadow: none;
+        }
+      }
+
+      & .Right {
+        margin-right: 0;
+      }
     }
   }
 }
