@@ -19,7 +19,7 @@ msgstr "CONUN 소개"
 
 #: src/pages/Home/LandingPage/index.tsx:11
 msgid "01 About Us"
-msgstr ""
+msgstr "CONUN 소개"
 
 #: src/pages/Home/LandingPage/index.tsx:11
 #~ msgid "01 What We Do"
@@ -36,7 +36,7 @@ msgstr "분산 슈퍼 컴퓨팅"
 
 #: src/pages/Home/About/index.tsx:38
 msgid "03 DRIVE"
-msgstr ""
+msgstr "드라이브"
 
 #: src/pages/Home/LandingPage/index.tsx:21
 #~ msgid "03 Decentralized Finance"
@@ -44,15 +44,15 @@ msgstr ""
 
 #: src/pages/Home/LandingPage/index.tsx:21
 msgid "03 Drive"
-msgstr ""
+msgstr "드라이브"
 
 #: src/pages/Home/About/index.tsx:45
 msgid "04 DECENTRALIZED FINANCE"
-msgstr ""
+msgstr "디파이 금융"
 
 #: src/pages/Home/LandingPage/index.tsx:26
 msgid "04 Decentralized Finance"
-msgstr ""
+msgstr "디파이 금융"
 
 #: src/pages/Home/About/index.tsx:84
 #: src/pages/Home/LandingPage/index.tsx:26
@@ -62,7 +62,7 @@ msgstr ""
 #: src/pages/Home/About/index.tsx:92
 #: src/pages/Home/LandingPage/index.tsx:31
 msgid "05 Get Started"
-msgstr ""
+msgstr "시작하기"
 
 #: src/pages/Home/About/index.tsx:102
 #: src/pages/Home/LandingPage/index.tsx:31
@@ -77,7 +77,7 @@ msgstr ""
 #: src/pages/Home/About/index.tsx:110
 #: src/pages/Home/LandingPage/index.tsx:36
 msgid "06 White Paper"
-msgstr ""
+msgstr "백서"
 
 #: src/pages/Home/Announcements/index.tsx:38
 #: src/pages/Home/LandingPage/index.tsx:42
@@ -87,12 +87,12 @@ msgstr ""
 #: src/pages/Home/LandingPage/index.tsx:41
 #: src/pages/Home/Roadmap/index.tsx:12
 msgid "07 Roadmap"
-msgstr ""
+msgstr "로드맵"
 
 #: src/pages/Home/Announcements/index.tsx:43
 #: src/pages/Home/LandingPage/index.tsx:47
 msgid "08 Announcements"
-msgstr ""
+msgstr "공지사항"
 
 #: src/pages/Home/About/index.tsx:66
 msgid "A peer-to-peer, decentralized  file sharing service built on our blockchain network."
@@ -155,7 +155,7 @@ msgstr "CONUN P2P 탈중앙 네트워크에서의 서로를 신뢰할 수 있는
 
 #: src/pages/Home/About/index.tsx:96
 msgid "CONUN’s projects are based on blockchain technology, making them more secure and also giving you more freedom. Currently we have our wallet, drive, and coin available for public use."
-msgstr ""
+msgstr "CONUN은 블록 체인 기반의 분산 형 슈퍼 컴퓨팅 플랫폼입니다. 참여자의 쉬고 있는 개인용 컴퓨터의 유휴 자원을 공유하여 고성능 컴퓨팅 자원의 능력을 처리 할 수 있도록 하는 서비스 입니다"
 
 #: src/pages/Home/Roadmap/YearSelector/years.tsx:51
 msgid "CTM Front-End"
@@ -171,7 +171,7 @@ msgstr "코넌 네트워크 SDK 와 API CONUN Network SDKs and APIs 서비스 �
 
 #: src/pages/Home/Footer/index.tsx:93
 msgid "Connecting on Universal Networks"
-msgstr ""
+msgstr "유니버설 네트워크에 연결"
 
 #: src/pages/Home/Footer/index.tsx:23
 msgid "Contact Us"
@@ -179,11 +179,11 @@ msgstr "연락처"
 
 #: src/pages/Home/About/index.tsx:40
 msgid "Conun Drive is a decentralized content sharing system. It means there is no centralized server that stores all contents. All content will be stored by Conun Drive network participants (peer nodes). As soon as a user connects to the Conun Drive network his/her computer will become a Conun Drive network participant. And participants will choose which files to store or publish. Content publishers will be rewarded by the network participants. In addition, all actions that occur on the Conun Drive network will be stored on the Conun Private Blockchain, meaning all actions are immutable and secure."
-msgstr ""
+msgstr "Conun Drive는 분산 형 콘텐츠 공유 시스템입니다. 이는 모든 콘텐츠를 저장하는 중앙 집중식 서버가 없음을 의미합니다. 모든 콘텐츠는 Conun Drive 네트워크 참가자 (피어 노드)에 의해 저장됩니다. 사용자가 Conun Drive 네트워크에 연결하는 순간 사용자의 컴퓨터는 Conun Drive 네트워크의 참여자가 됩니다. 이 참가자는 저장하거나 게시 할 파일을 선택 할 수 있으며, 콘텐츠 게시한 참가자는 네트워크 참가자로부터 보상을받습니다. 또한 Conun Drive 네트워크에서 발생하는 모든 작업은 Conun Private Blockchain에 저장되며 변경 불가능합니다 그러므로 안전이 보장됩니다"
 
 #: src/pages/Home/Roadmap/YearSelector/years.tsx:253
 msgid "Conun Wallet Web Extension"
-msgstr ""
+msgstr "CONUN 지갑 웹 익스텐션 (CONUN Wallet Web Extension) 런칭"
 
 #: src/pages/Home/Roadmap/YearSelector/years.tsx:56
 msgid "Crowdfunding for pre-sale"
@@ -249,7 +249,7 @@ msgstr "CONUN Mobile 앱개발"
 
 #: src/pages/Home/Roadmap/YearSelector/years.tsx:70
 msgid "Development CONUN platform core & wallet"
-msgstr ""
+msgstr "CONUN 데이터 네트워크에 해당하는 코어와 사용자 전자지갑을 공개합니다"
 
 #: src/pages/Home/Roadmap/YearSelector/years.tsx:109
 msgid "Development distributed network architecture (C/S platform)"
@@ -286,7 +286,7 @@ msgstr "제품 다운로드"
 
 #: src/pages/Home/About/index.tsx:75
 msgid "Easily swap, exchange, and buy with CON coin through our wallet application."
-msgstr ""
+msgstr "지갑 애플리케이션을 통해 CON 코인으로 쉽게 환전, 교환 및 구매할 수 있습니다"
 
 #: src/pages/Home/About/index.tsx:113
 #: src/pages/Home/Roadmap/index.tsx:15
@@ -374,7 +374,9 @@ msgstr "CONUN 플래닝"
 
 #: src/pages/Home/Roadmap/YearSelector/years.tsx:281
 msgid "Launching the CONUN membership service and CONUN Resource Monitoring allows you to configure a cost estimate and income estimate that fits your unique business or personal needs with CONUN platform"
-msgstr ""
+msgstr "코넌 멤버십 출시와 함께 코넌 모니터링 서비스를 시작하여 CONUN 플랫폼에서 서비스사용자들이
+각각의 고유한 비즈니스 또는 개인 요구 사항에 맞는 비용추정 및 유휴자원을 빌려주는 사용자들에게는
+받을 보상금액을 알 수 있습니다"
 
 #: src/pages/Home/About/index.tsx:121
 msgid "Learn More"
@@ -382,7 +384,7 @@ msgstr "상세보기"
 
 #: src/pages/Home/Roadmap/YearSelector/years.tsx:248
 msgid "Make project for CONUN platform Test application in science circulation, deep learning, big data"
-msgstr ""
+msgstr "CONUN platform에 동작할 수 있는 여러 종류의 분산 project를 test하고 검증을 합니다"
 
 #: src/pages/Home/Roadmap/YearSelector/years.tsx:245
 msgid "Make projects for CONUN platform Test : science circulation / deep learning / big data"
@@ -394,7 +396,7 @@ msgstr "알파버전(c/s platform) 배포"
 
 #: src/pages/Home/Roadmap/YearSelector/years.tsx:72
 msgid "Make public CONUN's core service and client wallet in data network"
-msgstr ""
+msgstr "CONUN 데이터 네트워크에 해당하는 코어와 사용자 전자지갑을 공개합니다"
 
 #: src/pages/Home/Roadmap/YearSelector/years.tsx:158
 msgid "Make the architecture for Peer to Peer platform"
@@ -451,7 +453,7 @@ msgstr "CONUN 사용자의 활동 및 작업처리 상황을 모니터링 및 �
 
 #: src/pages/Home/About/index.tsx:58
 msgid "Our new cryptocurrency manager keeps your existing wallets together securely."
-msgstr ""
+msgstr "새로운 암호 화폐 관리자가 사용자의 기존 지갑을 안전하게 보관합니다"
 
 #: src/pages/Home/Roadmap/YearSelector/years.tsx:96
 msgid "PC Application UI/UX/Virtual Machine"
@@ -548,7 +550,7 @@ msgstr "이용약관"
 
 #: src/pages/Home/Roadmap/YearSelector/years.tsx:79
 msgid "Test Beta version for managing digital exchange. Making the core and trading system and security enforcement"
-msgstr ""
+msgstr "실제 암호화폐 거래소를 운영하기 위한 플랫폼 베타버전을 테스트합니다. 거래시스템 및 코어를 점검하고, 보안성을 강화하는 작업을 진행합니다"
 
 #: src/pages/Home/Roadmap/YearSelector/years.tsx:226
 msgid "The first release of CONUN blockchain main services 'Halla - Release'. Complete CONUN DRIVE"
@@ -556,7 +558,7 @@ msgstr "코넌의 최초 통합블록체인서비스 '한라Halla' 대공개 여
 
 #: src/pages/Home/Roadmap/YearSelector/years.tsx:295
 msgid "Through CONUN Network SDKs, organizations can efficiently integrate their business into the CONUN Blockchain Network. With CONUN provided APIs, organizations can implement their own business applications"
-msgstr ""
+msgstr "CONUN Network SDK를 통해 CONUN 블록체인 네트워크를 통합합니다. CONUN에서 제공하는 API를 통해 각 서비스 사용자들은 자체의 맞춤형 비즈니스 애플리케이션을 구현할 수 있습니"
 
 #: src/pages/Home/LandingPage/index.tsx:63
 #: src/pages/Home/LandingPage/index.tsx:67
