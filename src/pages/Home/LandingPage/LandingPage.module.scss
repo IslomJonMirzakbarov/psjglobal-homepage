@@ -41,7 +41,6 @@
   & .RightSide {
     display: flex;
     height: fit-content;
-    margin-top: 75px;
     width: 30%;
 
     & .Sections {
@@ -65,7 +64,7 @@
       opacity: 0.5;
       text-orientation: sideways;
       text-transform: uppercase;
-      transform: translateY(-200px) translateX(270px);
+      transform: translateY(-120px) translateX(270px);
       writing-mode: vertical-rl;
     }
   }

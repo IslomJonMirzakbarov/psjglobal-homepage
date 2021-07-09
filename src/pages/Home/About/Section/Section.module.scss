@@ -9,6 +9,10 @@
     object-fit: cover;
     text-align: center;
     width: 20%;
+
+    & .Icon {
+      width: 120%;
+    }
   }
 
   & .Left {
