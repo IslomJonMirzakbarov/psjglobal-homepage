@@ -8,9 +8,6 @@
     object-fit: cover;
     text-align: center;
     width: 20%;
-    & .Icon {
-      width: 90%;
-    }
   }
 
   & .Left {
@@ -60,6 +57,10 @@
     & .Left,
     .Right {
       width: inherit;
+
+      & .Icon {
+        width: 80%;
+      }
     }
 
     &.isIconLeft {

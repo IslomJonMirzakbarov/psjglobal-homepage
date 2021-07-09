@@ -107,28 +107,26 @@ function About() {
           <Network className={styles.AboutBottomIcon} />
         </div>
       </section>
-      <section id="white-paper" className={styles.WhitePaper}>
-        <div className={styles.WhitePaperText}>
-          <p className={styles.Title}>
-            <Trans id="06 White Paper" />
-          </p>
-          <p className={styles.Description}>
-            <Trans id="Explore our white paper to learn more about CONUN as a business, our motivations, and our current and future products." />
-          </p>
-          <p className={styles.LearnMore}>
-            <a
-              href="https://conun.io/whitepaper"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Trans id="Learn More" />
-            </a>
-          </p>
-        </div>
-        <div className={styles.WhitePaperImage}>
-          <WhitePaper />
-        </div>
-      </section>
+      <Section
+        section={{
+          id: "white-paper",
+          title: <Trans id="06 White Paper" />,
+          description: (
+            <div className={styles.WhitePaperDescription}>
+              <Trans id="Explore our white paper to learn more about CONUN as a business, our motivations, and our current and future products." />
+              <a
+                href="https://conun.io/whitepaper"
+                className={styles.LearnMoreLink}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Trans id="Learn More" />
+              </a>
+            </div>
+          ),
+          icon: WhitePaper,
+        }}
+      />
     </>
   );
 }
