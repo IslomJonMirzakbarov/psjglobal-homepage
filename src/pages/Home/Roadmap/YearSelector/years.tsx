@@ -150,6 +150,7 @@ export const YEARS: any = {
         title: (
           <Trans id="Staring to manage CONUN algorithm finding key version" />
         ),
+        subtitle: <Trans id="korean-sub-only algorithm key" />,
       },
       {
         month: <Trans id="Mar" />,
@@ -236,8 +237,17 @@ export const YEARS: any = {
       },
       {
         month: "Aug",
-        title: <Trans id="CONUN TOKEN SWAP" />,
-        subtitle: <Trans id="Bridge Swap" />,
+        title: <Trans id="Launch CONUN Token Swap" />,
+        subtitle: (
+          <Trans id="Launch Bridge Swap, that enables asset swapping between Ethereum Blockchain and Conun Private Blockchain" />
+        ),
+      },
+      {
+        month: "Sep",
+        title: <Trans id="Development and launch CONUN CHAIN CODES" />,
+        subtitle: (
+          <Trans id="CONUN Engine Smart Contract. Token Swap: Easily and securely swapping to CON ERC-20 Token" />
+        ),
       },
       {
         month: <Trans id="Oct" />,
@@ -250,11 +260,14 @@ export const YEARS: any = {
       },
       {
         month: <Trans id="Nov" />,
-        title: <Trans id="Conun Wallet Web Extension" />,
+        title: <Trans id="Launch Conun Wallet Web Extension" />,
+        subtitle: (
+          <Trans id="Launch browser extension version of Conun wallet" />
+        ),
       },
       {
         month: <Trans id="Dec" />,
-        title: <Trans id="Launch beta version" />,
+        title: <Trans id="Launch DSC beta version" />,
         subtitle: <Trans id="Launch distributed project beta version test" />,
       },
       {
@@ -265,6 +278,12 @@ export const YEARS: any = {
         month: <Trans id="Dec" />,
         title: <Trans id="Release CONUN Blockchain Explorer Mainnet" />,
       },
+      ,
+      {
+        month: <Trans id="Dec" />,
+        title: <Trans id="korean-only-title" message="" />,
+        subtitle: <Trans id="korean-only-sub" message="" />,
+      },
     ],
   },
   2022: {
@@ -272,7 +291,7 @@ export const YEARS: any = {
     events: [
       {
         month: <Trans id="Feb" />,
-        title: <Trans id="Development CONUN mobile application" />,
+        title: <Trans id="Launch Cross-chain SWAP" />,
       },
       {
         month: <Trans id="Apr" />,
@@ -290,16 +309,16 @@ export const YEARS: any = {
       },
       {
         month: <Trans id="Dec" />,
-        title: <Trans id="Complete CONUN Network SDKs and APIsn" />,
+        title: <Trans id="Development CONUN mobile application" />,
         subtitle: (
-          <Trans id="Through CONUN Network SDKs, organizations can efficiently integrate their business into the CONUN Blockchain Network. With CONUN provided APIs, organizations can implement their own business applications" />
+          <Trans id="Development for CONUN mobile platform for android and iOS version" />
         ),
       },
       {
         month: <Trans id="Dec" />,
-        title: <Trans id="Development CONUN mobile application" />,
+        title: <Trans id="Complete CONUN Network SDKs and APIs" />,
         subtitle: (
-          <Trans id="Development for CONUN mobile platform for android and iOS version" />
+          <Trans id="Through CONUN Network SDKs, organizations can efficiently integrate their business into the CONUN Blockchain Network. With CONUN provided APIs, organizations can implement their own business applications" />
         ),
       },
     ],
@@ -309,8 +328,9 @@ export const YEARS: any = {
     events: [
       {
         month: <Trans id="Dec" />,
-        title: (
-          <Trans id="Development for total control web version management system in PC and mobile 'CONUN orchestration'" />
+        title: <Trans id="CONUN Orchestration(web base)" />,
+        subtitle: (
+          <Trans id="Development for total control web version management system in PC and mobile 'CONUN orchestration" />
         ),
       },
     ],
