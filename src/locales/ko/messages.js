@@ -1,16 +1,16 @@
 /*eslint-disable*/ module.exports = {
   messages: {
-    "01 About CONUN": "CONUN 소개",
-    "01 About Us": "CONUN 소개",
-    "02 Distributed Super Computing": "분산 슈퍼 컴퓨팅",
-    "03 DRIVE": "드라이브",
-    "03 Drive": "드라이브",
-    "04 DECENTRALIZED FINANCE": "디파이 금융",
-    "04 Decentralized Finance": "디파이 금융",
-    "05 Get Started": "시작하기",
-    "06 White Paper": "백서",
-    "07 Roadmap": "로드맵",
-    "08 Announcements": "공지사항",
+    "01 About CONUN": "01 CONUN 소개",
+    "01 About Conun": "01 CONUN 소개",
+    "02 Distributed Super Computing": "02 분산 슈퍼 컴퓨팅",
+    "03 DRIVE": "03 드라이브",
+    "03 Drive": "03 드라이브",
+    "04 DECENTRALIZED FINANCE": "04 디파이 금융",
+    "04 Decentralized Finance": "04 디파이 금융",
+    "05 Get Started": "05 시작하기",
+    "06 White Paper": "06 백서",
+    "07 Roadmap": "07 로드맵",
+    "08 Announcements": "08 공지사항",
     "A peer-to-peer, decentralized  file sharing service built on our blockchain network.":
       "CONUN의 블록 체인 네트워크에 구축 된 P2P, 분산 파일 공유 서비스를 제공합니다",
     "Analyze for CONUN P2P platform": "CONUN P2P platform 분석 및 설계",
@@ -20,17 +20,20 @@
       "분산 처리 플랫폼(docker 기반) 구축 및 블록체인(ethernum test-net:ropsten) 연동",
     "Apply for network core and trading system in BTC, ETH, XRP, QTUM etc":
       "비트코인/이더리움/리플/퀀텀 등 각종 네트워크 코어 및 거래시스템을 적용합니다",
-    Apr: "Apr",
+    Apr: "4월",
     "Architect for smartcontrat and mining algorithm for managing trading":
       "거래트랜잭션을 관리하는 스마트 컨트랙트와 마이닝 알고리즘을 구현합니다",
     "Based on desktop grid computing technology, CONUN's Distributed Super Computing Platform operates by agreement between participants and users that supports a horizontal revenue ecosystem. Participants agree to share available space with users, and users access the available space for their personal computing needs - thus creating a mutually beneficial relationship.":
       "사용의 용이성과 효율성에 중점을 둔 CONUN의 목표는 자사의 플랫폼을 온 / 오프라인 서비스와 연결하여 프로젝트에서 프로젝트로 이어지는 개발을 끊임없이 꿈꾸고 만들어서 사용자에게 광범위한 이점을 제공하는 것입니다",
     Blogs: "블로그",
+    "CONUN Branding Renewal": "CONUN 브랜딩 리뉴얼",
     "CONUN Engine Smart Contract. Token Swap: Easily and securely swapping to CON ERC-20 Token":
       "CONUN 엔진 스마트컨트랙트 개발과 토큰 스왑( ERC-20 )을 진행합니다",
     "CONUN Orchestration(web base)": "CONUN Orchestration(web base)",
     "CONUN Services: CONUN Decentralized Data Storage Infrastructure SaaS. CONUN Drive Smart Contract":
       "코넌의 최초 통합 블록체인서비스 '한라' 출시 코넌 드라이브 서비스 공개",
+    "CONUN changed the logo to announce its new start":
+      "CONUN이 리브랜딩하며 새롭게 시작합니다",
     "CONUN is a blockchain-based distributed supercomputing and resource sharing platform. Together, the participants of our network forms a high-performance resource-sharing service.":
       "CONUN은 블록 체인 기반의 분산 형 슈퍼 컴퓨팅 플랫폼입니다. 참여자의 쉬고 있는 개인용 컴퓨터의 유휴 자원을 공유하여 고성능 컴퓨팅 자원의 능력을 처리 할 수 있도록 하는 서비스 입니다",
     "CONUN p2p protocol is designed for delivering a secure network between trustless users. Security protocols":
@@ -46,7 +49,11 @@
     "Contact Us": "연락처",
     "Conun Drive is a decentralized content sharing system. It means there is no centralized server that stores all contents. All content will be stored by Conun Drive network participants (peer nodes). As soon as a user connects to the Conun Drive network his/her computer will become a Conun Drive network participant. And participants will choose which files to store or publish. Content publishers will be rewarded by the network participants. In addition, all actions that occur on the Conun Drive network will be stored on the Conun Private Blockchain, meaning all actions are immutable and secure.":
       "Conun Drive는 분산 형 콘텐츠 공유 시스템입니다. 이는 모든 콘텐츠를 저장하는 중앙 집중식 서버가 없음을 의미합니다. 모든 콘텐츠는 Conun Drive 네트워크 참가자 (피어 노드)에 의해 저장됩니다. 사용자가 Conun Drive 네트워크에 연결하는 순간 사용자의 컴퓨터는 Conun Drive 네트워크의 참여자가 됩니다. 이 참가자는 저장하거나 게시 할 파일을 선택 할 수 있으며, 콘텐츠 게시한 참가자는 네트워크 참가자로부터 보상을받습니다. 또한 Conun Drive 네트워크에서 발생하는 모든 작업은 Conun Private Blockchain에 저장되며 변경 불가능합니다 그러므로 안전이 보장됩니다",
+    "Conun Manager and Drive": "CONUN 매니저 & 드라이브",
+    "Conun blockchain has beta launched two of its DApp services":
+      "Conun 블록체인은 두 개의 DApp 서비스를 베타 출시했습니다",
     "Crowdfunding for pre-sale": "Crowdfunding Pre-sale",
+    "DEFI Project Development": "DEFI 프로젝트 개발",
     "DappStore is a platform, which lists all popular dApps. Discover the innovative world of blockchain, plus explore the many decentralized applications in our platform":
       "코넌의 디앱스토어에서는 모든 인기있는 dApp 을 나열하는 플랫폼입니다. 혁신적인 블록체인 세계를 발견하고 당사 플랫폼의 많은 분산 애플리케이션 경험을 제공할 것입니다",
     Dec: "12월",
@@ -86,15 +93,20 @@
       "지갑 애플리케이션을 통해 CON 코인으로 쉽게 환전, 교환 및 구매할 수 있습니다",
     "Explore our white paper to learn more about CONUN as a business, our motivations, and our current and future products.":
       "비즈니스로서의 CONUN, 동기 부여, 현재 및 미래의 제품에 대해 자세히 알아 보려면 백서를 살펴보십시오.",
+    Explorer: "Explorer",
     Feb: "2월",
     Github: "Github",
     "Implement for Client / Server platform network architecture":
       "Client / Server platform으로 구성된 네트워크 아키텍처를 구현합니다",
     "Implement for client application program":
       "사용자 응용프로그램 인터페이스를 구현합니다",
+    "Introducing Conun's DEFI project, stage one - UNISWAP":
+      "CONUN의 DEFI 프로젝트 1단계를 UNISWAP룰 소개합니다",
     Jan: "1월",
     Jobs: "채용",
     Jul: "7월",
+    "July 1, 2021": "2021년 7월 1일",
+    "July 5, 2021": "2021년 7월 5일",
     Jun: "6월",
     "Launch Bridge Swap, that enables asset swapping between Ethereum Blockchain and Conun Private Blockchain":
       "Ethereum Blockchain 과 Conun Private Blockchain 간의 자산 교환할 수 있는 서비스를 런칭합니다",
@@ -110,7 +122,7 @@
     "Launch Cross-chain SWAP": "크로스 체인 스왑(Cross-chain Swap) 런칭",
     "Launch DSC beta version": "DSC 배타버전 배포",
     "Launch browser extension version of Conun wallet":
-      "Launch browser extension version of Conun wallet",
+      "CONUN 지갑 브라우저 확장 버전 출시",
     "Launch cryptocurrency exchange service":
       "암호 화폐거래소 서비스를 시작합니다",
     "Launch distributed network (client/server platform) Alpha version in GitHub and pre-trial":

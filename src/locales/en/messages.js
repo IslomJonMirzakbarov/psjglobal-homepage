@@ -1,7 +1,7 @@
 /*eslint-disable*/ module.exports = {
   messages: {
     "01 About CONUN": "01 About CONUN",
-    "01 About Us": "01 About Us",
+    "01 About Conun": "01 About Conun",
     "02 Distributed Super Computing": "02 Distributed Super Computing",
     "03 DRIVE": "03 DRIVE",
     "03 Drive": "03 Drive",
@@ -26,11 +26,14 @@
     "Based on desktop grid computing technology, CONUN's Distributed Super Computing Platform operates by agreement between participants and users that supports a horizontal revenue ecosystem. Participants agree to share available space with users, and users access the available space for their personal computing needs - thus creating a mutually beneficial relationship.":
       "Based on desktop grid computing technology, CONUN's Distributed Super Computing Platform operates by agreement between participants and users that supports a horizontal revenue ecosystem. Participants agree to share available space with users, and users access the available space for their personal computing needs - thus creating a mutually beneficial relationship.",
     Blogs: "Blogs",
+    "CONUN Branding Renewal": "CONUN Branding Renewal",
     "CONUN Engine Smart Contract. Token Swap: Easily and securely swapping to CON ERC-20 Token":
       "CONUN Engine Smart Contract. Token Swap: Easily and securely swapping to CON ERC-20 Token",
     "CONUN Orchestration(web base)": "CONUN Orchestration(web base)",
     "CONUN Services: CONUN Decentralized Data Storage Infrastructure SaaS. CONUN Drive Smart Contract":
       "CONUN Services: CONUN Decentralized Data Storage Infrastructure SaaS. CONUN Drive Smart Contract",
+    "CONUN changed the logo to announce its new start":
+      "CONUN changed the logo to announce its new start",
     "CONUN is a blockchain-based distributed supercomputing and resource sharing platform. Together, the participants of our network forms a high-performance resource-sharing service.":
       "CONUN is a blockchain-based distributed supercomputing and resource sharing platform. Together, the participants of our network forms a high-performance resource-sharing service.",
     "CONUN p2p protocol is designed for delivering a secure network between trustless users. Security protocols":
@@ -46,7 +49,11 @@
     "Contact Us": "Contact Us",
     "Conun Drive is a decentralized content sharing system. It means there is no centralized server that stores all contents. All content will be stored by Conun Drive network participants (peer nodes). As soon as a user connects to the Conun Drive network his/her computer will become a Conun Drive network participant. And participants will choose which files to store or publish. Content publishers will be rewarded by the network participants. In addition, all actions that occur on the Conun Drive network will be stored on the Conun Private Blockchain, meaning all actions are immutable and secure.":
       "Conun Drive is a decentralized content sharing system. It means there is no centralized server that stores all contents. All content will be stored by Conun Drive network participants (peer nodes). As soon as a user connects to the Conun Drive network his/her computer will become a Conun Drive network participant. And participants will choose which files to store or publish. Content publishers will be rewarded by the network participants. In addition, all actions that occur on the Conun Drive network will be stored on the Conun Private Blockchain, meaning all actions are immutable and secure.",
+    "Conun Manager and Drive": "Conun Manager and Drive",
+    "Conun blockchain has beta launched two of its DApp services":
+      "Conun blockchain has beta launched two of its DApp services",
     "Crowdfunding for pre-sale": "Crowdfunding for pre-sale",
+    "DEFI Project Development": "DEFI Project Development",
     "DappStore is a platform, which lists all popular dApps. Discover the innovative world of blockchain, plus explore the many decentralized applications in our platform":
       "DappStore is a platform, which lists all popular dApps. Discover the innovative world of blockchain, plus explore the many decentralized applications in our platform",
     Dec: "Dec",
@@ -88,15 +95,20 @@
       "Easily swap, exchange, and buy with CON coin through our wallet application.",
     "Explore our white paper to learn more about CONUN as a business, our motivations, and our current and future products.":
       "Explore our white paper to learn more about CONUN as a business, our motivations, and our current and future products.",
+    Explorer: "Explorer",
     Feb: "Feb",
     Github: "Github",
     "Implement for Client / Server platform network architecture":
       "Implement for Client / Server platform network architecture",
     "Implement for client application program":
       "Implement for client application program",
+    "Introducing Conun's DEFI project, stage one - UNISWAP":
+      "Introducing Conun's DEFI project, stage one - UNISWAP",
     Jan: "Jan",
     Jobs: "Jobs",
     Jul: "Jul",
+    "July 1, 2021": "July 1, 2021",
+    "July 5, 2021": "July 5, 2021",
     Jun: "Jun",
     "Launch Bridge Swap, that enables asset swapping between Ethereum Blockchain and Conun Private Blockchain":
       "Launch Bridge Swap, that enables asset swapping between Ethereum Blockchain and Conun Private Blockchain",

@@ -12,25 +12,29 @@ import styles from "./Announcements.module.scss";
 const ANNOUNCEMENTS: any = [
   {
     id: 3,
-    date: "July 1, 2021",
-    title: "DEFI Project Development",
-    subtitle: "Introducing Conun's DEFI project, stage one - UNISWAP",
+    date: <Trans id="July 1, 2021" />,
+    title: <Trans id="DEFI Project Development" />,
+    subtitle: (
+      <Trans id="Introducing Conun's DEFI project, stage one - UNISWAP" />
+    ),
     image: youtubeThumbnail,
     link: "https://www.youtube.com/watch?v=bHdEj0bEyMo",
   },
   {
     id: 1,
-    date: "July 5, 2021",
-    title: "CONUN Branding Renewal",
-    subtitle: "CONUN changed the logo to announce its new start. ",
+    date: <Trans id="July 5, 2021" />,
+    title: <Trans id="CONUN Branding Renewal" />,
+    subtitle: <Trans id="CONUN changed the logo to announce its new start" />,
     image: logoRenewal,
     link: "https://xangle.io/project/CON/recent-disclosure/60ded621d9d39fef9a4d9b2c",
   },
   {
     id: 2,
-    date: "July 5, 2021",
-    title: "Conun Manager and Drive",
-    subtitle: "Conun blockchain has beta launched two of its DApp services",
+    date: <Trans id="July 5, 2021" />,
+    title: <Trans id="Conun Manager and Drive" />,
+    subtitle: (
+      <Trans id="Conun blockchain has beta launched two of its DApp services" />
+    ),
     image: driveManager,
     link: "https://xangle.io/project/CON/recent-disclosure/6094d7b9e141e6daca481242",
   },
