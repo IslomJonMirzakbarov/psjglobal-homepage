@@ -1,14 +1,14 @@
 .LandingPage {
   background-image: url("../../../../public/assets/bg-1.png");
-  background-position: top;
   background-size: cover;
   display: flex;
+  height: calc(100vh - 500px);
   justify-content: space-between;
-  padding: 200px var(--website-padding);
+  padding: 250px var(--website-padding);
 
   & .LeftSide {
     align-self: flex-start;
-    width: 60%;
+    width: 70%;
 
     & .Title {
       color: #76f1bd;
@@ -30,28 +30,32 @@
       font-weight: 400;
       margin-bottom: 30px;
     }
+
     & .ConunDescription {
       color: #fff;
-      font-size: calc(16px + 0.3vw);
+      font-size: calc(16px + 0.2vw);
       line-height: 150%;
-      max-width: 800px;
+      max-width: 700px;
     }
   }
 
   & .RightSide {
     display: flex;
     height: fit-content;
-    margin-top: 75px;
-    padding-right: 20px;
-    width: 40%;
+    width: 30%;
 
     & .Sections {
       align-self: flex-end;
-      display: grid;
+      display: flex;
+      flex-direction: column;
       font-size: 10px;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: 50px 50px 50px 50px;
       margin-bottom: 50px;
+      margin-left: auto;
+      margin-right: 0;
+
+      & > :not(:last-child) {
+        margin-bottom: 1rem;
+      }
     }
 
     & .VerticalText {
@@ -61,19 +65,20 @@
       opacity: 0.5;
       text-orientation: sideways;
       text-transform: uppercase;
-      transform: translateY(-200px) translateX(270px);
+      transform: translateY(-120px) translateX(270px);
       writing-mode: vertical-rl;
     }
   }
 
   @media only screen and (max-width: 800px) {
+    height: auto;
     padding: 0 2rem;
 
     & .LeftSide {
       align-self: flex-start;
       height: 100vh;
       margin-top: 60%;
-      width: 90%;
+      width: 100%;
       & .Title {
         height: auto;
         text-align: center;

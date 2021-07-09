@@ -1,43 +1,21 @@
 .AboutConun {
   background-image: url("../../../../public/assets/midpage_land_asset.jpg");
-  background-position: center 280px;
+  background-position: center 340px;
   background-repeat: no-repeat;
   color: var(--conun-blue);
   width: 100%;
 }
 
-.WhitePaper {
+.WhitePaperDescription {
   display: flex;
-  padding: 0 var(--website-padding);
+  flex-direction: column;
 
-  & .WhitePaperText {
-    color: var(--conun-blue);
-    width: 90%;
-    & .Title {
-      font-size: 30px;
-      font-weight: 500;
-      margin-bottom: 20px;
-      text-transform: uppercase;
-    }
-    & .Description {
-      font-size: 20px;
-      font-weight: 400;
-      line-height: 30px;
-      margin-bottom: 30px;
-    }
-
-    & .LearnMore {
-      color: red;
-      &:hover {
-        cursor: pointer;
-        text-decoration: underline;
-      }
-    }
-  }
-  & .WhitePaperImage {
-    width: 20%;
-    &.Icon {
-      width: 90%;
+  & .LearnMoreLink {
+    color: red;
+    margin-top: 20px;
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
     }
   }
 }
@@ -50,9 +28,11 @@
   color: var(--conun-blue);
   margin-bottom: 50px;
   width: 100%;
+
   & .GetStartedContainer {
     margin-bottom: 300px;
     padding: 0 var(--website-padding);
+
     & .GetStartedText {
       & .Title {
         font-size: 30px;
@@ -69,11 +49,13 @@
         max-width: 810px;
       }
     }
+
     & .GetStartedCards {
       display: flex;
       justify-content: space-evenly;
       margin-bottom: 130px;
     }
+
     & .AboutBottomIcon {
       margin-left: -390px;
       transform: translateY(200px);

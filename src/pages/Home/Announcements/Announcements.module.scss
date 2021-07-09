@@ -30,19 +30,19 @@
 
     & .Announcement {
       background: #fff;
-      border: 2px solid var(--conun-blue);
+      border-radius: 15px;
+      box-shadow: 0 4px 10px var(--conun-blue);
       display: flex;
       flex-direction: column;
-      height: 570px;
-      justify-content: space-between;
-      padding: 15px 20px;
-      width: calc(430px - 40px);
+      height: 380px;
+      justify-content: space-around;
+      padding: 30px;
+      width: calc(430px - 80px);
 
       & .Date {
         color: #15827b;
         font-size: 18px;
-        text-align: center;
-        text-decoration: underline;
+        text-align: left;
         text-transform: uppercase;
       }
 
@@ -50,22 +50,13 @@
         color: var(--conun-blue);
         font-size: 22px;
         font-weight: 600;
-        text-align: center;
+        text-align: left;
       }
 
       & .Subtitle {
         color: var(--conun-blue);
         font-weight: 400;
-        text-align: center;
-      }
-
-      & .Link {
-        & > div {
-          width: 100%;
-        }
-        & .Image {
-          width: 100%;
-        }
+        text-align: left;
       }
     }
   }

@@ -11,6 +11,7 @@ import Wallet from "@/assets/icons/wallet.svg";
 import Finance from "@/assets/icons/finance.svg";
 import Network from "@/assets/icons/network.svg";
 import WhitePaper from "@/assets/icons/white-paper.svg";
+import Key from "@/assets/icons/key.svg";
 
 import styles from "./About.module.scss";
 
@@ -31,6 +32,7 @@ const SECTIONS = [
       <Trans id="Based on desktop grid computing technology, CONUN's Distributed Super Computing Platform operates by agreement between participants and users that supports a horizontal revenue ecosystem. Participants agree to share available space with users, and users access the available space for their personal computing needs - thus creating a mutually beneficial relationship." />
     ),
     isIconLeft: true,
+    isWhiteColor: true,
     icon: CompWalletCoin,
   },
   {
@@ -39,6 +41,7 @@ const SECTIONS = [
     description: (
       <Trans id="Conun Drive is a decentralized content sharing system. It means there is no centralized server that stores all contents. All content will be stored by Conun Drive network participants (peer nodes). As soon as a user connects to the Conun Drive network his/her computer will become a Conun Drive network participant. And participants will choose which files to store or publish. Content publishers will be rewarded by the network participants. In addition, all actions that occur on the Conun Drive network will be stored on the Conun Private Blockchain, meaning all actions are immutable and secure." />
     ),
+    icon: Finance,
   },
   {
     id: "decentralized-finance",
@@ -46,8 +49,8 @@ const SECTIONS = [
     description: (
       <Trans id="Decentralized finance operates through the decentralized blockchain on a distributed public ledger, it makes all transactions transparent and trackable. With peer-to peer exchanges it eliminates the middle-man present in centralized finance and allows for more control over personal information and of finances." />
     ),
-
-    icon: Finance,
+    icon: Key,
+    isIconLeft: true,
   },
 ];
 const GET_STARTED_CARDS = [
@@ -104,28 +107,26 @@ function About() {
           <Network className={styles.AboutBottomIcon} />
         </div>
       </section>
-      <section id="white-paper" className={styles.WhitePaper}>
-        <div className={styles.WhitePaperText}>
-          <p className={styles.Title}>
-            <Trans id="06 White Paper" />
-          </p>
-          <p className={styles.Description}>
-            <Trans id="Explore our white paper to learn more about CONUN as a business, our motivations, and our current and future products." />
-          </p>
-          <p className={styles.LearnMore}>
-            <a
-              href="https://conun.io/whitepaper"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Trans id="Learn More" />
-            </a>
-          </p>
-        </div>
-        <div className={styles.WhitePaperImage}>
-          <WhitePaper />
-        </div>
-      </section>
+      <Section
+        section={{
+          id: "white-paper",
+          title: <Trans id="06 White Paper" />,
+          description: (
+            <div className={styles.WhitePaperDescription}>
+              <Trans id="Explore our white paper to learn more about CONUN as a business, our motivations, and our current and future products." />
+              <a
+                href="https://conun.io/whitepaper"
+                className={styles.LearnMoreLink}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Trans id="Learn More" />
+              </a>
+            </div>
+          ),
+          icon: WhitePaper,
+        }}
+      />
     </>
   );
 }
