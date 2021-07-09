@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap");
+
 :root {
   --conun-blue: #1d428a;
   --neon-green: #76f1bd;
@@ -16,7 +16,6 @@
 html,
 body {
   font-family: "Barlow", sans-serif;
-  font-family: "Nanum Gothic", sans-serif;
   font-weight: 500;
   overflow-x: hidden;
   scroll-behavior: smooth;
