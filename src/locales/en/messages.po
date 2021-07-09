@@ -18,8 +18,12 @@ msgid "01 About CONUN"
 msgstr "01 About CONUN"
 
 #: src/pages/Home/LandingPage/index.tsx:11
-msgid "01 What We Do"
-msgstr "01 What We Do"
+msgid "01 About Us"
+msgstr "01 About Us"
+
+#: src/pages/Home/LandingPage/index.tsx:11
+#~ msgid "01 What We Do"
+#~ msgstr "01 What We Do"
 
 #: src/pages/Home/About/index.tsx:29
 #: src/pages/Home/LandingPage/index.tsx:16
@@ -27,34 +31,70 @@ msgid "02 Distributed Super Computing"
 msgstr "02 Distributed Super Computing"
 
 #: src/pages/Home/About/index.tsx:38
-msgid "03 DECENTRALIZED FINANCE"
-msgstr "03 DECENTRALIZED FINANCE"
+#~ msgid "03 DECENTRALIZED FINANCE"
+#~ msgstr "03 DECENTRALIZED FINANCE"
+
+#: src/pages/Home/About/index.tsx:38
+msgid "03 DRIVE"
+msgstr "03 DRIVE"
 
 #: src/pages/Home/LandingPage/index.tsx:21
-msgid "03 Decentralized Finance"
-msgstr "03 Decentralized Finance"
+#~ msgid "03 Decentralized Finance"
+#~ msgstr "03 Decentralized Finance"
+
+#: src/pages/Home/LandingPage/index.tsx:21
+msgid "03 Drive"
+msgstr "03 Drive"
+
+#: src/pages/Home/About/index.tsx:45
+msgid "04 DECENTRALIZED FINANCE"
+msgstr "04 DECENTRALIZED FINANCE"
+
+#: src/pages/Home/LandingPage/index.tsx:26
+msgid "04 Decentralized Finance"
+msgstr "04 Decentralized Finance"
 
 #: src/pages/Home/About/index.tsx:84
 #: src/pages/Home/LandingPage/index.tsx:26
-msgid "04 Get Started"
-msgstr "04 Get Started"
+#~ msgid "04 Get Started"
+#~ msgstr "04 Get Started"
+
+#: src/pages/Home/About/index.tsx:92
+#: src/pages/Home/LandingPage/index.tsx:31
+msgid "05 Get Started"
+msgstr "05 Get Started"
 
 #: src/pages/Home/About/index.tsx:102
 #: src/pages/Home/LandingPage/index.tsx:31
-msgid "05 White Paper"
-msgstr "05 White Paper"
+#~ msgid "05 White Paper"
+#~ msgstr "05 White Paper"
 
 #: src/pages/Home/LandingPage/index.tsx:36
 #: src/pages/Home/Roadmap/index.tsx:12
-msgid "06 Roadmap"
-msgstr "06 Roadmap"
+#~ msgid "06 Roadmap"
+#~ msgstr "06 Roadmap"
+
+#: src/pages/Home/About/index.tsx:110
+#: src/pages/Home/LandingPage/index.tsx:36
+msgid "06 White Paper"
+msgstr "06 White Paper"
 
 #: src/pages/Home/Announcements/index.tsx:38
 #: src/pages/Home/LandingPage/index.tsx:42
-msgid "07 Announcements"
-msgstr "07 Announcements"
+#~ msgid "07 Announcements"
+#~ msgstr "07 Announcements"
 
-#: src/pages/Home/About/index.tsx:59
+#: src/pages/Home/LandingPage/index.tsx:41
+#: src/pages/Home/Roadmap/index.tsx:12
+msgid "07 Roadmap"
+msgstr "07 Roadmap"
+
+#: src/pages/Home/Announcements/index.tsx:43
+#: src/pages/Home/LandingPage/index.tsx:47
+msgid "08 Announcements"
+msgstr "08 Announcements"
+
+#: src/pages/Home/About/index.tsx:66
 msgid "A peer-to-peer, decentralized  file sharing service built on our blockchain network."
 msgstr "A peer-to-peer, decentralized  file sharing service built on our blockchain network."
 
@@ -105,7 +145,7 @@ msgstr "CONUN Services: CONUN Decentralized Data Storage Infrastructure SaaS. CO
 msgid "CONUN TOKEN SWAP"
 msgstr "CONUN TOKEN SWAP"
 
-#: src/pages/Home/LandingPage/index.tsx:66
+#: src/pages/Home/LandingPage/index.tsx:71
 msgid "CONUN is a blockchain-based distributed supercomputing and resource sharing platform. Together, the participants of our network forms a high-performance resource-sharing service."
 msgstr "CONUN is a blockchain-based distributed supercomputing and resource sharing platform. Together, the participants of our network forms a high-performance resource-sharing service."
 
@@ -113,7 +153,7 @@ msgstr "CONUN is a blockchain-based distributed supercomputing and resource shar
 msgid "CONUN p2p protocol is designed for delivering a secure network between trustless users. Security protocols"
 msgstr "CONUN p2p protocol is designed for delivering a secure network between trustless users. Security protocols"
 
-#: src/pages/Home/About/index.tsx:88
+#: src/pages/Home/About/index.tsx:96
 msgid "CONUN’s projects are based on blockchain technology, making them more secure and also giving you more freedom. Currently we have our wallet, drive, and coin available for public use."
 msgstr "CONUN’s projects are based on blockchain technology, making them more secure and also giving you more freedom. Currently we have our wallet, drive, and coin available for public use."
 
@@ -136,6 +176,10 @@ msgstr "Connecting on Universal Networks"
 #: src/pages/Home/Footer/index.tsx:23
 msgid "Contact Us"
 msgstr "Contact Us"
+
+#: src/pages/Home/About/index.tsx:40
+msgid "Conun Drive is a decentralized content sharing system. It means there is no centralized server that stores all contents. All content will be stored by Conun Drive network participants (peer nodes). As soon as a user connects to the Conun Drive network his/her computer will become a Conun Drive network participant. And participants will choose which files to store or publish. Content publishers will be rewarded by the network participants. In addition, all actions that occur on the Conun Drive network will be stored on the Conun Private Blockchain, meaning all actions are immutable and secure."
+msgstr "Conun Drive is a decentralized content sharing system. It means there is no centralized server that stores all contents. All content will be stored by Conun Drive network participants (peer nodes). As soon as a user connects to the Conun Drive network his/her computer will become a Conun Drive network participant. And participants will choose which files to store or publish. Content publishers will be rewarded by the network participants. In addition, all actions that occur on the Conun Drive network will be stored on the Conun Private Blockchain, meaning all actions are immutable and secure."
 
 #: src/pages/Home/Roadmap/YearSelector/years.tsx:253
 msgid "Conun Wallet Web Extension"
@@ -166,7 +210,7 @@ msgstr "DappStore is a platform, which lists all popular dApps. Discover the inn
 msgid "Dec"
 msgstr "Dec"
 
-#: src/pages/Home/About/index.tsx:40
+#: src/pages/Home/About/index.tsx:47
 msgid "Decentralized finance operates through the decentralized blockchain on a distributed public ledger, it makes all transactions transparent and trackable. With peer-to peer exchanges it eliminates the middle-man present in centralized finance and allows for more control over personal information and of finances."
 msgstr "Decentralized finance operates through the decentralized blockchain on a distributed public ledger, it makes all transactions transparent and trackable. With peer-to peer exchanges it eliminates the middle-man present in centralized finance and allows for more control over personal information and of finances."
 
@@ -240,11 +284,11 @@ msgstr "Development project utility and portal server for CONUN market"
 msgid "Download Products"
 msgstr "Download Products"
 
-#: src/pages/Home/About/index.tsx:67
+#: src/pages/Home/About/index.tsx:75
 msgid "Easily swap, exchange, and buy with CON coin through our wallet application."
 msgstr "Easily swap, exchange, and buy with CON coin through our wallet application."
 
-#: src/pages/Home/About/index.tsx:105
+#: src/pages/Home/About/index.tsx:113
 #: src/pages/Home/Roadmap/index.tsx:15
 msgid "Explore our white paper to learn more about CONUN as a business, our motivations, and our current and future products."
 msgstr "Explore our white paper to learn more about CONUN as a business, our motivations, and our current and future products."
@@ -332,7 +376,7 @@ msgstr "Launching CONUN business"
 msgid "Launching the CONUN membership service and CONUN Resource Monitoring allows you to configure a cost estimate and income estimate that fits your unique business or personal needs with CONUN platform"
 msgstr "Launching the CONUN membership service and CONUN Resource Monitoring allows you to configure a cost estimate and income estimate that fits your unique business or personal needs with CONUN platform"
 
-#: src/pages/Home/About/index.tsx:113
+#: src/pages/Home/About/index.tsx:121
 msgid "Learn More"
 msgstr "Learn More"
 
@@ -393,7 +437,7 @@ msgstr "Nov"
 msgid "Oct"
 msgstr "Oct"
 
-#: src/pages/Home/Announcements/index.tsx:41
+#: src/pages/Home/Announcements/index.tsx:46
 msgid "Ongoing project and company updates related to CONUN."
 msgstr "Ongoing project and company updates related to CONUN."
 
@@ -405,7 +449,7 @@ msgstr "Open CONUN's whitepaper describing technical architecture and aim in det
 msgid "Organize distributed computing system for CONUN's client activities monitoring system"
 msgstr "Organize distributed computing system for CONUN's client activities monitoring system"
 
-#: src/pages/Home/About/index.tsx:51
+#: src/pages/Home/About/index.tsx:58
 msgid "Our new cryptocurrency manager keeps your existing wallets together securely."
 msgstr "Our new cryptocurrency manager keeps your existing wallets together securely."
 
@@ -482,7 +526,7 @@ msgstr "Roadmap"
 msgid "Sep"
 msgstr "Sep"
 
-#: src/pages/Home/LandingPage/index.tsx:53
+#: src/pages/Home/LandingPage/index.tsx:58
 msgid "Share. Earn. Explore"
 msgstr "Share. Earn. Explore"
 
@@ -514,8 +558,8 @@ msgstr "The first release of CONUN blockchain main services 'Halla - Release'. C
 msgid "Through CONUN Network SDKs, organizations can efficiently integrate their business into the CONUN Blockchain Network. With CONUN provided APIs, organizations can implement their own business applications"
 msgstr "Through CONUN Network SDKs, organizations can efficiently integrate their business into the CONUN Blockchain Network. With CONUN provided APIs, organizations can implement their own business applications"
 
-#: src/pages/Home/LandingPage/index.tsx:58
-#: src/pages/Home/LandingPage/index.tsx:62
+#: src/pages/Home/LandingPage/index.tsx:63
+#: src/pages/Home/LandingPage/index.tsx:67
 msgid "Universal Resource Sharing"
 msgstr "Universal Resource Sharing"
 
@@ -528,14 +572,14 @@ msgstr "Update CONUN p2p network traffic"
 msgid "With the idle processing powers of personal computers and smartphones CONUN provides a horizontal, distributed computing power sharing platform that is open to all application requesters and operators who need computing power. With focus on ease-of use and efficiency CONUN’s goal is to link our platform with on and offline services to provide users with broad benefits as we continue to dream and create from project to project. "
 msgstr "With the idle processing powers of personal computers and smartphones CONUN provides a horizontal, distributed computing power sharing platform that is open to all application requesters and operators who need computing power. With focus on ease-of use and efficiency CONUN’s goal is to link our platform with on and offline services to provide users with broad benefits as we continue to dream and create from project to project. "
 
-#: src/pages/Home/About/index.tsx:49
+#: src/pages/Home/About/index.tsx:56
 msgid "connect with manager"
 msgstr "connect with manager"
 
-#: src/pages/Home/About/index.tsx:65
+#: src/pages/Home/About/index.tsx:73
 msgid "conun finance"
 msgstr "conun finance"
 
-#: src/pages/Home/About/index.tsx:57
+#: src/pages/Home/About/index.tsx:64
 msgid "explore drive"
 msgstr "explore drive"

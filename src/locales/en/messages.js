@@ -1,14 +1,23 @@
 /*eslint-disable*/ module.exports = {
   messages: {
     "01 About CONUN": "01 About CONUN",
+    "01 About Us": "01 About Us",
     "01 What We Do": "01 What We Do",
     "02 Distributed Super Computing": "02 Distributed Super Computing",
     "03 DECENTRALIZED FINANCE": "03 DECENTRALIZED FINANCE",
+    "03 DRIVE": "03 DRIVE",
     "03 Decentralized Finance": "03 Decentralized Finance",
+    "03 Drive": "03 Drive",
+    "04 DECENTRALIZED FINANCE": "04 DECENTRALIZED FINANCE",
+    "04 Decentralized Finance": "04 Decentralized Finance",
     "04 Get Started": "04 Get Started",
+    "05 Get Started": "05 Get Started",
     "05 White Paper": "05 White Paper",
     "06 Roadmap": "06 Roadmap",
+    "06 White Paper": "06 White Paper",
     "07 Announcements": "07 Announcements",
+    "07 Roadmap": "07 Roadmap",
+    "08 Announcements": "08 Announcements",
     "A peer-to-peer, decentralized  file sharing service built on our blockchain network.":
       "A peer-to-peer, decentralized  file sharing service built on our blockchain network.",
     "Analyze for CONUN P2P platform": "Analyze for CONUN P2P platform",
@@ -41,6 +50,8 @@
       "Complete CONUN Network SDKs and APIsn",
     "Connecting on Universal Networks": "Connecting on Universal Networks",
     "Contact Us": "Contact Us",
+    "Conun Drive is a decentralized content sharing system. It means there is no centralized server that stores all contents. All content will be stored by Conun Drive network participants (peer nodes). As soon as a user connects to the Conun Drive network his/her computer will become a Conun Drive network participant. And participants will choose which files to store or publish. Content publishers will be rewarded by the network participants. In addition, all actions that occur on the Conun Drive network will be stored on the Conun Private Blockchain, meaning all actions are immutable and secure.":
+      "Conun Drive is a decentralized content sharing system. It means there is no centralized server that stores all contents. All content will be stored by Conun Drive network participants (peer nodes). As soon as a user connects to the Conun Drive network his/her computer will become a Conun Drive network participant. And participants will choose which files to store or publish. Content publishers will be rewarded by the network participants. In addition, all actions that occur on the Conun Drive network will be stored on the Conun Private Blockchain, meaning all actions are immutable and secure.",
     "Conun Wallet Web Extension": "Conun Wallet Web Extension",
     "Crowdfunding for pre-sale": "Crowdfunding for pre-sale",
     "DappStore is a platform, which lists all popular dApps. Discover the innovative world of blockchain, plus explore the many decentralized applications in our platform":
