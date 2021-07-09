@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { Trans } from "@lingui/react";
+import { motion } from "framer-motion";
 
 import youtubeThumbnail from "../../../../public/assets/youtube-thumbnail.jpg";
 import logoRenewal from "../../../../public/assets/logo-renewal.jpg";
@@ -46,7 +47,8 @@ function Announcements() {
       </p>
       <div className={styles.AnnouncementsContainer}>
         {ANNOUNCEMENTS.map((a: any) => (
-          <a
+          <motion.a
+            whileHover={{ y: -10 }}
             className={styles.Announcement}
             href={a.link}
             key={a.id}
@@ -59,7 +61,7 @@ function Announcements() {
 
             <p className={styles.Title}>{a.title}</p>
             <p className={styles.Subtitle}>{a.subtitle}</p>
-          </a>
+          </motion.a>
         ))}
       </div>
     </section>
