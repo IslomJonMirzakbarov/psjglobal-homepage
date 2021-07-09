@@ -30,7 +30,7 @@ const PAGES = [
   {
     id: "roadmap",
     label: <Trans id="Roadmap" />,
-    path: "/roadmap",
+    path: "/#roadmap",
   },
 ];
 

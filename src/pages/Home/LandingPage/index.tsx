@@ -1,7 +1,11 @@
-import useIsMobile from "@/hooks/useIsMobile";
 import { Trans } from "@lingui/react";
+import { motion } from "framer-motion";
 
 import Section from "./Section";
+
+import useIsMobile from "@/hooks/useIsMobile";
+
+import Blocks from "@/assets/icons/blocks.svg";
 
 import styles from "./LandingPage.module.scss";
 
@@ -53,6 +57,23 @@ function LandingPage() {
   const isMobile = useIsMobile();
   return (
     <section id="home" className={styles.LandingPage}>
+      {!isMobile && (
+        <motion.div
+          initial={{ y: 0 }}
+          animate={{ y: -10 }}
+          exit={{ y: 0 }}
+          transition={{
+            y: {
+              duration: 1,
+              yoyo: Infinity,
+              ease: "easeOut",
+            },
+          }}
+          className={styles.BlocksContainer}
+        >
+          <Blocks className={styles.Blocks} />
+        </motion.div>
+      )}
       <div className={styles.LeftSide}>
         <p className={styles.Title}>
           <Trans id="Share. Earn. Explore" />

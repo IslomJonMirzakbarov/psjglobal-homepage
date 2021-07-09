@@ -5,6 +5,18 @@
   height: calc(100vh - 500px);
   justify-content: space-between;
   padding: 250px var(--website-padding);
+  position: relative;
+
+  & .BlocksContainer {
+    position: absolute;
+    right: 0;
+    top: -12%;
+    width: 100%;
+
+    & .Blocks {
+      width: 100%;
+    }
+  }
 
   & .LeftSide {
     align-self: flex-start;
@@ -43,6 +55,7 @@
     display: flex;
     height: fit-content;
     width: 30%;
+    z-index: 100;
 
     & .Sections {
       align-self: flex-end;
