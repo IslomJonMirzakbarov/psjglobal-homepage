@@ -34,22 +34,17 @@ const MENU_ITEMS = [
     path: "https://github.com/CONUN-Global",
   },
   {
-    id: "roadmap",
-    title: <Trans id="Roadmap" />,
-    path: "/roadmap",
-  },
-  {
     id: "download",
     title: <Trans id="Download Products" />,
     isExternal: true,
-    path: "/https://dappstore.conun.io/",
+    path: "https://dappstore.conun.io/",
   },
 ];
 
 function Sidebar() {
   const isSidebarOpen = useStore((state) => state.isSidebarOpen);
-
   const handleSidebar = useStore((state) => state.handleSidebar);
+
   return (
     <motion.div
       className={styles.Sidebar}
