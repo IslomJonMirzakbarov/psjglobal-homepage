@@ -19,8 +19,6 @@ const Section = ({ section }: Section) => {
   const { title, description, icon, isIconLeft, isWhiteColor, className } =
     section;
   const Icon = icon;
-
-  console.log(`className`, className);
   return (
     <section
       id={section.id}

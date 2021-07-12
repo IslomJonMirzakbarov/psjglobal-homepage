@@ -28,20 +28,22 @@
 
       & .Line {
         border-top: 1px solid var(--conun-blue);
-        width: 150px;
+        width: 150;
       }
     }
   }
 
   @media only screen and (max-width: 800px) {
+    align-self: center;
     flex-direction: column;
+
     & .Years {
       flex-direction: row;
       & .Year {
         margin-bottom: 20px;
 
         & .YearButton {
-          margin-right: 10px;
+          margin: 0 10px;
         }
 
         & .Line {
