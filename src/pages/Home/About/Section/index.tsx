@@ -19,6 +19,7 @@ const Section = ({ section }: Section) => {
   const { title, description, icon, isIconLeft, isWhiteColor, className } =
     section;
   const Icon = icon;
+
   return (
     <section
       id={section.id}
@@ -33,7 +34,7 @@ const Section = ({ section }: Section) => {
     >
       <div className={styles.Left}>
         <p className={styles.Title}>{title}</p>
-        <p className={styles.Description}>{description}</p>
+        <div className={styles.Description}>{description}</div>
       </div>
       <div
         className={classNames(styles.Right, {
@@ -49,8 +50,8 @@ const Section = ({ section }: Section) => {
             transition={{
               y: {
                 duration: 1,
-                yoyo: Infinity,
-                ease: "easeOut",
+                repeat: Infinity,
+                repeatType: "reverse",
               },
             }}
           >

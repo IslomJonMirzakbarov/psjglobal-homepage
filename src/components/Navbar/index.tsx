@@ -50,8 +50,10 @@ function Navbar() {
           >
             <Menu className={styles.MenuIcon} />
           </Button>
-          <Link href="/#home" passHref>
-            <ConunLogo className={styles.ConunLogo} />
+          <Link href="/#home">
+            <a>
+              <ConunLogo className={styles.ConunLogo} />
+            </a>
           </Link>
           <LanguageSwitcher />
         </>
