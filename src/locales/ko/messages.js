@@ -24,7 +24,7 @@
     "Architect for smartcontrat and mining algorithm for managing trading":
       "거래트랜잭션을 관리하는 스마트 컨트랙트와 마이닝 알고리즘을 구현합니다",
     "Based on desktop grid computing technology, CONUN's Distributed Super Computing Platform operates by agreement between participants and users that supports a horizontal revenue ecosystem. Participants agree to share available space with users, and users access the available space for their personal computing needs - thus creating a mutually beneficial relationship.":
-      "사용의 용이성과 효율성에 중점을 둔 CONUN의 목표는 자사의 플랫폼을 온 / 오프라인 서비스와 연결하여 프로젝트에서 프로젝트로 이어지는 개발을 끊임없이 꿈꾸고 만들어서 사용자에게 광범위한 이점을 제공하는 것입니다",
+      "사용의 용이성과 효율성에 중점을 둔 CONUN의 목표는 자사의 플랫폼을 온 / 오프라인 서비스와 연결하여 프로젝트에서 프로젝트로 이어지는 개발을 끊임없이 실현시키며 사용자에게 최대한의 이점을 제공하는 것입니다",
     Blogs: "블로그",
     "CONUN Branding Renewal": "CONUN 브랜딩 리뉴얼",
     "CONUN Engine Smart Contract. Token Swap: Easily and securely swapping to CON ERC-20 Token":
@@ -35,11 +35,11 @@
     "CONUN changed the logo to announce its new start":
       "CONUN이 리브랜딩하며 새롭게 시작합니다",
     "CONUN is a blockchain-based distributed supercomputing and resource sharing platform. Together, the participants of our network forms a high-performance resource-sharing service.":
-      "CONUN은 블록 체인 기반의 분산 형 슈퍼 컴퓨팅 및 자원 공유 플랫폼입니다. 참여자의 쉬고 있는 개인용 컴퓨터의 유휴 자원을 공유하여 고성능 컴퓨팅 자원의 능력을 처리 할 수 있도록 하는 서비스 입니다",
+      "CONUN은 블록 체인 기반의 분산 형 슈퍼 컴퓨팅 및 자원 공유 플랫폼입니다. 참여자의 쉬고 있는 개인용 컴퓨터의 유휴 자원을 공유하여 고성능 컴퓨팅 자원의 능력 처리를 가능하게 합니다",
     "CONUN p2p protocol is designed for delivering a secure network between trustless users. Security protocols":
       "CONUN P2P 탈중앙 네트워크에서의 서로를 신뢰할 수 있는 강력한 보안을 제공하도록 설계합니다.",
     "CONUN’s projects are based on blockchain technology, making them more secure and also giving you more freedom. Currently we have our wallet, drive, and coin available for public use.":
-      "CONUN은 블록 체인 기반의 분산 형 슈퍼 컴퓨팅 플랫폼입니다. 참여자의 쉬고 있는 개인용 컴퓨터의 유휴 자원을 공유하여 고성능 컴퓨팅 자원의 능력을 처리 할 수 있도록 하는 서비스 입니다",
+      "CONUN의 프로젝트는 블록 체인 기술을 기반으로하여 더 안전하고 더 많은 자유를 제공합니다. 현재로써 CONUN 지갑, 드라이브 및 코인을 공개적으로 사용하실 수 있습니다",
     "CTM Front-End": "CTM FRONT-END",
     "Complete CONUN DECENTRALIZED NETWORK":
       "코넌 탈중앙 네트워크 CONUN DECENTRALIZED NETWORK 서비스 개발완료",
@@ -48,7 +48,7 @@
     "Connecting on Universal Networks": "유니버설 네트워크에 연결",
     "Contact Us": "연락처",
     "Conun Drive is a decentralized content sharing system. It means there is no centralized server that stores all contents. All content will be stored by Conun Drive network participants (peer nodes). As soon as a user connects to the Conun Drive network his/her computer will become a Conun Drive network participant. And participants will choose which files to store or publish. Content publishers will be rewarded by the network participants. In addition, all actions that occur on the Conun Drive network will be stored on the Conun Private Blockchain, meaning all actions are immutable and secure.":
-      "Conun Drive는 분산 형 콘텐츠 공유 시스템입니다. 이는 모든 콘텐츠를 저장하는 중앙 집중식 서버가 없음을 의미합니다. 모든 콘텐츠는 Conun Drive 네트워크 참가자 (피어 노드)에 의해 저장됩니다. 사용자가 Conun Drive 네트워크에 연결하는 순간 사용자의 컴퓨터는 Conun Drive 네트워크의 참여자가 됩니다. 이 참가자는 저장하거나 게시 할 파일을 선택 할 수 있으며, 콘텐츠 게시한 참가자는 네트워크 참가자로부터 보상을받습니다. 또한 Conun Drive 네트워크에서 발생하는 모든 작업은 Conun Private Blockchain에 저장되며 변경 불가능합니다 그러므로 안전이 보장됩니다",
+      "Conun Drive는 분산 형 콘텐츠 공유 시스템입니다. 이는 모든 콘텐츠를 저장하는 중앙 집중식 서버가 없음을 의미합니다. 모든 콘텐츠는 Conun Drive 네트워크 참가자 (피어 노드)에 의해 저장됩니다. 사용자가 Conun Drive 네트워크에 연결하는 순간 사용자의 컴퓨터는 Conun Drive 네트워크의 참여자가 됩니다. 이 참가자는 저장하거나 게시 할 파일을 선택 할 수 있으며, 콘텐츠를 게시한 참가자는 네트워크 참가자로부터 보상을받습니다. 또한 Conun Drive 네트워크에서 발생하는 모든 작업은 Conun Private Blockchain에 저장되며 변경 불가능 하므로 안전이 보장됩니다",
     "Conun Manager and Drive": "CONUN 매니저 & 드라이브",
     "Conun blockchain has beta launched two of its DApp services":
       "Conun 블록체인은 두 개의 DApp 서비스를 베타 출시했습니다",
@@ -58,7 +58,7 @@
       "코넌의 디앱스토어에서는 모든 인기있는 dApp 을 나열하는 플랫폼입니다. 혁신적인 블록체인 세계를 발견하고 당사 플랫폼의 많은 분산 애플리케이션 경험을 제공할 것입니다",
     Dec: "12월",
     "Decentralized finance operates through the decentralized blockchain on a distributed public ledger, it makes all transactions transparent and trackable. With peer-to peer exchanges it eliminates the middle-man present in centralized finance and allows for more control over personal information and of finances.":
-      "Conun Drive는 분산 형 콘텐츠 공유 시스템입니다. 이는 모든 콘텐츠를 저장하는 중앙 집중식 서버가 없음을 의미합니다. 모든 콘텐츠는 Conun Drive 네트워크 참가자 (피어 노드)에 의해 저장됩니다. 사용자가 Conun Drive 네트워크에 연결하는 순간 사용자의 컴퓨터는 Conun Drive 네트워크의 참여자가 됩니다. 이 참가자는 저장하거나 게시 할 파일을 선택 할 수 있으며, 콘텐츠 게시한 참가자는 네트워크 참가자로부터 보상을받습니다. 또한 Conun Drive 네트워크에서 발생하는 모든 작업은 Conun Private Blockchain에 저장되며 변경 불가능합니다 그러므로 안전이 보장됩니다",
+      "Defi (탈중앙화 금융)은 분산 된 공개 원장의 분산 형 블록 체인을 통해 운영되며 이는 모든 거래를 투명하며 추적 할 수 있게 합니다. 또한 P2P 교환을 통해 중앙 집중식 금융에 존재하는 중개인을 제거하고 개인 정보 및 금융에 대한 더 많은 통제를 허용합니다.",
     "Develop CONUN's digital currency exchange platform 'Alpha version' for trading digital currency":
       "암호화폐 거래플랫폼의 알파버전을 개발합니다",
     "Develop CONUN's digital currency exchange platform for trading digital currency":
@@ -90,9 +90,9 @@
       "CONUN market 을 위한 project utility 및 포털 서버 구축",
     "Download Products": "제품 다운로드",
     "Easily swap, exchange, and buy with CON coin through our wallet application.":
-      "지갑 애플리케이션을 통해 CON 코인으로 쉽게 환전, 교환 및 구매할 수 있습니다",
+      "지갑 애플리케이션을 통해 CON 코인으로 쉽게 환전, 교환 및 구매가 가능합니다",
     "Explore our white paper to learn more about CONUN as a business, our motivations, and our current and future products.":
-      "비즈니스로서의 CONUN, 동기 부여, 현재 및 미래의 제품에 대해 자세히 알아 보려면 백서를 살펴보십시오.",
+      "비즈니스로서의 CONUN, 경영 목표와 신제품에 대한 정보는 백서에서 살펴보실 수 있습니다",
     Explorer: "Explorer",
     Feb: "2월",
     Github: "Github",
