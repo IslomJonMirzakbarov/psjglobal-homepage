@@ -1,4 +1,14 @@
-.Layout {
-  height: 100vh;
-  min-height: 100vh;
+.Appwrapper {
+  &.ko {
+    color: red;
+    font-family: "Nanum Gothic", sans-serif;
+  }
+
+  &.en {
+    font-family: "Barlow", sans-serif;
+  }
+  & .Layout {
+    height: 100vh;
+    min-height: 100vh;
+  }
 }
