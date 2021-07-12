@@ -20,7 +20,6 @@ const Section = ({ section }: Section) => {
     section;
   const Icon = icon;
 
-  console.log(`className`, className);
   return (
     <section
       id={section.id}
