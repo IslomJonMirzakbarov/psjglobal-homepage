@@ -65,8 +65,8 @@ function LandingPage() {
           transition={{
             y: {
               duration: 1,
-              yoyo: Infinity,
-              ease: "easeOut",
+              repeat: Infinity,
+              repeatType: "reverse",
             },
           }}
           className={styles.BlocksContainer}
