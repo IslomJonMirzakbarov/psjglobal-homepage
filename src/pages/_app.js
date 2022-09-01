@@ -5,6 +5,7 @@ import theme from 'mui-theme'
 import { persistor, store } from '../store/store'
 import { Provider } from 'react-redux'
 import { PersistGate } from 'redux-persist/integration/react'
+import NextNProgress from 'nextjs-progressbar'
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -13,16 +14,28 @@ function MyApp({ Component, pageProps }) {
         <PersistGate loading={null} persistor={persistor}>
           <ThemeProvider theme={theme}>
             <Layout>
+              <NextNProgress
+                options={{
+                  showSpinner: false
+                }}
+                color='#0012B0'
+              />
               <Component {...pageProps} />
             </Layout>
           </ThemeProvider>
         </PersistGate>
       ) : (
-          <ThemeProvider theme={theme}>
-            <Layout>
-              <Component {...pageProps} />
-            </Layout>
-          </ThemeProvider>
+        <ThemeProvider theme={theme}>
+          <Layout>
+            <NextNProgress
+              options={{
+                showSpinner: false
+              }}
+              color='#0012B0'
+            />
+            <Component {...pageProps} />
+          </Layout>
+        </ThemeProvider>
       )}
     </Provider>
   )
