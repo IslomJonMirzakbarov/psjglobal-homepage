@@ -10,10 +10,10 @@ export default function SEO({ title }) {
       />
       <meta charSet='utf-8' />
       <title>{title || 'Next js template'}</title>
-      <meta
+      {/* <meta
         name='description'
         content='Next js template — это коворкинг в г. Ташкент, основанный с целью создать атмосферу, максимально подходящую не только для работы, но и отдыха. Next js template коворкинг-центр позволяет стартаперам, фрилансерам и руководителям небольших компаний экономить на аренде офиса.'
-      />
+      /> */}
       {/* <meta
         name='keywords'
         content='Cspace, coworking, co-working, center, tashkent'

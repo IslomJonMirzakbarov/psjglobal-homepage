@@ -12,7 +12,7 @@ export function Header() {
   const products = [
     {
       title: 'OceanDrive',
-      link: '/ocean-drive'
+      link: '/'
     },
     {
       title: 'World Art DEXPO NFT',
@@ -26,7 +26,7 @@ export function Header() {
   const downloads = [
     {
       title: 'OceanDrive',
-      link: '/'
+      link: '/ocean-drive'
     },
     {
       title: 'Metacon',
