@@ -1,0 +1,21 @@
+@import 'styles/unit.scss';
+.card {
+  background: #ffffff;
+  border-radius: rem(5);
+  padding: rem(10) rem(15);
+  .title {
+    font-weight: 600;
+    font-size: rem(14);
+    line-height: rem(21);
+    color: #232323;
+    margin-bottom: rem(10);
+    text-align: center;
+  }
+  .content {
+    font-size: rem(12);
+    line-height: rem(20);
+    text-align: center;
+
+    color: #484848;
+  }
+}

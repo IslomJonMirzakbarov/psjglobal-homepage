@@ -1,0 +1,23 @@
+@import 'styles/unit.scss';
+
+.banner {
+  padding: rem(141) 0 rem(113);
+  .content {
+    width: rem(591);
+    .title {
+      margin-bottom: rem(25);
+      &:after {
+        content: attr(data-text);
+        color: var(--primary-color);
+        transform: translateX(-100%);
+        position: absolute;
+      }
+    }
+    .link {
+      display: flex;
+      align-items: center;
+      column-gap: rem(10);
+      margin-top: rem(45);
+    }
+  }
+}

@@ -1,0 +1,73 @@
+@import 'styles/unit.scss';
+.box {
+  padding: rem(8) 0 rem(110);
+  .roadmap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .years {
+      display: flex;
+      align-items: center;
+      margin-top: rem(40);
+      border-radius: rem(10);
+      overflow: hidden;
+      width: auto;
+      .item {
+        padding: rem(15) rem(27);
+        border: 1px solid #ffffff;
+        box-shadow: inset 5px 6px 11px rgba(0, 0, 0, 0.07);
+        font-size: rem(16);
+        line-height: rem(20);
+        color: #7d8890;
+        cursor: pointer;
+        &.active {
+          background: #0015cf;
+          color: #fff;
+          font-weight: 700;
+          box-shadow: inset 5px 6px 11px rgba(0, 0, 0, 0.07);
+        }
+      }
+    }
+  }
+  .diagram {
+    margin-top: rem(128);
+    .line {
+      width: 100%;
+      height: rem(2);
+      background-color: #fff;
+    }
+    .items {
+      display: grid;
+      column-gap: rem(49);
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      padding-top: rem(25);
+      .list {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(20);
+        position: relative;
+        .element {
+          position: absolute;
+          left: calc(50% - rem(12));
+          top: rem(-72);
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          p {
+            font-weight: 700;
+            font-size: rem(20);
+            line-height: rem(20);
+            margin-bottom: rem(20);
+          }
+          .circle {
+            width: rem(13);
+            height: rem(13);
+            border-radius: 50%;
+            background: #ffffff;
+            border: rem(2.5) solid #1ad7b5;
+          }
+        }
+      }
+    }
+  }
+}

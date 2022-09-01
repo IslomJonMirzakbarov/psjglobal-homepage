@@ -1,0 +1,55 @@
+@import 'styles/unit.scss';
+
+.dropdown {
+  padding-top: rem(25);
+  position: absolute;
+  top: 100%;
+  left: -60%;
+  perspective: rem(1000);
+  z-index: -1;
+  .dropdownMenu {
+    background: #ffffff;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.12);
+    border-radius: rem(10);
+    width: rem(195);
+    li {
+      display: none;
+      padding: rem(13) rem(6);
+      font-weight: 400;
+      font-size: rem(12);
+      line-height: rem(18);
+      color: #232323;
+      text-align: center;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        font-weight: 600;
+        color: #7d8890 !important;
+      }
+    }
+  }
+}
+
+.dropdownMenuAnimated {
+  display: none;
+  li {
+    display: block;
+    opacity: 1;
+  }
+}
+
+.dropdownMenuScale {
+  animation: growOut 400ms ease-in-out forwards;
+  transform-origin: top center;
+}
+
+@keyframes growOut {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

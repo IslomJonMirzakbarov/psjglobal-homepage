@@ -1,0 +1,19 @@
+@import 'styles/unit.scss';
+
+.items {
+  display: grid;
+  column-gap: rem(15);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  .item {
+    border-radius: rem(10);
+    // border: 1px solid #dddddd;
+    height: rem(312);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: rem(22) rem(26) rem(57);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+  }
+}
