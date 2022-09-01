@@ -10,7 +10,7 @@ export default function Banner() {
           <Typography data-text='Conun' variant='h1' className={styles.title}>
             Great to
             <br /> See you again.
-            <br /> It's Conun
+            <br /> {"It's Conun"}
           </Typography>
           <Typography variant='body2' color='secondary'>
             CONUN is a blockchain-based distributed supercomputing platform. It
