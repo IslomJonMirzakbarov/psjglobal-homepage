@@ -12,7 +12,9 @@ const nextConfig = nextTranslate({
   images: {
     domains: ['test.cdn.rasta.app']
   },
-  ignoreDuringBuilds: true
+  eslint: {
+    ignoreDuringBuilds: true
+  }
   // env: {
   //   BASE_URL: baseUrl,
   // },
