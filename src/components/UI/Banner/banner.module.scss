@@ -2,6 +2,7 @@
 
 .banner {
   padding: rem(141) 0 rem(113);
+  position: relative;
   .content {
     width: rem(591);
     .title {
@@ -19,5 +20,100 @@
       column-gap: rem(10);
       margin-top: rem(45);
     }
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .bannerBgPhone {
+    position: absolute;
+    top: rem(192);
+    width: rem(225);
+    height: rem(317);
+    right: rem(200);
+    img {
+      object-fit: cover;
+    }
+  }
+  .bannerBgRocket {
+    position: absolute;
+    top: rem(128);
+    width: rem(150);
+    height: rem(120);
+    right: 0;
+  }
+  .bannerBgFolder {
+    position: absolute;
+    top: rem(138);
+    width: rem(137);
+    height: rem(98);
+    right: rem(400);
+  }
+  .bannerBgTerminal {
+    position: absolute;
+    top: rem(210);
+    width: rem(112);
+    height: rem(84);
+    right: rem(280);
+  }
+  .bannerBgLock {
+    position: absolute;
+    top: rem(320);
+    width: rem(76);
+    height: rem(108);
+    right: rem(340);
+  }
+  .bannerBgCloud {
+    position: absolute;
+    bottom: rem(100);
+    width: rem(320);
+    height: rem(150);
+    right: rem(0);
+  }
+  .bannerBgErwhgeth {
+    position: absolute;
+    bottom: rem(220);
+    width: rem(320);
+    height: rem(150);
+    right: rem(0);
+  }
+  .bannerBgCircle {
+    position: absolute;
+    bottom: rem(320);
+    width: rem(55);
+    height: rem(55);
+    right: rem(280);
+  }
+  .bannerBgSmallCloud {
+    position: absolute;
+    bottom: rem(320);
+    width: rem(148);
+    height: rem(66);
+    right: rem(410);
+  }
+  .bannerBgBlueCircle {
+    position: absolute;
+    bottom: rem(200);
+    width: rem(39);
+    height: rem(40);
+    right: rem(480);
+  }
+  .bannerShutterstock {
+    position: absolute;
+    bottom: rem(100);
+    width: rem(94);
+    height: rem(96);
+    right: rem(380);
+  }
+  .bannerBg {
+    background-image: url('/images/banner-bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 60%;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    top: 0;
   }
 }

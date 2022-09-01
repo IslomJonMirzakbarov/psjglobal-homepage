@@ -62,9 +62,10 @@ export default function News() {
                 <div className={styles.img}>
                   <Image
                     src={item.img}
-                    objectFit='cover'
+                    objectFit='contain'
                     alt='news2'
-                    layout='fill'
+                    width={117}
+                    height={139}
                   />
                 </div>
                 <div className={styles.content}>

@@ -1,10 +1,13 @@
 import SEO from 'components/SEO'
+import OceanDrive from 'components/UI/OceanDrive/OceanDrive'
 
-export default function OceanDrive() {
+export default function OceanDrivePage() {
   return (
     <>
       <SEO />
-      <main></main>
+      <main>
+        <OceanDrive />
+      </main>
     </>
   )
 }

@@ -1,0 +1,68 @@
+@import 'styles/unit.scss';
+
+.box {
+  padding: rem(106) 0 rem(110);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .img {
+    width: rem(157);
+    height: rem(157);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .text {
+    margin-top: rem(7);
+    span {
+      color: #1ad7b5;
+      font-weight: 600;
+    }
+  }
+  .items {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: rem(73);
+    justify-content: center;
+    .item {
+      width: 25%;
+      padding: rem(30) 0 rem(35);
+      border: 1px solid #e2e2e2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-left: none;
+      &:first-child {
+        border-left: 1px solid #e2e2e2;
+        border-radius: rem(10) 0 0 rem(10);
+      }
+      &:last-child {
+        border-radius: 0 rem(10) rem(10) 0;
+      }
+      .itemImg {
+        width: rem(90);
+        height: rem(90);
+        position: relative;
+        margin-bottom: rem(7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .desc {
+        margin-bottom: rem(16);
+      }
+      .btn {
+        padding: rem(16) rem(52);
+        border-radius: rem(10);
+        background-color: var(--primary-color);
+        color: #fff;
+        font-weight: 600;
+        font-size: rem(15);
+        line-height: reM(22);
+        border: none;
+      }
+    }
+  }
+}
