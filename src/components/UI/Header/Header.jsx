@@ -30,7 +30,7 @@ export function Header() {
     },
     {
       title: 'Metacon',
-      link: '/'
+      link: '/metacon'
     }
   ]
 
@@ -44,6 +44,8 @@ export function Header() {
       link: '/'
     }
   ]
+
+  console.log(router.pathname)
   return (
     <header className={styles.header}>
       <div className={styles.container}>
@@ -60,7 +62,16 @@ export function Header() {
             <Dropdown links={products} />
           </li>
           <li>
-            <Typography variant='body1' component='p'>
+            <Typography
+              color={
+                router.pathname === '/ocean-drive' ||
+                router.pathname === '/metacon'
+                  ? 'primary'
+                  : 'primary.dark'
+              }
+              variant='body1'
+              component='p'
+            >
               Download ▼
             </Typography>
             <Dropdown links={downloads} />

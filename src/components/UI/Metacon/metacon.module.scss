@@ -16,8 +16,8 @@
       position: absolute;
       top: rem(305);
       left: 0;
-      width: rem(100);
-      height: rem(94);
+      width: rem(83);
+      height: rem(118);
     }
     .leftElement2 {
       position: absolute;
@@ -25,6 +25,13 @@
       left: rem(150);
       width: rem(29);
       height: rem(29);
+    }
+    .leftElement3 {
+      position: absolute;
+      top: rem(242);
+      left: rem(100);
+      width: rem(62);
+      height: rem(62);
     }
   }
   .rightElements {
@@ -37,22 +44,15 @@
       position: absolute;
       top: rem(351);
       right: rem(200);
-      width: rem(55);
-      height: rem(55);
+      width: rem(29);
+      height: rem(29);
     }
     .rightElement2 {
       position: absolute;
-      top: rem(273);
-      right: rem(140);
-      width: rem(40);
-      height: rem(40);
-    }
-    .rightElement3 {
-      position: absolute;
-      top: rem(345);
+      top: rem(250);
       right: 0;
-      width: rem(120);
-      height: rem(92);
+      width: rem(174);
+      height: rem(129);
     }
   }
   .img {

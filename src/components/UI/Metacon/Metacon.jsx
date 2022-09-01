@@ -1,8 +1,8 @@
 import { Container, Typography } from '@mui/material'
 import Image from 'next/image'
-import styles from './oceanDrive.module.scss'
+import styles from './metacon.module.scss'
 
-export default function OceanDrive({ data }) {
+export default function Metacon({ data }) {
   return (
     <Container>
       <div className={styles.box}>
@@ -26,21 +26,21 @@ export default function OceanDrive({ data }) {
         />
         <div className={styles.leftElements}>
           <div className={styles.leftElement1}>
-            <img src='/images/ocean-drive/left1.png' />
+            <img src='/images/metacon/left1.png' />
           </div>
           <div className={styles.leftElement2}>
-            <img src='/images/ocean-drive/left2.png' />
+            <img src='/images/metacon/left2.png' />
+          </div>
+          <div className={styles.leftElement3}>
+            <img src='/images/metacon/left3.png' />
           </div>
         </div>
         <div className={styles.rightElements}>
           <div className={styles.rightElement1}>
-            <img src='/images/ocean-drive/right1.png' />
-          </div>
-          <div className={styles.rightElement3}>
-            <img src='/images/ocean-drive/right2.png' />
+            <img src='/images/metacon/right1.png' />
           </div>
           <div className={styles.rightElement2}>
-            <img src='/images/ocean-drive/right3.png' />
+            <img src='/images/metacon/right2.png' />
           </div>
         </div>
         <div className={styles.items}>

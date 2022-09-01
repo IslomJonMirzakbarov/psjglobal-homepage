@@ -16,7 +16,7 @@ export default function Home() {
         <Banner />
         <Products />
         <Advantage />
-        <div className='bg-gradient'>
+        <div className='home-bg'>
           <Roadmap />
           <News />
           <ExternalNews />

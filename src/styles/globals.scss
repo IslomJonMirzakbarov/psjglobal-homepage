@@ -52,8 +52,15 @@ textarea {
   text-rendering: optimizeLegibility;
 }
 
-.bg-gradient {
+.home-bg {
   background-image: url('/images/roadmap-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.download-bg {
+  background-image: url('/images/download-bg.png');
+  background-repeat: no-repeat;
+  background-size: 100% rem(548);
+  background-position: bottom;
 }
