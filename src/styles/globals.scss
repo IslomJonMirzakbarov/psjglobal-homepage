@@ -58,6 +58,13 @@ textarea {
   background-size: cover;
 }
 
+.news-bg {
+  background-image: url('/images/roadmap-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% rem(1593);
+  background-position: bottom;
+}
+
 .download-bg {
   background-image: url('/images/download-bg.jpg');
   background-repeat: no-repeat;

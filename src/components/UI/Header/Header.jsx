@@ -37,7 +37,7 @@ export function Header() {
   const community = [
     {
       title: 'News',
-      link: '/'
+      link: '/news'
     },
     {
       title: 'FAQ',
@@ -77,7 +77,15 @@ export function Header() {
             <Dropdown links={downloads} />
           </li>
           <li>
-            <Typography variant='body1' component='p'>
+            <Typography
+              color={
+                router.pathname === '/news' || router.pathname === '/faq'
+                  ? 'primary'
+                  : 'primary.dark'
+              }
+              variant='body1'
+              component='p'
+            >
               Community ▼
             </Typography>
             <Dropdown links={community} />

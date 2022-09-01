@@ -19,6 +19,15 @@
       align-items: center;
       column-gap: rem(10);
       margin-top: rem(45);
+      cursor: pointer;
+      &:hover {
+        svg {
+          transform: translateX(rem(5));
+        }
+      }
+      svg {
+        transition: all 0.2s ease-in-out;
+      }
     }
   }
 
