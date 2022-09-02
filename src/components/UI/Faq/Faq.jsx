@@ -12,7 +12,8 @@ const Accordion = styled((props) => (
 ))(({ theme }) => ({
   '&:not(:last-child)': {
     borderBottom: 0
-  }
+  },
+  background: 'transparent'
 }))
 
 const AccordionSummary = styled((props) => <MuiAccordionSummary {...props} />)(

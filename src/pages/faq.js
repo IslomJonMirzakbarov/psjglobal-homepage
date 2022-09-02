@@ -6,7 +6,7 @@ export default function FaqPage() {
   return (
     <>
       <SEO />
-      <main>
+      <main className='faq-bg'>
         <Faq />
         <Footer />
       </main>
