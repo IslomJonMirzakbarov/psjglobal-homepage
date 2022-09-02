@@ -41,7 +41,7 @@ export function Header() {
     },
     {
       title: 'FAQ',
-      link: '/'
+      link: '/faq'
     }
   ]
 

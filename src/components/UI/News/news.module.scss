@@ -2,6 +2,9 @@
 
 .news {
   padding: rem(110) 0;
+  &.newsPage {
+    padding: rem(90) 0 rem(110);
+  }
   .list {
     margin-top: rem(40);
     display: grid;

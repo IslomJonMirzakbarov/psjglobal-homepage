@@ -4,7 +4,7 @@ import { rem } from 'utils/pxToRem'
 import { NextArrow } from '../Icons'
 import styles from './news.module.scss'
 
-export default function News() {
+export default function News({ isNewsPage = false }) {
   const data = [
     {
       title: 'Conun is Verified With Bithumb!',
@@ -27,7 +27,7 @@ export default function News() {
   ]
   return (
     <Container>
-      <div className={styles.news}>
+      <div className={`${styles.news} ${isNewsPage ? styles.newsPage : ''}`}>
         <Typography align='center' variant='h2' color='primary.dark'>
           CONUN News
         </Typography>

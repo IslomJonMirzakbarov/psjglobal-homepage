@@ -33,7 +33,7 @@ export default function Advantage() {
             <Typography
               className={styles.title}
               variant='h5'
-              color='secondary.dark'
+              color='primary.dark'
               align='center'
             >
               {item.title}

@@ -13,7 +13,7 @@ export default createTheme({
     },
     secondary: {
       main: '#484848',
-      dark: '#232323'
+      dark: '#252525'
     }
   },
   typography: {

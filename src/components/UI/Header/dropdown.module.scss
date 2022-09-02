@@ -14,7 +14,7 @@
     width: rem(195);
     li {
       display: none;
-      padding: rem(13) rem(6);
+
       font-weight: 400;
       font-size: rem(12);
       line-height: rem(18);
@@ -24,6 +24,10 @@
       &:hover {
         font-weight: 600;
         color: #7d8890 !important;
+      }
+      a {
+        padding: rem(13) rem(6);
+        display: block;
       }
       &.active {
         font-weight: 600;

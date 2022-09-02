@@ -9,7 +9,7 @@ export default function NewsPage() {
       <SEO />
       <main>
         <div className='news-bg'>
-          <News />
+          <News isNewsPage />
           <ExternalNews />
           <Footer />
         </div>

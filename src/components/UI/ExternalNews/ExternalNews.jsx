@@ -55,7 +55,7 @@ export default function ExternalNews() {
                 <Typography
                   variant='body1'
                   fontWeight='500'
-                  color='secondary.dark'
+                  color='primary.dark'
                 >
                   {item.date}
                 </Typography>
