@@ -15,7 +15,12 @@ export default function OceanDrive({ data }) {
             objectFit='contain'
           />
         </div>
-        <Typography variant='h2' component='h1' fontWeight='700'>
+        <Typography
+          color='primary.dark'
+          variant='h2'
+          component='h1'
+          fontWeight='700'
+        >
           {data.title}
         </Typography>
         <Typography

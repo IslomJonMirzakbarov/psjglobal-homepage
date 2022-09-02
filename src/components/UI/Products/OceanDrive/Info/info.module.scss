@@ -1,5 +1,8 @@
 @import 'styles/unit.scss';
 .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   .img {
     width: rem(203);
     height: rem(181);
@@ -11,6 +14,7 @@
     }
   }
   .desc {
+    width: 90%;
     margin: rem(10) 0 rem(90);
   }
 }

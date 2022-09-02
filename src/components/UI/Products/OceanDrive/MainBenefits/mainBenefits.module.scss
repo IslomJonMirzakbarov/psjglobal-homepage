@@ -1,0 +1,35 @@
+@import 'styles/unit.scss';
+
+.benefits {
+  padding: rem(110) 0 rem(110);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .list {
+    margin-top: rem(70);
+    width: 75%;
+    gap: rem(25);
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    .item {
+      padding: rem(137) rem(90) rem(42);
+      background: #f3f5ff;
+      border-radius: rem(10);
+      position: relative;
+      .title {
+        margin-bottom: rem(20);
+      }
+      .img {
+        width: rem(140);
+        position: absolute;
+        top: rem(-30);
+        left: calc(50% - rem(70));
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
