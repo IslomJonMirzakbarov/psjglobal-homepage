@@ -7,7 +7,12 @@ export default function Banner() {
     <Container>
       <div className={styles.banner}>
         <div className={styles.content}>
-          <Typography data-text='Conun' variant='h1' className={styles.title}>
+          <Typography
+            data-text='Conun'
+            color='primary.dark'
+            variant='h1'
+            className={styles.title}
+          >
             Great to
             <br /> See you again.
             <br /> {"It's Conun"}

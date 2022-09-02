@@ -1,6 +1,6 @@
 import SEO from 'components/SEO'
 import { Footer } from 'components/UI/Footer/Footer'
-import OceanDrive from 'components/UI/OceanDrive/OceanDrive'
+import OceanDrive from 'components/UI/Download/OceanDrive/OceanDrive'
 
 export default function OceanDrivePage() {
   const data = {

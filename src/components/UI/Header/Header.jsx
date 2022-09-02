@@ -9,20 +9,22 @@ import styles from './header.module.scss'
 export function Header() {
   const router = useRouter()
   const { t } = useTranslation('common')
+
   const products = [
     {
       title: 'OceanDrive',
-      link: '/'
+      link: '/products/ocean-drive'
     },
     {
       title: 'World Art DEXPO NFT',
-      link: '/'
+      link: '/products/world-art-nft'
     },
     {
       title: 'Metacon',
-      link: '/'
+      link: '/products/metacon'
     }
   ]
+
   const downloads = [
     {
       title: 'OceanDrive',

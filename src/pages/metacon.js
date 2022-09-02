@@ -1,6 +1,6 @@
 import SEO from 'components/SEO'
 import { Footer } from 'components/UI/Footer/Footer'
-import Metacon from 'components/UI/Metacon/Metacon'
+import Metacon from 'components/UI/Download/Metacon/Metacon'
 
 export default function MetaconPage() {
   const data = {

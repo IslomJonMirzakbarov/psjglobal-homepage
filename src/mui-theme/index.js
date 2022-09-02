@@ -55,9 +55,23 @@ export default createTheme({
     MuiButton: {
       styleOverrides: {
         root: {
-          backgroundColor: 'red',
+          padding: `${rem(16)} ${rem(52)}`,
+          borderRadius: rem(10),
+          backgroundColor: 'var(--primary-color)',
+          color: ' #fff',
+          fontWeight: 600,
+          fontSize: rem(15),
+          lineHeight: rem(22),
+          border: 'none',
+          textTransform: 'none',
+          transition: 'all 0.25s ease-in-out',
           '&:hover': {
-            color: 'black'
+            transform: 'translateY(-1px)',
+            backgroundColor: 'var(--primary-color)'
+          },
+          '&.Mui-disabled': {
+            color: '#fff',
+            backgroundColor: '#7D8890'
           }
         }
       }

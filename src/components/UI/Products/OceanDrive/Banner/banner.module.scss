@@ -1,0 +1,112 @@
+@import 'styles/unit.scss';
+.box {
+  overflow: hidden;
+  .container {
+    position: relative;
+    .banner {
+      padding: rem(141) 0 rem(113);
+      position: relative;
+      overflow: hidden;
+      .content {
+        width: rem(700);
+        position: relative;
+        z-index: 9;
+        .title {
+          margin-bottom: rem(25);
+          &:after {
+            content: attr(data-text);
+            color: #09c9c9;
+            transform: translateX(-100%);
+            position: absolute;
+          }
+        }
+        button {
+          margin-top: rem(25);
+          padding: rem(16) rem(52);
+          border-radius: rem(10);
+          background-color: var(--primary-color);
+          color: #fff;
+          font-weight: 600;
+          font-size: rem(15);
+          line-height: rem(22);
+          border: none;
+          transition: all 0.25s ease-in-out;
+          &:hover {
+            transform: translateY(-1px);
+          }
+        }
+      }
+
+      .bannerBg {
+        background-image: url('/images/products/ocean-drive/banner-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 70%;
+        position: absolute;
+        right: 0;
+        height: 100%;
+        top: rem(-150);
+      }
+    }
+
+    .elements {
+      width: 50%;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: rem(80);
+      right: rem(-80);
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+      .element {
+        width: 100%;
+        height: auto;
+      }
+      .element3 {
+        position: absolute;
+        width: rem(252);
+        height: rem(200);
+        top: rem(100);
+        right: rem(260);
+      }
+      .element2 {
+        position: absolute;
+        width: rem(300);
+        height: rem(230);
+        top: rem(100);
+        right: rem(260);
+      }
+      .element4 {
+        position: absolute;
+        width: rem(52);
+        height: rem(52);
+        top: rem(140);
+        right: rem(510);
+      }
+      .element6 {
+        position: absolute;
+        width: rem(100);
+        height: rem(70);
+        bottom: rem(350);
+        right: rem(140);
+      }
+      .element1 {
+        position: absolute;
+        width: rem(40);
+        height: rem(40);
+        bottom: rem(300);
+        right: rem(140);
+      }
+      .element5 {
+        position: absolute;
+        width: rem(70);
+        height: rem(55);
+        bottom: rem(320);
+        right: rem(500);
+      }
+    }
+  }
+}
