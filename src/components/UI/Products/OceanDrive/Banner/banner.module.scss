@@ -22,18 +22,6 @@
         }
         button {
           margin-top: rem(25);
-          padding: rem(16) rem(52);
-          border-radius: rem(10);
-          background-color: var(--primary-color);
-          color: #fff;
-          font-weight: 600;
-          font-size: rem(15);
-          line-height: rem(22);
-          border: none;
-          transition: all 0.25s ease-in-out;
-          &:hover {
-            transform: translateY(-1px);
-          }
         }
       }
 

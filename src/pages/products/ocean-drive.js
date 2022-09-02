@@ -8,8 +8,8 @@ export default function OceanDrivePage() {
       <SEO />
       <main>
         <OceanDrive />
-        <Footer />
       </main>
+      <Footer />
     </>
   )
 }

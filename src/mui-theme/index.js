@@ -55,7 +55,8 @@ export default createTheme({
     MuiButton: {
       styleOverrides: {
         root: {
-          padding: `${rem(16)} ${rem(52)}`,
+          padding: rem(16),
+          width: rem(180),
           borderRadius: rem(10),
           backgroundColor: 'var(--primary-color)',
           color: ' #fff',
