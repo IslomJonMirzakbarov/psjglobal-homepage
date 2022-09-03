@@ -56,6 +56,9 @@ export default function MainBenefits() {
               </Typography>
             </div>
           ))}
+          <div className={styles.starImg}>
+            <img src='/images/star.png' />
+          </div>
         </div>
       </div>
     </Container>

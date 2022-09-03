@@ -42,6 +42,12 @@ export default function Roadmap() {
     <div className={styles.box}>
       <Container>
         <div className={styles.roadmap}>
+          <div className={styles.element}>
+            <img src='/images/roadmap2.png' alt='roadmap' />
+          </div>
+          <div className={styles.element2}>
+            <img src='/images/roadmap1.png' alt='roadmap' />
+          </div>
           <Typography variant='h2' color='primary.dark'>
             Roadmap
           </Typography>

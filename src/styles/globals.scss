@@ -87,3 +87,15 @@ textarea {
     }
   }
 }
+
+.metacon-bg {
+  background-image: url('/images/metacon-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% rem(1314);
+  background-position: bottom;
+  footer {
+    p {
+      color: #fff !important;
+    }
+  }
+}

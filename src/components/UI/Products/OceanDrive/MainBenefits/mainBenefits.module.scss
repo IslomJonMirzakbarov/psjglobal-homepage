@@ -11,6 +11,19 @@
     gap: rem(25);
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    position: relative;
+    .starImg {
+      position: absolute;
+      width: rem(108);
+      height: rem(108);
+      top: calc(50% - rem(54));
+      right: calc(50% - rem(54));
+    }
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
     .item {
       padding: rem(137) rem(90) rem(42);
       background: #f3f5ff;
@@ -24,11 +37,6 @@
         position: absolute;
         top: rem(-30);
         left: calc(50% - rem(70));
-        img {
-          width: 100%;
-          height: auto;
-          object-fit: contain;
-        }
       }
     }
   }

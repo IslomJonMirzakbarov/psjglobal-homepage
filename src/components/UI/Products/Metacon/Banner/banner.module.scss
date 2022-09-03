@@ -1,0 +1,88 @@
+@import 'styles/unit.scss';
+.box {
+  overflow: hidden;
+  .container {
+    position: relative;
+    .banner {
+      padding: rem(141) 0 rem(113);
+      position: relative;
+      overflow: hidden;
+      .content {
+        width: rem(700);
+        position: relative;
+        z-index: 9;
+        .title {
+          margin-bottom: rem(25);
+        }
+        .btn {
+          margin-top: rem(25);
+          background: linear-gradient(94.06deg, #4f2dfe 5.14%, #45e3af 105.19%);
+        }
+      }
+    }
+    .elements {
+      width: 50%;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: rem(80);
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+      .element1 {
+        width: rem(375);
+        height: rem(413);
+        position: absolute;
+        top: rem(50);
+        right: rem(100);
+      }
+      .element3 {
+        position: absolute;
+        width: rem(77);
+        height: rem(109);
+        top: rem(50);
+        right: rem(30);
+      }
+      .element2 {
+        position: absolute;
+        width: rem(30);
+        height: rem(30);
+        top: rem(400);
+        right: rem(200);
+      }
+      .element4 {
+        position: absolute;
+        width: rem(144);
+        height: rem(108);
+        top: rem(300);
+        right: rem(450);
+      }
+      .element5 {
+        position: absolute;
+        width: rem(68);
+        height: rem(81);
+        top: rem(320);
+        right: rem(120);
+      }
+      .element {
+        position: absolute;
+        width: rem(44);
+        height: rem(44);
+        top: rem(100);
+        right: rem(500);
+      }
+    }
+  }
+  .bannerBg {
+    background-image: url('/images/products/metacon/banner-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70%;
+    position: absolute;
+    right: rem(-200);
+    height: rem(800);
+    top: rem(-150);
+  }
+}
