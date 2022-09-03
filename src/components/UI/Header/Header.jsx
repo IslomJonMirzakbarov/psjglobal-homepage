@@ -58,7 +58,15 @@ export function Header() {
         </Link>
         <ul className={styles.links}>
           <li>
-            <Typography variant='body1' component='p'>
+            <Typography
+              color={
+                router.pathname.includes('products')
+                  ? 'primary'
+                  : 'primary.dark'
+              }
+              variant='body1'
+              component='p'
+            >
               Products ▼
             </Typography>
             <Dropdown links={products} />
