@@ -32,12 +32,17 @@ export default function News({ isNewsPage = false }) {
           <Typography align='center' variant='h2' color='primary.dark'>
             CONUN News
           </Typography>
-          <div className={styles.element}>
-            <img src='/images/roadmap3.png' alt='roadmap' />
-          </div>
-          <div className={styles.element2}>
-            <img src='/images/roadmap3.png' alt='roadmap' />
-          </div>
+          {!isNewsPage && (
+            <>
+              <div className={styles.element}>
+                <img src='/images/roadmap3.png' alt='roadmap' />
+              </div>
+              <div className={styles.element2}>
+                <img src='/images/roadmap3.png' alt='roadmap' />
+              </div>
+            </>
+          )}
+
           <div className={styles.list}>
             <div className={styles.item}>
               <div className={styles.img}>
