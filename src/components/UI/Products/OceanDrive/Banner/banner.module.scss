@@ -98,3 +98,92 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .box {
+    padding: rem(50) 0 0;
+    overflow: initial;
+    background-image: url('/images/products/ocean-drive/banner-bg.jpg');
+    background-repeat: no-repeat;
+    top: rem(100);
+    width: 100%;
+    height: rem(600);
+    background-size: 100% rem(600);
+    background-position: bottom;
+    height: rem(735);
+    .container {
+      position: initial;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      .banner {
+        overflow: initial;
+        position: initial;
+        padding: 0 rem(22);
+        .bannerBg {
+          display: none;
+        }
+        .content {
+          width: 100%;
+          .title {
+            margin-bottom: rem(10);
+          }
+          button {
+            margin-top: rem(15);
+          }
+        }
+      }
+      .elements {
+        position: relative;
+        width: rem(313);
+        top: auto;
+        right: auto;
+        margin-top: rem(31);
+        height: rem(340);
+        .element {
+          right: 0;
+          width: rem(313);
+          height: rem(219);
+          position: absolute;
+        }
+        .element3 {
+          width: rem(125);
+          height: rem(101);
+          top: rem(50);
+          right: rem(130);
+        }
+        .element2 {
+          width: rem(136);
+          height: rem(118);
+          top: rem(50);
+          right: rem(130);
+        }
+        .element1 {
+          right: rem(50);
+          width: rem(16);
+          height: rem(16);
+          bottom: rem(200);
+        }
+        .element6 {
+          width: rem(50);
+          height: rem(31);
+          top: rem(110);
+          right: rem(60);
+        }
+        .element5 {
+          left: rem(20);
+          top: rem(150);
+          width: rem(30);
+          height: rem(22);
+        }
+        .element4 {
+          width: rem(21);
+          height: rem(21);
+          left: rem(0);
+          top: rem(80);
+        }
+      }
+    }
+  }
+}

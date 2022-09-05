@@ -31,34 +31,38 @@ export default function MainBenefits() {
           Main Benefits
         </Typography>
         <div className={styles.list}>
-          {data.map((item) => (
-            <div className={styles.item}>
-              <div className={styles.img}>
-                <img src={item.img} alt='ocean drive' />
+          {data.map((item, index) => (
+            <>
+              {index === 2 && (
+                <div className={styles.starImg}>
+                  <img src='/images/star.png' />
+                </div>
+              )}
+              <div className={styles.item}>
+                <div className={styles.img}>
+                  <img src={item.img} alt='ocean drive' />
+                </div>
+                <Typography
+                  className={styles.title}
+                  variant='h6'
+                  fontWeight='700'
+                  color='primary.dark'
+                  textAlign='center'
+                >
+                  {item.title}
+                </Typography>
+                <Typography
+                  textAlign='center'
+                  variant='body3'
+                  color='secondary'
+                  fontWeight='500'
+                  component='p'
+                >
+                  {item.desc}
+                </Typography>
               </div>
-              <Typography
-                className={styles.title}
-                variant='h6'
-                fontWeight='700'
-                color='primary.dark'
-                textAlign='center'
-              >
-                {item.title}
-              </Typography>
-              <Typography
-                textAlign='center'
-                variant='body3'
-                color='secondary'
-                fontWeight='500'
-                component='p'
-              >
-                {item.desc}
-              </Typography>
-            </div>
+            </>
           ))}
-          <div className={styles.starImg}>
-            <img src='/images/star.png' />
-          </div>
         </div>
       </div>
     </Container>
