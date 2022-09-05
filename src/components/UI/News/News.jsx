@@ -54,7 +54,11 @@ export default function News({ isNewsPage = false }) {
                 />
               </div>
               <div className={styles.body}>
-                <Typography variant='body2' color='primary'>
+                <Typography
+                  className={styles.date}
+                  variant='body2'
+                  color='primary'
+                >
                   Tue Dec 21 2021
                 </Typography>
                 <p className={styles.title}>Conun is Verified With Bithumb!</p>
@@ -83,13 +87,25 @@ export default function News({ isNewsPage = false }) {
                     />
                   </div>
                   <div className={styles.content}>
-                    <Typography variant='body2' color='primary'>
-                      {item.date}
-                    </Typography>
-                    <p className={styles.title}>{item.title}</p>
-                    <Typography variant='body3' color='secondary' component='p'>
-                      {item.desc}
-                    </Typography>
+                    <div>
+                      <Typography
+                        className={styles.date}
+                        variant='body2'
+                        color='primary'
+                        fontWeight='700'
+                      >
+                        {item.date}
+                      </Typography>
+                      <p className={styles.title}>{item.title}</p>
+                      <Typography
+                        className={styles.desc}
+                        variant='body3'
+                        color='secondary'
+                        component='p'
+                      >
+                        {item.desc}
+                      </Typography>
+                    </div>
                     <div
                       className={styles.navigation}
                       style={{ marginTop: rem(13) }}

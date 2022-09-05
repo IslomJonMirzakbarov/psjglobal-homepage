@@ -3,6 +3,7 @@ import useTranslation from 'next-translate/useTranslation'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { LanguageIcon } from '../Icons'
+import BurgerMenu from './BurgerMenu'
 import Dropdown from './Dropdown'
 import styles from './header.module.scss'
 
@@ -47,7 +48,6 @@ export function Header() {
     }
   ]
 
-  console.log(router.pathname)
   return (
     <header className={styles.header}>
       <div className={styles.container}>
@@ -153,6 +153,7 @@ export function Header() {
             </Link>
           </div>
         </div>
+        <BurgerMenu />
       </div>
     </header>
   )

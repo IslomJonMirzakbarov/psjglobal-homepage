@@ -6,7 +6,6 @@
   grid-template-columns: repeat(4, minmax(0, 1fr));
   .item {
     border-radius: rem(10);
-    // border: 1px solid #dddddd;
     height: rem(312);
     display: flex;
     flex-direction: column;
@@ -15,5 +14,18 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .items {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(22);
+    padding: rem(40) rem(18);
+    .item {
+      height: rem(312);
+      background-size: 100% 100%;
+    }
   }
 }

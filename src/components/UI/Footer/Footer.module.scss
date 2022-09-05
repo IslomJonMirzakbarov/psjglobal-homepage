@@ -34,3 +34,24 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column-reverse;
+    padding: rem(65) 0 rem(50);
+    .leftElement {
+      display: block;
+      margin-top: rem(32);
+      p {
+        text-align: center;
+        font-size: rem(12);
+        line-height: rem(18);
+        &:last-child {
+          margin-left: 0;
+          font-weight: 600;
+          margin-top: rem(8);
+        }
+      }
+    }
+  }
+}

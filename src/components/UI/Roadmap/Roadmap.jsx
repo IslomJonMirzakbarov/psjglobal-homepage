@@ -40,9 +40,9 @@ export default function Roadmap() {
   const [tab, setTab] = useState('2019')
   return (
     <div className={styles.box}>
-      <Container>
+      <Container className={styles.container}>
         <div className={styles.roadmap}>
-          <div className={styles.element}>
+          <div className={styles.element1}>
             <img src='/images/roadmap2.png' alt='roadmap' />
           </div>
           <div className={styles.element2}>
@@ -68,7 +68,7 @@ export default function Roadmap() {
       </Container>
       <div className={styles.diagram}>
         <div className={styles.line} />
-        <Container>
+        <Container className={styles.diagramContainer}>
           <div className={styles.items}>
             {data.map((item, index) => (
               <div className={styles.list} key={item.title}>

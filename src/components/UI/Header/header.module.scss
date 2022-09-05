@@ -84,3 +84,18 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .header {
+    padding: 0 rem(22);
+    .container {
+      padding: 0;
+      .links {
+        display: none;
+      }
+      .rightItem {
+        display: none;
+      }
+    }
+  }
+}

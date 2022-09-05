@@ -132,3 +132,23 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .banner {
+    padding: rem(50) 0 rem(40);
+    .bannerBg {
+      position: relative;
+      height: rem(430);
+      width: 100%;
+    }
+    .content {
+      width: 100%;
+      .title {
+        margin-bottom: rem(10);
+      }
+      .link {
+        margin-top: rem(11);
+      }
+    }
+  }
+}

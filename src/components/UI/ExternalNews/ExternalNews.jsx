@@ -25,7 +25,7 @@ export default function ExternalNews() {
     }
   ]
   return (
-    <Container>
+    <Container className={styles.container}>
       <div className={styles.externalNews}>
         <Typography align='center' variant='h2' color='primary.dark'>
           External News

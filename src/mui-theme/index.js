@@ -33,12 +33,20 @@ export default createTheme({
     h1: {
       fontWeight: 700,
       fontSize: rem(65),
-      lineHeight: rem(78)
+      lineHeight: rem(78),
+      ['@media screen and (max-width: 600px)']: {
+        fontSize: rem(28),
+        lineHeight: rem(35)
+      }
     },
     h2: {
       fontWeight: 700,
       fontSize: rem(55),
-      lineHeight: rem(80)
+      lineHeight: rem(80),
+      ['@media screen and (max-width: 600px)']: {
+        fontSize: rem(28),
+        lineHeight: rem(22)
+      }
     },
     h6: {
       fontWeight: 700,
@@ -48,7 +56,11 @@ export default createTheme({
     h5: {
       fontWeight: 700,
       fontSize: rem(25),
-      lineHeight: rem(37)
+      lineHeight: rem(37),
+      ['@media screen and (max-width: 600px)']: {
+        fontSize: rem(18),
+        lineHeight: rem(22)
+      }
     }
   },
   components: {
@@ -73,6 +85,16 @@ export default createTheme({
           '&.Mui-disabled': {
             color: '#fff',
             backgroundColor: '#7D8890'
+          }
+        }
+      }
+    },
+
+    MuiContainer: {
+      styleOverrides: {
+        root: {
+          ['@media screen and (max-width: 600px)']: {
+            padding: `0 ${rem(22)}`
           }
         }
       }

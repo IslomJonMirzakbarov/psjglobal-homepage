@@ -17,7 +17,10 @@ export default function Banner() {
             <br /> See you again.
             <br /> {"It's Conun"}
           </Typography>
-          <Typography variant='body2' color='secondary'>
+          <Typography
+            sx={{ typography: { sm: 'body2', xs: 'body3' } }}
+            color='secondary'
+          >
             CONUN is a blockchain-based distributed supercomputing platform. It
             is a service platform that allows the processing of high-performance
             computing resources by sharing the idle resources of the

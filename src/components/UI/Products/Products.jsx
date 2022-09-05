@@ -18,7 +18,7 @@ export default function Products() {
       color2: 'white'
     },
     {
-      title: 'World Art DEXPO',
+      title: '',
       text: 'World Art DEXPO NFT Marketplace is a platform built to gather like-minded creators, artists, and crypto enthusiasts to create, trade, and share top NFTs.',
       bgImg: '/images/adventage-bg3.jpg',
       color1: 'white',
