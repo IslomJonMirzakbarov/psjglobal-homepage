@@ -41,6 +41,7 @@ export default function Banner() {
   const yRocket = useTransform(scrollYProgress, [0, 0.06], [500, 0])
   const xRocket = useTransform(scrollYProgress, [0, 0.06], [200, 0])
   const cloudOpacity = useTransform(scrollYProgress, [0, 0.06, 0.08], [0, 0, 1])
+  const folderScale = useTransform(scrollYProgress, [0, 0.05], [0, 1])
   const rocketRotate = useTransform(
     scrollYProgress,
     [0, 0.02, 0.04, 0.06],
@@ -117,9 +118,14 @@ export default function Banner() {
               >
                 <img src='/images/banner-rocket-bg.png' alt='rocket' />
               </motion.div>
-              <div className={styles.bannerBgFolder}>
+              <motion.div
+                style={{
+                  scale: folderScale
+                }}
+                className={styles.bannerBgFolder}
+              >
                 <img src='/images/banner-folder-bg.png' alt='rocket' />
-              </div>
+              </motion.div>
               <div className={styles.bannerBgTerminal}>
                 <img src='/images/banner-terminal-bg.png' alt='rocket' />
               </div>
