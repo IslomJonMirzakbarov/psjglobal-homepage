@@ -26,6 +26,15 @@ const boxVariant2 = {
   }
 }
 
+const boxVariant6 = {
+  hidden: { opacity: 0, scale: 0.4 },
+  visible: {
+    scale: 1,
+    opacity: 1,
+    transition: { duration: 2.5, delay: 1.5 }
+  }
+}
+
 const boxVariant3 = {
   hidden: { x: 300, y: 0, scale: 0.4 },
   visible: { x: 0, y: 0, scale: 1, transition: { duration: 1.5 } }
@@ -37,7 +46,7 @@ const boxVariant4 = {
 }
 
 const boxVariant5 = {
-  hidden: { opacity: 0 },
+  hidden: { opacity: 0.2 },
   visible: { opacity: 1, transition: { duration: 0.5, delay: 0.2 } }
 }
 
@@ -120,9 +129,15 @@ export default function Banner() {
               <div className={styles.bannerBgLock}>
                 <img src='/images/banner-lock-bg.png' alt='rocket' />
               </div>
-              <div className={styles.bannerBgErwhgeth}>
+              <motion.div
+                ref={ref}
+                variants={boxVariant6}
+                initial='hidden'
+                animate={control}
+                className={styles.bannerBgErwhgeth}
+              >
                 <img src='/images/banner-erwhgeth-bg.png' alt='rocket' />
-              </div>
+              </motion.div>
               <motion.div
                 ref={ref}
                 variants={boxVariant3}
