@@ -29,7 +29,7 @@
       position: relative;
       background: #f3f5ff;
       border-radius: rem(10);
-      .title {
+      .subTitle {
         margin: rem(24) 0 rem(7);
       }
       .img {
@@ -40,6 +40,34 @@
           height: 100%;
           object-fit: contain;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .dexpo {
+    padding: rem(80) 0 rem(65);
+    .desc {
+      margin: rem(14) 0 rem(130);
+      br {
+        display: none;
+      }
+    }
+    .starImg {
+      width: rem(55);
+      height: rem(55);
+    }
+    .title {
+      margin: rem(12) 0 rem(83);
+    }
+    .list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: rem(92);
+      .item {
+        width: rem(231);
       }
     }
   }

@@ -5,7 +5,12 @@ export default function WalletForGoogle() {
   return (
     <Container>
       <div className={styles.box}>
-        <Typography variant='h2' color='primary.dark' textAlign='center'>
+        <Typography
+          className={styles.title}
+          variant='h2'
+          color='primary.dark'
+          textAlign='center'
+        >
           A Cryptocurrency
           <br /> Wallet for Google Chrome!
         </Typography>

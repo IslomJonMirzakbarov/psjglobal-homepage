@@ -80,7 +80,7 @@ export default function MainBenefits() {
                 <img src={item.img} alt='ocean drive' />
               </div>
               <Typography
-                className={styles.title}
+                className={styles.subTitle}
                 variant='body1'
                 fontWeight='700'
                 color='primary.dark'

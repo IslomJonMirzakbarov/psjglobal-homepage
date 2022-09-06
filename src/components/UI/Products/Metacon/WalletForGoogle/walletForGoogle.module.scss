@@ -65,3 +65,54 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .box {
+    padding: rem(65) 0 rem(116);
+    .title {
+      line-height: rem(35);
+    }
+    .desc {
+      margin: rem(10) 0 rem(15);
+    }
+    .elements {
+      width: rem(257);
+      height: rem(140);
+      margin-top: rem(44);
+      .item1 {
+        top: rem(28);
+        width: rem(45);
+        height: rem(45);
+        left: rem(106);
+      }
+      .item2 {
+        width: rem(124);
+        height: rem(66);
+        left: rem(-120);
+        bottom: rem(10);
+      }
+      .item3 {
+        width: rem(74);
+        height: rem(37);
+        right: rem(-40);
+        bottom: rem(-10);
+      }
+      .item4 {
+        width: rem(34);
+        height: rem(34);
+        top: rem(-20);
+      }
+      .item5 {
+        width: rem(42);
+        height: rem(29);
+      }
+      .item6 {
+        width: rem(34);
+        height: rem(26);
+        bottom: rem(45);
+        right: rem(-15);
+        top: auto;
+      }
+    }
+  }
+}

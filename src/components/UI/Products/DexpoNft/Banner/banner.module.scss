@@ -87,3 +87,82 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .box {
+    padding: rem(50) 0 0;
+    overflow: initial;
+    height: rem(735);
+    background-image: url('/images/products/dexpo-nft/banner-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    .container {
+      position: initial;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .banner {
+        overflow: initial;
+        position: initial;
+        padding: 0 rem(22);
+        .bannerBg {
+          display: none;
+        }
+        .content {
+          width: 100%;
+          .title {
+            margin-bottom: rem(10);
+          }
+          br {
+            display: none;
+          }
+          button {
+            margin-top: rem(15);
+          }
+        }
+      }
+      .elements {
+        position: relative;
+        width: rem(350);
+        top: auto;
+        right: auto;
+        margin-top: rem(31);
+        height: rem(340);
+        .element4 {
+          width: rem(196);
+          height: rem(130);
+          left: calc(50% - rem(98));
+          top: rem(130);
+        }
+        .element {
+          right: rem(15);
+          width: rem(105);
+          height: rem(105);
+          position: absolute;
+        }
+        .element3 {
+          width: rem(56);
+          height: rem(56);
+          bottom: rem(50);
+          right: rem(50);
+          top: auto;
+        }
+        .element1 {
+          left: rem(35);
+          width: rem(53);
+          height: rem(53);
+          top: rem(200);
+        }
+        .element2 {
+          width: rem(35);
+          height: rem(35);
+          bottom: rem(10);
+          left: rem(100);
+          top: auto;
+        }
+      }
+    }
+  }
+}
