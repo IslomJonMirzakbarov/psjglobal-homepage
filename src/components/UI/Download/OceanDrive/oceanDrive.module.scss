@@ -109,3 +109,45 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .box {
+    padding: rem(24) 0 rem(304);
+    align-items: flex-start;
+    .img {
+      width: rem(172);
+      height: rem(172);
+    }
+    .items {
+      margin-top: rem(196);
+      flex-direction: column;
+      .item {
+        width: 100%;
+        border-left: 1px solid #e2e2e2;
+        border-bottom: none;
+        background-color: #fff;
+        &:first-child {
+          border-radius: rem(10) rem(10) 0 0;
+        }
+        &:last-child {
+          border-radius: 0 0 rem(10) rem(10);
+          border-bottom: 1px solid #e2e2e2;
+        }
+      }
+    }
+    .rightElements {
+      .rightElement1 {
+        bottom: rem(100);
+        top: auto;
+      }
+      .rightElement3 {
+        bottom: rem(50);
+        top: auto;
+      }
+      .rightElement2 {
+        bottom: rem(200);
+        top: auto;
+      }
+    }
+  }
+}

@@ -37,3 +37,12 @@
     margin-top: rem(30);
   }
 }
+
+@media (max-width: 600px) {
+  .faq {
+    padding: rem(50) 0 rem(30);
+    h2 {
+      text-align: left;
+    }
+  }
+}

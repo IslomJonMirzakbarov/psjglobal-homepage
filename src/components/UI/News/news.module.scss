@@ -124,6 +124,12 @@
   .section {
     .news {
       padding: 0 0 rem(65);
+      &.newsPage {
+        padding: rem(50) 0 rem(65);
+        h2 {
+          text-align: left;
+        }
+      }
       .list {
         display: flex;
         flex-direction: column;
