@@ -5,7 +5,9 @@ import {
   motion,
   useAnimation,
   useViewportScroll,
-  useTransform
+  useTransform,
+  useScroll,
+  useSpring
 } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { useEffect } from 'react'
@@ -13,31 +15,6 @@ import { useEffect } from 'react'
 const boxVariant = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.6 } },
   hidden: { opacity: 0, scale: 0 }
-}
-
-const boxVariant2 = {
-  hidden: { x: 100, y: 400, opacity: 0, rotate: 50 },
-  visible: {
-    x: 0,
-    y: 0,
-    rotate: 0,
-    opacity: 1,
-    transition: { duration: 1.5, delay: 0.2 }
-  }
-}
-
-const boxVariant6 = {
-  hidden: { opacity: 0, scale: 0.4 },
-  visible: {
-    scale: 1,
-    opacity: 1,
-    transition: { duration: 2.5, delay: 1.5 }
-  }
-}
-
-const boxVariant3 = {
-  hidden: { x: 300, y: 0, scale: 0.4 },
-  visible: { x: 0, y: 0, scale: 1, transition: { duration: 1.5 } }
 }
 
 const boxVariant4 = {
@@ -53,8 +30,23 @@ const boxVariant5 = {
 export default function Banner() {
   const control = useAnimation()
   const [ref, inView] = useInView()
-  const { scrollYProgress } = useViewportScroll()
-  const scale = useTransform(scrollYProgress, [0, 1], [0.2, 2])
+  const { scrollYProgress } = useScroll()
+  const xCloud = useTransform(scrollYProgress, [0, 0.07], [400, 0])
+  const xCloudSmall = useTransform(scrollYProgress, [0, 0.07], [-200, 0])
+  const cloudSmallOpacity = useTransform(
+    scrollYProgress,
+    [0, 0.06, 0.08],
+    [0, 0.5, 1]
+  )
+  const yRocket = useTransform(scrollYProgress, [0, 0.06], [500, 0])
+  const xRocket = useTransform(scrollYProgress, [0, 0.06], [200, 0])
+  const cloudOpacity = useTransform(scrollYProgress, [0, 0.06, 0.08], [0, 0, 1])
+  const rocketRotate = useTransform(
+    scrollYProgress,
+    [0, 0.02, 0.04, 0.06],
+    [50, 40, 30, 0]
+  )
+
   useEffect(() => {
     if (inView) {
       control.start('visible')
@@ -62,6 +54,10 @@ export default function Banner() {
       control.start('hidden')
     }
   }, [control, inView])
+
+  useEffect(() => {
+    console.log(scrollYProgress)
+  }, [scrollYProgress])
 
   return (
     <div className={styles.container}>
@@ -112,10 +108,11 @@ export default function Banner() {
                 <img src='/images/banner-phone-bg.png' alt='rocket' />
               </motion.div>
               <motion.div
-                ref={ref}
-                variants={boxVariant2}
-                initial='hidden'
-                animate={control}
+                style={{
+                  y: yRocket,
+                  x: xRocket,
+                  rotate: rocketRotate
+                }}
                 className={styles.bannerBgRocket}
               >
                 <img src='/images/banner-rocket-bg.png' alt='rocket' />
@@ -130,28 +127,26 @@ export default function Banner() {
                 <img src='/images/banner-lock-bg.png' alt='rocket' />
               </div>
               <motion.div
-                ref={ref}
-                variants={boxVariant6}
-                initial='hidden'
-                animate={control}
+                style={{
+                  opacity: cloudOpacity
+                }}
                 className={styles.bannerBgErwhgeth}
               >
                 <img src='/images/banner-erwhgeth-bg.png' alt='rocket' />
               </motion.div>
               <motion.div
-                ref={ref}
-                variants={boxVariant3}
-                initial='hidden'
-                animate={control}
+                style={{
+                  x: xCloud
+                }}
                 className={styles.bannerBgCloud}
               >
                 <img src='/images/banner-cloud-bg.png' alt='rocket' />
               </motion.div>
               <motion.div
-                ref={ref}
-                variants={boxVariant4}
-                initial='hidden'
-                animate={control}
+                style={{
+                  x: xCloudSmall,
+                  opacity: cloudSmallOpacity
+                }}
                 className={styles.bannerBgSmallCloud}
               >
                 <img src='/images/banner-cloud-small-bg.png' alt='rocket' />
