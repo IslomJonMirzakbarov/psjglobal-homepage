@@ -1,4 +1,5 @@
 import { Container, Typography } from '@mui/material'
+import { motion } from 'framer-motion'
 import { rem } from 'utils/pxToRem'
 import styles from './mainBenefits.module.scss'
 
@@ -55,9 +56,15 @@ export default function MainBenefits() {
           <br />
           CONUN's services like the DSC platform and the Drive.
         </Typography>
-        <div className={styles.starImg}>
+        <motion.div
+          initial={{ scale: 0 }}
+          whileInView={{ scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.3 }}
+          className={styles.starImg}
+        >
           <img src='/images/star.png' />
-        </div>
+        </motion.div>
         <Typography
           className={styles.title}
           variant='h2'
@@ -67,9 +74,13 @@ export default function MainBenefits() {
           Main Benefits
         </Typography>
         <div className={styles.list}>
-          {data.map((item) => (
+          {data.map((item, index) => (
             <div className={styles.item}>
-              <div
+              <motion.div
+                initial={{ scale: 0 }}
+                whileInView={{ scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.3, delay: +`0.${index + 1}` }}
                 className={styles.img}
                 style={{
                   maxWidth: item.widthImg,
@@ -78,7 +89,7 @@ export default function MainBenefits() {
                 }}
               >
                 <img src={item.img} alt='ocean drive' />
-              </div>
+              </motion.div>
               <Typography
                 className={styles.subTitle}
                 variant='body1'

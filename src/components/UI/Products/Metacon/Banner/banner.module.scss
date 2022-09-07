@@ -37,6 +37,7 @@
         position: absolute;
         top: rem(50);
         right: rem(100);
+        transition: all 0.8s ease-in-out;
       }
       .element3 {
         position: absolute;
@@ -44,6 +45,7 @@
         height: rem(109);
         top: rem(50);
         right: rem(30);
+        transition: all 0.8s ease-in-out;
       }
       .element2 {
         position: absolute;
@@ -58,6 +60,7 @@
         height: rem(108);
         top: rem(300);
         right: rem(450);
+        transition: all 0.8s ease-in-out;
       }
       .element5 {
         position: absolute;
@@ -72,6 +75,7 @@
         height: rem(44);
         top: rem(100);
         right: rem(500);
+        transition: all 0.8s ease-in-out;
       }
     }
   }
