@@ -15,8 +15,19 @@
     background-size: 100% 100%;
     width: 100%;
     transition: all 0.2s ease-in-out;
+    position: relative;
     &:hover {
       transform: scale(1.04);
+    }
+    .icon {
+      position: absolute;
+      top: rem(25);
+      right: rem(27);
+    }
+    .next {
+      position: absolute;
+      right: rem(20);
+      bottom: rem(10);
     }
   }
 }

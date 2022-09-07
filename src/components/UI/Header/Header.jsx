@@ -101,13 +101,11 @@ export function Header() {
             <Dropdown links={community} />
           </li>
           <li>
-            <Link href='/'>
-              <a>
-                <Typography variant='body1' component='p'>
-                  WhitePaper
-                </Typography>
-              </a>
-            </Link>
+            <a href='/file.pdf' target='_blank'>
+              <Typography variant='body1' component='p'>
+                WhitePaper
+              </Typography>
+            </a>
           </li>
         </ul>
         <div className={styles.rightItem}>
@@ -141,16 +139,16 @@ export function Header() {
           <div className={styles.border} />
           <div className={styles.mainnetLive}>
             <div className={styles.circle} />
-            <Link href='/'>
+            <a href='https://conscan.conun.io' target='_blank'>
               <Typography
                 className={styles.link}
-                component='a'
+                component='p'
                 variant='body1'
                 fontWeight='600'
               >
                 Mainnet is live
               </Typography>
-            </Link>
+            </a>
           </div>
         </div>
         <BurgerMenu />

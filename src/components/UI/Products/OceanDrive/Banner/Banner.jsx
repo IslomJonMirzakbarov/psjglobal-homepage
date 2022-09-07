@@ -13,7 +13,7 @@ export default function Banner() {
   const control = useAnimation()
   const [ref, inView] = useInView()
   const { scrollYProgress } = useScroll()
-  const xCloud = useTransform(scrollYProgress, [0.09, 0.06, 0], [500, 50, 0])
+  const xCloud = useTransform(scrollYProgress, [0.09, 0.06, 0], [500, 50, 100])
   const yElement = useTransform(scrollYProgress, [0.07, 0], [300, 0])
   const scaleElement = useTransform(
     scrollYProgress,

@@ -98,12 +98,14 @@ export default function Banner() {
               high-performance computing resources by sharing the idle resources
               of the participants' personal computers and smartphones.
             </Typography>
-            <div className={styles.link}>
-              <Typography variant='body1' color='primary'>
-                CON Token withdrawal verification guide
-              </Typography>
-              <NextArrow />
-            </div>
+            <a href='/file.pdf' target='_blank'>
+              <div className={styles.link}>
+                <Typography variant='body1' color='primary'>
+                  CON Token withdrawal verification guide
+                </Typography>
+                <NextArrow />
+              </div>
+            </a>
           </div>
           <motion.div
             ref={ref}
