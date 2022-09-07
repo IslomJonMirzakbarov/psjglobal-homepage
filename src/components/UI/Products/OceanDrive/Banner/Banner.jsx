@@ -1,8 +1,17 @@
 import { Button, Container, Typography } from '@mui/material'
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { motion, useAnimation, useScroll, useTransform } from 'framer-motion'
+import { useEffect } from 'react'
+import { useInView } from 'react-intersection-observer'
 import styles from './banner.module.scss'
 
+const animationVarinat = {
+  hidden: { opacity: 0.2 },
+  visible: { opacity: 1, transition: { duration: 0.5, delay: 0.2 } }
+}
+
 export default function Banner() {
+  const control = useAnimation()
+  const [ref, inView] = useInView()
   const { scrollYProgress } = useScroll()
   const xCloud = useTransform(scrollYProgress, [0, 0.07], [300, 0])
   const yElement = useTransform(scrollYProgress, [0, 0.07], [300, 0])
@@ -22,6 +31,14 @@ export default function Banner() {
     [0, 0.06, 0.08],
     [0.3, 0.5, 1]
   )
+
+  useEffect(() => {
+    if (inView) {
+      control.start('visible')
+    } else {
+      control.start('hidden')
+    }
+  }, [control, inView])
 
   return (
     <div className={styles.box}>
@@ -50,7 +67,13 @@ export default function Banner() {
           </div>
           <div className={styles.bannerBg} />
         </div>
-        <div className={styles.elements}>
+        <motion.div
+          ref={ref}
+          variants={animationVarinat}
+          initial='hidden'
+          animate={control}
+          className={styles.elements}
+        >
           <motion.div
             style={{
               x: xCloud,
@@ -100,7 +123,7 @@ export default function Banner() {
           >
             <img src='/images/products/ocean-drive/element5.png' />
           </motion.div>
-        </div>
+        </motion.div>
       </Container>
     </div>
   )

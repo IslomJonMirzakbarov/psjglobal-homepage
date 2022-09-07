@@ -5,7 +5,7 @@ import { motion, useAnimation, useTransform, useScroll } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { useEffect } from 'react'
 
-const boxVariant5 = {
+const animationVarinat = {
   hidden: { opacity: 0.2 },
   visible: { opacity: 1, transition: { duration: 0.5, delay: 0.2 } }
 }
@@ -77,7 +77,7 @@ export default function Banner() {
           </div>
           <motion.div
             ref={ref}
-            variants={boxVariant5}
+            variants={animationVarinat}
             initial='hidden'
             animate={control}
             className={styles.bannerBg}
