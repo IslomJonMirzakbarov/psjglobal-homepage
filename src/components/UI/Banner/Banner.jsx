@@ -1,14 +1,7 @@
 import { Container, Typography } from '@mui/material'
 import { NextArrow } from '../Icons'
 import styles from './banner.module.scss'
-import {
-  motion,
-  useAnimation,
-  useViewportScroll,
-  useTransform,
-  useScroll,
-  useSpring
-} from 'framer-motion'
+import { motion, useAnimation, useTransform, useScroll } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { useEffect } from 'react'
 

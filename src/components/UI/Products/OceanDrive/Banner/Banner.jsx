@@ -1,7 +1,28 @@
 import { Button, Container, Typography } from '@mui/material'
+import { motion, useScroll, useTransform } from 'framer-motion'
 import styles from './banner.module.scss'
 
 export default function Banner() {
+  const { scrollYProgress } = useScroll()
+  const xCloud = useTransform(scrollYProgress, [0, 0.07], [300, 0])
+  const yElement = useTransform(scrollYProgress, [0, 0.07], [300, 0])
+  const elementOpacity = useTransform(
+    scrollYProgress,
+    [0, 0.06, 0.08],
+    [0, 0.2, 1]
+  )
+  const cloundRotate = useTransform(
+    scrollYProgress,
+    [0, 0.02, 0.04, 0.06],
+    [-15, -10, -5, 0]
+  )
+  const xCircleSmall = useTransform(scrollYProgress, [0, 0.07], [-200, 0])
+  const CircleOpacity = useTransform(
+    scrollYProgress,
+    [0, 0.06, 0.08],
+    [0.3, 0.5, 1]
+  )
+
   return (
     <div className={styles.box}>
       <Container className={styles.container}>
@@ -30,27 +51,55 @@ export default function Banner() {
           <div className={styles.bannerBg} />
         </div>
         <div className={styles.elements}>
-          <div className={styles.element}>
+          <motion.div
+            style={{
+              x: xCloud,
+              rotate: cloundRotate
+            }}
+            className={styles.element}
+          >
             <img src='/images/products/ocean-drive/element.png' />
-          </div>
-          <div className={styles.element2}>
+          </motion.div>
+          <motion.div
+            style={{
+              opacity: elementOpacity
+            }}
+            className={styles.element2}
+          >
             <img src='/images/products/ocean-drive/element2.png' />
-          </div>
-          <div className={styles.element3}>
+          </motion.div>
+          <motion.div
+            style={{
+              y: yElement
+            }}
+            className={styles.element3}
+          >
             <img src='/images/products/ocean-drive/element3.png' />
-          </div>
-          <div className={styles.element4}>
+          </motion.div>
+          <motion.div
+            style={{
+              x: xCircleSmall,
+              opacity: CircleOpacity
+            }}
+            className={styles.element4}
+          >
             <img src='/images/products/ocean-drive/element4.png' />
-          </div>
+          </motion.div>
           <div className={styles.element6}>
             <img src='/images/products/ocean-drive/element6.png' />
           </div>
           <div className={styles.element1}>
             <img src='/images/products/ocean-drive/element1.png' />
           </div>
-          <div className={styles.element5}>
+          <motion.div
+            style={{
+              y: xCircleSmall,
+              opacity: CircleOpacity
+            }}
+            className={styles.element5}
+          >
             <img src='/images/products/ocean-drive/element5.png' />
-          </div>
+          </motion.div>
         </div>
       </Container>
     </div>
