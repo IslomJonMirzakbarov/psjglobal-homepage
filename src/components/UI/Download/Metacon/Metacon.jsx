@@ -57,7 +57,7 @@ export default function Metacon({ data }) {
           </motion.div>
           <motion.div
             animate={{ rotate: 360 }}
-            transition={{ ease: 'linear', duration: 2, repeat: Infinity }}
+            transition={{ ease: 'linear', duration: 4, repeat: Infinity }}
             className={styles.leftElement3}
           >
             <img src='/images/metacon/left3.png' />
