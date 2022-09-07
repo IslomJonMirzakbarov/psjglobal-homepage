@@ -38,8 +38,13 @@ export default function Banner() {
     [0, 0.06, 0.08],
     [0, 0.5, 1]
   )
+  const xCircleBlue = useTransform(scrollYProgress, [0, 0.07], [50, 0])
+
   const yRocket = useTransform(scrollYProgress, [0, 0.06], [500, 0])
+  const yTerminal = useTransform(scrollYProgress, [0, 0.06], [-100, 0])
   const xRocket = useTransform(scrollYProgress, [0, 0.06], [200, 0])
+  const yPhone = useTransform(scrollYProgress, [0, 0.06], [150, 0])
+  const yCircle = useTransform(scrollYProgress, [0, 0.06], [150, 0])
   const cloudOpacity = useTransform(scrollYProgress, [0, 0.06, 0.08], [0, 0, 1])
   const folderScale = useTransform(scrollYProgress, [0, 0.05], [0, 1])
   const rocketRotate = useTransform(
@@ -100,10 +105,9 @@ export default function Banner() {
           >
             <div className={styles.elements}>
               <motion.div
-                ref={ref}
-                variants={boxVariant}
-                initial='hidden'
-                animate={control}
+                style={{
+                  y: yPhone
+                }}
                 className={styles.bannerBgPhone}
               >
                 <img src='/images/banner-phone-bg.png' alt='rocket' />
@@ -126,9 +130,14 @@ export default function Banner() {
               >
                 <img src='/images/banner-folder-bg.png' alt='rocket' />
               </motion.div>
-              <div className={styles.bannerBgTerminal}>
+              <motion.div
+                style={{
+                  y: yTerminal
+                }}
+                className={styles.bannerBgTerminal}
+              >
                 <img src='/images/banner-terminal-bg.png' alt='rocket' />
-              </div>
+              </motion.div>
               <div className={styles.bannerBgLock}>
                 <img src='/images/banner-lock-bg.png' alt='rocket' />
               </div>
@@ -157,13 +166,23 @@ export default function Banner() {
               >
                 <img src='/images/banner-cloud-small-bg.png' alt='rocket' />
               </motion.div>
-              <div className={styles.bannerBgCircle}>
+              <motion.div
+                style={{
+                  y: yCircle
+                }}
+                className={styles.bannerBgCircle}
+              >
                 <img src='/images/banner-circle-bg.png' alt='rocket' />
-              </div>
+              </motion.div>
 
-              <div className={styles.bannerBgBlueCircle}>
+              <motion.div
+                style={{
+                  x: xCircleBlue
+                }}
+                className={styles.bannerBgBlueCircle}
+              >
                 <img src='/images/banner-circle-blue-bg.png' alt='rocket' />
-              </div>
+              </motion.div>
               <div className={styles.bannerShutterstock}>
                 <img src='/images/banner-shutterstock-bg.png' alt='rocket' />
               </div>
