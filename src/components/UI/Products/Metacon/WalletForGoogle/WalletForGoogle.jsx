@@ -67,10 +67,9 @@ export default function WalletForGoogle() {
         <Button className={styles.btn}>Visit the website</Button>
         <div className={styles.elements}>
           <motion.div
-            ref={ref}
-            variants={animationVarinat}
-            initial='hidden'
-            animate={control}
+            style={{
+              scale: scaleDesktop
+            }}
             className={styles.item1}
           >
             <img src='/images/products/metacon/benefits4.png' alt='notebook' />

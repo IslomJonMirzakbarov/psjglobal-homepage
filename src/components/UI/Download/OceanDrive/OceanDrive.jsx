@@ -1,4 +1,5 @@
 import { Button, Container, Typography } from '@mui/material'
+import { motion } from 'framer-motion'
 import Image from 'next/image'
 import styles from './oceanDrive.module.scss'
 
@@ -6,7 +7,13 @@ export default function OceanDrive({ data }) {
   return (
     <Container>
       <div className={styles.box}>
-        <div className={styles.img}>
+        <motion.div
+          initial={{ scale: 0 }}
+          whileInView={{ scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          className={styles.img}
+        >
           <Image
             src={data.img}
             alt='ocean-drive'
@@ -14,7 +21,7 @@ export default function OceanDrive({ data }) {
             height={110}
             objectFit='contain'
           />
-        </div>
+        </motion.div>
         <Typography
           color='primary.dark'
           variant='h2'
@@ -30,23 +37,53 @@ export default function OceanDrive({ data }) {
           component='p'
         />
         <div className={styles.leftElements}>
-          <div className={styles.leftElement1}>
+          <motion.div
+            initial={{ x: -150 }}
+            whileInView={{ x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className={styles.leftElement1}
+          >
             <img src='/images/ocean-drive/left1.png' />
-          </div>
-          <div className={styles.leftElement2}>
+          </motion.div>
+          <motion.div
+            initial={{ scale: 0 }}
+            whileInView={{ scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className={styles.leftElement2}
+          >
             <img src='/images/ocean-drive/left2.png' />
-          </div>
+          </motion.div>
         </div>
         <div className={styles.rightElements}>
-          <div className={styles.rightElement1}>
+          <motion.div
+            initial={{ x: -150 }}
+            whileInView={{ x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className={styles.rightElement1}
+          >
             <img src='/images/ocean-drive/right1.png' />
-          </div>
-          <div className={styles.rightElement3}>
+          </motion.div>
+          <motion.div
+            initial={{ x: 150 }}
+            whileInView={{ x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className={styles.rightElement3}
+          >
             <img src='/images/ocean-drive/right2.png' />
-          </div>
-          <div className={styles.rightElement2}>
+          </motion.div>
+          <motion.div
+            initial={{ scale: 0 }}
+            whileInView={{ scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className={styles.rightElement2}
+          >
             <img src='/images/ocean-drive/right3.png' />
-          </div>
+          </motion.div>
         </div>
         <div className={styles.items}>
           {data.items.map((item) => (

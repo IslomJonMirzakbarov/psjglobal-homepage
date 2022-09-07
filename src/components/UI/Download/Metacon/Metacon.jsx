@@ -1,4 +1,5 @@
 import { Button, Container, Typography } from '@mui/material'
+import { motion } from 'framer-motion'
 import Image from 'next/image'
 import styles from './metacon.module.scss'
 
@@ -6,7 +7,13 @@ export default function Metacon({ data }) {
   return (
     <Container>
       <div className={styles.box}>
-        <div className={styles.img}>
+        <motion.div
+          initial={{ scale: 0 }}
+          whileInView={{ scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          className={styles.img}
+        >
           <Image
             src={data.img}
             alt='ocean-drive'
@@ -14,7 +21,7 @@ export default function Metacon({ data }) {
             height={110}
             objectFit='contain'
           />
-        </div>
+        </motion.div>
         <Typography
           color='primary.dark'
           variant='h2'
@@ -30,23 +37,51 @@ export default function Metacon({ data }) {
           component='p'
         />
         <div className={styles.leftElements}>
-          <div className={styles.leftElement1}>
+          <motion.div
+            initial={{ x: -150 }}
+            whileInView={{ x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className={styles.leftElement1}
+          >
             <img src='/images/metacon/left1.png' />
-          </div>
-          <div className={styles.leftElement2}>
+          </motion.div>
+          <motion.div
+            initial={{ scale: 0 }}
+            whileInView={{ scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className={styles.leftElement2}
+          >
             <img src='/images/metacon/left2.png' />
-          </div>
-          <div className={styles.leftElement3}>
+          </motion.div>
+          <motion.div
+            animate={{ rotate: 360 }}
+            transition={{ ease: 'linear', duration: 2, repeat: Infinity }}
+            className={styles.leftElement3}
+          >
             <img src='/images/metacon/left3.png' />
-          </div>
+          </motion.div>
         </div>
         <div className={styles.rightElements}>
-          <div className={styles.rightElement1}>
+          <motion.div
+            initial={{ scale: 0 }}
+            whileInView={{ scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className={styles.rightElement1}
+          >
             <img src='/images/metacon/right1.png' />
-          </div>
-          <div className={styles.rightElement2}>
+          </motion.div>
+          <motion.div
+            initial={{ x: 150 }}
+            whileInView={{ x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className={styles.rightElement2}
+          >
             <img src='/images/metacon/right2.png' />
-          </div>
+          </motion.div>
         </div>
         <div className={styles.items}>
           {data.items.map((item) => (

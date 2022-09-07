@@ -65,10 +65,8 @@ export default function Roadmap() {
       <Container className={styles.container}>
         <div className={styles.roadmap}>
           <motion.div
-            ref={ref}
-            variants={animationVariant}
-            initial='hidden'
-            animate={control}
+            animate={{ rotate: 360 }}
+            transition={{ ease: 'linear', duration: 2, repeat: Infinity }}
             className={styles.element1}
           >
             <img src='/images/roadmap2.png' alt='roadmap' />
