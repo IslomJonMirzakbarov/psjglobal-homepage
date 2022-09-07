@@ -9,6 +9,11 @@ const animationVariant = {
   visible: { scale: 1, transition: { duration: 1.2, delay: 0.2 } }
 }
 
+const animationVariant2 = {
+  hidden: { scale: 0 },
+  visible: { scale: 1, transition: { duration: 0.4 } }
+}
+
 export default function Advantage() {
   const control = useAnimation()
   const [ref, inView] = useInView()
@@ -47,9 +52,15 @@ export default function Advantage() {
       <div className={styles.items}>
         {items.map((item) => (
           <div className={styles.item} key={item.title}>
-            <div className={styles.img}>
+            <motion.div
+              ref={ref}
+              variants={animationVariant2}
+              initial='hidden'
+              animate={control}
+              className={styles.img}
+            >
               <img src={item.img} alt={item.title} />
-            </div>
+            </motion.div>
             <Typography
               className={styles.title}
               variant='h5'
