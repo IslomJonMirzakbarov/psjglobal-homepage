@@ -7,8 +7,16 @@ import styles from './news.module.scss'
 
 export default function News({ isNewsPage = false }) {
   const { scrollYProgress } = useScroll()
-  const xCloud = useTransform(scrollYProgress, [0.6, 0.8], [-500, 0])
-  const xCloud2 = useTransform(scrollYProgress, [0.7, 0.8], [400, 0])
+  const xCloud = useTransform(
+    scrollYProgress,
+    [0.5, 0.55, 0.6, 0.65],
+    [-500, -350, -200, 0]
+  )
+  const xCloud2 = useTransform(
+    scrollYProgress,
+    [0.7, 0.72, 0.74, 0.77, 0.8],
+    [0, 30, 60, 90, 110]
+  )
   const data = [
     {
       title: 'Conun is Verified With Bithumb!',

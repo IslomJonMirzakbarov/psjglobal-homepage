@@ -1,7 +1,14 @@
 import { Container, Typography } from '@mui/material'
 import { NextArrow } from '../Icons'
 import styles from './banner.module.scss'
-import { motion, useAnimation, useTransform, useScroll } from 'framer-motion'
+import {
+  motion,
+  useAnimation,
+  useTransform,
+  useScroll,
+  useSpring,
+  useMotionValue
+} from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { useEffect } from 'react'
 
@@ -14,25 +21,45 @@ export default function Banner() {
   const control = useAnimation()
   const [ref, inView] = useInView()
   const { scrollYProgress } = useScroll()
-  const xCloud = useTransform(scrollYProgress, [0, 0.07], [400, 0])
-  const xCloudSmall = useTransform(scrollYProgress, [0, 0.07], [-200, 0])
+  const xCloud = useTransform(
+    scrollYProgress,
+    [0.09, 0.07, 0.05, 0.03, 0.01, 0],
+    [400, 350, 300, 250, 200, 0]
+  )
+  const xCloudSmall = useTransform(
+    scrollYProgress,
+    [0.07, 0.04, 0],
+    [-200, -100, 0]
+  )
   const cloudSmallOpacity = useTransform(
     scrollYProgress,
-    [0, 0.06, 0.08],
+    [0.08, 0.06, 0],
     [0, 0.5, 1]
   )
-  const xCircleBlue = useTransform(scrollYProgress, [0, 0.07], [50, 0])
+  const xCircleBlue = useTransform(scrollYProgress, [0.07, 0], [50, 0])
 
-  const yRocket = useTransform(scrollYProgress, [0, 0.06], [500, 0])
-  const yTerminal = useTransform(scrollYProgress, [0, 0.06], [-100, 0])
-  const xRocket = useTransform(scrollYProgress, [0, 0.06], [200, 0])
-  const yPhone = useTransform(scrollYProgress, [0, 0.06], [150, 0])
-  const yCircle = useTransform(scrollYProgress, [0, 0.06], [150, 0])
-  const cloudOpacity = useTransform(scrollYProgress, [0, 0.06, 0.08], [0, 0, 1])
-  const folderScale = useTransform(scrollYProgress, [0, 0.05], [0, 1])
+  const yRocket = useTransform(scrollYProgress, [0.06, 0], [500, 0])
+  const yTerminal = useTransform(scrollYProgress, [0.06, 0], [-100, 0])
+  const xRocket = useTransform(
+    scrollYProgress,
+    [0.06, 0.05, 0.004, 0.03, 0.02, 0.01, 0],
+    [200, 170, 140, 110, 80, 50, 0]
+  )
+  const yPhone = useTransform(
+    scrollYProgress,
+    [0.06, 0.05, 0.04, 0.03, 0.02, 0.01, 0],
+    [160, 130, 100, 70, 40, 10, 0]
+  )
+  const yCircle = useTransform(scrollYProgress, [0.06, 0], [150, 0])
+  const cloudOpacity = useTransform(scrollYProgress, [0.08, 0.06, 0], [0, 0, 1])
+  const folderScale = useTransform(
+    scrollYProgress,
+    [0.05, 0.04, 0.02, 0],
+    [0, 0.3, 0.6, 1]
+  )
   const rocketRotate = useTransform(
     scrollYProgress,
-    [0, 0.02, 0.04, 0.06],
+    [0.06, 0.04, 0.02, 0],
     [50, 40, 30, 0]
   )
 

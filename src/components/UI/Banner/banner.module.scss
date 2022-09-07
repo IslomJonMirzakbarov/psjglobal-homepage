@@ -58,6 +58,7 @@
           width: rem(225);
           height: rem(317);
           right: rem(200);
+          transition: all 0.5s ease-in-out;
           img {
             object-fit: cover;
           }
@@ -68,6 +69,7 @@
           width: rem(150);
           height: rem(120);
           right: 0;
+          transition: all 1.1s ease-in-out;
         }
         .bannerBgFolder {
           position: absolute;
@@ -75,6 +77,7 @@
           width: rem(137);
           height: rem(98);
           right: rem(400);
+          transition: all 0.5s ease-in-out;
         }
         .bannerBgTerminal {
           position: absolute;
@@ -82,6 +85,7 @@
           width: rem(112);
           height: rem(84);
           right: rem(280);
+          transition: all 0.8s ease-in-out;
         }
         .bannerBgLock {
           position: absolute;
@@ -96,6 +100,7 @@
           width: rem(320);
           height: rem(150);
           right: rem(0);
+          transition: all 0.4s ease-in-out;
         }
         .bannerBgErwhgeth {
           position: absolute;
@@ -110,6 +115,7 @@
           width: rem(55);
           height: rem(55);
           right: rem(280);
+          transition: all 0.5s ease-in-out;
         }
         .bannerBgSmallCloud {
           position: absolute;
@@ -117,6 +123,7 @@
           width: rem(148);
           height: rem(66);
           right: rem(410);
+          transition: all 0.8s ease-in-out;
         }
         .bannerBgBlueCircle {
           position: absolute;
@@ -124,6 +131,7 @@
           width: rem(39);
           height: rem(40);
           right: rem(480);
+          transition: all 0.8s ease-in-out;
         }
         .bannerShutterstock {
           position: absolute;
