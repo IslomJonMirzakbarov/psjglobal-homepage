@@ -101,11 +101,9 @@ export function Header() {
             <Dropdown links={community} />
           </li>
           <li>
-            <a href='/file.pdf' target='_blank'>
-              <Typography variant='body1' component='p'>
-                WhitePaper
-              </Typography>
-            </a>
+            <Typography variant='body1' component='p'>
+              WhitePaper
+            </Typography>
           </li>
         </ul>
         <div className={styles.rightItem}>
