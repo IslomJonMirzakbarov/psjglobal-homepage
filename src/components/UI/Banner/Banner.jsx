@@ -10,7 +10,7 @@ import {
   useMotionValue
 } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 
 const animationVarinat = {
   hidden: { opacity: 0.2 },
@@ -42,8 +42,11 @@ export default function Banner() {
   const yTerminal = useTransform(scrollYProgress, [0.06, 0], [-100, 0])
   const xRocket = useTransform(
     scrollYProgress,
-    [0.06, 0.05, 0.004, 0.03, 0.02, 0.01, 0],
-    [200, 170, 140, 110, 80, 50, 0]
+    [
+      0.06, 0.055, 0.05, 0.045, 0.04, 0.035, 0.03, 0.025, 0.02, 0.015, 0.01,
+      0.005, 0
+    ], //
+    [200, 165, 150, 125, 110, 95, 80, 65, 50, 35, 20, 15, 0]
   )
   const yPhone = useTransform(
     scrollYProgress,

@@ -52,7 +52,7 @@
       .element {
         width: 100%;
         height: auto;
-        transition-duration: 0.5s;
+        transition: all 1.1s ease-in-out;
       }
       .element3 {
         position: absolute;
@@ -60,6 +60,7 @@
         height: rem(200);
         top: rem(100);
         right: rem(260);
+        transition: all 0.8s ease-in-out;
       }
       .element2 {
         position: absolute;
@@ -67,6 +68,7 @@
         height: rem(230);
         top: rem(100);
         right: rem(260);
+        transition: all 1.1s ease-in-out;
       }
       .element4 {
         position: absolute;
@@ -74,6 +76,7 @@
         height: rem(52);
         top: rem(140);
         right: rem(510);
+        transition: all 1.1s ease-in-out;
       }
       .element6 {
         position: absolute;
@@ -81,6 +84,7 @@
         height: rem(70);
         bottom: rem(350);
         right: rem(140);
+        transition: all 1.1s ease-in-out;
       }
       .element1 {
         position: absolute;
@@ -88,6 +92,7 @@
         height: rem(40);
         bottom: rem(300);
         right: rem(140);
+        transition: all 1.1s ease-in-out;
       }
       .element5 {
         position: absolute;
@@ -95,6 +100,7 @@
         height: rem(55);
         bottom: rem(320);
         right: rem(500);
+        transition: all 1.1s ease-in-out;
       }
     }
   }

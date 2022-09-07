@@ -1,4 +1,5 @@
 import { Container, Typography } from '@mui/material'
+import { motion } from 'framer-motion'
 import styles from './mainBenefits.module.scss'
 
 export default function MainBenefits() {
@@ -34,14 +35,26 @@ export default function MainBenefits() {
           {data.map((item, index) => (
             <>
               {index === 2 && (
-                <div className={styles.starImg}>
+                <motion.div
+                  initial={{ scale: 0 }}
+                  whileInView={{ scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.3, delay: 0.5 }}
+                  className={styles.starImg}
+                >
                   <img src='/images/star.png' />
-                </div>
+                </motion.div>
               )}
               <div className={styles.item}>
-                <div className={styles.img}>
+                <motion.div
+                  initial={{ scale: 0 }}
+                  whileInView={{ scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.3 }}
+                  className={styles.img}
+                >
                   <img src={item.img} alt='ocean drive' />
-                </div>
+                </motion.div>
                 <Typography
                   className={styles.title}
                   variant='h6'

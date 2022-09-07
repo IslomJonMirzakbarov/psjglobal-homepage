@@ -9,11 +9,6 @@ const animationVariant = {
   visible: { scale: 1, transition: { duration: 1.2, delay: 0.2 } }
 }
 
-const animationVariant2 = {
-  hidden: { scale: 0 },
-  visible: { scale: 1, transition: { duration: 0.2 } }
-}
-
 export default function Advantage() {
   const control = useAnimation()
   const [ref, inView] = useInView()

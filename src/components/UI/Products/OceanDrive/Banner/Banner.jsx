@@ -13,22 +13,27 @@ export default function Banner() {
   const control = useAnimation()
   const [ref, inView] = useInView()
   const { scrollYProgress } = useScroll()
-  const xCloud = useTransform(scrollYProgress, [0, 0.06, 0.09], [500, 50, 0])
-  const yElement = useTransform(scrollYProgress, [0, 0.07], [300, 0])
+  const xCloud = useTransform(scrollYProgress, [0.09, 0.06, 0], [500, 50, 0])
+  const yElement = useTransform(scrollYProgress, [0.07, 0], [300, 0])
+  const scaleElement = useTransform(
+    scrollYProgress,
+    [0.07, 0.04, 0],
+    [0, 0.5, 1]
+  )
   const elementOpacity = useTransform(
     scrollYProgress,
-    [0, 0.06, 0.08],
+    [0.08, 0.06, 0],
     [0, 0.2, 1]
   )
   const cloundRotate = useTransform(
     scrollYProgress,
-    [0, 0.02, 0.04, 0.06],
+    [0.06, 0.04, 0.02, 0],
     [-15, -10, -5, 0]
   )
-  const xCircleSmall = useTransform(scrollYProgress, [0, 0.07], [-200, 0])
+  const xCircleSmall = useTransform(scrollYProgress, [0.07, 0], [-200, 0])
   const CircleOpacity = useTransform(
     scrollYProgress,
-    [0, 0.06, 0.08],
+    [0.06, 0.08, 0],
     [0.3, 0.5, 1]
   )
 
@@ -93,7 +98,8 @@ export default function Banner() {
           </motion.div>
           <motion.div
             style={{
-              y: yElement
+              y: yElement,
+              scale: scaleElement
             }}
             className={styles.element3}
           >
