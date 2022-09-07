@@ -1,4 +1,5 @@
 import { Container, Typography } from '@mui/material'
+import { motion } from 'framer-motion'
 import styles from './worldDexpoArt.module.scss'
 
 export default function WorldDexpoArt() {
@@ -38,9 +39,15 @@ export default function WorldDexpoArt() {
         <div className={styles.list}>
           {data.map((item) => (
             <div className={styles.item}>
-              <div className={styles.img}>
+              <motion.div
+                initial={{ scale: 0 }}
+                whileInView={{ scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.3 }}
+                className={styles.img}
+              >
                 <img src={item.img} alt='ocean drive' />
-              </div>
+              </motion.div>
               <Typography
                 className={styles.title}
                 variant='h6'

@@ -9,7 +9,7 @@ export default function News({ isNewsPage = false }) {
   const { scrollYProgress } = useScroll()
   const xCloud = useTransform(
     scrollYProgress,
-    [0.5, 0.55, 0.6, 0.65],
+    [0.55, 0.6, 0.66, 0.7],
     [-500, -350, -200, 0]
   )
   const xCloud2 = useTransform(
@@ -17,6 +17,7 @@ export default function News({ isNewsPage = false }) {
     [0.7, 0.72, 0.74, 0.77, 0.8],
     [0, 30, 60, 90, 110]
   )
+
   const data = [
     {
       title: 'Conun is Verified With Bithumb!',

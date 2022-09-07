@@ -1,7 +1,44 @@
 import { Button, Container, Typography } from '@mui/material'
+import { motion, useScroll, useTransform } from 'framer-motion'
 import styles from './banner.module.scss'
 
 export default function Banner() {
+  const { scrollYProgress } = useScroll()
+  const scaleElement = useTransform(
+    scrollYProgress,
+    [0.2, 0.1, 0.05, 0],
+    [0, 0.3, 0.5, 1]
+  )
+  const scaleElement2 = useTransform(
+    scrollYProgress,
+    [0.35, 0.25, 0.15, 0],
+    [0, 0.3, 0.5, 1]
+  )
+
+  const xCircle = useTransform(
+    scrollYProgress,
+    [0.25, 0.17, 0.1, 0],
+    [200, 160, 80, 0]
+  )
+
+  const yCircle = useTransform(
+    scrollYProgress,
+    [0.25, 0.17, 0.1, 0],
+    [-200, -160, -80, 0]
+  )
+
+  const xCircle2 = useTransform(
+    scrollYProgress,
+    [0.3, 0.2, 0.1, 0],
+    [-200, -160, -80, 0]
+  )
+
+  const yCircle2 = useTransform(
+    scrollYProgress,
+    [0.3, 0.2, 0.1, 0],
+    [-200, -160, -80, 0]
+  )
+
   return (
     <div className={styles.box}>
       <Container className={styles.container}>
@@ -28,21 +65,48 @@ export default function Banner() {
           <div className={styles.bannerBg} />
         </div>
         <div className={styles.elements}>
-          <div className={styles.element}>
+          <motion.div
+            style={{
+              x: xCircle,
+              y: yCircle
+            }}
+            className={styles.element}
+          >
             <img src='/images/products/dexpo-nft/element.png' />
-          </div>
-          <div className={styles.element2}>
+          </motion.div>
+          <motion.div
+            style={{
+              scale: scaleElement2
+            }}
+            className={styles.element2}
+          >
             <img src='/images/products/dexpo-nft/element2.png' />
-          </div>
-          <div className={styles.element3}>
+          </motion.div>
+          <motion.div
+            style={{
+              scale: scaleElement2
+            }}
+            className={styles.element3}
+          >
             <img src='/images/products/dexpo-nft/element3.png' />
-          </div>
-          <div className={styles.element1}>
+          </motion.div>
+          <motion.div
+            style={{
+              x: xCircle2,
+              y: yCircle2
+            }}
+            className={styles.element1}
+          >
             <img src='/images/products/dexpo-nft/element1.png' />
-          </div>
-          <div className={styles.element4}>
+          </motion.div>
+          <motion.div
+            style={{
+              scale: scaleElement
+            }}
+            className={styles.element4}
+          >
             <img src='/images/products/dexpo-nft/element4.png' />
-          </div>
+          </motion.div>
         </div>
       </Container>
     </div>
