@@ -11,7 +11,7 @@ const animationVariant = {
 
 const animationVariant2 = {
   hidden: { scale: 0 },
-  visible: { scale: 1, transition: { duration: 0.4 } }
+  visible: { scale: 1, transition: { duration: 0.2 } }
 }
 
 export default function Advantage() {
@@ -53,10 +53,10 @@ export default function Advantage() {
         {items.map((item) => (
           <div className={styles.item} key={item.title}>
             <motion.div
-              ref={ref}
-              variants={animationVariant2}
-              initial='hidden'
-              animate={control}
+              initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.3 }}
               className={styles.img}
             >
               <img src={item.img} alt={item.title} />
