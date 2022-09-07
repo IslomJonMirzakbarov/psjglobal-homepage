@@ -1,7 +1,26 @@
 import { Container, Typography } from '@mui/material'
 import styles from './advantage.module.scss'
+import { motion, useAnimation } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
+import { useEffect } from 'react'
+
+const animationVariant = {
+  hidden: { scale: 0 },
+  visible: { scale: 1, transition: { duration: 1.2, delay: 0.2 } }
+}
 
 export default function Advantage() {
+  const control = useAnimation()
+  const [ref, inView] = useInView()
+
+  useEffect(() => {
+    if (inView) {
+      control.start('visible')
+    } else {
+      control.start('hidden')
+    }
+  }, [control, inView])
+
   const items = [
     {
       title: 'Get Power By Conun',
@@ -22,6 +41,7 @@ export default function Advantage() {
       img: '/icons/advantage3.png'
     }
   ]
+
   return (
     <Container>
       <div className={styles.items}>
@@ -43,7 +63,11 @@ export default function Advantage() {
             </Typography>
           </div>
         ))}
-        <img
+        <motion.img
+          ref={ref}
+          variants={animationVariant}
+          initial='hidden'
+          animate={control}
           className={styles.element}
           src='/icons/advantage4.png'
           alt='element'

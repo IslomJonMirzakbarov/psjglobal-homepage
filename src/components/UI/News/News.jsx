@@ -1,10 +1,14 @@
 import { Container, Typography } from '@mui/material'
+import { useScroll, useTransform, motion } from 'framer-motion'
 import Image from 'next/image'
 import { rem } from 'utils/pxToRem'
 import { NextArrow } from '../Icons'
 import styles from './news.module.scss'
 
 export default function News({ isNewsPage = false }) {
+  const { scrollYProgress } = useScroll()
+  const xCloud = useTransform(scrollYProgress, [0.6, 0.8], [-500, 0])
+  const xCloud2 = useTransform(scrollYProgress, [0.7, 0.8], [400, 0])
   const data = [
     {
       title: 'Conun is Verified With Bithumb!',
@@ -34,12 +38,22 @@ export default function News({ isNewsPage = false }) {
           </Typography>
           {!isNewsPage && (
             <>
-              <div className={styles.element}>
+              <motion.div
+                style={{
+                  x: xCloud
+                }}
+                className={styles.element2}
+              >
                 <img src='/images/roadmap3.png' alt='roadmap' />
-              </div>
-              <div className={styles.element2}>
+              </motion.div>
+              <motion.div
+                style={{
+                  x: xCloud2
+                }}
+                className={styles.element}
+              >
                 <img src='/images/roadmap3.png' alt='roadmap' />
-              </div>
+              </motion.div>
             </>
           )}
 

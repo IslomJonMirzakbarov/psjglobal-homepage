@@ -12,16 +12,6 @@ import {
 import { useInView } from 'react-intersection-observer'
 import { useEffect } from 'react'
 
-const boxVariant = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.6 } },
-  hidden: { opacity: 0, scale: 0 }
-}
-
-const boxVariant4 = {
-  hidden: { scale: 0.4, x: -200 },
-  visible: { scale: 1, x: 0, transition: { duration: 1.5 } }
-}
-
 const boxVariant5 = {
   hidden: { opacity: 0.2 },
   visible: { opacity: 1, transition: { duration: 0.5, delay: 0.2 } }
@@ -60,10 +50,6 @@ export default function Banner() {
       control.start('hidden')
     }
   }, [control, inView])
-
-  useEffect(() => {
-    console.log(scrollYProgress)
-  }, [scrollYProgress])
 
   return (
     <div className={styles.container}>
