@@ -58,7 +58,7 @@ export default function Advantage() {
             </motion.div>
             <Typography
               className={styles.title}
-              variant='h5'
+              variant='h6'
               color='primary.dark'
               align='center'
             >

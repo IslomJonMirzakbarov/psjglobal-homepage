@@ -12,7 +12,9 @@ export default function MetaconPage() {
         title: 'Chrome',
         desc: 'OSX 10.9 later',
         img: '/icons/chrome.png',
-        active: true
+        active: true,
+        imgWidth: 56,
+        imgHeight: 56
       },
       {
         title: 'iOS, android',

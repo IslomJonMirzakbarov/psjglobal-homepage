@@ -4,6 +4,7 @@
   height: rem(72);
   display: flex;
   align-items: center;
+  position: relative;
   .container {
     padding: 0 rem(45);
     width: 100%;
@@ -32,11 +33,16 @@
       display: flex;
       align-items: center;
       column-gap: rem(80);
+      position: absolute;
+      left: calc(50% - rem(280));
       li {
         position: relative;
         perspective: 1000px;
         z-index: 100;
         cursor: pointer;
+        p {
+          font-size: rem(13);
+        }
         &:hover {
           p {
             color: var(--primary-color);

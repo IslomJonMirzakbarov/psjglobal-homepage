@@ -66,14 +66,15 @@ export default function WalletForGoogle() {
         </Typography>
         <Button className={styles.btn}>Visit the website</Button>
         <div className={styles.elements}>
-          <motion.div
-            style={{
-              scale: scaleDesktop
-            }}
-            className={styles.item1}
-          >
-            <img src='/images/products/metacon/benefits4.png' alt='notebook' />
-          </motion.div>
+          <div className={styles.item1}>
+            <motion.img
+              style={{
+                scale: scaleDesktop
+              }}
+              src='/images/products/metacon/benefits4.png'
+              alt='notebook'
+            />
+          </div>
           <motion.div
             ref={ref}
             variants={animationVarinat3}

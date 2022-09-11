@@ -24,6 +24,7 @@ export default function OceanDrivePage() {
         title: 'Linux',
         desc: 'OSX 10.9 later',
         img: '/icons/linux.png',
+        imgWidth: 70,
         active: true
       },
       {

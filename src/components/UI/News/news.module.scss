@@ -49,6 +49,7 @@
         .img {
           height: rem(422);
           position: relative;
+          cursor: pointer;
         }
         .body {
           padding: rem(15) rem(30);
@@ -103,6 +104,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            cursor: pointer;
           }
           .content {
             padding: rem(20) rem(25);

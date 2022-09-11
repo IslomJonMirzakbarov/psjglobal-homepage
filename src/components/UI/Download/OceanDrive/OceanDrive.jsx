@@ -7,13 +7,7 @@ export default function OceanDrive({ data }) {
   return (
     <Container>
       <div className={styles.box}>
-        <motion.div
-          initial={{ scale: 0 }}
-          whileInView={{ scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.5 }}
-          className={styles.img}
-        >
+        <div className={styles.img}>
           <Image
             src={data.img}
             alt='ocean-drive'
@@ -21,7 +15,7 @@ export default function OceanDrive({ data }) {
             height={110}
             objectFit='contain'
           />
-        </motion.div>
+        </div>
         <Typography
           color='primary.dark'
           variant='h2'
@@ -105,8 +99,8 @@ export default function OceanDrive({ data }) {
                     src={item.img}
                     objectFit='contain'
                     alt='apple'
-                    width={40}
-                    height={40}
+                    width={item.imgWidth || 40}
+                    height={item.imgHeight || 40}
                   />
                 )}
               </div>

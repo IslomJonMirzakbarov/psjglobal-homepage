@@ -84,6 +84,7 @@
       flex-direction: column;
       align-items: center;
       border-left: none;
+      background-color: #fff;
       &:first-child {
         border-left: 1px solid #e2e2e2;
         border-radius: rem(10) 0 0 rem(10);
@@ -127,7 +128,6 @@
         width: 100%;
         border-left: 1px solid #e2e2e2;
         border-bottom: none;
-        background-color: #fff;
         &:first-child {
           border-radius: rem(10) rem(10) 0 0;
         }

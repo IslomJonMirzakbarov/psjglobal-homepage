@@ -17,12 +17,14 @@ export default function MainBenefits() {
     {
       title: 'Business Opportunity',
       desc: 'Business opportunity for all users - rewards by sharing your personal idle resources and published private content.',
-      img: '/images/products/ocean-drive/main3.png'
+      img: '/images/products/ocean-drive/main3.png',
+      imgTop: -45
     },
     {
       title: 'Software Development',
       desc: 'Conun Drive was built for developers. So, if you are building an application, an NFT marketplace, or anything in between, our APIs and SDKs will give you superpowers.',
-      img: '/images/products/ocean-drive/main4.png'
+      img: '/images/products/ocean-drive/main4.png',
+      imgTop: -15
     }
   ]
   return (
@@ -52,6 +54,7 @@ export default function MainBenefits() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.3 }}
                   className={styles.img}
+                  style={{ top: item.imgTop || -30 }}
                 >
                   <img src={item.img} alt='ocean drive' />
                 </motion.div>

@@ -11,6 +11,7 @@
         width: rem(700);
         position: relative;
         z-index: 9;
+        min-height: rem(413);
         .title {
           margin-bottom: rem(25);
           &:after {
@@ -133,6 +134,7 @@
         }
         .content {
           width: 100%;
+          min-height: auto;
           .title {
             margin-bottom: rem(10);
           }

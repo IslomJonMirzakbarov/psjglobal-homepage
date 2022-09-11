@@ -3,7 +3,7 @@
 .container {
   overflow: hidden;
   .banner {
-    padding: rem(141) 0 rem(113);
+    padding: rem(100) 0 rem(180);
     position: relative;
     .content {
       width: rem(591);
@@ -54,7 +54,7 @@
 
         .bannerBgPhone {
           position: absolute;
-          top: rem(192);
+          top: rem(151);
           width: rem(225);
           height: rem(317);
           right: rem(200);
@@ -65,7 +65,7 @@
         }
         .bannerBgRocket {
           position: absolute;
-          top: rem(128);
+          top: rem(87);
           width: rem(150);
           height: rem(120);
           right: 0;
@@ -73,7 +73,7 @@
         }
         .bannerBgFolder {
           position: absolute;
-          top: rem(138);
+          top: rem(97);
           width: rem(137);
           height: rem(98);
           right: rem(400);
@@ -81,7 +81,7 @@
         }
         .bannerBgTerminal {
           position: absolute;
-          top: rem(210);
+          top: rem(170);
           width: rem(112);
           height: rem(84);
           right: rem(280);
@@ -89,14 +89,14 @@
         }
         .bannerBgLock {
           position: absolute;
-          top: rem(320);
+          top: rem(280);
           width: rem(76);
           height: rem(108);
           right: rem(340);
         }
         .bannerBgCloud {
           position: absolute;
-          bottom: rem(100);
+          bottom: rem(167);
           width: rem(320);
           height: rem(150);
           right: rem(0);
@@ -104,14 +104,14 @@
         }
         .bannerBgErwhgeth {
           position: absolute;
-          bottom: rem(170);
+          bottom: rem(237);
           width: rem(169);
           height: rem(284);
           right: rem(-40);
         }
         .bannerBgCircle {
           position: absolute;
-          bottom: rem(320);
+          bottom: rem(387);
           width: rem(55);
           height: rem(55);
           right: rem(280);
@@ -119,7 +119,7 @@
         }
         .bannerBgSmallCloud {
           position: absolute;
-          bottom: rem(320);
+          bottom: rem(387);
           width: rem(148);
           height: rem(66);
           right: rem(410);
@@ -127,7 +127,7 @@
         }
         .bannerBgBlueCircle {
           position: absolute;
-          bottom: rem(200);
+          bottom: rem(267);
           width: rem(39);
           height: rem(40);
           right: rem(480);
@@ -135,7 +135,7 @@
         }
         .bannerShutterstock {
           position: absolute;
-          bottom: rem(100);
+          bottom: rem(167);
           width: rem(94);
           height: rem(96);
           right: rem(380);

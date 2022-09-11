@@ -26,7 +26,10 @@
       top: rem(62);
       width: rem(102);
       height: rem(102);
-      left: rem(231);
+      left: calc(50% - rem(51));
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     .item2 {
       position: absolute;
