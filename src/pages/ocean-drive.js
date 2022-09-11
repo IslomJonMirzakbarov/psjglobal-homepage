@@ -40,7 +40,7 @@ export default function OceanDrivePage() {
     <>
       <SEO />
       <main>
-        <div className='download-bg'>
+        <div className='download-bg overflow-hidden'>
           <OceanDrive data={data} />
           <Footer />
         </div>

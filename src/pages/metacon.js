@@ -29,7 +29,7 @@ export default function MetaconPage() {
     <>
       <SEO />
       <main>
-        <div className='download-bg'>
+        <div className='download-bg overflow-hidden'>
           <Metacon data={data} />
           <Footer />
         </div>
