@@ -1,7 +1,8 @@
 import { Container, Typography } from '@mui/material'
 import styles from './externalNews.module.scss'
+import { format } from 'date-fns'
 
-export default function ExternalNews() {
+export default function ExternalNews({ externalNews }) {
   const data = [
     {
       title: 'MBN',
@@ -24,6 +25,7 @@ export default function ExternalNews() {
       date: '2022-08-16'
     }
   ]
+  console.log('externalNews', externalNews)
   return (
     <Container className={styles.container}>
       <div className={styles.externalNews}>
@@ -31,7 +33,7 @@ export default function ExternalNews() {
           External News
         </Typography>
         <div className={styles.list}>
-          {data.map((item, index) => (
+          {externalNews.map((item, index) => (
             <div className={styles.item} key={item.title + index}>
               <div className={styles.leftElement}>
                 <Typography
@@ -40,7 +42,7 @@ export default function ExternalNews() {
                   fontWeight='600'
                   color='#7D8890'
                 >
-                  {item.title}
+                  {item.attributes.title_en}
                 </Typography>
                 <Typography
                   className={styles.content}
@@ -48,7 +50,7 @@ export default function ExternalNews() {
                   fontWeight='500'
                   color='primary.dark'
                 >
-                  {item.desc}
+                  {item.attributes.description_en}
                 </Typography>
               </div>
               <div className={styles.rightElement}>
@@ -57,7 +59,7 @@ export default function ExternalNews() {
                   fontWeight='500'
                   color='primary.dark'
                 >
-                  {item.date}
+                  {format(new Date(item?.attributes?.createdAt), 'yyyy-MM-dd')}
                 </Typography>
                 <svg
                   width='7'

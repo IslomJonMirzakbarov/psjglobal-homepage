@@ -4,9 +4,11 @@ import Image from 'next/image'
 import { rem } from 'utils/pxToRem'
 import { NextArrow } from '../Icons'
 import styles from './news.module.scss'
+import { format } from 'date-fns'
 
-export default function News({ isNewsPage = false }) {
+export default function News({ isNewsPage = false, news }) {
   const { scrollYProgress } = useScroll()
+  console.log('news', news)
   const xCloud = useTransform(
     scrollYProgress,
     [0.55, 0.6, 0.66, 0.7],
@@ -38,6 +40,8 @@ export default function News({ isNewsPage = false }) {
       img: '/images/news2.png'
     }
   ]
+  const firstNews = news ? news[0]?.attributes : {}
+
   return (
     <div className={styles.section}>
       <Container>
@@ -70,39 +74,62 @@ export default function News({ isNewsPage = false }) {
             <div className={styles.item}>
               <div className={styles.img}>
                 <Image
-                  src='/images/news1.jpg'
+                  src={
+                    process.env.NEXT_PUBLIC_IMAGE_BASE_URL +
+                    firstNews?.image?.data?.attributes?.url
+                  }
                   objectFit='cover'
                   alt='news1'
                   layout='fill'
                 />
               </div>
               <div className={styles.body}>
-                <Typography
-                  className={styles.date}
-                  variant='body2'
-                  color='primary'
-                >
-                  Tue Dec 21 2021
-                </Typography>
-                <p className={styles.title}>Conun is Verified With Bithumb!</p>
+                {isNewsPage ? (
+                  <Typography
+                    className={styles.date}
+                    variant='body2'
+                    color='primary'
+                    fontWeight='700'
+                  >
+                    {format(new Date(firstNews.createdAt), 'yyyy.MM.dd')}
+                  </Typography>
+                ) : (
+                  <Typography
+                    className={styles.date}
+                    variant='body2'
+                    color='primary'
+                    fontWeight='700'
+                  >
+                    {format(new Date(firstNews.createdAt), 'EEEE').substring(
+                      0,
+                      3
+                    )}{' '}
+                    {format(new Date(firstNews.createdAt), 'LLLL').substring(
+                      0,
+                      3
+                    )}{' '}
+                    {format(new Date(firstNews.createdAt), 'dd yyyy')}
+                  </Typography>
+                )}
+                <p className={styles.title}>{firstNews.title_en}</p>
                 <Typography variant='body1' color='secondary'>
-                  Bithumb have repealed their investment warning status. Click
-                  for more info.
+                  {firstNews.description_en}
                 </Typography>
                 <div className={styles.navigation}>
-                  <div className={styles.postName}>
-                    posted by BLOCKCHAIN TEAM
-                  </div>
+                  <div className={styles.postName}>{firstNews.posted_en}</div>
                   <NextArrow width={rem(35)} height={rem(35)} />
                 </div>
               </div>
             </div>
             <div className={styles.items}>
-              {data.map((item, index) => (
+              {news.slice(1, 4).map((item, index) => (
                 <div className={styles.card} key={item.title + index}>
                   <div className={styles.img}>
                     <Image
-                      src={item.img}
+                      src={
+                        process.env.NEXT_PUBLIC_IMAGE_BASE_URL +
+                        item?.attributes?.image?.data?.attributes?.url
+                      }
                       objectFit='contain'
                       alt='news2'
                       width={117}
@@ -111,29 +138,59 @@ export default function News({ isNewsPage = false }) {
                   </div>
                   <div className={styles.content}>
                     <div>
-                      <Typography
-                        className={styles.date}
-                        variant='body2'
-                        color='primary'
-                        fontWeight='700'
-                      >
-                        {item.date}
-                      </Typography>
-                      <p className={styles.title}>{item.title}</p>
+                      {isNewsPage ? (
+                        <Typography
+                          className={styles.date}
+                          variant='body2'
+                          color='primary'
+                          fontWeight='700'
+                        >
+                          {format(
+                            new Date(item?.attributes?.createdAt),
+                            'yyyy.MM.dd'
+                          )}
+                        </Typography>
+                      ) : (
+                        <Typography
+                          className={styles.date}
+                          variant='body2'
+                          color='primary'
+                          fontWeight='700'
+                        >
+                          {format(
+                            new Date(item?.attributes?.createdAt),
+                            'EEEE'
+                          ).substring(0, 3)}{' '}
+                          {format(
+                            new Date(item?.attributes?.createdAt),
+                            'LLLL'
+                          ).substring(0, 3)}{' '}
+                          {format(
+                            new Date(item?.attributes?.createdAt),
+                            'dd yyyy'
+                          )}
+                        </Typography>
+                      )}
+                      <p className={styles.title}>
+                        {item?.attributes?.title_en}
+                      </p>
                       <Typography
                         className={styles.desc}
                         variant='body3'
                         color='secondary'
                         component='p'
                       >
-                        {item.desc}
+                        {' '}
+                        {item?.attributes?.description_en}
                       </Typography>
                     </div>
                     <div
                       className={styles.navigation}
                       style={{ marginTop: rem(13) }}
                     >
-                      <div className={styles.postName}>posted by CHLOE</div>
+                      <div className={styles.postName}>
+                        {item?.attributes?.posted_en}
+                      </div>
                       <NextArrow width={rem(35)} height={rem(35)} />
                     </div>
                   </div>

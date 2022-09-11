@@ -6,16 +6,11 @@ import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 
 const animationVariant = {
-  hidden: { x: -150 },
-  visible: { x: 0, transition: { duration: 1, delay: 0.2 } }
-}
-
-const animationVariant2 = {
   hidden: { x: 100 },
   visible: { x: 0, transition: { duration: 1, delay: 0.2 } }
 }
 
-export default function Roadmap() {
+export default function Roadmap({ roadmaps }) {
   const control = useAnimation()
   const [ref, inView] = useInView()
 
@@ -26,6 +21,7 @@ export default function Roadmap() {
       control.start('hidden')
     }
   }, [control, inView])
+
   const years = ['2017', '2018', '2019', '2020', '2021', '2022', '2023']
   const data = [
     {
@@ -59,7 +55,9 @@ export default function Roadmap() {
       content: 'Apply for blockchain and task processing based on docker task'
     }
   ]
-  const [tab, setTab] = useState('2019')
+
+  const [tab, setTab] = useState(roadmaps ? roadmaps[0].id : null)
+
   return (
     <div className={styles.box}>
       <Container className={styles.container}>
@@ -73,7 +71,7 @@ export default function Roadmap() {
           </motion.div>
           <motion.div
             ref={ref}
-            variants={animationVariant2}
+            variants={animationVariant}
             initial='hidden'
             animate={control}
             className={styles.element2}
@@ -84,15 +82,15 @@ export default function Roadmap() {
             Roadmap
           </Typography>
           <div className={styles.years}>
-            {years.map((item) => (
+            {roadmaps?.map((item) => (
               <div
-                onClick={() => setTab(item)}
+                onClick={() => setTab(item.id)}
                 className={`${styles.item} ${
-                  tab === item ? styles.active : ''
+                  tab === item.id ? styles.active : ''
                 }`}
                 key={item}
               >
-                {item}
+                {item.attributes.year}
               </div>
             ))}
           </div>
@@ -102,18 +100,20 @@ export default function Roadmap() {
         <div className={styles.line} />
         <Container className={styles.diagramContainer}>
           <div className={styles.items}>
-            {data.map((item, index) => (
-              <div className={styles.list} key={item.title}>
-                <div className={styles.element}>
-                  <p>Q{index + 1}</p>
-                  <div className={styles.circle} />
+            {roadmaps
+              ?.find((data) => data.id === tab)
+              ?.attributes?.quaters?.map((item, index) => (
+                <div className={styles.list} key={item.title}>
+                  <div className={styles.element}>
+                    <p>Q{index + 1}</p>
+                    <div className={styles.circle} />
+                  </div>
+                  <Card item={item} />
+                  {item?.items?.map((val) => (
+                    <Card item={val} />
+                  ))}
                 </div>
-                <Card item={item} />
-                {item?.children?.map((val) => (
-                  <Card item={val} />
-                ))}
-              </div>
-            ))}
+              ))}
           </div>
         </Container>
       </div>

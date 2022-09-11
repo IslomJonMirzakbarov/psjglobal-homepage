@@ -8,7 +8,8 @@ import News from 'components/UI/News/News'
 import ExternalNews from 'components/UI/ExternalNews/ExternalNews'
 import { Footer } from 'components/UI/Footer/Footer'
 
-export default function Home() {
+export default function Home({ news, externalNews, roadmaps }) {
+  console.log('roadmaps==>', roadmaps)
   return (
     <>
       <SEO />
@@ -17,12 +18,29 @@ export default function Home() {
         <Products />
         <Advantage />
         <div className='home-bg'>
-          <Roadmap />
-          <News />
-          <ExternalNews />
+          <Roadmap roadmaps={roadmaps?.data} />
+          <News news={news?.data} />
+          <ExternalNews externalNews={externalNews?.data} />
           <Footer />
         </div>
       </main>
     </>
   )
+}
+
+export async function getServerSideProps() {
+  const urls = [
+    'external-news',
+    'news?populate=*',
+    'roadmaps?populate=*,quaters.items'
+  ]
+  const [externalNews, news, roadmaps] = await fetchMultipleUrls(urls)
+
+  return {
+    props: {
+      externalNews,
+      news,
+      roadmaps
+    }
+  }
 }

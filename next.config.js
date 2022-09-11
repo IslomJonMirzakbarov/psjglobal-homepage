@@ -10,7 +10,7 @@ const nextTranslate = require('next-translate')
 const nextConfig = nextTranslate({
   reactStrictMode: true,
   images: {
-    domains: ['test.cdn.rasta.app']
+    domains: ['localhost']
   },
   eslint: {
     ignoreDuringBuilds: true
