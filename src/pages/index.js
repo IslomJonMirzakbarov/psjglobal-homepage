@@ -9,7 +9,6 @@ import ExternalNews from 'components/UI/ExternalNews/ExternalNews'
 import { Footer } from 'components/UI/Footer/Footer'
 
 export default function Home({ news, externalNews, roadmaps }) {
-  console.log('roadmaps==>', roadmaps)
   return (
     <>
       <SEO />
@@ -30,8 +29,8 @@ export default function Home({ news, externalNews, roadmaps }) {
 
 export async function getServerSideProps() {
   const urls = [
-    'external-news',
-    'news?populate=*',
+    'external-news?pagination[start]=0&pagination[limit]=8',
+    'news?populate=*&pagination[start]=0&pagination[limit]=4',
     'roadmaps?populate=*,quaters.items'
   ]
   const [externalNews, news, roadmaps] = await fetchMultipleUrls(urls)

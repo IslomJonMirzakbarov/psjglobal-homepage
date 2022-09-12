@@ -17,6 +17,40 @@ export function NextArrow({ fill = '#0012B0', ...restProps }) {
   )
 }
 
+export function PArrowLeft() {
+  return (
+    <svg
+      width='9'
+      height='11'
+      viewBox='0 0 9 11'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+    >
+      <path
+        d='M5.48065 10.052L0.420649 5.058L5.48065 0.064H8.64865L3.56665 5.058L8.64865 10.052H5.48065Z'
+        fill='#7D8890'
+      />
+    </svg>
+  )
+}
+
+export function PArrowRight() {
+  return (
+    <svg
+      width='9'
+      height='11'
+      viewBox='0 0 9 11'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+    >
+      <path
+        d='M0.475719 0.064H3.64372L8.70372 5.058L3.64372 10.052H0.475719L5.55772 5.058L0.475719 0.064Z'
+        fill='#0012B0'
+      />
+    </svg>
+  )
+}
+
 export function MainnetIcon() {
   return (
     <svg

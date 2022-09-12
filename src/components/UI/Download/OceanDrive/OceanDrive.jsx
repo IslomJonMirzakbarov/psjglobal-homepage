@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import styles from './oceanDrive.module.scss'
 
-export default function OceanDrive({ data }) {
+export default function OceanDrive({ data, items }) {
   return (
     <Container>
       <div className={styles.box}>
@@ -80,29 +80,22 @@ export default function OceanDrive({ data }) {
           </motion.div>
         </div>
         <div className={styles.items}>
-          {data.items.map((item) => (
-            <div className={styles.item}>
+          {items.downloads.map((item, index) => (
+            <div className={styles.item} key={item.id}>
               <div className={styles.itemImg}>
-                {Array.isArray(item.img) ? (
-                  item.img.map((val) => (
-                    <Image
-                      src={val}
-                      key={val}
-                      objectFit='contain'
-                      alt='apple'
-                      width={40}
-                      height={40}
-                    />
-                  ))
-                ) : (
+                {item?.logo?.data?.map((val) => (
                   <Image
-                    src={item.img}
+                    src={
+                      process.env.NEXT_PUBLIC_IMAGE_BASE_URL +
+                      val?.attributes?.url
+                    }
+                    key={val.id}
                     objectFit='contain'
                     alt='apple'
-                    width={item.imgWidth || 40}
-                    height={item.imgHeight || 40}
+                    width={index === 2 ? 70 : 40}
+                    height={40}
                   />
-                )}
+                ))}
               </div>
               <Typography variant='h6' fontWeight='700' color='primary.dark'>
                 {item.title}
@@ -112,10 +105,10 @@ export default function OceanDrive({ data }) {
                 variant='body2'
                 color='secondary'
               >
-                {item.desc}
+                {item.description_en}
               </Typography>
-              <Button disabled={!item.active}>
-                {item.active ? 'Download' : 'Coming soon'}
+              <Button disabled={!item.is_active}>
+                {item.is_active ? 'Download' : 'Coming soon'}
               </Button>
             </div>
           ))}

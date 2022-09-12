@@ -1,8 +1,32 @@
 import { Container, Typography } from '@mui/material'
 import styles from './externalNews.module.scss'
 import { format } from 'date-fns'
+import Pagination from '../Pagination/Pagination'
+import { useState } from 'react'
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
 
-export default function ExternalNews({ externalNews }) {
+export default function ExternalNews({
+  externalNews,
+  count,
+  isNewsPage = false
+}) {
+  const [currentPage, setCurrentPage] = useState(0)
+  const router = useRouter()
+  useEffect(() => {
+    router.push(
+      {
+        pathname: router.pathname,
+        query: {
+          ...router.query,
+          externalNewsPage: currentPage
+        }
+      },
+      undefined,
+      { scroll: false }
+    )
+  }, [currentPage])
+
   const data = [
     {
       title: 'MBN',
@@ -77,6 +101,13 @@ export default function ExternalNews({ externalNews }) {
             </div>
           ))}
         </div>
+        {isNewsPage && (
+          <Pagination
+            currentPage={currentPage}
+            setCurrentPage={setCurrentPage}
+            count={count}
+          />
+        )}
       </div>
     </Container>
   )

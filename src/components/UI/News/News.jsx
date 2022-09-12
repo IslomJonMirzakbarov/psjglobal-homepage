@@ -5,10 +5,29 @@ import { rem } from 'utils/pxToRem'
 import { NextArrow } from '../Icons'
 import styles from './news.module.scss'
 import { format } from 'date-fns'
+import Pagination from '../Pagination/Pagination'
+import { useEffect, useState } from 'react'
+import { useRouter } from 'next/router'
 
-export default function News({ isNewsPage = false, news }) {
+export default function News({ newsItem, isNewsPage = false, news, count }) {
   const { scrollYProgress } = useScroll()
-  console.log('news', news)
+  const [currentPage, setCurrentPage] = useState(0)
+  const router = useRouter()
+  useEffect(() => {
+    router.push(
+      {
+        pathname: router.pathname,
+        query: {
+          ...router.query,
+          newsPage: currentPage
+        }
+      },
+      undefined,
+      { scroll: false }
+    )
+  }, [currentPage])
+
+  console.log('news', count)
   const xCloud = useTransform(
     scrollYProgress,
     [0.55, 0.6, 0.66, 0.7],
@@ -40,8 +59,12 @@ export default function News({ isNewsPage = false, news }) {
       img: '/images/news2.png'
     }
   ]
-  const firstNews = news ? news[0]?.attributes : {}
-
+  const firstNews = newsItem
+    ? newsItem[0]?.attributes
+    : news
+    ? news[0]?.attributes
+    : {}
+  console.log('firstNews', firstNews)
   return (
     <div className={styles.section}>
       <Container>
@@ -122,7 +145,7 @@ export default function News({ isNewsPage = false, news }) {
               </div>
             </div>
             <div className={styles.items}>
-              {news.slice(1, 4).map((item, index) => (
+              {news.slice(isNewsPage ? 0 : 1).map((item, index) => (
                 <div className={styles.card} key={item.title + index}>
                   <div className={styles.img}>
                     <Image
@@ -198,6 +221,14 @@ export default function News({ isNewsPage = false, news }) {
               ))}
             </div>
           </div>
+          {isNewsPage && (
+            <Pagination
+              currentPage={currentPage}
+              setCurrentPage={setCurrentPage}
+              count={count - 1}
+              pageSize={5}
+            />
+          )}
         </div>
       </Container>
     </div>

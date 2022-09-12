@@ -141,7 +141,7 @@ export default function BurgerMenu() {
         <div className={styles.body}>
           <div>
             {data.map((item) => (
-              <Accordion>
+              <Accordion key={item.title}>
                 <AccordionSummary
                   aria-controls='panel1a-content'
                   id='panel1a-header'
