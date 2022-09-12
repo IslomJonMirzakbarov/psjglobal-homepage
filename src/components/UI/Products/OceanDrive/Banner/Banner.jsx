@@ -88,14 +88,14 @@ export default function Banner() {
           >
             <img src='/images/products/ocean-drive/element.png' />
           </motion.div>
-          <motion.div
+          {/* <motion.div
             style={{
               opacity: elementOpacity
             }}
             className={styles.element2}
           >
             <img src='/images/products/ocean-drive/element2.png' />
-          </motion.div>
+          </motion.div> */}
           <motion.div
             style={{
               y: yElement,

@@ -7,15 +7,17 @@ import styles from './news.module.scss'
 
 export default function News({ isNewsPage = false }) {
   const { scrollYProgress } = useScroll()
+
   const xCloud = useTransform(
     scrollYProgress,
     [0.55, 0.6, 0.66, 0.7],
-    [-500, -350, -200, 0]
+    [-300, -200, -100, 0]
   )
+
   const xCloud2 = useTransform(
     scrollYProgress,
     [0.7, 0.72, 0.74, 0.77, 0.8],
-    [0, 30, 60, 90, 110]
+    [0, 10, 30, 50, 70]
   )
 
   const data = [
@@ -38,6 +40,7 @@ export default function News({ isNewsPage = false }) {
       img: '/images/news2.png'
     }
   ]
+
   return (
     <div className={styles.section}>
       <Container>
