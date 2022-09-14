@@ -1,6 +1,6 @@
 @import 'styles/unit.scss';
 .container {
-  min-height: 80vh;
+  min-height: calc(100vh - rem(72));
   .faq {
     padding: rem(90) 0 rem(110);
     max-width: rem(800);
