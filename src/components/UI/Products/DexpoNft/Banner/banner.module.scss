@@ -4,7 +4,7 @@
   .container {
     position: relative;
     .banner {
-      padding: rem(141) 0 rem(113);
+      padding: rem(100) 0 rem(113);
       position: relative;
       overflow: hidden;
       .content {
@@ -43,8 +43,8 @@
       width: 50%;
       height: 100%;
       position: absolute;
-      right: 0;
-      top: rem(80);
+      right: rem(-50);
+      top: rem(40);
       img {
         width: 100%;
         height: 100%;
@@ -54,7 +54,7 @@
         width: rem(181);
         height: rem(181);
         position: absolute;
-        top: rem(80);
+        top: rem(40);
         right: rem(40);
         transition: all 0.8s ease-in-out;
       }
@@ -62,7 +62,7 @@
         position: absolute;
         width: rem(100);
         height: rem(100);
-        top: rem(330);
+        top: rem(290);
         right: rem(100);
         transition: all 1.1s ease-in-out;
       }
@@ -71,14 +71,14 @@
         width: rem(59);
         height: rem(59);
         top: rem(350);
-        right: rem(310);
+        right: rem(360);
         transition: all 1.1s ease-in-out;
       }
       .element4 {
         position: absolute;
-        width: rem(300);
+        width: rem(341);
         height: rem(226);
-        top: rem(120);
+        top: rem(80);
         right: rem(150);
         transition: all 1.1s ease-in-out;
       }
@@ -86,8 +86,8 @@
         position: absolute;
         width: rem(92);
         height: rem(92);
-        top: rem(210);
-        right: rem(410);
+        top: rem(170);
+        right: rem(460);
         transition: all 0.8s ease-in-out;
       }
     }
@@ -138,21 +138,25 @@
         margin-top: rem(31);
         height: rem(340);
         .element4 {
-          width: rem(196);
-          height: rem(130);
-          left: calc(50% - rem(98));
-          top: rem(130);
+          width: rem(250);
+          height: rem(180);
+          left: calc(50% - rem(125));
+          top: rem(80);
+          img {
+            object-fit: cover;
+          }
         }
         .element {
-          right: rem(15);
+          right: rem(0);
           width: rem(105);
           height: rem(105);
+          top: rem(20);
           position: absolute;
         }
         .element3 {
           width: rem(56);
           height: rem(56);
-          bottom: rem(50);
+          bottom: rem(30);
           right: rem(50);
           top: auto;
         }

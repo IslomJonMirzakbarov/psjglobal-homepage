@@ -36,6 +36,11 @@ export default function Banner() {
     [0.06, 0.08, 0],
     [0.3, 0.5, 1]
   )
+  const circleScale = useTransform(
+    scrollYProgress,
+    [0.06, 0.08, 0],
+    [0.3, 0.5, 1]
+  )
 
   useEffect(() => {
     if (inView) {
@@ -114,12 +119,22 @@ export default function Banner() {
           >
             <img src='/images/products/ocean-drive/element4.png' />
           </motion.div>
-          <div className={styles.element6}>
+          <motion.div
+            style={{
+              scale: circleScale
+            }}
+            className={styles.element6}
+          >
             <img src='/images/products/ocean-drive/element6.png' />
-          </div>
-          <div className={styles.element1}>
+          </motion.div>
+          <motion.div
+            style={{
+              scale: circleScale
+            }}
+            className={styles.element1}
+          >
             <img src='/images/products/ocean-drive/element1.png' />
-          </div>
+          </motion.div>
           <motion.div
             style={{
               y: xCircleSmall,

@@ -4,7 +4,7 @@
   .container {
     position: relative;
     .banner {
-      padding: rem(141) 0 rem(113);
+      padding: rem(100) 0 rem(113);
       position: relative;
       overflow: hidden;
       .content {
@@ -44,23 +44,23 @@
       position: absolute;
       right: 0;
       top: rem(80);
-      right: rem(-80);
+      right: 0;
       img {
         width: 100%;
         height: 100%;
         object-fit: contain;
       }
       .element {
-        width: 100%;
-        height: auto;
+        width: rem(1070);
+        height: rem(533);
         transition: all 1.1s ease-in-out;
       }
       .element3 {
         position: absolute;
-        width: rem(252);
-        height: rem(200);
-        top: rem(60);
-        right: rem(200);
+        width: rem(329);
+        height: rem(285);
+        top: rem(100);
+        right: rem(40);
         transition: all 0.8s ease-in-out;
       }
       .element2 {
@@ -75,32 +75,32 @@
         position: absolute;
         width: rem(52);
         height: rem(52);
-        top: rem(140);
-        right: rem(510);
+        top: rem(180);
+        right: rem(400);
         transition: all 1.1s ease-in-out;
       }
       .element6 {
         position: absolute;
         width: rem(100);
         height: rem(70);
-        bottom: rem(350);
-        right: rem(140);
+        bottom: rem(250);
+        right: rem(-40);
         transition: all 1.1s ease-in-out;
       }
       .element1 {
         position: absolute;
         width: rem(40);
         height: rem(40);
-        bottom: rem(300);
-        right: rem(140);
+        bottom: rem(220);
+        right: rem(-60);
         transition: all 1.1s ease-in-out;
       }
       .element5 {
         position: absolute;
         width: rem(70);
         height: rem(55);
-        bottom: rem(320);
-        right: rem(500);
+        bottom: rem(170);
+        right: rem(350);
         transition: all 1.1s ease-in-out;
       }
     }
@@ -119,6 +119,7 @@
     background-size: 100% rem(600);
     background-position: bottom;
     height: rem(735);
+    overflow: hidden;
     .container {
       position: initial;
       padding: 0;
@@ -148,14 +149,14 @@
       }
       .elements {
         position: relative;
-        width: rem(313);
+        width: rem(400);
         top: auto;
         right: auto;
         margin-top: rem(31);
         height: rem(340);
         .element {
           right: 0;
-          width: rem(313);
+          width: rem(400);
           height: rem(219);
           position: absolute;
         }
@@ -175,7 +176,7 @@
           right: rem(50);
           width: rem(16);
           height: rem(16);
-          bottom: rem(200);
+          bottom: rem(190);
         }
         .element6 {
           width: rem(50);
@@ -184,7 +185,7 @@
           right: rem(60);
         }
         .element5 {
-          left: rem(20);
+          left: rem(120);
           top: rem(150);
           width: rem(30);
           height: rem(22);
@@ -192,7 +193,7 @@
         .element4 {
           width: rem(21);
           height: rem(21);
-          left: rem(0);
+          left: rem(100);
           top: rem(80);
         }
       }
