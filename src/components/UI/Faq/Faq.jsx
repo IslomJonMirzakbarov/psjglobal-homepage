@@ -51,7 +51,7 @@ export default function Faq() {
     }
   ]
   return (
-    <Container>
+    <Container className={styles.container}>
       <div className={styles.faq}>
         <Typography align='center' variant='h2' color='primary.dark'>
           FAQ

@@ -1,52 +1,56 @@
 @import 'styles/unit.scss';
-
-.faq {
-  padding: rem(90) 0 rem(110);
-  max-width: rem(800);
-  margin: 0 auto;
-
-  .search {
-    margin-top: rem(35);
-    position: relative;
-    input {
-      width: 100%;
-      border: 1px solid #e8e8e8;
-      background-color: transparent;
-      border-radius: rem(10);
-      padding: rem(13) rem(20);
-      font-size: rem(15);
-      line-height: rem(22);
-      transition: all 0.25s ease-in-out;
-      &:focus {
-        outline: none;
-        border-color: var(--primary-color);
-      }
-      &::placeholder {
+.container {
+  min-height: 100vh;
+  .faq {
+    padding: rem(90) 0 rem(110);
+    max-width: rem(800);
+    margin: 0 auto;
+    .search {
+      margin-top: rem(35);
+      position: relative;
+      input {
+        width: 100%;
+        border: 1px solid #e8e8e8;
+        background-color: transparent;
+        border-radius: rem(10);
+        padding: rem(13) rem(20);
         font-size: rem(15);
         line-height: rem(22);
-        color: #7d8890;
-        font-family: 'Poppins', -apple-system, BlinkMacSystemFont, Segoe UI,
-          Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-          Helvetica Neue, sans-serif;
+        transition: all 0.25s ease-in-out;
+        &:focus {
+          outline: none;
+          border-color: var(--primary-color);
+        }
+        &::placeholder {
+          font-size: rem(15);
+          line-height: rem(22);
+          color: #7d8890;
+          font-family: 'Poppins', -apple-system, BlinkMacSystemFont, Segoe UI,
+            Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+            Helvetica Neue, sans-serif;
+        }
+      }
+      .icon {
+        position: absolute;
+        top: calc(50% - rem(10.5));
+        right: rem(20);
       }
     }
-    .icon {
-      position: absolute;
-      top: calc(50% - rem(10.5));
-      right: rem(20);
+    .accordion {
+      margin-top: rem(30);
     }
-  }
-  .accordion {
-    margin-top: rem(30);
   }
 }
 
 @media (max-width: 600px) {
-  .faq {
-    padding: rem(50) 0 rem(30);
-    max-width: none;
-    h2 {
-      text-align: left;
+  .container {
+    min-height: auto;
+    .faq {
+      padding: rem(50) 0 rem(30);
+      max-width: none;
+      h2 {
+        text-align: left;
+      }
     }
   }
 }
