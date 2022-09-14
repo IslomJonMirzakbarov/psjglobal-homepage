@@ -60,7 +60,9 @@ export default function Banner() {
               Great chance for artists to create their own items. <br />
               lowest fee for Buying and Selling NFTs
             </Typography>
-            <Button className={styles.btn}>Visit the website</Button>
+            <a href='https://testnet.dexpo.world' target='_blank'>
+              <Button className={styles.btn}>Visit the website</Button>
+            </a>
           </div>
           <div className={styles.bannerBg} />
         </div>
