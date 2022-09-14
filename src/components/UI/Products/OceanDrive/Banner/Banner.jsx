@@ -20,15 +20,11 @@ export default function Banner() {
     [0.07, 0.04, 0],
     [0, 0.5, 1]
   )
-  const elementOpacity = useTransform(
-    scrollYProgress,
-    [0.08, 0.06, 0],
-    [0, 0.2, 1]
-  )
+
   const cloundRotate = useTransform(
     scrollYProgress,
     [0.06, 0.04, 0.02, 0],
-    [-15, -10, -5, 0]
+    [-10, -8, -5, 0]
   )
   const xCircleSmall = useTransform(scrollYProgress, [0.07, 0], [-200, 0])
   const CircleOpacity = useTransform(
