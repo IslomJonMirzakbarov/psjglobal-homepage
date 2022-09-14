@@ -5,18 +5,18 @@ import styles from './worldDexpoArt.module.scss'
 export default function WorldDexpoArt() {
   const data = [
     {
-      title: 'Transactions on CYCON',
+      title: 'Trade with CYCON',
       desc: 'The same ecosystem as when users receive rewards from CYCON COIN. Users can use CYCON COIN to buy and sell NFTs.',
       img: '/images/products/dexpo-nft/art1.png'
     },
     {
-      title: 'Using Ocean Drive Distributed Storage',
+      title: 'OceanDrive Storage',
       desc: "Most NFT exchanges use third-party cloud storage. DEXPONFT uses OceanDrive's distributed storage.",
       img: '/images/products/dexpo-nft/art2.png'
     },
     {
       title: 'Audition',
-      desc: 'DEXPONFT has a specific aspect of auditions. All information about the artist (artist information, content sales information, price information, etc.) is checked by the administrator.',
+      desc: 'Through an andition, all information regarding the artists will be checked and processed.',
       img: '/images/products/dexpo-nft/art3.png'
     }
   ]

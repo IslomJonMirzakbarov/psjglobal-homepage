@@ -84,7 +84,7 @@ export default createTheme({
           },
           '&.Mui-disabled': {
             color: '#fff',
-            backgroundColor: '#7D8890'
+            backgroundColor: '#1AD7B5'
           }
         }
       }
