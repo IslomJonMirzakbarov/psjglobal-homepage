@@ -5,11 +5,6 @@ import Card from './Card/Card'
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 
-const animationVariant = {
-  hidden: { x: -150 },
-  visible: { x: 0, transition: { duration: 1, delay: 0.2 } }
-}
-
 const animationVariant2 = {
   hidden: { x: 100 },
   visible: { x: 0, transition: { duration: 1, delay: 0.2 } }
@@ -110,7 +105,7 @@ export default function Roadmap() {
                 </div>
                 <Card item={item} />
                 {item?.children?.map((val) => (
-                  <Card item={val} />
+                  <Card item={val} key={val.title} />
                 ))}
               </div>
             ))}

@@ -1,9 +1,12 @@
 import { Button, Container, Typography } from '@mui/material'
+import SubscribeModal from 'components/UI/SubscribeModal/SubscribeModal'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import { useState } from 'react'
 import styles from './oceanDrive.module.scss'
 
 export default function OceanDrive({ data }) {
+  const [open, setOpen] = useState(false)
   return (
     <Container>
       <div className={styles.box}>
@@ -114,13 +117,24 @@ export default function OceanDrive({ data }) {
               >
                 {item.desc}
               </Typography>
-              <Button disabled={!item.active}>
+              <Button
+                color={!item.active ? 'secondary' : 'primary'}
+                onClick={() => {
+                  if (!item.active) {
+                    setOpen((prev) => !prev)
+                  }
+                }}
+              >
                 {item.active ? 'Download' : 'Coming soon'}
               </Button>
             </div>
           ))}
         </div>
       </div>
+      <SubscribeModal
+        open={open}
+        handleClose={() => setOpen((prev) => !prev)}
+      />
     </Container>
   )
 }

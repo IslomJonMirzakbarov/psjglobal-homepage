@@ -61,7 +61,7 @@ export default function Products() {
     <Container>
       <div className={styles.items}>
         {data.map((val, index) => (
-          <Link href={val.path}>
+          <Link href={val.path} key={val.title}>
             <a target={index === 0 ? '_blank' : ''}>
               <div
                 className={styles.item}

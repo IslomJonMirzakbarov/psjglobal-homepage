@@ -86,10 +86,29 @@ export default createTheme({
             color: '#fff',
             backgroundColor: '#1AD7B5'
           }
+        },
+        textSecondary: {
+          backgroundColor: '#1AD7B5',
+          '&:hover': {
+            backgroundColor: '#1AD7B5'
+          }
         }
       }
     },
-
+    MuiPaper: {
+      styleOverrides: {
+        root: {
+          borderRadius: rem(10)
+        }
+      }
+    },
+    MuiCheckbox: {
+      styleOverrides: {
+        root: {
+          padding: 0
+        }
+      }
+    },
     MuiContainer: {
       styleOverrides: {
         root: {

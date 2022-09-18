@@ -141,7 +141,7 @@ export default function BurgerMenu() {
         <div className={styles.body}>
           <div>
             {data.map((item) => (
-              <Accordion>
+              <Accordion key={item.title}>
                 <AccordionSummary
                   aria-controls='panel1a-content'
                   id='panel1a-header'
@@ -161,7 +161,7 @@ export default function BurgerMenu() {
                 </AccordionSummary>
                 <AccordionDetails>
                   {item.items?.map((value) => (
-                    <Link href={value.link}>
+                    <Link href={value.link} key={value.title}>
                       <a onClick={() => setOpen(false)}>
                         <Typography
                           variant='body3'

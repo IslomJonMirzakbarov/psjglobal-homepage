@@ -11,6 +11,7 @@ export default function Dropdown({ links }) {
       >
         {links?.map((item) => (
           <li
+            key={item.title}
             className={`${router.pathname === item.link ? styles.active : ''}`}
           >
             <Link href={item.link}>
