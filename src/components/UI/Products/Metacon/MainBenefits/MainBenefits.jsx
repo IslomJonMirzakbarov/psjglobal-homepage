@@ -48,13 +48,13 @@ export default function MainBenefits() {
           textAlign='center'
           className={styles.desc}
         >
-          METACON plays the role of a mediator that connects you to the
-          applications that exist in the CONUN ecosystem.
-          <br />
-          Since it's connected to the CONUN Mainnet, we guarantee fast and safe
-          payment and rewards system for users in the
-          <br />
-          CONUN's services like the DSC platform and the Drive.
+          Metacon plays the role of a mediator that connects you to the <br />
+          applications that exist in the CONUN ecosystem. Since it's connected
+          to the CONUN Mainnet, <br />
+          we guarantee fast and safe payment and rewards system for users in the
+          CONUN's services. <br />
+          Our wallet seamlessly incorporates Ethereum wallets, access with one
+          easy download.
         </Typography>
         <motion.div
           initial={{ scale: 0 }}

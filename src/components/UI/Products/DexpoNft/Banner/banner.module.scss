@@ -97,12 +97,13 @@
 @media (max-width: 600px) {
   .box {
     padding: rem(50) 0 0;
-    overflow: initial;
+    overflow: hidden;
     height: rem(735);
     background-image: url('/images/products/dexpo-nft/banner-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
+
     .container {
       position: initial;
       padding: 0;

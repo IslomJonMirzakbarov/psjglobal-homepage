@@ -98,8 +98,11 @@ export default function Banner() {
               Fast and secure cryptocurrency wallet
             </Typography>
             <Typography variant='body2' color='primary.dark'>
-              Great chance for artists to create their own items. <br />
-              lowest fee for Buying and Selling NFTs
+              Metacon is CONUN’s cryptocurrency wallet. With our wallet
+              <br />
+              you can access the products within our ecosystem as well as
+              <br />
+              swap and transfer cryptocurrency quickly and securely.
             </Typography>
             <Button className={styles.btn}>Visit the website</Button>
           </div>

@@ -80,23 +80,25 @@ export default function Banner() {
         <div className={styles.banner}>
           <div className={styles.content}>
             <Typography
-              data-text='Conun'
+              data-text='CONUN!'
               color='primary.dark'
               variant='h1'
               className={styles.title}
             >
-              Great to
-              <br /> See you again.
-              <br /> {"It's Conun"}
+              Collect & Share <br /> Storage <br />
+              with CONUN!
             </Typography>
             <Typography
               sx={{ typography: { sm: 'body2', xs: 'body3' } }}
               color='secondary'
+              className={styles.desc}
             >
-              CONUN is a blockchain-based distributed supercomputing platform.
-              It is a service platform that allows the processing of
-              high-performance computing resources by sharing the idle resources
-              of the participants' personal computers and smartphones.
+              CONUN is a blockchain-based decentralized storage network.
+              <br />
+              It is a service platform that collects world wide storage by
+              <br />
+              sharing the idle resources of the participants' personal
+              computers.
             </Typography>
             <a href='/file.pdf' target='_blank'>
               <div className={styles.link}>

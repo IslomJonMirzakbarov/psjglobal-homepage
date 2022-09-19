@@ -64,10 +64,11 @@ export default function Banner() {
               OceanDrive
             </Typography>
             <Typography variant='body2' color='secondary'>
-              OceanDrive is a unique desktop platform that connects and allows
-              users to <br /> share digital assets worldwide. It is a place to
-              share and explore all your assets
-              <br /> quickly and conveniently.
+              OceanDrive is a unique desktop platform that connects
+              <br />
+              and allows users to share storage worldwide. It is a place to
+              <br />
+              share and explore all your assets quickly and conveniently.
             </Typography>
             <Button>Download</Button>
           </div>

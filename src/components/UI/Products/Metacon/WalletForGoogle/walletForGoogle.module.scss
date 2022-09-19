@@ -74,6 +74,7 @@
 @media (max-width: 600px) {
   .box {
     padding: rem(65) 0 rem(116);
+    overflow: hidden;
     .title {
       line-height: rem(35);
     }

@@ -22,7 +22,7 @@ export default function MainBenefits() {
     },
     {
       title: 'Software Development',
-      desc: 'Conun Drive was built for developers. So, if you are building an application, an NFT marketplace, or anything in between, our APIs and SDKs will give you superpowers.',
+      desc: 'OceanDrive was built for developers. So, if you are building an application, an NFT marketplace, or anything in between, our APIs and SDKs will provide you with powerful features.',
       img: '/images/products/ocean-drive/main4.png',
       imgTop: -15
     }

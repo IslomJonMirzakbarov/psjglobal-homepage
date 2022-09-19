@@ -227,6 +227,11 @@
       }
       .content {
         width: 100%;
+        .desc {
+          br {
+            display: none;
+          }
+        }
         .title {
           margin-bottom: rem(10);
         }
