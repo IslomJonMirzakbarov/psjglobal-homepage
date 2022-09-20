@@ -1,4 +1,6 @@
 import { Container, Typography } from '@mui/material'
+import { useFontFamily } from 'hooks/useFontFamily'
+import useTranslation from 'next-translate/useTranslation'
 import Link from 'next/link'
 import {
   DexpoIcon,
@@ -10,24 +12,26 @@ import {
 import styles from './products.module.scss'
 
 export default function Products() {
+  const font = useFontFamily()
+  const { t } = useTranslation('common')
   const data = [
     {
       title: 'Mainnet',
-      text: 'CONUN’s Private Blockchain Network is an answer to the limitations that come with using a public blockchain...',
+      text: t('mainnet_description'),
       bgImg: '/images/adventage-bg1.jpg',
       color1: 'primary.dark',
       color2: 'secondary',
-      subtitle: 'A Fast, Secure, and Affordable Blockchain',
+      subtitle: t('mainnet_subtitle'),
       icon: <MainnetIcon />,
       path: 'https://conscan.conun.io'
     },
     {
       title: 'Ocean Drive <br/> (Storage)',
-      text: 'OceanDrive is a unique desktop platform that connects and allows users to share storage worldwide.',
+      text: t('ocean_drive_description'),
       bgImg: '/images/adventage-bg.jpg',
       color1: 'white',
       color2: 'white',
-      subtitle: 'Explore, Share, and Earn with OceanDrive',
+      subtitle: t('ocean_drive_subtitle'),
       icon: (
         <img
           src='/images/ocean-drive.png'
@@ -41,19 +45,19 @@ export default function Products() {
     },
     {
       title: 'World Art <br/> DEXPO',
-      text: 'World Art DEXPO NFT Marketplace is a platform built to gather like-minded creators, artists, and crypto enthusiasts...',
+      text: t('world_art_description'),
       bgImg: '/images/adventage-bg3.jpg',
       color1: 'white',
       color2: 'white',
-      subtitle: 'Create, Sell and Collect Extraordinary NFTs',
+      subtitle: t('world_art_subtitle'),
       icon: <DexpoIcon />,
       path: '/products/world-art-nft'
     },
     {
       title: 'Metacon',
-      text: 'Metacon is CONUN’s cryptocurrency wallet. With our wallet you can access the products within our ecosystem as well as...',
+      text: t('metacon_description'),
       bgImg: '/images/adventage-bg4.jpg',
-      subtitle: 'Fast and Secure Cryptocurrency Wallet',
+      subtitle: t('metacon_subtitle'),
       color1: 'white',
       color2: 'white',
       icon: <MetaconIcon />,
@@ -82,17 +86,21 @@ export default function Products() {
                   <Typography
                     variant='body1'
                     fontWeight='700'
+                    style={font}
                     color={val.color2}
-                  >
-                    {val.subtitle}
-                  </Typography>
+                    dangerouslySetInnerHTML={{ __html: val.subtitle }}
+                  />
+                  {/* {val.subtitle}
+                  </Typography> */}
                   <Typography
                     className={styles.desc}
                     variant='body3'
+                    style={font}
+                    dangerouslySetInnerHTML={{ __html: val.text }}
                     color={val.color2}
-                  >
-                    {val.text}
-                  </Typography>
+                  />
+                  {/* {val.text} */}
+                  {/* </Typography> */}
                 </div>
                 <div className={styles.next}>
                   <NextArrow

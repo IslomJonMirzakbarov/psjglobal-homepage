@@ -11,6 +11,8 @@ import {
 } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { useEffect, useRef } from 'react'
+import useTranslation from 'next-translate/useTranslation'
+import { useFontFamily } from 'hooks/useFontFamily'
 
 const animationVarinat = {
   hidden: { opacity: 0.2 },
@@ -19,6 +21,10 @@ const animationVarinat = {
 
 export default function Banner() {
   const control = useAnimation()
+  const { t } = useTranslation('common')
+  const font = useFontFamily()
+
+  console.log('font', font)
   const [ref, inView] = useInView()
   const { scrollYProgress } = useScroll()
   const xCloud = useTransform(
@@ -92,14 +98,15 @@ export default function Banner() {
               sx={{ typography: { sm: 'body2', xs: 'body3' } }}
               color='secondary'
               className={styles.desc}
-            >
-              CONUN is a blockchain-based decentralized storage network.
-              <br />
-              It is a service platform that collects world wide storage by
+              style={font}
+              dangerouslySetInnerHTML={{ __html: t('banner_description') }}
+            />
+            {/* CONUN is a blockchain-based decentralized storage network. <br />
+              It is a service platform that collects world wide storage by{' '}
               <br />
               sharing the idle resources of the participants' personal
               computers.
-            </Typography>
+            </Typography> */}
             <a href='/file.pdf' target='_blank'>
               <div className={styles.link}>
                 <Typography variant='body1' color='primary'>

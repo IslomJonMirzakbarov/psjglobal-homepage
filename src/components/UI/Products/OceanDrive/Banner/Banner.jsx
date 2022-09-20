@@ -57,16 +57,13 @@ export default function Banner() {
               className={styles.title}
               color='primary.dark'
             >
-              Explore, Share, and
-              <br />
-              Earn with
-              <br />
+              Explore, Share, and <br />
+              Earn with <br />
               OceanDrive
             </Typography>
             <Typography variant='body2' color='secondary'>
-              OceanDrive is a unique desktop platform that connects
-              <br />
-              and allows users to share storage worldwide. It is a place to
+              OceanDrive is a unique desktop platform that connects <br />
+              and allows users to share storage worldwide. It is a place to{' '}
               <br />
               share and explore all your assets quickly and conveniently.
             </Typography>

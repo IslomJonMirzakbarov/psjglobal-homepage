@@ -1,5 +1,6 @@
 @import 'unit';
 @import '../../public/fonts/font.css';
+@import '../../public/fonts/conun_web_ko_font/font.css';
 
 :root {
   --primary-color: #0012b0;
@@ -12,6 +13,8 @@ html,
 body {
   padding: 0;
   margin: 0;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -26,8 +29,6 @@ button {
 
 * {
   box-sizing: border-box;
-  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 p,

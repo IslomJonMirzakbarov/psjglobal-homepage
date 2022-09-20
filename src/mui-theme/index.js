@@ -115,6 +115,13 @@ export default createTheme({
           ['@media screen and (max-width: 600px)']: {
             padding: `0 ${rem(22)}`
           }
+        },
+        maxWidthLg: {
+          '@media (min-width: 1280px)': {
+            maxWidth: '1230px',
+            paddingLeft: '16px',
+            paddingRight: '16px'
+          }
         }
       }
     }

@@ -2,14 +2,14 @@
 
 .items {
   display: grid;
-  column-gap: rem(15);
+  column-gap: rem(14);
   grid-template-columns: repeat(4, minmax(0, 1fr));
   .item {
     border-radius: rem(10);
     height: rem(312);
     display: flex;
     flex-direction: column;
-    padding: rem(22) rem(26) rem(57);
+    padding: rem(22) rem(17.5) rem(57);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 100%;
@@ -19,7 +19,7 @@
       transform: scale(1.04);
     }
     .title {
-      min-height: rem(68);
+      min-height: rem(74);
       margin-bottom: rem(38);
     }
     .desc {

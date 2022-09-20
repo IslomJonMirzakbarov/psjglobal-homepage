@@ -50,10 +50,8 @@ export default function Banner() {
               className={styles.title}
               color='white'
             >
-              Create, sell and
-              <br />
-              collect
-              <br />
+              Create, sell and <br />
+              collect <br />
               extraordinary NFTs
             </Typography>
             <Typography variant='body2' color='white'>

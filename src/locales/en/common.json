@@ -1,6 +1,17 @@
 {
-  "greeting": "Hello world",
-  "home": "Home",
-  "blog": "Blog",
-  "about": "About"
+  "banner_description": "CONUN is a blockchain-based decentralized storage network. <br /> It is a service platform that collects world wide storage by <br /> sharing the idle resources of the participants' personal computers.",
+  "mainnet_subtitle": "A Fast, Secure, <br/> and Affordable Blockchain",
+  "mainnet_description": "CONUN’s Private Blockchain Network is <br/> an answer to the limitations that come <br/> with using a public blockchain...",
+  "ocean_drive_subtitle": "Explore, Share, <br/> and Earn with OceanDrive",
+  "ocean_drive_description": "OceanDrive is a unique desktop platform that connects and allows users to share storage worldwide.",
+  "world_art_subtitle": "Create, Sell and Collect <br/> Extraordinary NFTs",
+  "world_art_description": "World Art DEXPO NFT Marketplace is a platform built to gather like-minded creators, artists, and crypto enthusiasts...",
+  "metacon_subtitle": "Fast and Secure <br/> Cryptocurrency Wallet",
+  "metacon_description": "Metacon is CONUN’s cryptocurrency wallet. With our wallet you can access the products within our ecosystem as well as...",
+  "advantage_title_1": "Get Power By Conun",
+  "advantage_desc_1": "Through our distributed super computing platform you can get the power to run large projects, files, and applications affordably.",
+  "advantage_title_2": "Give Power to Earn",
+  "advantage_desc_2": "By sharing your personal computing resources you become part of a P2P network where earning is easy.",
+  "advantage_title_3": "Join Our Ecosystem",
+  "advantage_desc_3": "Become part of the CONUN network and you can benefit from our current and future blockchain-based projects."
 }
