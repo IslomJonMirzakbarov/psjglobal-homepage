@@ -1,4 +1,6 @@
 import { Button, Checkbox, Dialog, styled } from '@mui/material'
+import { useFontFamily } from 'hooks/useFontFamily'
+import useTranslation from 'next-translate/useTranslation'
 import { CloseModalIcon } from '../Icons'
 import styles from './SubscribeModal.module.scss'
 
@@ -67,6 +69,8 @@ function BpCheckbox(props) {
 }
 
 export default function SubscribeModal({ open, handleClose }) {
+  const { t } = useTranslation('common')
+  const font = useFontFamily()
   return (
     <Dialog
       open={open}
@@ -78,15 +82,16 @@ export default function SubscribeModal({ open, handleClose }) {
         <div className={styles.close} onClick={handleClose}>
           <CloseModalIcon />
         </div>
-        <p className={styles.title}>Subscribe to download</p>
+        <p className={styles.title} style={font}>
+          {t('dialog_title')}
+        </p>
         <img
           className={styles.img}
           src='/images/subscribe.png'
           alt='subscribe'
         />
-        <p className={styles.desc}>
-          This project is currently under development. Please type your email
-          address to be updated and you will be the first to know!
+        <p className={styles.desc} style={font}>
+          {t('dialog_desc')}
         </p>
         <input
           name='email'
@@ -94,9 +99,8 @@ export default function SubscribeModal({ open, handleClose }) {
           placeholder='your@email.com'
           className={styles.input}
         />
-        <div className={styles.checkbox}>
-          <BpCheckbox />I want to receive notifications to my email whatever new
-          updates are available from CONUN.
+        <div className={styles.checkbox} style={font}>
+          <BpCheckbox /> {t('dialog_privacy')}
         </div>
         <Button fullWidth className={styles.button}>
           Subscribe

@@ -1,12 +1,14 @@
 import { Button, Container, Typography } from '@mui/material'
 import SubscribeModal from 'components/UI/SubscribeModal/SubscribeModal'
 import { motion } from 'framer-motion'
+import { useFontFamily } from 'hooks/useFontFamily'
 import Image from 'next/image'
 import { useState } from 'react'
 import styles from './oceanDrive.module.scss'
 
 export default function OceanDrive({ data }) {
   const [open, setOpen] = useState(false)
+  const font = useFontFamily()
   return (
     <Container>
       <div className={styles.box}>
@@ -32,6 +34,7 @@ export default function OceanDrive({ data }) {
           dangerouslySetInnerHTML={{ __html: data.desc }}
           variant='body2'
           component='p'
+          style={font}
         />
         <div className={styles.leftElements}>
           <motion.div

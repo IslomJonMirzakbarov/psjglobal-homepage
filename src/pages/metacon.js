@@ -1,12 +1,14 @@
 import SEO from 'components/SEO'
 import { Footer } from 'components/UI/Footer/Footer'
 import Metacon from 'components/UI/Download/Metacon/Metacon'
+import useTranslation from 'next-translate/useTranslation'
 
 export default function MetaconPage() {
+  const { t } = useTranslation('common')
   const data = {
     title: 'Metacon',
     img: '/images/metacon.jpg',
-    desc: '<span>Best Security Wallet</span> Start Right Now!',
+    desc: t('download_metacon_desc'),
     items: [
       {
         title: 'Chrome',

@@ -1,12 +1,15 @@
 import SEO from 'components/SEO'
 import { Footer } from 'components/UI/Footer/Footer'
 import OceanDrive from 'components/UI/Download/OceanDrive/OceanDrive'
+import useTranslation from 'next-translate/useTranslation'
 
 export default function OceanDrivePage() {
+  const { t } = useTranslation('common')
+
   const data = {
     title: 'OceanDrive',
     img: '/images/ocean-drive.jpg',
-    desc: ' <span>User-First Drive</span> Start Right Now!',
+    desc: t('download_ocean_drive_desc'),
     items: [
       {
         title: 'Windows',

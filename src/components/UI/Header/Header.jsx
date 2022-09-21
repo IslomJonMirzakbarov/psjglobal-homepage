@@ -110,7 +110,7 @@ export function Header() {
         <div className={styles.rightItem}>
           <div className={styles.langItems}>
             <LanguageIcon />
-            <Link href='/' locale='en'>
+            <Link href={router.asPath} locale='en'>
               <a onClick={() => saveLang('en')}>
                 <Typography
                   className={styles.link}
@@ -122,7 +122,7 @@ export function Header() {
                 </Typography>
               </a>
             </Link>
-            <Link href='/' locale='kr'>
+            <Link href={router.asPath} locale='kr'>
               <a onClick={() => saveLang('kr')}>
                 <Typography
                   className={styles.link}
