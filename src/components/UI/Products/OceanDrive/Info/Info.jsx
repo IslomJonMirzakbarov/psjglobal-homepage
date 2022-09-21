@@ -1,19 +1,23 @@
 import { Container, Typography } from '@mui/material'
+import { useFontFamily } from 'hooks/useFontFamily'
+import useTranslation from 'next-translate/useTranslation'
 import { rem } from 'utils/pxToRem'
 import styles from './info.module.scss'
 
 export default function Info() {
+  const { t } = useTranslation('common')
+  const font = useFontFamily()
   const items = [
     {
-      title: 'User Device',
-      desc: 'Join the network and become a storage provider. Share your files with friends or backup your friends’ files.',
+      title: t('product_ocean_drive_network_title_1'),
+      desc: t('product_ocean_drive_network_desc_1'),
       img: '/images/products/ocean-drive/desktop.png',
       width: rem(355),
       imgHeight: rem(167)
     },
 
     {
-      title: 'User Device',
+      title: t('product_ocean_drive_network_title_1'),
       img: '/images/products/ocean-drive/phone.png',
       width: rem(94),
       imgHeight: rem(134)
@@ -22,15 +26,15 @@ export default function Info() {
 
   const avarageItems = [
     {
-      title: 'Storage Providers',
-      desc: '3. Rent someone your personal storage and get rewarded',
+      title: t('product_ocean_drive_network_title_2'),
+      desc: t('product_ocean_drive_network_desc_2'),
       img: '/images/products/ocean-drive/storage.png',
       width: rem(186),
       imgHeight: rem(93)
     },
     {
-      title: 'Storage Gateway',
-      desc: '4. OceanDrive provides two different interfaces (HTTP/ P2P) for performing, sorting and querying on stream and are installed defined into application. Storage Gateway is responsible for handling requests by clients which connects to a remote OceanDrive node over HTTP.',
+      title: t('product_ocean_drive_network_title_3'),
+      desc: t('product_ocean_drive_network_desc_3'),
       img: '/images/products/ocean-drive/storage.png',
       width: rem(284),
       imgHeight: rem(93)
@@ -47,18 +51,11 @@ export default function Info() {
           color='black'
           textAlign='center'
           className={styles.desc}
-        >
-          OceanDrive is secure and public decentralized storage. It means there
-          is no centralized server that stores all the content. All content will
-          be stored by OceanDrive participants (which is nodes). As soon as a
-          user connects to the OceanDrive network his/her computer will become a
-          OceanDrive network participant, and participants will choose which
-          files to publish or store/backup. Content publishers and storage
-          providers will be rewarded by the network participants. All actions
-          and transactions that occur on the OceanDrive network will be stored
-          on the Conun Private Blockchain, meaning all actions and transactions
-          are immutable and secure.
-        </Typography>
+          style={font}
+          dangerouslySetInnerHTML={{
+            __html: t('product_info_ocean_drive_desc')
+          }}
+        />
         <div className={styles.img}>
           <div className={styles.oval}>
             <div className={styles.line} />
@@ -72,18 +69,18 @@ export default function Info() {
                 color='secondary.dark'
                 textAlign='center'
                 fontWeight={700}
+                style={font}
               >
-                CONUN Blockchain Network
+                {t('product_ocean_drive_network_title_4')}
               </Typography>
               <Typography
                 variant='body3'
                 color='secondary.dark'
                 textAlign='center'
                 component='p'
+                style={font}
               >
-                5. The network constantly verifies that storage providers are
-                storing files correctly. All rewarding process is powered by
-                CONUN blockchain.
+                {t('product_ocean_drive_network_desc_4')}
               </Typography>
             </div>
             <div className={styles.items}>
@@ -106,6 +103,7 @@ export default function Info() {
                     color='secondary.dark'
                     textAlign='center'
                     fontWeight={700}
+                    style={font}
                   >
                     {item.title}
                   </Typography>
@@ -114,9 +112,11 @@ export default function Info() {
                     color='secondary.dark'
                     textAlign='center'
                     component='p'
-                  >
-                    {item.desc}
-                  </Typography>
+                    style={font}
+                    dangerouslySetInnerHTML={{
+                      __html: item.desc
+                    }}
+                  />
                 </div>
               ))}
             </div>
@@ -140,6 +140,7 @@ export default function Info() {
                     color='secondary.dark'
                     textAlign='center'
                     fontWeight={700}
+                    style={font}
                   >
                     {item.title}
                   </Typography>
@@ -148,6 +149,7 @@ export default function Info() {
                     color='secondary.dark'
                     textAlign='center'
                     component='p'
+                    style={font}
                   >
                     {item.desc}
                   </Typography>

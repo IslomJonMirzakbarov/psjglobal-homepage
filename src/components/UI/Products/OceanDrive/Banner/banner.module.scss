@@ -14,11 +14,9 @@
         min-height: rem(413);
         .title {
           margin-bottom: rem(25);
-          &:after {
-            content: attr(data-text);
+          span {
+            font-family: 'Poppins' !important;
             color: #09c9c9;
-            transform: translateX(-100%);
-            position: absolute;
           }
         }
         button {

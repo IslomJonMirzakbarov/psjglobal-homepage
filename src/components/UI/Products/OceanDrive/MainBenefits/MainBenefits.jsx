@@ -1,28 +1,32 @@
 import { Container, Typography } from '@mui/material'
 import { motion } from 'framer-motion'
+import { useFontFamily } from 'hooks/useFontFamily'
+import useTranslation from 'next-translate/useTranslation'
 import styles from './mainBenefits.module.scss'
 
 export default function MainBenefits() {
+  const { t } = useTranslation('common')
+  const font = useFontFamily()
   const data = [
     {
-      title: 'Storage',
-      desc: 'Stores data separately instead of storing all data on one centralized server - eliminates need for cloud storage',
+      title: t('product_ocean_drive_benefits_title_1'),
+      desc: t('product_ocean_drive_benefits_desc_1'),
       img: '/images/products/ocean-drive/main1.png'
     },
     {
-      title: 'Marketplace',
-      desc: 'Peer to peer marketplace - meaning unique products, worldwide assets, and increased availability of product.',
+      title: t('product_ocean_drive_benefits_title_2'),
+      desc: t('product_ocean_drive_benefits_desc_2'),
       img: '/images/products/ocean-drive/main2.png'
     },
     {
-      title: 'Business Opportunity',
-      desc: 'Business opportunity for all users - rewards by sharing your personal idle resources and published private content.',
+      title: t('product_ocean_drive_benefits_title_3'),
+      desc: t('product_ocean_drive_benefits_desc_3'),
       img: '/images/products/ocean-drive/main3.png',
       imgTop: -45
     },
     {
-      title: 'Software Development',
-      desc: 'OceanDrive was built for developers. So, if you are building an application, and NFT marketplace, or anything in between, our APIs and SDKs will provide you with powerful features.',
+      title: t('product_ocean_drive_benefits_title_4'),
+      desc: t('product_ocean_drive_benefits_desc_4'),
       img: '/images/products/ocean-drive/main4.png',
       imgTop: -15
     }
@@ -64,6 +68,7 @@ export default function MainBenefits() {
                   fontWeight='700'
                   color='primary.dark'
                   textAlign='center'
+                  style={font}
                 >
                   {item.title}
                 </Typography>
@@ -73,6 +78,7 @@ export default function MainBenefits() {
                   color='secondary'
                   fontWeight='500'
                   component='p'
+                  style={font}
                 >
                   {item.desc}
                 </Typography>

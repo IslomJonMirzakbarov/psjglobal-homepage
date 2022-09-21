@@ -114,6 +114,9 @@
     .desc {
       width: 100%;
       margin: rem(12) 0 rem(55);
+      br {
+        display: none;
+      }
     }
     .img {
       width: rem(151);

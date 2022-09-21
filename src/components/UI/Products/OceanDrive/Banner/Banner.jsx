@@ -1,5 +1,7 @@
 import { Button, Container, Typography } from '@mui/material'
 import { motion, useAnimation, useScroll, useTransform } from 'framer-motion'
+import { useFontFamily } from 'hooks/useFontFamily'
+import useTranslation from 'next-translate/useTranslation'
 import { useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'
 import styles from './banner.module.scss'
@@ -11,6 +13,8 @@ const animationVarinat = {
 
 export default function Banner() {
   const control = useAnimation()
+  const { t } = useTranslation('common')
+  const font = useFontFamily()
   const [ref, inView] = useInView()
   const { scrollYProgress } = useScroll()
   const xCloud = useTransform(scrollYProgress, [0.09, 0.06, 0], [500, 50, 100])
@@ -52,21 +56,22 @@ export default function Banner() {
         <div className={styles.banner}>
           <div className={styles.content}>
             <Typography
-              data-text='OceanDrive'
               variant='h1'
               className={styles.title}
               color='primary.dark'
-            >
-              Explore, Share, and <br />
-              Earn with <br />
-              OceanDrive
-            </Typography>
-            <Typography variant='body2' color='secondary'>
-              OceanDrive is a unique desktop platform that connects <br />
-              and allows users to share storage worldwide. It is a place to{' '}
-              <br />
-              share and explore all your assets quickly and conveniently.
-            </Typography>
+              style={font}
+              dangerouslySetInnerHTML={{
+                __html: t('product_ocean_drive_title')
+              }}
+            />
+            <Typography
+              variant='body2'
+              style={font}
+              color='secondary'
+              dangerouslySetInnerHTML={{
+                __html: t('product_ocean_drive_desc')
+              }}
+            />
             <Button>Download</Button>
           </div>
           <div className={styles.bannerBg} />
