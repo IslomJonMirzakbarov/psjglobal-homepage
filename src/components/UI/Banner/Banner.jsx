@@ -44,7 +44,7 @@ export default function Banner() {
   )
   const xCircleBlue = useTransform(scrollYProgress, [0.07, 0], [50, 0])
 
-  const yRocket = useTransform(scrollYProgress, [0.06, 0], [500, 0])
+  const yRocket = useTransform(scrollYProgress, [0.06, 0], [460, 0])
   const yTerminal = useTransform(scrollYProgress, [0.06, 0], [-100, 0])
   const xRocket = useTransform(
     scrollYProgress,
