@@ -64,3 +64,38 @@
     transform: none;
   }
 }
+
+@media (max-width: 600px) {
+  .modal {
+    padding: rem(16) rem(16) rem(62);
+    width: 100%;
+    .title {
+      font-size: rem(15);
+      line-height: rem(22);
+      margin-bottom: rem(12);
+    }
+    .img {
+      height: rem(64);
+    }
+    .input {
+      padding: rem(8) rem(20);
+      height: rem(40);
+    }
+    .desc {
+      font-size: rem(12);
+      line-height: rem(18);
+    }
+    .input {
+      margin-top: rem(13);
+    }
+    .checkbox {
+      margin-top: rem(17);
+      font-size: rem(10);
+      line-height: rem(15);
+    }
+    .button {
+      height: rem(45);
+      font-size: rem(12);
+    }
+  }
+}
