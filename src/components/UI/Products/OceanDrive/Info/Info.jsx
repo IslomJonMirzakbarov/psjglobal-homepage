@@ -35,9 +35,9 @@ export default function Info() {
     {
       title: t('product_ocean_drive_network_title_3'),
       desc: t('product_ocean_drive_network_desc_3'),
-      img: '/images/products/ocean-drive/storage.png',
+      img: '/images/products/ocean-drive/network2.png',
       width: rem(284),
-      imgHeight: rem(93)
+      imgHeight: rem(163)
     }
   ]
   return (

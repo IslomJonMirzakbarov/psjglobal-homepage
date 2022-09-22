@@ -98,6 +98,16 @@
             display: flex;
             justify-content: center;
           }
+          &:last-child {
+            position: relative;
+            top: rem(-30);
+            .itemImg {
+              height: rem(163);
+              img {
+                height: rem(150) !important;
+              }
+            }
+          }
         }
       }
     }
