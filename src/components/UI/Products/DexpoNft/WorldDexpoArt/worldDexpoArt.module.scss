@@ -9,7 +9,7 @@
     margin: rem(8) 0 rem(47);
   }
   .list {
-    gap: rem(80);
+    gap: rem(60);
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     .item {
@@ -51,7 +51,6 @@
       flex-direction: column;
       row-gap: rem(50);
       column-gap: 0;
-      padding: 0 rem(22);
     }
   }
 }
