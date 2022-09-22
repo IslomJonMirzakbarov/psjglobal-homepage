@@ -103,7 +103,7 @@ export default function SubscribeModal({ open, handleClose }) {
           <BpCheckbox /> {t('dialog_privacy')}
         </div>
         <Button fullWidth className={styles.button}>
-          Subscribe
+          Confirm
         </Button>
       </div>
     </Dialog>

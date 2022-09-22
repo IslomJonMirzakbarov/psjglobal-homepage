@@ -66,9 +66,8 @@ export default function WorldDexpoArt() {
                 color='white'
                 component='p'
                 style={font}
-              >
-                {item.desc}
-              </Typography>
+                dangerouslySetInnerHTML={{ __html: item.desc }}
+              />
             </div>
           ))}
         </div>
