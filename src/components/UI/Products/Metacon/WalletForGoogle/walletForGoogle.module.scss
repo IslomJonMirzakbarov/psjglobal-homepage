@@ -77,9 +77,15 @@
     overflow: hidden;
     .title {
       line-height: rem(35);
+      br {
+        display: none;
+      }
     }
     .desc {
       margin: rem(10) 0 rem(15);
+      br {
+        display: none;
+      }
     }
     .elements {
       width: rem(257);

@@ -1,36 +1,40 @@
 import { Container, Typography } from '@mui/material'
 import { motion } from 'framer-motion'
+import { useFontFamily } from 'hooks/useFontFamily'
+import useTranslation from 'next-translate/useTranslation'
 import { rem } from 'utils/pxToRem'
 import styles from './mainBenefits.module.scss'
 
 export default function MainBenefits() {
+  const { t } = useTranslation('common')
+  const font = useFontFamily()
   const data = [
     {
-      title: 'Fast <br/> Transactions',
+      title: t('product_metacon_benefits_1'),
       img: '/images/products/metacon/main1.png',
       widthImg: 112,
       heightImg: 112
     },
     {
-      title: 'Secure<br/> Network',
+      title: t('product_metacon_benefits_2'),
       img: '/images/products/metacon/main2.png',
       widthImg: 84,
       heightImg: 124
     },
     {
-      title: 'Easy Management Of<br/> Your Crypto',
+      title: t('product_metacon_benefits_3'),
       img: '/images/products/metacon/main3.png',
       widthImg: 109,
       heightImg: 129
     },
     {
-      title: 'Decentralized<br/> Finance',
+      title: t('product_metacon_benefits_4'),
       img: '/images/products/metacon/main4.png',
       widthImg: 115,
       heightImg: 115
     },
     {
-      title: 'Access To<br/>  Conun’s Services',
+      title: t('product_metacon_benefits_5'),
       img: '/images/products/metacon/main5.png',
       widthImg: 74,
       heightImg: 112
@@ -47,15 +51,11 @@ export default function MainBenefits() {
           color='secondary'
           textAlign='center'
           className={styles.desc}
-        >
-          Metacon plays the role of a mediator that connects you to the <br />
-          applications that exist in the CONUN ecosystem. Since it's connected
-          to the CONUN Mainnet, <br />
-          we guarantee fast and safe payment and rewards system for users in the
-          CONUN's services. <br />
-          Our wallet seamlessly incorporates Ethereum wallets, access with one
-          easy download.
-        </Typography>
+          dangerouslySetInnerHTML={{
+            __html: t('product_metacon_info')
+          }}
+          style={font}
+        />
         <motion.div
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
@@ -95,6 +95,7 @@ export default function MainBenefits() {
                 variant='body1'
                 fontWeight='700'
                 color='primary.dark'
+                style={font}
                 textAlign='center'
                 dangerouslySetInnerHTML={{ __html: item.title }}
               />

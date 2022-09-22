@@ -1,9 +1,13 @@
 import { Button, Container, Typography } from '@mui/material'
 import { motion, useScroll, useTransform } from 'framer-motion'
+import { useFontFamily } from 'hooks/useFontFamily'
+import useTranslation from 'next-translate/useTranslation'
 import styles from './banner.module.scss'
 
 export default function Banner() {
   const { scrollYProgress } = useScroll()
+  const { t } = useTranslation('common')
+  const font = useFontFamily()
   const scaleElement = useTransform(
     scrollYProgress,
     [0.08, 0.06, 0.04, 0.02, 0],
@@ -94,14 +98,19 @@ export default function Banner() {
               variant='h1'
               className={styles.title}
               color='primary.dark'
-            >
-              Fast and secure cryptocurrency wallet
-            </Typography>
-            <Typography variant='body2' color='primary.dark'>
-              Metacon is CONUN’s cryptocurrency wallet. With our wallet <br />
-              you can access the products within our ecosystem as well as <br />
-              swap and transfer cryptocurrency quickly and securely.
-            </Typography>
+              dangerouslySetInnerHTML={{
+                __html: t('product_metacon_title')
+              }}
+              style={font}
+            />
+            <Typography
+              variant='body2'
+              color='primary.dark'
+              dangerouslySetInnerHTML={{
+                __html: t('product_metacon_desc')
+              }}
+              style={font}
+            />
             <Button className={styles.btn}>Visit the website</Button>
           </div>
         </div>

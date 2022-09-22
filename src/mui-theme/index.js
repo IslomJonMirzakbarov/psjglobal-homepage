@@ -109,6 +109,13 @@ export default createTheme({
         }
       }
     },
+    MuiDrawer: {
+      styleOverrides: {
+        paper: {
+          borderRadius: 0
+        }
+      }
+    },
     MuiContainer: {
       styleOverrides: {
         root: {

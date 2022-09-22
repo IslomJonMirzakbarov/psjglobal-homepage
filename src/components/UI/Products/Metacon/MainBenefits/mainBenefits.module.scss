@@ -24,6 +24,7 @@
     gap: rem(25);
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
+    width: 100%;
     .item {
       padding: rem(93) rem(16) rem(19);
       position: relative;

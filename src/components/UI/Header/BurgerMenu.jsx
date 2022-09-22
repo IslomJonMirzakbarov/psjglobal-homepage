@@ -9,6 +9,8 @@ import MuiAccordionSummary from '@mui/material/AccordionSummary'
 import MuiAccordionDetails from '@mui/material/AccordionDetails'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp'
+import saveLang from 'utils/saveLang'
+import { useRouter } from 'next/router'
 
 const MuiSwipeableDrawer = styled((props) => <SwipeableDrawer {...props} />)(
   ({ theme }) => ({
@@ -23,6 +25,7 @@ const Accordion = styled((props) => (
 ))(({ theme }) => ({
   border: 'none',
   background: '#F6F6FB',
+  borderRadius: 0,
   '&::before': {
     display: 'none'
   }
@@ -51,6 +54,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 
 export default function BurgerMenu() {
   const [open, setOpen] = useState(false)
+  const router = useRouter()
   const iOS =
     typeof navigator !== 'undefined' &&
     /iPad|iPhone|iPod/.test(navigator.userAgent)
@@ -182,8 +186,13 @@ export default function BurgerMenu() {
           <div className={styles.bottomElement}>
             <div className={styles.langItems}>
               <LanguageIcon />
-              <Link href='/' locale='en'>
-                <a>
+              <Link href={router.asPath} locale='en'>
+                <a
+                  onClick={() => {
+                    setOpen(false)
+                    saveLang('en')
+                  }}
+                >
                   <Typography
                     className={styles.lang}
                     component='p'
@@ -194,8 +203,13 @@ export default function BurgerMenu() {
                   </Typography>
                 </a>
               </Link>
-              <Link href='/' locale='kr'>
-                <a>
+              <Link href={router.asPath} locale='kr'>
+                <a
+                  onClick={() => {
+                    setOpen(false)
+                    saveLang('kr')
+                  }}
+                >
                   <Typography
                     className={styles.lang}
                     component=''
@@ -210,7 +224,7 @@ export default function BurgerMenu() {
             <div className={styles.border} />
             <div className={styles.mainnetLive}>
               <div className={styles.circle} />
-              <Link href='/'>
+              <a href='https://conscan.conun.io' target='_blank'>
                 <Typography
                   className={styles.lang}
                   component='a'
@@ -219,7 +233,7 @@ export default function BurgerMenu() {
                 >
                   Mainnet is live
                 </Typography>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
