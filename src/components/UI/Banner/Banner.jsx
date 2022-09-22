@@ -23,8 +23,6 @@ export default function Banner() {
   const control = useAnimation()
   const { t } = useTranslation('common')
   const font = useFontFamily()
-
-  console.log('font', font)
   const [ref, inView] = useInView()
   const { scrollYProgress } = useScroll()
   const xCloud = useTransform(

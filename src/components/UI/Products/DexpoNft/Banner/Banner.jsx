@@ -1,9 +1,13 @@
 import { Button, Container, Typography } from '@mui/material'
 import { motion, useScroll, useTransform } from 'framer-motion'
+import { useFontFamily } from 'hooks/useFontFamily'
+import useTranslation from 'next-translate/useTranslation'
 import styles from './banner.module.scss'
 
 export default function Banner() {
   const { scrollYProgress } = useScroll()
+  const { t } = useTranslation('common')
+  const font = useFontFamily()
   const scaleElement = useTransform(
     scrollYProgress,
     [0.2, 0.1, 0.05, 0],
@@ -49,15 +53,15 @@ export default function Banner() {
               variant='h1'
               className={styles.title}
               color='white'
-            >
-              Create, sell and <br />
-              collect <br />
-              extraordinary NFTs
-            </Typography>
-            <Typography variant='body2' color='white'>
-              Great chance for artists to create their own items. <br />
-              lowest fee for Buying and Selling NFTs
-            </Typography>
+              style={font}
+              dangerouslySetInnerHTML={{ __html: t('product_dexpo_title') }}
+            />
+            <Typography
+              variant='body2'
+              color='white'
+              style={font}
+              dangerouslySetInnerHTML={{ __html: t('product_dexpo_desc') }}
+            />
             <a href='https://testnet.dexpo.world' target='_blank'>
               <Button className={styles.btn}>Visit the website</Button>
             </a>

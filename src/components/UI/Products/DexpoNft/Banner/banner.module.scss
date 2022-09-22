@@ -14,11 +14,8 @@
         min-height: rem(413);
         .title {
           margin-bottom: rem(25);
-          &:after {
-            content: attr(data-text);
+          span {
             color: #e61e66;
-            transform: translateX(-100%);
-            position: absolute;
           }
         }
         .btn {
