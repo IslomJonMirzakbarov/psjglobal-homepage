@@ -16,17 +16,19 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     const userLang = navigator.language || navigator.userLanguage
     const cookies = parseCookies()
-    if (!cookies && !cookies.lang) {
-      if (userLang === 'ko') {
-        router.push(router.asPath, router.asPath, { locale: 'kr' })
-        saveLang('kr')
+    if (router.pathname !== '/404') {
+      if (!cookies && !cookies.lang) {
+        if (userLang === 'ko') {
+          router.push(router.asPath, router.asPath, { locale: 'kr' })
+          saveLang('kr')
+        } else {
+          router.push(router.asPath, router.asPath, { locale: 'en' })
+          saveLang('en')
+        }
       } else {
-        router.push(router.asPath, router.asPath, { locale: 'en' })
-        saveLang('en')
-      }
-    } else {
-      if (cookies.lang) {
-        router.push(router.asPath, router.asPath, { locale: cookies.lang })
+        if (cookies.lang) {
+          router.push(router.asPath, router.asPath, { locale: cookies.lang })
+        }
       }
     }
   }, [])
