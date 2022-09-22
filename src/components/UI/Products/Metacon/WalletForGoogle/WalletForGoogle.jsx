@@ -42,94 +42,111 @@ export default function WalletForGoogle() {
   }, [control, inView])
 
   return (
-    <Container>
-      <div className={styles.box}>
-        <Typography
-          className={styles.title}
-          variant='h2'
-          color='primary.dark'
-          textAlign='center'
-          dangerouslySetInnerHTML={{
-            __html: t('product_metacon_wallet_title')
-          }}
-          style={font}
-        />
-        <Typography
-          variant='body2'
-          className={styles.desc}
-          color='secondary'
-          textAlign='center'
-          dangerouslySetInnerHTML={{
-            __html: t('product_metacon_wallet_desc')
-          }}
-          style={font}
-        />
-        <Button className={styles.btn}>Visit the website</Button>
-        <div className={styles.elements}>
-          <div className={styles.item1}>
+    <div className={styles.container}>
+      <Container>
+        <div className={styles.box}>
+          <Typography
+            className={styles.title}
+            variant='h2'
+            color='primary.dark'
+            textAlign='center'
+            dangerouslySetInnerHTML={{
+              __html: t('product_metacon_wallet_title')
+            }}
+            style={font}
+          />
+          <Typography
+            variant='body2'
+            className={styles.desc}
+            color='secondary'
+            textAlign='center'
+            dangerouslySetInnerHTML={{
+              __html: t('product_metacon_wallet_desc')
+            }}
+            style={font}
+          />
+          <Button className={styles.btn}>Visit the website</Button>
+          <div className={styles.elements}>
+            <div className={styles.item1}>
+              <motion.img
+                style={{
+                  scale: scaleDesktop
+                }}
+                src='/images/products/metacon/benefits4.png'
+                alt='notebook'
+              />
+            </div>
+            <motion.div
+              ref={ref}
+              variants={animationVarinat3}
+              initial='hidden'
+              animate={control}
+              className={styles.item2}
+            >
+              <img
+                src='/images/products/metacon/benefits2.png'
+                alt='notebook'
+              />
+            </motion.div>
+            <motion.div
+              ref={ref}
+              variants={animationVarinat2}
+              initial='hidden'
+              animate={control}
+              className={styles.item3}
+            >
+              <img
+                src='/images/products/metacon/benefits2.png'
+                alt='notebook'
+              />
+            </motion.div>
+            <motion.div
+              ref={ref}
+              variants={animationVarinat}
+              initial='hidden'
+              animate={control}
+              className={styles.item4}
+            >
+              <img
+                src='/images/products/metacon/benefits6.png'
+                alt='notebook'
+              />
+            </motion.div>
+            <motion.div
+              ref={ref}
+              variants={animationVarinat}
+              initial='hidden'
+              animate={control}
+              className={styles.item5}
+            >
+              <img
+                src='/images/products/metacon/benefits5.png'
+                alt='notebook'
+              />
+            </motion.div>
+            <motion.div
+              ref={ref}
+              variants={animationVarinat}
+              initial='hidden'
+              animate={control}
+              className={styles.item6}
+            >
+              <img
+                src='/images/products/metacon/benefits7.png'
+                alt='notebook'
+              />
+            </motion.div>
             <motion.img
               style={{
-                scale: scaleDesktop
+                scale: scaleDesktop,
+                position: 'relative'
               }}
-              src='/images/products/metacon/benefits4.png'
+              src='/images/products/metacon/benefits1.png'
               alt='notebook'
             />
           </div>
-          <motion.div
-            ref={ref}
-            variants={animationVarinat3}
-            initial='hidden'
-            animate={control}
-            className={styles.item2}
-          >
-            <img src='/images/products/metacon/benefits2.png' alt='notebook' />
-          </motion.div>
-          <motion.div
-            ref={ref}
-            variants={animationVarinat2}
-            initial='hidden'
-            animate={control}
-            className={styles.item3}
-          >
-            <img src='/images/products/metacon/benefits2.png' alt='notebook' />
-          </motion.div>
-          <motion.div
-            ref={ref}
-            variants={animationVarinat}
-            initial='hidden'
-            animate={control}
-            className={styles.item4}
-          >
-            <img src='/images/products/metacon/benefits6.png' alt='notebook' />
-          </motion.div>
-          <motion.div
-            ref={ref}
-            variants={animationVarinat}
-            initial='hidden'
-            animate={control}
-            className={styles.item5}
-          >
-            <img src='/images/products/metacon/benefits5.png' alt='notebook' />
-          </motion.div>
-          <motion.div
-            ref={ref}
-            variants={animationVarinat}
-            initial='hidden'
-            animate={control}
-            className={styles.item6}
-          >
-            <img src='/images/products/metacon/benefits7.png' alt='notebook' />
-          </motion.div>
-          <motion.img
-            style={{
-              scale: scaleDesktop,
-              position: 'relative'
-            }}
-            src='/images/products/metacon/benefits1.png'
-            alt='notebook'
-          />
         </div>
-      </div>
-    </Container>
+      </Container>
+    </div>
   )
 }
