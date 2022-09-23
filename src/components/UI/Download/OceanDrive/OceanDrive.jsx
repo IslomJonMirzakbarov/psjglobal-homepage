@@ -38,7 +38,7 @@ export default function OceanDrive({ data }) {
         />
         <div className={styles.leftElements}>
           <motion.div
-            initial={{ x: -150 }}
+            initial={{ x: -120 }}
             whileInView={{ x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.5 }}
@@ -67,7 +67,7 @@ export default function OceanDrive({ data }) {
             <img src='/images/ocean-drive/right1.png' />
           </motion.div>
           <motion.div
-            initial={{ x: 150 }}
+            initial={{ x: 120 }}
             whileInView={{ x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.5 }}

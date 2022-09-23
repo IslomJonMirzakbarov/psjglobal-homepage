@@ -1,45 +1,52 @@
 import { Container, Typography } from '@mui/material'
 import { useFontFamily } from 'hooks/useFontFamily'
 import useTranslation from 'next-translate/useTranslation'
+import { useMemo } from 'react'
 import { rem } from 'utils/pxToRem'
 import styles from './info.module.scss'
 
 export default function Info() {
   const { t } = useTranslation('common')
   const font = useFontFamily()
-  const items = [
-    {
-      title: t('product_ocean_drive_network_title_1'),
-      desc: t('product_ocean_drive_network_desc_1'),
-      img: '/images/products/ocean-drive/desktop.png',
-      width: rem(355),
-      imgHeight: rem(167)
-    },
+  const items = useMemo(
+    () => [
+      {
+        title: t('product_ocean_drive_network_title_1'),
+        desc: t('product_ocean_drive_network_desc_1'),
+        img: '/images/products/ocean-drive/desktop.png',
+        width: rem(355),
+        imgHeight: rem(167)
+      },
 
-    {
-      title: t('product_ocean_drive_network_title_1'),
-      img: '/images/products/ocean-drive/phone.png',
-      width: rem(94),
-      imgHeight: rem(134)
-    }
-  ]
+      {
+        title: t('product_ocean_drive_network_title_1'),
+        img: '/images/products/ocean-drive/phone.png',
+        width: rem(94),
+        imgHeight: rem(134)
+      }
+    ],
+    []
+  )
 
-  const avarageItems = [
-    {
-      title: t('product_ocean_drive_network_title_2'),
-      desc: t('product_ocean_drive_network_desc_2'),
-      img: '/images/products/ocean-drive/storage.png',
-      width: rem(186),
-      imgHeight: rem(93)
-    },
-    {
-      title: t('product_ocean_drive_network_title_3'),
-      desc: t('product_ocean_drive_network_desc_3'),
-      img: '/images/products/ocean-drive/network2.png',
-      width: rem(284),
-      imgHeight: rem(163)
-    }
-  ]
+  const avarageItems = useMemo(
+    () => [
+      {
+        title: t('product_ocean_drive_network_title_2'),
+        desc: t('product_ocean_drive_network_desc_2'),
+        img: '/images/products/ocean-drive/storage.png',
+        width: rem(186),
+        imgHeight: rem(93)
+      },
+      {
+        title: t('product_ocean_drive_network_title_3'),
+        desc: t('product_ocean_drive_network_desc_3'),
+        img: '/images/products/ocean-drive/network2.png',
+        width: rem(284),
+        imgHeight: rem(163)
+      }
+    ],
+    []
+  )
   return (
     <Container>
       <div className={styles.info}>

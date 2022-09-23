@@ -10,7 +10,7 @@ export default function NewsPage() {
       <main>
         <div className='news-bg'>
           <News isNewsPage />
-          <ExternalNews />
+          <ExternalNews isNewsPage />
           <Footer />
         </div>
       </main>

@@ -12,15 +12,15 @@ export default function MetaconPage() {
     items: [
       {
         title: 'Chrome',
-        desc: 'OSX 10.9 later',
+        //desc: 'OSX 10.9 later',
         img: '/icons/chrome.png',
-        active: true,
+        active: false,
         imgWidth: 56,
         imgHeight: 56
       },
       {
         title: 'iOS, android',
-        desc: '',
+        //desc: '',
         img: ['/icons/apple.png', '/icons/android.png'],
         active: false
       }

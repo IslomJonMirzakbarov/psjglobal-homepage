@@ -8,6 +8,15 @@
       padding: rem(90) 0 rem(110);
     }
     position: relative;
+    .more {
+      font-size: rem(12);
+      line-height: rem(20);
+      color: var(--primary-color);
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-top: rem(17);
+    }
     .element {
       position: absolute;
       bottom: rem(160);
@@ -45,7 +54,8 @@
         border-radius: rem(10);
         overflow: hidden;
         background-color: #fff;
-
+        border: 1px solid #e8e8e8;
+        height: rem(618);
         .img {
           height: rem(422);
           position: relative;
@@ -96,6 +106,7 @@
           background-color: #fff;
           border-radius: rem(10);
           overflow: hidden;
+          border: 1px solid #e8e8e8;
           .img {
             min-width: rem(178);
             max-width: rem(178);
@@ -151,6 +162,7 @@
           .img {
             height: rem(223);
           }
+          height: auto;
         }
         .date {
           font-size: rem(10);

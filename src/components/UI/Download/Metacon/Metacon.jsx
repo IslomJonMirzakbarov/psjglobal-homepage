@@ -38,7 +38,7 @@ export default function Metacon({ data }) {
         />
         <div className={styles.leftElements}>
           <motion.div
-            initial={{ x: -150 }}
+            initial={{ x: -100 }}
             whileInView={{ x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.5 }}

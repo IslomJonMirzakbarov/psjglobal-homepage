@@ -1,0 +1,36 @@
+@import 'styles/unit.scss';
+
+.main {
+  display: flex;
+  align-items: center;
+  column-gap: rem(13);
+  margin-top: rem(25);
+  justify-content: flex-end;
+  .number {
+    font-size: rem(15);
+    line-height: rem(20);
+    color: #232323;
+  }
+  .arrow {
+    width: rem(13);
+    cursor: pointer;
+    svg {
+      path {
+        fill: #7d8890;
+      }
+    }
+    &.prev {
+      pointer-events: none;
+    }
+    &.next {
+      pointer-events: none;
+    }
+    &.active {
+      svg {
+        path {
+          fill: #0012b0;
+        }
+      }
+    }
+  }
+}

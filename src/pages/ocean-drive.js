@@ -13,22 +13,22 @@ export default function OceanDrivePage() {
     items: [
       {
         title: 'Windows',
-        desc: 'Windows7 later',
+        // desc: 'Windows7 later',
         img: '/icons/windows.png',
-        active: true
+        active: false
       },
       {
         title: 'macOS',
-        desc: 'OSX 10.9 later',
+        // desc: 'OSX 10.9 later',
         img: '/icons/apple.png',
-        active: true
+        active: false
       },
       {
         title: 'Linux',
-        desc: 'OSX 10.9 later',
+        // desc: 'OSX 10.9 later',
         img: '/icons/linux.png',
         imgWidth: 70,
-        active: true
+        active: false
       },
       {
         title: 'iOS, android',

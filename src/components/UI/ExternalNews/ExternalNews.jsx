@@ -1,8 +1,42 @@
 import { Container, Typography } from '@mui/material'
+import Link from 'next/link'
+import { useState } from 'react'
+import Pagination from '../Pagination/Pagination'
 import styles from './externalNews.module.scss'
 
-export default function ExternalNews() {
+export default function ExternalNews({ isNewsPage = false }) {
+  const [currentPage, setCurrentPage] = useState(0)
   const data = [
+    {
+      title: 'MBN',
+      desc: 'Why has CONUN developed its own private blockchain network?',
+      date: '2022-08-16'
+    },
+    {
+      title: 'MBN',
+      desc: 'Why has CONUN developed its own private blockchain network?',
+      date: '2022-08-16'
+    },
+    {
+      title: 'MBN',
+      desc: 'Why has CONUN developed its own private blockchain network?',
+      date: '2022-08-16'
+    },
+    {
+      title: 'MBN',
+      desc: 'Why has CONUN developed its own private blockchain network?',
+      date: '2022-08-16'
+    },
+    {
+      title: 'MBN',
+      desc: 'Why has CONUN developed its own private blockchain network?',
+      date: '2022-08-16'
+    },
+    {
+      title: 'MBN',
+      desc: 'Why has CONUN developed its own private blockchain network?',
+      date: '2022-08-16'
+    },
     {
       title: 'MBN',
       desc: 'Why has CONUN developed its own private blockchain network?',
@@ -25,7 +59,7 @@ export default function ExternalNews() {
     }
   ]
   return (
-    <Container className={styles.container}>
+    <Container className={styles.container} id='external-news'>
       <div className={styles.externalNews}>
         <Typography align='center' variant='h2' color='primary.dark'>
           External News
@@ -75,6 +109,17 @@ export default function ExternalNews() {
             </div>
           ))}
         </div>
+        {isNewsPage ? (
+          <Pagination
+            currentPage={currentPage}
+            setCurrentPage={setCurrentPage}
+            count={100}
+          />
+        ) : (
+          <Link href='/news/#external-news'>
+            <a className={styles.more}>More {'>'}</a>
+          </Link>
+        )}
       </div>
     </Container>
   )

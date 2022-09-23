@@ -1,7 +1,9 @@
 import { Button, Container, Typography } from '@mui/material'
+import SubscribeModal from 'components/UI/SubscribeModal/SubscribeModal'
 import { motion, useAnimation, useScroll, useTransform } from 'framer-motion'
 import { useFontFamily } from 'hooks/useFontFamily'
 import useTranslation from 'next-translate/useTranslation'
+import { useState } from 'react'
 import { useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'
 import styles from './banner.module.scss'
@@ -13,6 +15,7 @@ const animationVarinat = {
 
 export default function Banner() {
   const control = useAnimation()
+  const [open, setOpen] = useState(false)
   const { t } = useTranslation('common')
   const font = useFontFamily()
   const [ref, inView] = useInView()
@@ -72,7 +75,9 @@ export default function Banner() {
                 __html: t('product_ocean_drive_desc')
               }}
             />
-            <Button>Download</Button>
+            <Button onClick={() => setOpen((prev) => !prev)}>
+              Coming soon
+            </Button>
           </div>
           <div className={styles.bannerBg} />
         </div>
@@ -145,6 +150,10 @@ export default function Banner() {
           </motion.div>
         </motion.div>
       </Container>
+      <SubscribeModal
+        open={open}
+        handleClose={() => setOpen((prev) => !prev)}
+      />
     </div>
   )
 }

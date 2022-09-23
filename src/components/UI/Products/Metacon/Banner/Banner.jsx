@@ -1,12 +1,15 @@
 import { Button, Container, Typography } from '@mui/material'
+import SubscribeModal from 'components/UI/SubscribeModal/SubscribeModal'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useFontFamily } from 'hooks/useFontFamily'
 import useTranslation from 'next-translate/useTranslation'
+import { useState } from 'react'
 import styles from './banner.module.scss'
 
 export default function Banner() {
   const { scrollYProgress } = useScroll()
   const { t } = useTranslation('common')
+  const [open, setOpen] = useState(false)
   const font = useFontFamily()
   const scaleElement = useTransform(
     scrollYProgress,
@@ -111,7 +114,12 @@ export default function Banner() {
               }}
               style={font}
             />
-            <Button className={styles.btn}>Visit the website</Button>
+            <Button
+              onClick={() => setOpen((prev) => !prev)}
+              className={styles.btn}
+            >
+              Coming soon
+            </Button>
           </div>
         </div>
         <div className={styles.bannerBg} />
@@ -176,6 +184,10 @@ export default function Banner() {
           </motion.div>
         </div>
       </Container>
+      <SubscribeModal
+        open={open}
+        handleClose={() => setOpen((prev) => !prev)}
+      />
     </div>
   )
 }
