@@ -10,6 +10,9 @@
     margin-top: rem(202);
     height: rem(550);
     padding: 0 rem(50);
+    iframe {
+      border: none;
+    }
   }
   .list {
     margin-top: rem(70);
