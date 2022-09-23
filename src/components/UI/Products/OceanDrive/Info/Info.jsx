@@ -6,7 +6,7 @@ import { rem } from 'utils/pxToRem'
 import styles from './info.module.scss'
 
 export default function Info() {
-  const { t } = useTranslation('common')
+  const { t, lang } = useTranslation('common')
   const font = useFontFamily()
   const items = useMemo(
     () => [
@@ -15,17 +15,18 @@ export default function Info() {
         desc: t('product_ocean_drive_network_desc_1'),
         img: '/images/products/ocean-drive/desktop.png',
         width: rem(355),
-        imgHeight: rem(167)
+        imgHeight: rem(167),
+        id: 1
       },
-
       {
         title: t('product_ocean_drive_network_title_1'),
         img: '/images/products/ocean-drive/phone.png',
         width: rem(94),
-        imgHeight: rem(134)
+        imgHeight: rem(134),
+        id: 2
       }
     ],
-    []
+    [lang]
   )
 
   const avarageItems = useMemo(
@@ -35,18 +36,21 @@ export default function Info() {
         desc: t('product_ocean_drive_network_desc_2'),
         img: '/images/products/ocean-drive/storage.png',
         width: rem(186),
-        imgHeight: rem(93)
+        imgHeight: rem(93),
+        id: 3
       },
       {
         title: t('product_ocean_drive_network_title_3'),
         desc: t('product_ocean_drive_network_desc_3'),
         img: '/images/products/ocean-drive/network2.png',
         width: rem(284),
-        imgHeight: rem(163)
+        imgHeight: rem(163),
+        id: 4
       }
     ],
-    []
+    [lang]
   )
+  console.log('items==>', items)
   return (
     <Container>
       <div className={styles.info}>
@@ -94,7 +98,7 @@ export default function Info() {
               {items.map((item) => (
                 <div
                   className={styles.item}
-                  key={item.title}
+                  key={item.id}
                   style={{ maxWidth: item.width }}
                 >
                   <div className={styles.itemImg}>
@@ -131,7 +135,7 @@ export default function Info() {
               {avarageItems.map((item) => (
                 <div
                   className={styles.item}
-                  key={item.title}
+                  key={item.id}
                   style={{ maxWidth: item.width }}
                 >
                   <div className={styles.itemImg}>
