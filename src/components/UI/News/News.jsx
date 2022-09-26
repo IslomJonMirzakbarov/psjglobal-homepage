@@ -81,7 +81,7 @@ export default function News({ newsItem, isNewsPage = false, news, count }) {
     ? newsItem[0]?.attributes
     : news
     ? news[0]?.attributes
-    : {}
+    : null
   console.log('firstNews', firstNews)
   return (
     <div className={styles.section} id='news'>
@@ -112,65 +112,67 @@ export default function News({ newsItem, isNewsPage = false, news, count }) {
           )}
 
           <div className={styles.list}>
-            <div className={styles.item}>
-              <div className={styles.img}>
-                <Image
-                  src={
-                    process.env.NEXT_PUBLIC_IMAGE_BASE_URL +
-                    firstNews?.image?.data?.attributes?.url
-                  }
-                  objectFit='cover'
-                  alt='news1'
-                  layout='fill'
-                />
-              </div>
-              <div className={styles.body}>
-                {isNewsPage ? (
-                  <Typography
-                    className={styles.date}
-                    variant='body2'
-                    color='primary'
-                    fontWeight='700'
-                  >
-                    {format(new Date(firstNews.createdAt), 'yyyy.MM.dd')}
+            {firstNews && (
+              <div className={styles.item}>
+                <div className={styles.img}>
+                  <Image
+                    src={
+                      process.env.NEXT_PUBLIC_IMAGE_BASE_URL +
+                      firstNews?.image?.data?.attributes?.url
+                    }
+                    objectFit='cover'
+                    alt='news1'
+                    layout='fill'
+                  />
+                </div>
+                <div className={styles.body}>
+                  {isNewsPage ? (
+                    <Typography
+                      className={styles.date}
+                      variant='body2'
+                      color='primary'
+                      fontWeight='700'
+                    >
+                      {format(new Date(firstNews.createdAt), 'yyyy.MM.dd')}
+                    </Typography>
+                  ) : (
+                    <Typography
+                      className={styles.date}
+                      variant='body2'
+                      color='primary'
+                      fontWeight='700'
+                    >
+                      {format(new Date(firstNews.createdAt), 'EEEE').substring(
+                        0,
+                        3
+                      )}{' '}
+                      {format(new Date(firstNews.createdAt), 'LLLL').substring(
+                        0,
+                        3
+                      )}{' '}
+                      {format(new Date(firstNews.createdAt), 'dd yyyy')}
+                    </Typography>
+                  )}
+                  <p className={styles.title}>
+                    {getDataByLang(router.locale, 'title', firstNews)}
+                    {/* {firstNews.title_en} */}
+                  </p>
+                  <Typography variant='body1' color='secondary'>
+                    {/* {firstNews.description_en} */}
+                    {getDataByLang(router.locale, 'description', firstNews)}
                   </Typography>
-                ) : (
-                  <Typography
-                    className={styles.date}
-                    variant='body2'
-                    color='primary'
-                    fontWeight='700'
-                  >
-                    {format(new Date(firstNews.createdAt), 'EEEE').substring(
-                      0,
-                      3
-                    )}{' '}
-                    {format(new Date(firstNews.createdAt), 'LLLL').substring(
-                      0,
-                      3
-                    )}{' '}
-                    {format(new Date(firstNews.createdAt), 'dd yyyy')}
-                  </Typography>
-                )}
-                <p className={styles.title}>
-                  {getDataByLang(router.locale, 'title', firstNews)}
-                  {/* {firstNews.title_en} */}
-                </p>
-                <Typography variant='body1' color='secondary'>
-                  {/* {firstNews.description_en} */}
-                  {getDataByLang(router.locale, 'description', firstNews)}
-                </Typography>
-                <div className={styles.navigation}>
-                  <div className={styles.postName}>
-                    {getDataByLang(router.locale, 'posted', firstNews)}
-                    {/* {firstNews.posted_en} */}
+                  <div className={styles.navigation}>
+                    <div className={styles.postName}>
+                      {getDataByLang(router.locale, 'posted', firstNews)}
+                      {/* {firstNews.posted_en} */}
+                    </div>
+                    <NextArrow width={rem(35)} height={rem(35)} />
                   </div>
-                  <NextArrow width={rem(35)} height={rem(35)} />
                 </div>
               </div>
-            </div>
+            )}
             <div className={styles.items}>
-              {news.slice(isNewsPage ? 0 : 1).map((item, index) => (
+              {news?.slice(isNewsPage ? 0 : 1).map((item, index) => (
                 <div className={styles.card} key={item.title + index}>
                   <div className={styles.img}>
                     <Image

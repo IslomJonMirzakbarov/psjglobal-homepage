@@ -93,7 +93,7 @@ export default function ExternalNews({
           External News
         </Typography>
         <div className={styles.list}>
-          {externalNews.map((item, index) => (
+          {externalNews?.map((item, index) => (
             <div className={styles.item} key={item.title + index}>
               <div className={styles.leftElement}>
                 <Typography

@@ -87,7 +87,7 @@ export default function Metacon({ data, items }) {
           </motion.div>
         </div>
         <div className={styles.items}>
-          {items.downloads.map((item, index) => (
+          {items?.downloads?.map((item, index) => (
             <div className={styles.item} key={item.id}>
               <div className={styles.itemImg}>
                 {item?.logo?.data?.map((val) => (

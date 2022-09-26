@@ -92,7 +92,7 @@ export default function Faq({ faqs }) {
           </div>
         </div>
         <div className={styles.accordion}>
-          {items.length > 0 ? (
+          {items?.length > 0 ? (
             items?.map((item) => (
               <Accordion key={item.id}>
                 <AccordionSummary
