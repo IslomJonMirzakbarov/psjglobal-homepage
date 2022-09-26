@@ -1,9 +1,10 @@
 import SEO from 'components/SEO'
 import { Footer } from 'components/UI/Footer/Footer'
 import Metacon from 'components/UI/Download/Metacon/Metacon'
+import { fetchMultipleUrls } from 'services/fetchMultipleUrls'
 import useTranslation from 'next-translate/useTranslation'
 
-export default function MetaconPage() {
+export default function MetaconPage({ metacon }) {
   const { t } = useTranslation('common')
   const data = {
     title: 'Metacon',
@@ -32,10 +33,21 @@ export default function MetaconPage() {
       <SEO />
       <main>
         <div className='download-bg overflow-hidden'>
-          <Metacon data={data} />
+          <Metacon data={data} items={metacon?.data?.attributes} />
           <Footer />
         </div>
       </main>
     </>
   )
+}
+
+export async function getServerSideProps() {
+  const urls = ['metacon-download?populate=*,downloads.logo']
+  const [metacon] = await fetchMultipleUrls(urls)
+
+  return {
+    props: {
+      metacon
+    }
+  }
 }

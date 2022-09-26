@@ -69,6 +69,7 @@
       column-gap: rem(49);
       grid-template-columns: repeat(4, minmax(0, 1fr));
       padding-top: rem(25);
+      justify-items: center;
       .list {
         display: flex;
         flex-direction: column;

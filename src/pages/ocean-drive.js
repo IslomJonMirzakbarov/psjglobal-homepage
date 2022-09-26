@@ -1,9 +1,10 @@
 import SEO from 'components/SEO'
 import { Footer } from 'components/UI/Footer/Footer'
 import OceanDrive from 'components/UI/Download/OceanDrive/OceanDrive'
+import { fetchMultipleUrls } from 'services/fetchMultipleUrls'
 import useTranslation from 'next-translate/useTranslation'
 
-export default function OceanDrivePage() {
+export default function OceanDrivePage({ oceanDrive }) {
   const { t } = useTranslation('common')
 
   const data = {
@@ -44,10 +45,21 @@ export default function OceanDrivePage() {
       <SEO />
       <main>
         <div className='download-bg overflow-hidden'>
-          <OceanDrive data={data} />
+          <OceanDrive data={data} items={oceanDrive?.data?.attributes} />
           <Footer />
         </div>
       </main>
     </>
   )
+}
+
+export async function getServerSideProps() {
+  const urls = ['ocean-drive-download?populate=*,downloads.logo']
+  const [oceanDrive] = await fetchMultipleUrls(urls)
+
+  return {
+    props: {
+      oceanDrive
+    }
+  }
 }

@@ -51,6 +51,23 @@ export function PArrowRight() {
   )
 }
 
+export function ArrowNews() {
+  return (
+    <svg
+      width='7'
+      height='9'
+      viewBox='0 0 7 9'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+    >
+      <path
+        d='M0.0160001 0.415756H2.608L6.748 4.50176L2.608 8.58776H0.0160001L4.174 4.50176L0.0160001 0.415756Z'
+        fill='#232323'
+      />
+    </svg>
+  )
+}
+
 export function MainnetIcon() {
   return (
     <svg

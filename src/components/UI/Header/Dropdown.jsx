@@ -9,9 +9,9 @@ export default function Dropdown({ links }) {
       <ul
         className={`${styles.dropdownMenu} ${styles.dropdownMenuAnimated} ${styles.dropdownMenuScale}`}
       >
-        {links?.map((item) => (
+        {links?.map((item, index) => (
           <li
-            key={item.title}
+            key={item.title + index}
             className={`${router.pathname === item.link ? styles.active : ''}`}
           >
             <Link href={item.link}>

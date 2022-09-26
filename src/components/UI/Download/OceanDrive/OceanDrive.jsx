@@ -3,12 +3,15 @@ import SubscribeModal from 'components/UI/SubscribeModal/SubscribeModal'
 import { motion } from 'framer-motion'
 import { useFontFamily } from 'hooks/useFontFamily'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 import { useState } from 'react'
+import getDataByLang from 'utils/getDataByLang'
 import styles from './oceanDrive.module.scss'
 
-export default function OceanDrive({ data }) {
+export default function OceanDrive({ data, items }) {
   const [open, setOpen] = useState(false)
   const font = useFontFamily()
+  const router = useRouter()
   return (
     <Container>
       <div className={styles.box}>
@@ -86,31 +89,25 @@ export default function OceanDrive({ data }) {
           </motion.div>
         </div>
         <div className={styles.items}>
-          {data.items.map((item) => (
-            <div className={styles.item}>
+          {items.downloads.map((item, index) => (
+            <div className={styles.item} key={item.id}>
               <div className={styles.itemImg}>
-                {Array.isArray(item.img) ? (
-                  item.img.map((val) => (
-                    <Image
-                      src={val}
-                      key={val}
-                      objectFit='contain'
-                      alt='apple'
-                      width={40}
-                      height={40}
-                    />
-                  ))
-                ) : (
+                {item?.logo?.data?.map((val) => (
                   <Image
-                    src={item.img}
+                    src={
+                      process.env.NEXT_PUBLIC_IMAGE_BASE_URL +
+                      val?.attributes?.url
+                    }
+                    key={val.id}
                     objectFit='contain'
                     alt='apple'
-                    width={item.imgWidth || 40}
-                    height={item.imgHeight || 40}
+                    width={index === 2 ? 70 : 40}
+                    height={40}
                   />
-                )}
+                ))}
               </div>
               <Typography variant='h6' fontWeight='700' color='primary.dark'>
+                {/* {getDataByLang(router.locale, 'title', item)} */}
                 {item.title}
               </Typography>
               <Typography
@@ -118,7 +115,8 @@ export default function OceanDrive({ data }) {
                 variant='body2'
                 color='secondary'
               >
-                {item.desc}
+                {getDataByLang(router.locale, 'description', item)}
+                {/* {item.description_en} */}
               </Typography>
               <Button
                 color={!item.active ? 'secondary' : 'primary'}
