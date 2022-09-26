@@ -1,22 +1,26 @@
 import { Container, Typography } from '@mui/material'
 import { motion } from 'framer-motion'
+import { useFontFamily } from 'hooks/useFontFamily'
+import useTranslation from 'next-translate/useTranslation'
 import styles from './worldDexpoArt.module.scss'
 
 export default function WorldDexpoArt() {
+  const { t } = useTranslation('common')
+  const font = useFontFamily()
   const data = [
     {
-      title: 'Transactions on CYCON',
-      desc: 'The same ecosystem as when users receive rewards from CYCON COIN. Users can use CYCON COIN to buy and sell NFTs.',
+      title: t('product_dexpo_advantage_title_1'),
+      desc: t('product_dexpo_advantage_desc_1'),
       img: '/images/products/dexpo-nft/art1.png'
     },
     {
-      title: 'Using Ocean Drive Distributed Storage',
-      desc: "Most NFT exchanges use third-party cloud storage. DEXPONFT uses OceanDrive's distributed storage.",
+      title: t('product_dexpo_advantage_title_2'),
+      desc: t('product_dexpo_advantage_desc_2'),
       img: '/images/products/dexpo-nft/art2.png'
     },
     {
-      title: 'Audition',
-      desc: 'DEXPONFT has a specific aspect of auditions. All information about the artist (artist information, content sales information, price information, etc.) is checked by the administrator.',
+      title: t('product_dexpo_advantage_title_3'),
+      desc: t('product_dexpo_advantage_desc_3'),
       img: '/images/products/dexpo-nft/art3.png'
     }
   ]
@@ -31,11 +35,9 @@ export default function WorldDexpoArt() {
           color='white'
           textAlign='center'
           className={styles.desc}
-        >
-          World Art DEXPO NFT Marketplace is a platform built to gather
-          like-minded creators, artists, and crypto <br /> enthusiasts to
-          create, trade, and share top NFTs.
-        </Typography>
+          style={font}
+          dangerouslySetInnerHTML={{ __html: t('product_dexpo_art_desc') }}
+        />
         <div className={styles.list}>
           {data.map((item) => (
             <div className={styles.item}>
@@ -54,6 +56,7 @@ export default function WorldDexpoArt() {
                 fontWeight='700'
                 color='white'
                 textAlign='center'
+                style={font}
               >
                 {item.title}
               </Typography>
@@ -62,9 +65,9 @@ export default function WorldDexpoArt() {
                 variant='body2'
                 color='white'
                 component='p'
-              >
-                {item.desc}
-              </Typography>
+                style={font}
+                dangerouslySetInnerHTML={{ __html: item.desc }}
+              />
             </div>
           ))}
         </div>

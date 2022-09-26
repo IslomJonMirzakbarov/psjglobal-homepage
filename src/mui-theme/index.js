@@ -84,17 +84,50 @@ export default createTheme({
           },
           '&.Mui-disabled': {
             color: '#fff',
-            backgroundColor: '#7D8890'
+            backgroundColor: '#1AD7B5'
+          }
+        },
+        textSecondary: {
+          backgroundColor: '#1AD7B5',
+          '&:hover': {
+            backgroundColor: '#1AD7B5'
           }
         }
       }
     },
-
+    MuiPaper: {
+      styleOverrides: {
+        root: {
+          borderRadius: rem(10)
+        }
+      }
+    },
+    MuiCheckbox: {
+      styleOverrides: {
+        root: {
+          padding: 0
+        }
+      }
+    },
+    MuiDrawer: {
+      styleOverrides: {
+        paper: {
+          borderRadius: 0
+        }
+      }
+    },
     MuiContainer: {
       styleOverrides: {
         root: {
           ['@media screen and (max-width: 600px)']: {
             padding: `0 ${rem(22)}`
+          }
+        },
+        maxWidthLg: {
+          '@media (min-width: 1280px)': {
+            maxWidth: '1230px',
+            paddingLeft: '16px',
+            paddingRight: '16px'
           }
         }
       }

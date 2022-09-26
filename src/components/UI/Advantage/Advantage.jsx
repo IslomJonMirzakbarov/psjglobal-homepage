@@ -3,6 +3,8 @@ import styles from './advantage.module.scss'
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { useEffect } from 'react'
+import useTranslation from 'next-translate/useTranslation'
+import { useFontFamily } from 'hooks/useFontFamily'
 
 const animationVariant = {
   hidden: { scale: 0 },
@@ -11,8 +13,9 @@ const animationVariant = {
 
 export default function Advantage() {
   const control = useAnimation()
+  const font = useFontFamily()
   const [ref, inView] = useInView()
-
+  const { t } = useTranslation('common')
   useEffect(() => {
     if (inView) {
       control.start('visible')
@@ -23,21 +26,18 @@ export default function Advantage() {
 
   const items = [
     {
-      title: 'Get Power By Conun',
-      content:
-        'Through our distributed super computing platform you can get the power to run large projects, files, and applications affordably.',
+      title: t('advantage_title_1'),
+      content: t('advantage_desc_1'),
       img: '/icons/advantage1.png'
     },
     {
-      title: 'Give Power to Earn',
-      content:
-        'By sharing your personal computing resources you become part of a P2P network where earning is easy.',
+      title: t('advantage_title_2'),
+      content: t('advantage_desc_2'),
       img: '/icons/advantage2.png'
     },
     {
-      title: 'Join Our Ecosystem',
-      content:
-        'Become part of the CONUN network and you can benefit from our current and future blockchain-based projects.',
+      title: t('advantage_title_3'),
+      content: t('advantage_desc_3'),
       img: '/icons/advantage3.png'
     }
   ]
@@ -61,12 +61,19 @@ export default function Advantage() {
               variant='h6'
               color='primary.dark'
               align='center'
+              style={font}
             >
               {item.title}
             </Typography>
-            <Typography align='center' variant='body2' color='secondary'>
-              {item.content}
-            </Typography>
+            <Typography
+              style={font}
+              align='center'
+              variant='body2'
+              color='secondary'
+              dangerouslySetInnerHTML={{ __html: item.content }}
+            />
+            {/* {item.content} */}
+            {/* </Typography> */}
           </div>
         ))}
         <motion.img

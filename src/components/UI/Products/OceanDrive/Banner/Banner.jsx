@@ -1,5 +1,9 @@
 import { Button, Container, Typography } from '@mui/material'
+import SubscribeModal from 'components/UI/SubscribeModal/SubscribeModal'
 import { motion, useAnimation, useScroll, useTransform } from 'framer-motion'
+import { useFontFamily } from 'hooks/useFontFamily'
+import useTranslation from 'next-translate/useTranslation'
+import { useState } from 'react'
 import { useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'
 import styles from './banner.module.scss'
@@ -11,6 +15,9 @@ const animationVarinat = {
 
 export default function Banner() {
   const control = useAnimation()
+  const [open, setOpen] = useState(false)
+  const { t } = useTranslation('common')
+  const font = useFontFamily()
   const [ref, inView] = useInView()
   const { scrollYProgress } = useScroll()
   const xCloud = useTransform(scrollYProgress, [0.09, 0.06, 0], [500, 50, 100])
@@ -20,18 +27,19 @@ export default function Banner() {
     [0.07, 0.04, 0],
     [0, 0.5, 1]
   )
-  const elementOpacity = useTransform(
-    scrollYProgress,
-    [0.08, 0.06, 0],
-    [0, 0.2, 1]
-  )
+
   const cloundRotate = useTransform(
     scrollYProgress,
     [0.06, 0.04, 0.02, 0],
-    [-15, -10, -5, 0]
+    [-10, -8, -5, 0]
   )
   const xCircleSmall = useTransform(scrollYProgress, [0.07, 0], [-200, 0])
   const CircleOpacity = useTransform(
+    scrollYProgress,
+    [0.06, 0.08, 0],
+    [0.3, 0.5, 1]
+  )
+  const circleScale = useTransform(
     scrollYProgress,
     [0.06, 0.08, 0],
     [0.3, 0.5, 1]
@@ -51,24 +59,25 @@ export default function Banner() {
         <div className={styles.banner}>
           <div className={styles.content}>
             <Typography
-              data-text='OceanDrive'
               variant='h1'
               className={styles.title}
               color='primary.dark'
-            >
-              Explore, Share, and
-              <br />
-              Earn with
-              <br />
-              OceanDrive
-            </Typography>
-            <Typography variant='body2' color='secondary'>
-              OceanDrive is a unique desktop platform that connects and allows
-              users to <br /> share digital assets worldwide. It is a place to
-              share and explore all your assets
-              <br /> quickly and conveniently.
-            </Typography>
-            <Button>Download</Button>
+              style={font}
+              dangerouslySetInnerHTML={{
+                __html: t('product_ocean_drive_title')
+              }}
+            />
+            <Typography
+              variant='body2'
+              style={font}
+              color='secondary'
+              dangerouslySetInnerHTML={{
+                __html: t('product_ocean_drive_desc')
+              }}
+            />
+            <Button onClick={() => setOpen((prev) => !prev)}>
+              Coming soon
+            </Button>
           </div>
           <div className={styles.bannerBg} />
         </div>
@@ -88,14 +97,14 @@ export default function Banner() {
           >
             <img src='/images/products/ocean-drive/element.png' />
           </motion.div>
-          <motion.div
+          {/* <motion.div
             style={{
               opacity: elementOpacity
             }}
             className={styles.element2}
           >
             <img src='/images/products/ocean-drive/element2.png' />
-          </motion.div>
+          </motion.div> */}
           <motion.div
             style={{
               y: yElement,
@@ -114,12 +123,22 @@ export default function Banner() {
           >
             <img src='/images/products/ocean-drive/element4.png' />
           </motion.div>
-          <div className={styles.element6}>
+          <motion.div
+            style={{
+              scale: circleScale
+            }}
+            className={styles.element6}
+          >
             <img src='/images/products/ocean-drive/element6.png' />
-          </div>
-          <div className={styles.element1}>
+          </motion.div>
+          <motion.div
+            style={{
+              scale: circleScale
+            }}
+            className={styles.element1}
+          >
             <img src='/images/products/ocean-drive/element1.png' />
-          </div>
+          </motion.div>
           <motion.div
             style={{
               y: xCircleSmall,
@@ -131,6 +150,10 @@ export default function Banner() {
           </motion.div>
         </motion.div>
       </Container>
+      <SubscribeModal
+        open={open}
+        handleClose={() => setOpen((prev) => !prev)}
+      />
     </div>
   )
 }

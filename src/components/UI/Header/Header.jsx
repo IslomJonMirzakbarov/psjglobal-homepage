@@ -2,6 +2,7 @@ import Typography from '@mui/material/Typography'
 import useTranslation from 'next-translate/useTranslation'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import saveLang from 'utils/saveLang'
 import { LanguageIcon } from '../Icons'
 import BurgerMenu from './BurgerMenu'
 import Dropdown from './Dropdown'
@@ -109,8 +110,8 @@ export function Header() {
         <div className={styles.rightItem}>
           <div className={styles.langItems}>
             <LanguageIcon />
-            <Link href='/' locale='en'>
-              <a>
+            <Link href={router.asPath} locale='en'>
+              <a onClick={() => saveLang('en')}>
                 <Typography
                   className={styles.link}
                   component='p'
@@ -121,8 +122,8 @@ export function Header() {
                 </Typography>
               </a>
             </Link>
-            <Link href='/' locale='kr'>
-              <a>
+            <Link href={router.asPath} locale='kr'>
+              <a onClick={() => saveLang('kr')}>
                 <Typography
                   className={styles.link}
                   component=''

@@ -1,122 +1,134 @@
 @import 'styles/unit.scss';
-.box {
-  padding: rem(90) 0 rem(67);
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  .desc {
-    margin: rem(20) 0 rem(30);
-  }
-  .btn {
-    background: linear-gradient(94.06deg, #4f2dfe 5.14%, #45e3af 105.19%);
-  }
-  .elements {
-    position: relative;
-    width: rem(564);
-    height: rem(308);
-    margin-top: rem(68);
+.container {
+  .box {
+    padding: rem(90) 0 rem(67);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .desc {
+      margin: rem(20) 0 rem(30);
+    }
+    .btn {
+      background: linear-gradient(94.06deg, #4f2dfe 5.14%, #45e3af 105.19%);
+    }
+    .elements {
+      position: relative;
+      width: rem(564);
+      height: rem(308);
+      margin-top: rem(68);
 
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
-    .item1 {
-      position: absolute;
-      top: rem(62);
-      width: rem(102);
-      height: rem(102);
-      left: calc(50% - rem(51));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .item2 {
-      position: absolute;
-      bottom: rem(60);
-      left: rem(-200);
-      width: rem(270);
-      height: rem(143);
-    }
-    .item3 {
-      position: absolute;
-      bottom: rem(-40);
-      right: rem(-100);
-      width: rem(149);
-      height: rem(81);
-      z-index: 0;
-    }
-    .item4 {
-      position: absolute;
-      top: rem(-40);
-      right: 0;
-      width: rem(80);
-      height: rem(80);
-    }
-    .item5 {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: rem(92);
-      height: rem(64);
-      transition: all 0.5s ease-in-out;
-    }
-    .item6 {
-      position: absolute;
-      top: rem(160);
-      right: rem(-40);
-      width: rem(74);
-      height: rem(59);
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+      .item1 {
+        position: absolute;
+        top: rem(62);
+        width: rem(102);
+        height: rem(102);
+        left: calc(50% - rem(51));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .item2 {
+        position: absolute;
+        bottom: rem(60);
+        left: rem(-200);
+        width: rem(270);
+        height: rem(143);
+      }
+      .item3 {
+        position: absolute;
+        bottom: rem(-40);
+        right: rem(-100);
+        width: rem(149);
+        height: rem(81);
+        z-index: 0;
+      }
+      .item4 {
+        position: absolute;
+        top: rem(-40);
+        right: 0;
+        width: rem(80);
+        height: rem(80);
+      }
+      .item5 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: rem(92);
+        height: rem(64);
+        transition: all 0.5s ease-in-out;
+      }
+      .item6 {
+        position: absolute;
+        top: rem(160);
+        right: rem(-40);
+        width: rem(74);
+        height: rem(59);
+      }
     }
   }
 }
 
 @media (max-width: 600px) {
-  .box {
-    padding: rem(65) 0 rem(116);
-    .title {
-      line-height: rem(35);
-    }
-    .desc {
-      margin: rem(10) 0 rem(15);
-    }
-    .elements {
-      width: rem(257);
-      height: rem(140);
-      margin-top: rem(44);
-      .item1 {
-        top: rem(28);
-        width: rem(45);
-        height: rem(45);
-        left: rem(106);
+  .container {
+    overflow: hidden;
+    .box {
+      padding: rem(65) 0 rem(116);
+
+      .title {
+        line-height: rem(35);
+        br {
+          display: none;
+        }
       }
-      .item2 {
-        width: rem(124);
-        height: rem(66);
-        left: rem(-120);
-        bottom: rem(10);
+      .desc {
+        margin: rem(10) 0 rem(15);
+        br {
+          display: none;
+        }
       }
-      .item3 {
-        width: rem(74);
-        height: rem(37);
-        right: rem(-40);
-        bottom: rem(-10);
-      }
-      .item4 {
-        width: rem(34);
-        height: rem(34);
-        top: rem(-20);
-      }
-      .item5 {
-        width: rem(42);
-        height: rem(29);
-      }
-      .item6 {
-        width: rem(34);
-        height: rem(26);
-        bottom: rem(45);
-        right: rem(-15);
-        top: auto;
+      .elements {
+        width: rem(257);
+        height: rem(140);
+        margin-top: rem(44);
+        .item1 {
+          top: rem(28);
+          width: rem(45);
+          height: rem(45);
+          left: rem(106);
+        }
+        .item2 {
+          width: rem(124);
+          height: rem(66);
+          left: rem(-120);
+          bottom: rem(10);
+        }
+        .item3 {
+          width: rem(74);
+          height: rem(37);
+          right: rem(-40);
+          bottom: rem(-10);
+        }
+        .item4 {
+          width: rem(34);
+          height: rem(34);
+          top: rem(-20);
+        }
+        .item5 {
+          width: rem(42);
+          height: rem(29);
+        }
+        .item6 {
+          width: rem(34);
+          height: rem(26);
+          bottom: rem(45);
+          right: rem(-15);
+          top: auto;
+        }
       }
     }
   }

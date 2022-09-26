@@ -1,42 +1,48 @@
 import { Container, Typography } from '@mui/material'
 import { useScroll, useTransform, motion } from 'framer-motion'
 import Image from 'next/image'
+import Link from 'next/link'
+import { useState } from 'react'
 import { rem } from 'utils/pxToRem'
 import { NextArrow } from '../Icons'
+import Pagination from '../Pagination/Pagination'
 import styles from './news.module.scss'
 import { format } from 'date-fns'
-import Pagination from '../Pagination/Pagination'
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { useRouter } from 'next/router'
+import getDataByLang from 'utils/getDataByLang'
 
 export default function News({ newsItem, isNewsPage = false, news, count }) {
   const { scrollYProgress } = useScroll()
   const [currentPage, setCurrentPage] = useState(0)
   const router = useRouter()
   useEffect(() => {
-    router.push(
-      {
-        pathname: router.pathname,
-        query: {
-          ...router.query,
-          newsPage: currentPage
-        }
-      },
-      undefined,
-      { scroll: false }
-    )
+    if (router.pathname !== '/') {
+      router.push(
+        {
+          pathname: router.pathname,
+          query: {
+            ...router.query,
+            newsPage: currentPage
+          }
+        },
+        undefined,
+        { scroll: false }
+      )
+    }
   }, [currentPage])
 
   console.log('news', count)
   const xCloud = useTransform(
     scrollYProgress,
     [0.55, 0.6, 0.66, 0.7],
-    [-500, -350, -200, 0]
+    [-300, -200, -100, 0]
   )
+
   const xCloud2 = useTransform(
     scrollYProgress,
     [0.7, 0.72, 0.74, 0.77, 0.8],
-    [0, 30, 60, 90, 110]
+    [0, 10, 30, 50, 70]
   )
 
   const data = [
@@ -57,6 +63,18 @@ export default function News({ newsItem, isNewsPage = false, news, count }) {
       desc: 'Bithumb have repealed their investment warning status. Click for more info.',
       date: 'Tue Dec 21 2021',
       img: '/images/news2.png'
+    },
+    isNewsPage && {
+      title: 'Conun is Verified With Bithumb!',
+      desc: 'Bithumb have repealed their investment warning status. Click for more info.',
+      date: 'Tue Dec 21 2021',
+      img: '/images/news2.png'
+    },
+    isNewsPage && {
+      title: 'Conun is Verified With Bithumb!',
+      desc: 'Bithumb have repealed their investment warning status. Click for more info.',
+      date: 'Tue Dec 21 2021',
+      img: '/images/news2.png'
     }
   ]
   const firstNews = newsItem
@@ -66,7 +84,7 @@ export default function News({ newsItem, isNewsPage = false, news, count }) {
     : {}
   console.log('firstNews', firstNews)
   return (
-    <div className={styles.section}>
+    <div className={styles.section} id='news'>
       <Container>
         <div className={`${styles.news} ${isNewsPage ? styles.newsPage : ''}`}>
           <Typography align='center' variant='h2' color='primary.dark'>
@@ -134,12 +152,19 @@ export default function News({ newsItem, isNewsPage = false, news, count }) {
                     {format(new Date(firstNews.createdAt), 'dd yyyy')}
                   </Typography>
                 )}
-                <p className={styles.title}>{firstNews.title_en}</p>
+                <p className={styles.title}>
+                  {getDataByLang(router.locale, 'title', firstNews)}
+                  {/* {firstNews.title_en} */}
+                </p>
                 <Typography variant='body1' color='secondary'>
-                  {firstNews.description_en}
+                  {/* {firstNews.description_en} */}
+                  {getDataByLang(router.locale, 'description', firstNews)}
                 </Typography>
                 <div className={styles.navigation}>
-                  <div className={styles.postName}>{firstNews.posted_en}</div>
+                  <div className={styles.postName}>
+                    {getDataByLang(router.locale, 'posted', firstNews)}
+                    {/* {firstNews.posted_en} */}
+                  </div>
                   <NextArrow width={rem(35)} height={rem(35)} />
                 </div>
               </div>
@@ -195,7 +220,12 @@ export default function News({ newsItem, isNewsPage = false, news, count }) {
                         </Typography>
                       )}
                       <p className={styles.title}>
-                        {item?.attributes?.title_en}
+                        {getDataByLang(
+                          router.locale,
+                          'title',
+                          item?.attributes
+                        )}
+                        {/* {item?.attributes?.title_en} */}
                       </p>
                       <Typography
                         className={styles.desc}
@@ -203,8 +233,12 @@ export default function News({ newsItem, isNewsPage = false, news, count }) {
                         color='secondary'
                         component='p'
                       >
-                        {' '}
-                        {item?.attributes?.description_en}
+                        {getDataByLang(
+                          router.locale,
+                          'description',
+                          item?.attributes
+                        )}
+                        {/* {item?.attributes?.description_en} */}
                       </Typography>
                     </div>
                     <div
@@ -212,7 +246,12 @@ export default function News({ newsItem, isNewsPage = false, news, count }) {
                       style={{ marginTop: rem(13) }}
                     >
                       <div className={styles.postName}>
-                        {item?.attributes?.posted_en}
+                        {getDataByLang(
+                          router.locale,
+                          'posted',
+                          item?.attributes
+                        )}
+                        {/* {item?.attributes?.posted_en} */}
                       </div>
                       <NextArrow width={rem(35)} height={rem(35)} />
                     </div>
@@ -221,14 +260,19 @@ export default function News({ newsItem, isNewsPage = false, news, count }) {
               ))}
             </div>
           </div>
-          {isNewsPage && (
-            <Pagination
-              currentPage={currentPage}
-              setCurrentPage={setCurrentPage}
-              count={count - 1}
-              pageSize={5}
-            />
-          )}
+          {count > 4 &&
+            (isNewsPage ? (
+              <Pagination
+                currentPage={currentPage}
+                setCurrentPage={setCurrentPage}
+                count={count - 1}
+                pageSize={5}
+              />
+            ) : (
+              <Link href='/news/#news'>
+                <a className={styles.more}>More {'>'}</a>
+              </Link>
+            ))}
         </div>
       </Container>
     </div>

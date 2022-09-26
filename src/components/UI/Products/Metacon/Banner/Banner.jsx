@@ -1,9 +1,16 @@
 import { Button, Container, Typography } from '@mui/material'
+import SubscribeModal from 'components/UI/SubscribeModal/SubscribeModal'
 import { motion, useScroll, useTransform } from 'framer-motion'
+import { useFontFamily } from 'hooks/useFontFamily'
+import useTranslation from 'next-translate/useTranslation'
+import { useState } from 'react'
 import styles from './banner.module.scss'
 
 export default function Banner() {
   const { scrollYProgress } = useScroll()
+  const { t } = useTranslation('common')
+  const [open, setOpen] = useState(false)
+  const font = useFontFamily()
   const scaleElement = useTransform(
     scrollYProgress,
     [0.08, 0.06, 0.04, 0.02, 0],
@@ -94,14 +101,25 @@ export default function Banner() {
               variant='h1'
               className={styles.title}
               color='primary.dark'
+              dangerouslySetInnerHTML={{
+                __html: t('product_metacon_title')
+              }}
+              style={font}
+            />
+            <Typography
+              variant='body2'
+              color='primary.dark'
+              dangerouslySetInnerHTML={{
+                __html: t('product_metacon_desc')
+              }}
+              style={font}
+            />
+            <Button
+              onClick={() => setOpen((prev) => !prev)}
+              className={styles.btn}
             >
-              Fast and secure cryptocurrency wallet
-            </Typography>
-            <Typography variant='body2' color='primary.dark'>
-              Great chance for artists to create their own items. <br />
-              lowest fee for Buying and Selling NFTs
-            </Typography>
-            <Button className={styles.btn}>Visit the website</Button>
+              Coming soon
+            </Button>
           </div>
         </div>
         <div className={styles.bannerBg} />
@@ -166,6 +184,10 @@ export default function Banner() {
           </motion.div>
         </div>
       </Container>
+      <SubscribeModal
+        open={open}
+        handleClose={() => setOpen((prev) => !prev)}
+      />
     </div>
   )
 }

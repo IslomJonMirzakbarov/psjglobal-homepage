@@ -1,9 +1,17 @@
 import { Button, Container, Typography } from '@mui/material'
+import SubscribeModal from 'components/UI/SubscribeModal/SubscribeModal'
 import { motion } from 'framer-motion'
+import { useFontFamily } from 'hooks/useFontFamily'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
+import { useState } from 'react'
+import getDataByLang from 'utils/getDataByLang'
 import styles from './oceanDrive.module.scss'
 
 export default function OceanDrive({ data, items }) {
+  const [open, setOpen] = useState(false)
+  const font = useFontFamily()
+  const router = useRouter()
   return (
     <Container>
       <div className={styles.box}>
@@ -29,10 +37,11 @@ export default function OceanDrive({ data, items }) {
           dangerouslySetInnerHTML={{ __html: data.desc }}
           variant='body2'
           component='p'
+          style={font}
         />
         <div className={styles.leftElements}>
           <motion.div
-            initial={{ x: -150 }}
+            initial={{ x: -120 }}
             whileInView={{ x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.5 }}
@@ -61,7 +70,7 @@ export default function OceanDrive({ data, items }) {
             <img src='/images/ocean-drive/right1.png' />
           </motion.div>
           <motion.div
-            initial={{ x: 150 }}
+            initial={{ x: 120 }}
             whileInView={{ x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.5 }}
@@ -98,6 +107,7 @@ export default function OceanDrive({ data, items }) {
                 ))}
               </div>
               <Typography variant='h6' fontWeight='700' color='primary.dark'>
+                {/* {getDataByLang(router.locale, 'title', item)} */}
                 {item.title}
               </Typography>
               <Typography
@@ -105,15 +115,27 @@ export default function OceanDrive({ data, items }) {
                 variant='body2'
                 color='secondary'
               >
-                {item.description_en}
+                {getDataByLang(router.locale, 'description', item)}
+                {/* {item.description_en} */}
               </Typography>
-              <Button disabled={!item.is_active}>
-                {item.is_active ? 'Download' : 'Coming soon'}
+              <Button
+                color={!item.active ? 'secondary' : 'primary'}
+                onClick={() => {
+                  if (!item.active) {
+                    setOpen((prev) => !prev)
+                  }
+                }}
+              >
+                {item.active ? 'Download' : 'Coming soon'}
               </Button>
             </div>
           ))}
         </div>
       </div>
+      <SubscribeModal
+        open={open}
+        handleClose={() => setOpen((prev) => !prev)}
+      />
     </Container>
   )
 }

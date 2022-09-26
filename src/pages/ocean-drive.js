@@ -2,32 +2,34 @@ import SEO from 'components/SEO'
 import { Footer } from 'components/UI/Footer/Footer'
 import OceanDrive from 'components/UI/Download/OceanDrive/OceanDrive'
 import { fetchMultipleUrls } from 'services/fetchMultipleUrls'
+import useTranslation from 'next-translate/useTranslation'
 
 export default function OceanDrivePage({ oceanDrive }) {
-  console.log('oceanDrive', oceanDrive.data)
+  const { t } = useTranslation('common')
+
   const data = {
     title: 'OceanDrive',
     img: '/images/ocean-drive.jpg',
-    desc: ' <span>User-First Drive</span> Start Right Now!',
+    desc: t('download_ocean_drive_desc'),
     items: [
       {
         title: 'Windows',
-        desc: 'Windows7 later',
+        // desc: 'Windows7 later',
         img: '/icons/windows.png',
-        active: true
+        active: false
       },
       {
         title: 'macOS',
-        desc: 'OSX 10.9 later',
+        // desc: 'OSX 10.9 later',
         img: '/icons/apple.png',
-        active: true
+        active: false
       },
       {
         title: 'Linux',
-        desc: 'OSX 10.9 later',
+        // desc: 'OSX 10.9 later',
         img: '/icons/linux.png',
         imgWidth: 70,
-        active: true
+        active: false
       },
       {
         title: 'iOS, android',
@@ -42,7 +44,7 @@ export default function OceanDrivePage({ oceanDrive }) {
     <>
       <SEO />
       <main>
-        <div className='download-bg'>
+        <div className='download-bg overflow-hidden'>
           <OceanDrive data={data} items={oceanDrive?.data?.attributes} />
           <Footer />
         </div>

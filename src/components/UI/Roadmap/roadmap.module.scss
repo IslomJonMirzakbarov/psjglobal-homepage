@@ -103,6 +103,7 @@
 
 @media (max-width: 600px) {
   .box {
+    overflow: hidden;
     padding: rem(110) 0 rem(130);
     .container {
       padding: 0;

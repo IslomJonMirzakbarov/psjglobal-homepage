@@ -20,7 +20,7 @@
         display: flex;
         align-items: center;
         column-gap: rem(10);
-        margin-top: rem(45);
+        margin-top: rem(31);
         cursor: pointer;
         &:hover {
           svg {
@@ -111,10 +111,10 @@
         }
         .bannerBgCircle {
           position: absolute;
-          bottom: rem(387);
+          bottom: rem(350);
           width: rem(55);
           height: rem(55);
-          right: rem(280);
+          right: rem(275);
           transition: all 0.5s ease-in-out;
         }
         .bannerBgSmallCloud {
@@ -227,6 +227,11 @@
       }
       .content {
         width: 100%;
+        .desc {
+          br {
+            display: none;
+          }
+        }
         .title {
           margin-bottom: rem(10);
         }

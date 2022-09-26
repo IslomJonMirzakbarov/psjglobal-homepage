@@ -39,6 +39,12 @@
   .footer {
     flex-direction: column-reverse;
     padding: rem(65) 0 rem(50);
+    .rightElement {
+      width: rem(250);
+      flex-wrap: wrap;
+      row-gap: rem(12);
+      justify-content: center;
+    }
     .leftElement {
       display: block;
       margin-top: rem(32);

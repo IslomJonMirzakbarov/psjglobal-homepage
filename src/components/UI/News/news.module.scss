@@ -8,10 +8,19 @@
       padding: rem(90) 0 rem(110);
     }
     position: relative;
+    .more {
+      font-size: rem(12);
+      line-height: rem(20);
+      color: var(--primary-color);
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-top: rem(17);
+    }
     .element {
       position: absolute;
       bottom: rem(160);
-      left: rem(-150);
+      left: rem(-200);
       width: rem(275);
       height: rem(140);
       transition: all 1.2s ease-in-out;

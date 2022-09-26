@@ -2,24 +2,26 @@ import SEO from 'components/SEO'
 import { Footer } from 'components/UI/Footer/Footer'
 import Metacon from 'components/UI/Download/Metacon/Metacon'
 import { fetchMultipleUrls } from 'services/fetchMultipleUrls'
+import useTranslation from 'next-translate/useTranslation'
 
 export default function MetaconPage({ metacon }) {
+  const { t } = useTranslation('common')
   const data = {
     title: 'Metacon',
     img: '/images/metacon.jpg',
-    desc: '<span>Best Security Wallet</span> Start Right Now!',
+    desc: t('download_metacon_desc'),
     items: [
       {
         title: 'Chrome',
-        desc: 'OSX 10.9 later',
+        //desc: 'OSX 10.9 later',
         img: '/icons/chrome.png',
-        active: true,
+        active: false,
         imgWidth: 56,
         imgHeight: 56
       },
       {
         title: 'iOS, android',
-        desc: '',
+        //desc: '',
         img: ['/icons/apple.png', '/icons/android.png'],
         active: false
       }
@@ -30,7 +32,7 @@ export default function MetaconPage({ metacon }) {
     <>
       <SEO />
       <main>
-        <div className='download-bg'>
+        <div className='download-bg overflow-hidden'>
           <Metacon data={data} items={metacon?.data?.attributes} />
           <Footer />
         </div>

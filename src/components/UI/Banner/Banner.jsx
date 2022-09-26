@@ -11,6 +11,8 @@ import {
 } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { useEffect, useRef } from 'react'
+import useTranslation from 'next-translate/useTranslation'
+import { useFontFamily } from 'hooks/useFontFamily'
 
 const animationVarinat = {
   hidden: { opacity: 0.2 },
@@ -19,6 +21,8 @@ const animationVarinat = {
 
 export default function Banner() {
   const control = useAnimation()
+  const { t } = useTranslation('common')
+  const font = useFontFamily()
   const [ref, inView] = useInView()
   const { scrollYProgress } = useScroll()
   const xCloud = useTransform(
@@ -38,7 +42,7 @@ export default function Banner() {
   )
   const xCircleBlue = useTransform(scrollYProgress, [0.07, 0], [50, 0])
 
-  const yRocket = useTransform(scrollYProgress, [0.06, 0], [500, 0])
+  const yRocket = useTransform(scrollYProgress, [0.06, 0], [460, 0])
   const yTerminal = useTransform(scrollYProgress, [0.06, 0], [-100, 0])
   const xRocket = useTransform(
     scrollYProgress,
@@ -80,24 +84,27 @@ export default function Banner() {
         <div className={styles.banner}>
           <div className={styles.content}>
             <Typography
-              data-text='Conun'
+              data-text='CONUN!'
               color='primary.dark'
               variant='h1'
               className={styles.title}
             >
-              Great to
-              <br /> See you again.
-              <br /> {"It's Conun"}
+              Collect & Share <br /> Storage <br />
+              with CONUN!
             </Typography>
             <Typography
               sx={{ typography: { sm: 'body2', xs: 'body3' } }}
               color='secondary'
-            >
-              CONUN is a blockchain-based distributed supercomputing platform.
-              It is a service platform that allows the processing of
-              high-performance computing resources by sharing the idle resources
-              of the participants' personal computers and smartphones.
-            </Typography>
+              className={styles.desc}
+              style={font}
+              dangerouslySetInnerHTML={{ __html: t('banner_description') }}
+            />
+            {/* CONUN is a blockchain-based decentralized storage network. <br />
+              It is a service platform that collects world wide storage by{' '}
+              <br />
+              sharing the idle resources of the participants' personal
+              computers.
+            </Typography> */}
             <a href='/file.pdf' target='_blank'>
               <div className={styles.link}>
                 <Typography variant='body1' color='primary'>

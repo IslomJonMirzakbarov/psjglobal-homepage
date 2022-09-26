@@ -22,6 +22,8 @@ export default function NewsPage({ news, externalNews, newsItem }) {
             isNewsPage
             externalNews={externalNews?.data}
           />
+          {/* <News isNewsPage />
+          <ExternalNews isNewsPage /> */}
           <Footer />
         </div>
       </main>

@@ -4,7 +4,7 @@
   .container {
     position: relative;
     .banner {
-      padding: rem(141) 0 rem(113);
+      padding: rem(100) 0 rem(113);
       position: relative;
       overflow: hidden;
       .content {
@@ -14,6 +14,9 @@
         min-height: rem(413);
         .title {
           margin-bottom: rem(25);
+          span {
+            color: #4e3af7;
+          }
         }
         .btn {
           margin-top: rem(25);
@@ -26,7 +29,7 @@
       height: 100%;
       position: absolute;
       right: 0;
-      top: rem(80);
+      top: rem(40);
       img {
         width: 100%;
         height: 100%;
@@ -95,7 +98,6 @@
 @media (max-width: 600px) {
   .box {
     padding: rem(50) 0 0;
-    overflow: initial;
     height: rem(735);
     position: relative;
     .container {
