@@ -30,7 +30,7 @@ export default function Home({ news, externalNews, roadmaps }) {
 export async function getServerSideProps() {
   const urls = [
     'external-news?pagination[start]=0&pagination[limit]=8',
-    'news?populate=*&pagination[start]=0&pagination[limit]=4',
+    'news?sort=order:asc&populate=*&pagination[start]=0&pagination[limit]=4',
     'roadmaps?populate=*,quaters.items'
   ]
   const [externalNews, news, roadmaps] = await fetchMultipleUrls(urls)

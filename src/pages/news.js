@@ -5,6 +5,8 @@ import { Footer } from 'components/UI/Footer/Footer'
 import { fetchMultipleUrls } from 'services/fetchMultipleUrls'
 
 export default function NewsPage({ news, externalNews, newsItem }) {
+  console.log(news)
+  console.log(newsItem)
   return (
     <>
       <SEO />
@@ -35,10 +37,10 @@ export async function getServerSideProps({ query }) {
     `external-news?pagination[start]=${
       query.externalNewsPage * 8 || 0
     }&pagination[limit]=8`,
-    `news?populate=*&pagination[start]=${
+    `news?sort=order:asc&populate=*&pagination[start]=${
       (query.newsPage * 5 || 0) + 1
     }&pagination[limit]=5`,
-    'news?populate=*&pagination[start]=0&pagination[limit]=1'
+    'news?sort=order:asc&populate=*&pagination[start]=0&pagination[limit]=1'
   ]
   const [externalNews, news, newsItem] = await fetchMultipleUrls(urls)
 
