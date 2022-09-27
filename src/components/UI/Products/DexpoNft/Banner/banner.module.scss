@@ -1,0 +1,177 @@
+@import 'styles/unit.scss';
+.box {
+  overflow: hidden;
+  .container {
+    position: relative;
+    .banner {
+      padding: rem(100) 0 rem(113);
+      position: relative;
+      overflow: hidden;
+      .content {
+        width: rem(700);
+        position: relative;
+        z-index: 9;
+        min-height: rem(413);
+        .title {
+          margin-bottom: rem(25);
+          span {
+            color: #e61e66;
+          }
+        }
+        .btn {
+          margin-top: rem(25);
+          background: #e61e66 !important;
+        }
+      }
+
+      .bannerBg {
+        background-image: url('/images/products/dexpo-nft/banner-bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 70%;
+        position: absolute;
+        right: 0;
+        height: rem(800);
+        top: rem(-150);
+      }
+    }
+
+    .elements {
+      width: 50%;
+      height: 100%;
+      position: absolute;
+      right: rem(-50);
+      top: rem(40);
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+      .element {
+        width: rem(181);
+        height: rem(181);
+        position: absolute;
+        top: rem(40);
+        right: rem(40);
+        transition: all 0.8s ease-in-out;
+      }
+      .element3 {
+        position: absolute;
+        width: rem(100);
+        height: rem(100);
+        top: rem(290);
+        right: rem(100);
+        transition: all 1.1s ease-in-out;
+      }
+      .element2 {
+        position: absolute;
+        width: rem(59);
+        height: rem(59);
+        top: rem(350);
+        right: rem(360);
+        transition: all 1.1s ease-in-out;
+      }
+      .element4 {
+        position: absolute;
+        width: rem(341);
+        height: rem(226);
+        top: rem(80);
+        right: rem(150);
+        transition: all 1.1s ease-in-out;
+      }
+      .element1 {
+        position: absolute;
+        width: rem(92);
+        height: rem(92);
+        top: rem(170);
+        right: rem(460);
+        transition: all 0.8s ease-in-out;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .box {
+    padding: rem(50) 0 0;
+    overflow: hidden;
+    height: rem(735);
+    background-image: url('/images/products/dexpo-nft/banner-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+
+    .container {
+      position: initial;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .banner {
+        overflow: initial;
+        position: initial;
+        padding: 0 rem(22);
+        .bannerBg {
+          display: none;
+        }
+        .content {
+          width: 100%;
+          min-height: auto;
+          .title {
+            margin-bottom: rem(10);
+          }
+          br {
+            display: none;
+          }
+          button {
+            margin-top: rem(15);
+          }
+        }
+      }
+      .elements {
+        position: relative;
+        width: rem(350);
+        top: auto;
+        right: auto;
+        margin-top: rem(31);
+        height: rem(340);
+        .element4 {
+          width: rem(250);
+          height: rem(180);
+          left: calc(50% - rem(125));
+          top: rem(80);
+          img {
+            object-fit: cover;
+          }
+        }
+        .element {
+          right: rem(0);
+          width: rem(105);
+          height: rem(105);
+          top: rem(20);
+          position: absolute;
+        }
+        .element3 {
+          width: rem(56);
+          height: rem(56);
+          bottom: rem(30);
+          right: rem(50);
+          top: auto;
+        }
+        .element1 {
+          left: rem(35);
+          width: rem(53);
+          height: rem(53);
+          top: rem(200);
+        }
+        .element2 {
+          width: rem(35);
+          height: rem(35);
+          bottom: rem(10);
+          left: rem(100);
+          top: auto;
+        }
+      }
+    }
+  }
+}

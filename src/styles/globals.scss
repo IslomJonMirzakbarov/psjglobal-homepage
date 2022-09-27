@@ -1,0 +1,110 @@
+@import 'unit';
+@import '../../public/fonts/font.css';
+@import '../../public/fonts/conun_web_ko_font/font.css';
+
+:root {
+  --primary-color: #0012b0;
+  --primary-dark-color: #232323;
+  --secondary-color: #fdc100;
+  --text-color: #696969;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+label,
+input,
+textarea {
+  text-rendering: optimizeLegibility;
+}
+
+.home-bg {
+  background-image: url('/images/roadmap-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.news-bg {
+  background-image: url('/images/roadmap-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% rem(1593);
+  background-position: bottom;
+}
+
+.faq-bg {
+  background-image: url('/images/faq-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% rem(630);
+  background-position: bottom;
+}
+
+.download-bg {
+  background-image: url('/images/download-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% rem(548);
+  background-position: bottom;
+}
+
+.dexpo-nft-bg {
+  background-color: #000;
+  footer {
+    p {
+      color: #fff !important;
+    }
+  }
+}
+
+.metacon-bg {
+  background-image: url('/images/metacon-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% rem(1314);
+  background-position: bottom;
+  footer {
+    p {
+      color: #fff !important;
+    }
+  }
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}

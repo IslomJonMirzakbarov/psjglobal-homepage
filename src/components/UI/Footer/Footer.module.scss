@@ -1,0 +1,63 @@
+@import 'styles/unit.scss';
+
+.footer {
+  padding: rem(100) 0 rem(62);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .leftElement {
+    display: flex;
+    align-items: flex-end;
+    p {
+      font-weight: 300;
+      font-size: rem(12);
+      line-height: rem(22);
+      &:last-child {
+        margin-left: rem(208);
+      }
+      color: #232323;
+    }
+  }
+  .rightElement {
+    display: flex;
+    align-items: center;
+    column-gap: rem(12);
+    .item {
+      min-height: rem(46);
+      min-width: rem(46);
+      border-radius: rem(7);
+      background: #f6f6fb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column-reverse;
+    padding: rem(65) 0 rem(50);
+    .rightElement {
+      width: rem(250);
+      flex-wrap: wrap;
+      row-gap: rem(12);
+      justify-content: center;
+    }
+    .leftElement {
+      display: block;
+      margin-top: rem(32);
+      p {
+        text-align: center;
+        font-size: rem(12);
+        line-height: rem(18);
+        &:last-child {
+          margin-left: 0;
+          font-weight: 600;
+          margin-top: rem(8);
+        }
+      }
+    }
+  }
+}
