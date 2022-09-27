@@ -31,6 +31,10 @@
       align-items: center;
       justify-content: center;
       cursor: pointer;
+      img {
+        max-width: rem(25);
+        object-fit: contain;
+      }
     }
   }
 }

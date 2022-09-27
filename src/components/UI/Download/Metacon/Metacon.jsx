@@ -12,6 +12,7 @@ export default function Metacon({ data, items }) {
   const [open, setOpen] = useState(false)
   const font = useFontFamily()
   const router = useRouter()
+  console.log(items)
   return (
     <Container>
       <div className={styles.box}>
