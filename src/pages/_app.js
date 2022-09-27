@@ -14,7 +14,6 @@ import { parseCookies } from 'nookies'
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
   useEffect(() => {
-    console.log('dsadsa')
     const userLang = navigator.language || navigator.userLanguage
     const cookies = parseCookies()
     if (router.pathname !== '/404') {
