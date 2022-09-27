@@ -10,7 +10,7 @@ const nextTranslate = require('next-translate')
 const nextConfig = nextTranslate({
   reactStrictMode: true,
   images: {
-    domains: ['43.200.238.101']
+    domains: ['admin.conun.io']
   },
   eslint: {
     ignoreDuringBuilds: true
