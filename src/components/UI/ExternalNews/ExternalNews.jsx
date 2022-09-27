@@ -85,7 +85,7 @@ export default function ExternalNews({
       date: '2022-08-16'
     }
   ]
-  console.log('externalNews', externalNews)
+
   return (
     <Container className={styles.container} id='external-news'>
       <div className={styles.externalNews}>

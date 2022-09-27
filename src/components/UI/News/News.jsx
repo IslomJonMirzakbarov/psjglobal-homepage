@@ -32,7 +32,6 @@ export default function News({ newsItem, isNewsPage = false, news, count }) {
     }
   }, [currentPage])
 
-  console.log('news', count)
   const xCloud = useTransform(
     scrollYProgress,
     [0.55, 0.6, 0.66, 0.7],
@@ -82,7 +81,7 @@ export default function News({ newsItem, isNewsPage = false, news, count }) {
     : news
     ? news[0]?.attributes
     : null
-  console.log('firstNews', firstNews)
+
   return (
     <div className={styles.section} id='news'>
       <Container>

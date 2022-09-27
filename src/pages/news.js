@@ -5,7 +5,6 @@ import { Footer } from 'components/UI/Footer/Footer'
 import { fetchMultipleUrls } from 'services/fetchMultipleUrls'
 
 export default function NewsPage({ news, externalNews, newsItem }) {
-  console.log('newsItem===>', news)
   return (
     <>
       <SEO />

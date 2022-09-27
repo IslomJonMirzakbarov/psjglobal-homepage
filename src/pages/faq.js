@@ -4,7 +4,6 @@ import { Footer } from 'components/UI/Footer/Footer'
 import { fetchMultipleUrls } from 'services/fetchMultipleUrls'
 
 export default function FaqPage({ faqs }) {
-  console.log('faqs', faqs)
   return (
     <>
       <SEO />

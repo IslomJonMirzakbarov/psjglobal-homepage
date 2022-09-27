@@ -6,7 +6,6 @@ export const useFontFamily = () => {
   const router = useRouter()
 
   useEffect(() => {
-    console.log('listern')
     if (router.locale === 'en') {
       setFont('Poppins')
     } else {
