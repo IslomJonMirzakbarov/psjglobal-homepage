@@ -35,7 +35,7 @@ export function Footer() {
             </a>
             <a href='https://www.facebook.com/conunglobal' target='_blank'>
               <div className={styles.item}>
-                <img src='/icons/facebook.svg' alt='facebook' />
+                <img src='/icons/facebook.png' alt='facebook' />
               </div>
             </a>
             <a href='https://twitter.com/conunkorea' target='_blank'>
@@ -45,12 +45,12 @@ export function Footer() {
             </a>
             <a href='https://medium.com/conun-korea' target='_blank'>
               <div className={styles.item}>
-                <img src='/icons/medium.svg' alt='facebook' />
+                <img src='/icons/medium.png' alt='facebook' />
               </div>
             </a>
             <a href='https://blog.naver.com/conuncs' target='_blank'>
               <div className={styles.item}>
-                <img src='/icons/blog.svg' alt='facebook' />
+                <img src='/icons/blog.png' alt='facebook' />
               </div>
             </a>
           </div>
