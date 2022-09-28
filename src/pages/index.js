@@ -19,7 +19,7 @@ export default function Home({ news, externalNews, roadmaps }) {
         <Advantage />
         <div className='home-bg'>
           <Roadmap roadmaps={roadmaps?.data} />
-          <News news={news?.data} count={news?.meta?.pagination?.total} />
+          {/* <News news={news?.data} count={news?.meta?.pagination?.total} /> */}
           <ExternalNews
             externalNews={externalNews?.data}
             count={externalNews?.meta?.pagination?.total}

@@ -10,10 +10,11 @@ export const fetchMultipleUrls = async (urls) => {
           const response = await axios.get(
             process.env.NEXT_PUBLIC_BASE_URL + url
           )
+          // console.log(response)
           return response.data
         } catch (e) {
           console.log(e)
-          return null
+          return e.response.data
         }
       })
     )

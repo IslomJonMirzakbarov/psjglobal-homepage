@@ -32,12 +32,6 @@ function MyApp({ Component, pageProps }) {
         }
       }
     }
-    axios
-      .get('https://admin.conun.io/api/news')
-      .then((res) => {
-        console.log(res)
-      })
-      .catch((e) => console.log(e))
   }, [])
 
   return (
