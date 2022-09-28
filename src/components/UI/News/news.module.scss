@@ -60,6 +60,11 @@
           height: rem(422);
           position: relative;
           cursor: pointer;
+          img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+          }
         }
         .body {
           padding: rem(15) rem(30);
@@ -116,6 +121,11 @@
             align-items: center;
             justify-content: center;
             cursor: pointer;
+            img {
+              width: rem(117);
+              height: rem(139);
+              object-fit: cover;
+            }
           }
           .content {
             padding: rem(20) rem(25);

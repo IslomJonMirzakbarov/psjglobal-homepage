@@ -115,13 +115,13 @@ export default function News({ newsItem, isNewsPage = false, news, count }) {
               <div className={styles.item}>
                 <div className={styles.img}>
                   {firstNews?.image.data && (
-                    <Image
+                    <img
                       src={
                         process.env.NEXT_PUBLIC_IMAGE_BASE_URL +
                         firstNews?.image?.data?.attributes?.url
                       }
-                      objectFit='cover'
-                      alt='news1'
+                      // objectFit='cover'
+                      // alt='news1'
                       layout='fill'
                     />
                   )}
@@ -177,15 +177,15 @@ export default function News({ newsItem, isNewsPage = false, news, count }) {
                 <div className={styles.card} key={item.title + index}>
                   <div className={styles.img}>
                     {item?.attributes?.image?.data && (
-                      <Image
+                      <img
                         src={
                           process.env.NEXT_PUBLIC_IMAGE_BASE_URL +
                           item?.attributes?.image?.data?.attributes?.url
                         }
-                        objectFit='contain'
+                        //objectFit='contain'
                         alt='news2'
-                        width={117}
-                        height={139}
+                        // width={117}
+                        // height={139}
                       />
                     )}
                   </div>
