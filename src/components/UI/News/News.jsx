@@ -114,15 +114,17 @@ export default function News({ newsItem, isNewsPage = false, news, count }) {
             {firstNews && (
               <div className={styles.item}>
                 <div className={styles.img}>
-                  <Image
-                    src={
-                      process.env.NEXT_PUBLIC_IMAGE_BASE_URL +
-                      firstNews?.image?.data?.attributes?.url
-                    }
-                    objectFit='cover'
-                    alt='news1'
-                    layout='fill'
-                  />
+                  {firstNews?.image.data && (
+                    <Image
+                      src={
+                        process.env.NEXT_PUBLIC_IMAGE_BASE_URL +
+                        firstNews?.image?.data?.attributes?.url
+                      }
+                      objectFit='cover'
+                      alt='news1'
+                      layout='fill'
+                    />
+                  )}
                 </div>
                 <div className={styles.body}>
                   {isNewsPage ? (
@@ -174,16 +176,18 @@ export default function News({ newsItem, isNewsPage = false, news, count }) {
               {news?.slice(isNewsPage ? 0 : 1).map((item, index) => (
                 <div className={styles.card} key={item.title + index}>
                   <div className={styles.img}>
-                    <Image
-                      src={
-                        process.env.NEXT_PUBLIC_IMAGE_BASE_URL +
-                        item?.attributes?.image?.data?.attributes?.url
-                      }
-                      objectFit='contain'
-                      alt='news2'
-                      width={117}
-                      height={139}
-                    />
+                    {item?.attributes?.image?.data && (
+                      <Image
+                        src={
+                          process.env.NEXT_PUBLIC_IMAGE_BASE_URL +
+                          item?.attributes?.image?.data?.attributes?.url
+                        }
+                        objectFit='contain'
+                        alt='news2'
+                        width={117}
+                        height={139}
+                      />
+                    )}
                   </div>
                   <div className={styles.content}>
                     <div>

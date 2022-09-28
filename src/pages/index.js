@@ -10,6 +10,7 @@ import { Footer } from 'components/UI/Footer/Footer'
 
 export default function Home({ news, externalNews, roadmaps }) {
   console.log('news', news, externalNews, roadmaps)
+  console.log('env', process.env.NEXT_PUBLIC_BASE_URL)
   return (
     <>
       <SEO />
@@ -18,12 +19,12 @@ export default function Home({ news, externalNews, roadmaps }) {
         <Products />
         <Advantage />
         <div className='home-bg'>
-          {/* <Roadmap roadmaps={roadmaps?.data} />
+          <Roadmap roadmaps={roadmaps?.data} />
           <News news={news?.data} count={news?.meta?.pagination?.total} />
           <ExternalNews
             externalNews={externalNews?.data}
             count={externalNews?.meta?.pagination?.total}
-          /> */}
+          />
           <Footer />
         </div>
       </main>
