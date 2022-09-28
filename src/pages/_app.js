@@ -10,7 +10,6 @@ import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import saveLang from 'utils/saveLang'
 import { parseCookies } from 'nookies'
-import axios from 'axios'
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter()

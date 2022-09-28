@@ -18,12 +18,12 @@ export default function Home({ news, externalNews, roadmaps }) {
         <Products />
         <Advantage />
         <div className='home-bg'>
-          <Roadmap roadmaps={roadmaps?.data} />
-          {/* <News news={news?.data} count={news?.meta?.pagination?.total} /> */}
+          {/* <Roadmap roadmaps={roadmaps?.data} />
+          <News news={news?.data} count={news?.meta?.pagination?.total} />
           <ExternalNews
             externalNews={externalNews?.data}
             count={externalNews?.meta?.pagination?.total}
-          />
+          /> */}
           <Footer />
         </div>
       </main>
