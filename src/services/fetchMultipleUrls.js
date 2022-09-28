@@ -1,4 +1,5 @@
-import axios from 'axios'
+//import axios from 'axios'
+import ifetch from 'isomorphic-fetch'
 // import { request } from './http-client'
 
 export const fetchMultipleUrls = async (urls) => {
@@ -7,9 +8,9 @@ export const fetchMultipleUrls = async (urls) => {
     data = await Promise.all(
       urls.map(async (url) => {
         try {
-          const response = await axios.get('https://admin.conun.io/api/' + url)
+          const response = await ifetch('https://admin.conun.io/api/' + url)
 
-          return response.data
+          return response.json()
         } catch (e) {
           console.log(e)
           return e?.response?.data
