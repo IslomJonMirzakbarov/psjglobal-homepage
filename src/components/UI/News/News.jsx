@@ -112,7 +112,7 @@ export default function News({ newsItem, isNewsPage = false, news, count }) {
 
           <div className={styles.list}>
             {firstNews && (
-              <div className={styles.item}>
+              <a href={firstNews?.link} target='_blank' className={styles.item}>
                 <div className={styles.img}>
                   {firstNews?.image.data && (
                     <img
@@ -170,11 +170,16 @@ export default function News({ newsItem, isNewsPage = false, news, count }) {
                     <NextArrow width={rem(35)} height={rem(35)} />
                   </div>
                 </div>
-              </div>
+              </a>
             )}
             <div className={styles.items}>
               {news?.slice(isNewsPage ? 0 : 1).map((item, index) => (
-                <div className={styles.card} key={item.title + index}>
+                <a
+                  href={item?.attributes?.link}
+                  target='_blank'
+                  className={styles.card}
+                  key={item.title + index}
+                >
                   <div className={styles.img}>
                     {item?.attributes?.image?.data && (
                       <img
@@ -261,7 +266,7 @@ export default function News({ newsItem, isNewsPage = false, news, count }) {
                       <NextArrow width={rem(35)} height={rem(35)} />
                     </div>
                   </div>
-                </div>
+                </a>
               ))}
             </div>
           </div>
