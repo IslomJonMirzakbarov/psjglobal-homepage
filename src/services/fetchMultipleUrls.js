@@ -1,4 +1,5 @@
-import { request } from './http-client'
+import axios from 'axios'
+// import { request } from './http-client'
 
 export const fetchMultipleUrls = async (urls) => {
   let data
@@ -6,7 +7,9 @@ export const fetchMultipleUrls = async (urls) => {
     data = await Promise.all(
       urls.map(async (url) => {
         try {
-          const response = await request.get(url)
+          const response = await axios.get(
+            process.env.NEXT_PUBLIC_BASE_URL + url
+          )
           return response.data
         } catch (e) {
           console.log(e)
