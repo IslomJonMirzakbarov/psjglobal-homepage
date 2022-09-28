@@ -178,7 +178,7 @@ export default function News({ newsItem, isNewsPage = false, news, count }) {
                   href={item?.attributes?.link}
                   target='_blank'
                   className={styles.card}
-                  key={item.title + index}
+                  key={item.id}
                 >
                   <div className={styles.img}>
                     {item?.attributes?.image?.data && (

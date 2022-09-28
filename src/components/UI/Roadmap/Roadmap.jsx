@@ -88,7 +88,7 @@ export default function Roadmap({ roadmaps }) {
                 className={`${styles.item} ${
                   tab === item.id ? styles.active : ''
                 }`}
-                key={item}
+                key={item.id}
               >
                 {item.attributes.year}
               </div>
@@ -103,14 +103,14 @@ export default function Roadmap({ roadmaps }) {
             {roadmaps
               ?.find((data) => data.id === tab)
               ?.attributes?.quaters?.map((item, index) => (
-                <div className={styles.list} key={item.title}>
+                <div key={item.id} className={styles.list}>
                   <div className={styles.element}>
                     <p>Q{index + 1}</p>
                     <div className={styles.circle} />
                   </div>
                   <Card item={item} />
                   {item?.items?.map((val) => (
-                    <Card item={val} />
+                    <Card item={val} key={val.id} />
                   ))}
                 </div>
               ))}

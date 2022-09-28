@@ -98,7 +98,7 @@ export default function ExternalNews({
               href={item.attributes.link}
               target='_blank'
               className={styles.item}
-              key={item.title + index}
+              key={item.id}
             >
               <div className={styles.leftElement}>
                 <Typography

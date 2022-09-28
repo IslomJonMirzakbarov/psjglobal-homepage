@@ -1,4 +1,3 @@
-//import axios from 'axios'
 import { request } from './http-client'
 
 export const fetchMultipleUrls = async (urls) => {
@@ -10,7 +9,6 @@ export const fetchMultipleUrls = async (urls) => {
           const response = await request.get(
             process.env.NEXT_PUBLIC_BASE_URL + url
           )
-          // console.log(response)
           return response.data
         } catch (e) {
           console.log(e)

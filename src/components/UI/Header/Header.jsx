@@ -1,7 +1,11 @@
 import Typography from '@mui/material/Typography'
-import useTranslation from 'next-translate/useTranslation'
+// import useTranslation from 'next-translate/useTranslation'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import { useState } from 'react'
+import { useEffect } from 'react'
+import { request } from 'services/http-client'
+import getDataByLang from 'utils/getDataByLang'
 import saveLang from 'utils/saveLang'
 import { LanguageIcon } from '../Icons'
 import BurgerMenu from './BurgerMenu'
@@ -10,8 +14,8 @@ import styles from './header.module.scss'
 
 export function Header() {
   const router = useRouter()
-  const { t } = useTranslation('common')
-
+  // const { t } = useTranslation('common')
+  const [file, setFile] = useState(null)
   const products = [
     {
       title: 'OceanDrive',
@@ -48,6 +52,16 @@ export function Header() {
       link: '/faq'
     }
   ]
+
+  useEffect(() => {
+    request.get('white-paper?populate=*').then((res) => {
+      if (res.data.data)
+        setFile({
+          file_en: res.data.data.attributes.file_en,
+          file_kr: res.data.data.attributes.file_kr
+        })
+    })
+  }, [])
 
   return (
     <header className={styles.header}>
@@ -102,7 +116,18 @@ export function Header() {
             <Dropdown links={community} />
           </li>
           <li>
-            <Typography variant='body1' component='p'>
+            <Typography
+              variant='body1'
+              component='a'
+              href={
+                file
+                  ? process.env.NEXT_PUBLIC_IMAGE_BASE_URL +
+                    getDataByLang(router.locale, 'file', file)?.data.attributes
+                      ?.url
+                  : '#'
+              }
+              target='_blank'
+            >
               WhitePaper
             </Typography>
           </li>

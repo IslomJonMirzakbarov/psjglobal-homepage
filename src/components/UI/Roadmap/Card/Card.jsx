@@ -11,7 +11,10 @@ export default function Card({ item }) {
         {getDataByLang(router.locale, 'month', item)}
         {/* {item.month_en} */}
       </Typography>
-      <p className={styles.title}>{item.title_en}</p>
+      <p className={styles.title}>
+        {getDataByLang(router.locale, 'title', item)}
+        {/* {item.title_en} */}
+      </p>
       <Typography
         align='center'
         variant='body3'
