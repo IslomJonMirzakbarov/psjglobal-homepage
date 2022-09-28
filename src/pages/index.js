@@ -10,7 +10,7 @@ import { Footer } from 'components/UI/Footer/Footer'
 
 export default function Home({ news, externalNews, roadmaps }) {
   console.log('news', news, externalNews, roadmaps)
-  console.log('env', process.env.NEXT_PUBLIC_BASE_URL)
+  //console.log('env', process.env.NEXT_PUBLIC_BASE_URL)
   return (
     <>
       <SEO />
