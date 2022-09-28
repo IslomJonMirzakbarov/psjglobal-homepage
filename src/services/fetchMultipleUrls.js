@@ -7,9 +7,7 @@ export const fetchMultipleUrls = async (urls) => {
     data = await Promise.all(
       urls.map(async (url) => {
         try {
-          const response = await axios.get(
-            process.env.NEXT_PUBLIC_BASE_URL + url
-          )
+          const response = await axios.get('https://admin.conun.io/api/' + url)
 
           return response.data
         } catch (e) {
