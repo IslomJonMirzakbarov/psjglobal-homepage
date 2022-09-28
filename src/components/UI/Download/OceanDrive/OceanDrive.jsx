@@ -93,13 +93,13 @@ export default function OceanDrive({ data, items }) {
             <div className={styles.item} key={item.id}>
               <div className={styles.itemImg}>
                 {item?.logo?.data?.map((val) => (
-                  <Image
+                  <img
                     src={
                       process.env.NEXT_PUBLIC_IMAGE_BASE_URL +
                       val?.attributes?.url
                     }
                     key={val.id}
-                    objectFit='contain'
+                    // objectFit='contain'
                     alt='apple'
                     width={index === 2 ? 70 : 40}
                     height={40}
