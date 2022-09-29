@@ -11,6 +11,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp'
 import saveLang from 'utils/saveLang'
 import { useRouter } from 'next/router'
+import getDataByLang from 'utils/getDataByLang'
 
 const MuiSwipeableDrawer = styled((props) => <SwipeableDrawer {...props} />)(
   ({ theme }) => ({
@@ -52,7 +53,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   border: 'none'
 }))
 
-export default function BurgerMenu() {
+export default function BurgerMenu({ file }) {
   const [open, setOpen] = useState(false)
   const router = useRouter()
   const iOS =
@@ -113,7 +114,11 @@ export default function BurgerMenu() {
       ]
     },
     {
-      title: 'Whitepaper'
+      title: 'Whitepaper',
+      link: file
+        ? process.env.NEXT_PUBLIC_IMAGE_BASE_URL +
+          getDataByLang(router.locale, 'file', file)?.data.attributes?.url
+        : '#'
     }
   ]
 
@@ -155,13 +160,24 @@ export default function BurgerMenu() {
                     )
                   }
                 >
-                  <Typography
-                    variant='body1'
-                    fontWeight='500'
-                    color='secondary.dark'
-                  >
-                    {item.title}
-                  </Typography>
+                  {item.title === 'Whitepaper' ? (
+                    <Typography
+                      variant='body1'
+                      component='a'
+                      href={item.link}
+                      target='_blank'
+                    >
+                      {item.title}
+                    </Typography>
+                  ) : (
+                    <Typography
+                      variant='body1'
+                      fontWeight='500'
+                      color='secondary.dark'
+                    >
+                      {item.title}
+                    </Typography>
+                  )}
                 </AccordionSummary>
                 <AccordionDetails>
                   {item.items?.map((value) => (

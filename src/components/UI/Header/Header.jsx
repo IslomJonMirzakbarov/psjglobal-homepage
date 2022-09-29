@@ -175,7 +175,7 @@ export function Header() {
             </a>
           </div>
         </div>
-        <BurgerMenu />
+        <BurgerMenu file={file} />
       </div>
     </header>
   )
