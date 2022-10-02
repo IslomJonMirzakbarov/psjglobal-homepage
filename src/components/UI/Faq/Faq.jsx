@@ -57,24 +57,6 @@ export default function Faq({ faqs }) {
     }
   }, [search, faqs])
 
-  // const data = [
-  //   {
-  //     title: 'Why has CONUN developed its own private blockchain network?',
-  //     desc: 'CONUN’s main project, the DSC, allows users to submit supercomputing tasks, that will be shared with connected nodes, users who are sharing their computers’ resources with the network. When tasks are completed, users are rewarded for their computers’ work with tokens. For the rewarding process to work, transferring tokens must be both free, as well as fast. With a private blockchain network, CONUN is able to meet both of these requirements. You can read more about this on the DSC and CPBN product description pages!'
-  //   },
-  //   {
-  //     title: 'How much are fees when using CON and CONX tokens?',
-  //     desc: 'CONUN’s main project, the DSC, allows users to submit supercomputing tasks, that will be shared with connected nodes, users who are sharing their computers’ resources with the network. When tasks are completed, users are rewarded for their computers’ work with tokens. For the rewarding process to work, transferring tokens must be both free, as well as fast. With a private blockchain network, CONUN is able to meet both of these requirements. You can read more about this on the DSC and CPBN product description pages!'
-  //   },
-  //   {
-  //     title: 'How can I withdraw my CON tokens?',
-  //     desc: 'CONUN’s main project, the DSC, allows users to submit supercomputing tasks, that will be shared with connected nodes, users who are sharing their computers’ resources with the network. When tasks are completed, users are rewarded for their computers’ work with tokens. For the rewarding process to work, transferring tokens must be both free, as well as fast. With a private blockchain network, CONUN is able to meet both of these requirements. You can read more about this on the DSC and CPBN product description pages!'
-  //   },
-  //   {
-  //     title: 'Can I add other token wallets into my Metacon wallet?',
-  //     desc: 'CONUN’s main project, the DSC, allows users to submit supercomputing tasks, that will be shared with connected nodes, users who are sharing their computers’ resources with the network. When tasks are completed, users are rewarded for their computers’ work with tokens. For the rewarding process to work, transferring tokens must be both free, as well as fast. With a private blockchain network, CONUN is able to meet both of these requirements. You can read more about this on the DSC and CPBN product description pages!'
-  //   }
-  // ]
   return (
     <Container className={styles.container}>
       <div className={styles.faq}>
@@ -106,13 +88,11 @@ export default function Faq({ faqs }) {
                     color='secondary.dark'
                   >
                     {getDataByLang(router.locale, 'question', item.attributes)}
-                    {/* {item.attributes.question_en} */}
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography variant='body3' color='secondary'>
                     {getDataByLang(router.locale, 'answer', item.attributes)}
-                    {/* {item.attributes.answer_en} */}
                   </Typography>
                 </AccordionDetails>
               </Accordion>

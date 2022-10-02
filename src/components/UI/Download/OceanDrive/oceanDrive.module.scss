@@ -102,6 +102,9 @@
         align-items: center;
         justify-content: center;
         column-gap: rem(24);
+        img {
+          object-fit: contain;
+        }
       }
       .desc {
         margin-bottom: rem(16);

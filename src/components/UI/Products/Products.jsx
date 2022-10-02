@@ -90,8 +90,6 @@ export default function Products() {
                     color={val.color2}
                     dangerouslySetInnerHTML={{ __html: val.subtitle }}
                   />
-                  {/* {val.subtitle}
-                  </Typography> */}
                   <Typography
                     className={styles.desc}
                     variant='body3'
@@ -99,8 +97,6 @@ export default function Products() {
                     dangerouslySetInnerHTML={{ __html: val.text }}
                     color={val.color2}
                   />
-                  {/* {val.text} */}
-                  {/* </Typography> */}
                 </div>
                 <div className={styles.next}>
                   <NextArrow
@@ -113,34 +109,6 @@ export default function Products() {
             </a>
           </Link>
         ))}
-
-        {/* <div className={styles.item}>
-          <Typography variant='h5' color='primary.dark'>
-            Mainnet
-          </Typography>
-          <Typography variant='body2' color='secondary'>
-            CONUN is a blockchain- based distributed super It is a service
-            platform
-          </Typography>
-        </div>
-        <div className={styles.item}>
-          <Typography variant='h5' color='primary.dark'>
-            Mainnet
-          </Typography>
-          <Typography variant='body2' color='secondary'>
-            CONUN is a blockchain- based distributed super It is a service
-            platform
-          </Typography>
-        </div>
-        <div className={styles.item}>
-          <Typography variant='h5' color='primary.dark'>
-            Mainnet
-          </Typography>
-          <Typography variant='body2' color='secondary'>
-            CONUN is a blockchain- based distributed super It is a service
-            platform
-          </Typography>
-        </div> */}
       </div>
     </Container>
   )

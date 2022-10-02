@@ -6,11 +6,13 @@ export const fetchMultipleUrls = async (urls) => {
     data = await Promise.all(
       urls.map(async (url) => {
         try {
-          const response = await request.get(url)
+          const response = await request.get(
+            process.env.NEXT_PUBLIC_BASE_URL + url
+          )
           return response.data
         } catch (e) {
           console.log(e)
-          return null
+          return e?.response?.data
         }
       })
     )

@@ -48,7 +48,7 @@ export default function Metacon({ data, items }) {
             transition={{ duration: 1, delay: 0.5 }}
             className={styles.leftElement1}
           >
-            <img src='/images/metacon/left1.png' />
+            <img src='/images/metacon/leftElement1.png' />
           </motion.div>
           <motion.div
             initial={{ scale: 0 }}
@@ -57,14 +57,14 @@ export default function Metacon({ data, items }) {
             transition={{ duration: 1, delay: 0.5 }}
             className={styles.leftElement2}
           >
-            <img src='/images/metacon/left2.png' />
+            <img src='/images/metacon/leftElement2.png' />
           </motion.div>
           <motion.div
             animate={{ rotate: 360 }}
             transition={{ ease: 'linear', duration: 4, repeat: Infinity }}
             className={styles.leftElement3}
           >
-            <img src='/images/metacon/left3.png' />
+            <img src='/images/metacon/leftElement3.png' />
           </motion.div>
         </div>
         <div className={styles.rightElements}>
@@ -75,7 +75,7 @@ export default function Metacon({ data, items }) {
             transition={{ duration: 1, delay: 0.5 }}
             className={styles.rightElement1}
           >
-            <img src='/images/metacon/right1.png' />
+            <img src='/images/metacon/rightElement1.png' />
           </motion.div>
           <motion.div
             initial={{ x: 150 }}
@@ -84,7 +84,7 @@ export default function Metacon({ data, items }) {
             transition={{ duration: 1, delay: 0.5 }}
             className={styles.rightElement2}
           >
-            <img src='/images/metacon/right2.png' />
+            <img src='/images/metacon/rightElement2.png' />
           </motion.div>
         </div>
         <div className={styles.items}>
@@ -92,14 +92,13 @@ export default function Metacon({ data, items }) {
             <div className={styles.item} key={item.id}>
               <div className={styles.itemImg}>
                 {item?.logo?.data?.map((val) => (
-                  <Image
+                  <img
                     src={
                       process.env.NEXT_PUBLIC_IMAGE_BASE_URL +
                       val?.attributes?.url
                     }
                     key={val.id}
-                    objectFit='contain'
-                    alt='apple'
+                    alt={item.title}
                     width={index === 0 ? 56 : 40}
                     height={index === 0 ? 56 : 40}
                   />
@@ -107,7 +106,6 @@ export default function Metacon({ data, items }) {
               </div>
               <Typography variant='h6' fontWeight='700' color='primary.dark'>
                 {item.title}
-                {/* {getDataByLang(router.locale, 'title', item)} */}
               </Typography>
               <Typography
                 className={styles.desc}
@@ -115,7 +113,6 @@ export default function Metacon({ data, items }) {
                 color='secondary'
               >
                 {getDataByLang(router.locale, 'description', item)}
-                {/* {item.description_en} */}
               </Typography>
               <Button
                 color={!item.active ? 'secondary' : 'primary'}

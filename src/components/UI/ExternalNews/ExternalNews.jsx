@@ -8,6 +8,7 @@ import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import getDataByLang from 'utils/getDataByLang'
 import { ArrowNews } from '../Icons'
+import { useFontFamily } from 'hooks/useFontFamily'
 
 export default function ExternalNews({
   externalNews,
@@ -16,7 +17,7 @@ export default function ExternalNews({
 }) {
   const [currentPage, setCurrentPage] = useState(0)
   const router = useRouter()
-
+  const font = useFontFamily()
   useEffect(() => {
     if (router.pathname !== '/') {
       router.push(
@@ -33,59 +34,6 @@ export default function ExternalNews({
     }
   }, [currentPage])
 
-  const data = [
-    {
-      title: 'MBN',
-      desc: 'Why has CONUN developed its own private blockchain network?',
-      date: '2022-08-16'
-    },
-    {
-      title: 'MBN',
-      desc: 'Why has CONUN developed its own private blockchain network?',
-      date: '2022-08-16'
-    },
-    {
-      title: 'MBN',
-      desc: 'Why has CONUN developed its own private blockchain network?',
-      date: '2022-08-16'
-    },
-    {
-      title: 'MBN',
-      desc: 'Why has CONUN developed its own private blockchain network?',
-      date: '2022-08-16'
-    },
-    {
-      title: 'MBN',
-      desc: 'Why has CONUN developed its own private blockchain network?',
-      date: '2022-08-16'
-    },
-    {
-      title: 'MBN',
-      desc: 'Why has CONUN developed its own private blockchain network?',
-      date: '2022-08-16'
-    },
-    {
-      title: 'MBN',
-      desc: 'Why has CONUN developed its own private blockchain network?',
-      date: '2022-08-16'
-    },
-    {
-      title: 'MBN',
-      desc: 'Why has CONUN developed its own private blockchain network?',
-      date: '2022-08-16'
-    },
-    {
-      title: 'MBN',
-      desc: 'Why has CONUN developed its own private blockchain network?',
-      date: '2022-08-16'
-    },
-    {
-      title: 'MBN',
-      desc: 'Why has CONUN developed its own private blockchain network?',
-      date: '2022-08-16'
-    }
-  ]
-
   return (
     <Container className={styles.container} id='external-news'>
       <div className={styles.externalNews}>
@@ -94,13 +42,19 @@ export default function ExternalNews({
         </Typography>
         <div className={styles.list}>
           {externalNews?.map((item, index) => (
-            <div className={styles.item} key={item.title + index}>
+            <a
+              href={item.attributes.link}
+              target='_blank'
+              className={styles.item}
+              key={item.id}
+            >
               <div className={styles.leftElement}>
                 <Typography
                   className={styles.title}
                   variant='body1'
                   fontWeight='600'
                   color='#7D8890'
+                  style={font}
                 >
                   {getDataByLang(router.locale, 'title', item.attributes)}
                 </Typography>
@@ -109,9 +63,9 @@ export default function ExternalNews({
                   variant='body1'
                   fontWeight='500'
                   color='primary.dark'
+                  style={font}
                 >
                   {getDataByLang(router.locale, 'description', item.attributes)}
-                  {/* {item.attributes.description_en} */}
                 </Typography>
               </div>
               <div className={styles.rightElement}>
@@ -124,7 +78,7 @@ export default function ExternalNews({
                 </Typography>
                 <ArrowNews />
               </div>
-            </div>
+            </a>
           ))}
         </div>
         {count > 10 &&

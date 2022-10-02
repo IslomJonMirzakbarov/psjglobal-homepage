@@ -1,6 +1,5 @@
 import { Container, Typography } from '@mui/material'
 import { useScroll, useTransform, motion } from 'framer-motion'
-import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 import { rem } from 'utils/pxToRem'
@@ -11,11 +10,13 @@ import { format } from 'date-fns'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import getDataByLang from 'utils/getDataByLang'
+import { useFontFamily } from 'hooks/useFontFamily'
 
 export default function News({ newsItem, isNewsPage = false, news, count }) {
   const { scrollYProgress } = useScroll()
   const [currentPage, setCurrentPage] = useState(0)
   const router = useRouter()
+  const font = useFontFamily()
   useEffect(() => {
     if (router.pathname !== '/') {
       router.push(
@@ -44,38 +45,6 @@ export default function News({ newsItem, isNewsPage = false, news, count }) {
     [0, 10, 30, 50, 70]
   )
 
-  const data = [
-    {
-      title: 'Conun is Verified With Bithumb!',
-      desc: 'Bithumb have repealed their investment warning status. Click for more info.',
-      date: 'Tue Dec 21 2021',
-      img: '/images/news2.png'
-    },
-    {
-      title: 'Conun is Verified With Bithumb!',
-      desc: 'Bithumb have repealed their investment warning status. Click for more info.',
-      date: 'Tue Dec 21 2021',
-      img: '/images/news2.png'
-    },
-    {
-      title: 'Conun is Verified With Bithumb!',
-      desc: 'Bithumb have repealed their investment warning status. Click for more info.',
-      date: 'Tue Dec 21 2021',
-      img: '/images/news2.png'
-    },
-    isNewsPage && {
-      title: 'Conun is Verified With Bithumb!',
-      desc: 'Bithumb have repealed their investment warning status. Click for more info.',
-      date: 'Tue Dec 21 2021',
-      img: '/images/news2.png'
-    },
-    isNewsPage && {
-      title: 'Conun is Verified With Bithumb!',
-      desc: 'Bithumb have repealed their investment warning status. Click for more info.',
-      date: 'Tue Dec 21 2021',
-      img: '/images/news2.png'
-    }
-  ]
   const firstNews = newsItem
     ? newsItem[0]?.attributes
     : news
@@ -112,17 +81,18 @@ export default function News({ newsItem, isNewsPage = false, news, count }) {
 
           <div className={styles.list}>
             {firstNews && (
-              <div className={styles.item}>
+              <a href={firstNews?.link} target='_blank' className={styles.item}>
                 <div className={styles.img}>
-                  <Image
-                    src={
-                      process.env.NEXT_PUBLIC_IMAGE_BASE_URL +
-                      firstNews?.image?.data?.attributes?.url
-                    }
-                    objectFit='cover'
-                    alt='news1'
-                    layout='fill'
-                  />
+                  {firstNews?.image.data && (
+                    <img
+                      src={
+                        process.env.NEXT_PUBLIC_IMAGE_BASE_URL +
+                        firstNews?.image?.data?.attributes?.url
+                      }
+                      alt={getDataByLang(router.locale, 'title', firstNews)}
+                      layout='fill'
+                    />
+                  )}
                 </div>
                 <div className={styles.body}>
                   {isNewsPage ? (
@@ -154,36 +124,41 @@ export default function News({ newsItem, isNewsPage = false, news, count }) {
                   )}
                   <p className={styles.title}>
                     {getDataByLang(router.locale, 'title', firstNews)}
-                    {/* {firstNews.title_en} */}
                   </p>
                   <Typography variant='body1' color='secondary'>
-                    {/* {firstNews.description_en} */}
                     {getDataByLang(router.locale, 'description', firstNews)}
                   </Typography>
                   <div className={styles.navigation}>
                     <div className={styles.postName}>
                       {getDataByLang(router.locale, 'posted', firstNews)}
-                      {/* {firstNews.posted_en} */}
                     </div>
                     <NextArrow width={rem(35)} height={rem(35)} />
                   </div>
                 </div>
-              </div>
+              </a>
             )}
             <div className={styles.items}>
               {news?.slice(isNewsPage ? 0 : 1).map((item, index) => (
-                <div className={styles.card} key={item.title + index}>
+                <a
+                  href={item?.attributes?.link}
+                  target='_blank'
+                  className={styles.card}
+                  key={item.id}
+                >
                   <div className={styles.img}>
-                    <Image
-                      src={
-                        process.env.NEXT_PUBLIC_IMAGE_BASE_URL +
-                        item?.attributes?.image?.data?.attributes?.url
-                      }
-                      objectFit='contain'
-                      alt='news2'
-                      width={117}
-                      height={139}
-                    />
+                    {item?.attributes?.image?.data && (
+                      <img
+                        src={
+                          process.env.NEXT_PUBLIC_IMAGE_BASE_URL +
+                          item?.attributes?.image?.data?.attributes?.url
+                        }
+                        alt={getDataByLang(
+                          router.locale,
+                          'title',
+                          item?.attributes
+                        )}
+                      />
+                    )}
                   </div>
                   <div className={styles.content}>
                     <div>
@@ -220,26 +195,25 @@ export default function News({ newsItem, isNewsPage = false, news, count }) {
                           )}
                         </Typography>
                       )}
-                      <p className={styles.title}>
+                      <p className={styles.title} style={font}>
                         {getDataByLang(
                           router.locale,
                           'title',
                           item?.attributes
                         )}
-                        {/* {item?.attributes?.title_en} */}
                       </p>
                       <Typography
                         className={styles.desc}
                         variant='body3'
                         color='secondary'
                         component='p'
+                        style={font}
                       >
                         {getDataByLang(
                           router.locale,
                           'description',
                           item?.attributes
                         )}
-                        {/* {item?.attributes?.description_en} */}
                       </Typography>
                     </div>
                     <div
@@ -252,12 +226,11 @@ export default function News({ newsItem, isNewsPage = false, news, count }) {
                           'posted',
                           item?.attributes
                         )}
-                        {/* {item?.attributes?.posted_en} */}
                       </div>
                       <NextArrow width={rem(35)} height={rem(35)} />
                     </div>
                   </div>
-                </div>
+                </a>
               ))}
             </div>
           </div>

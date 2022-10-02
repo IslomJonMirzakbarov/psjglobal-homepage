@@ -60,6 +60,11 @@
           height: rem(422);
           position: relative;
           cursor: pointer;
+          img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+          }
         }
         .body {
           padding: rem(15) rem(30);
@@ -75,6 +80,7 @@
       .navigation {
         margin-top: rem(19);
         display: flex;
+
         align-items: center;
         justify-content: space-between;
         .postName {
@@ -116,17 +122,29 @@
             align-items: center;
             justify-content: center;
             cursor: pointer;
+            img {
+              width: rem(117);
+              height: rem(139);
+              object-fit: contain;
+            }
           }
           .content {
-            padding: rem(20) rem(25);
+            padding: rem(18) rem(25);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            width: calc(100% - rem(178));
             .title {
               font-weight: 700;
               font-size: rem(20);
               line-height: rem(28);
               margin: rem(6) 0;
+              height: rem(56);
+            }
+            .desc {
+              text-overflow: ellipsis;
+              overflow: hidden;
+              white-space: nowrap;
             }
           }
         }
@@ -189,16 +207,23 @@
             .img {
               min-width: rem(101);
               max-width: rem(101);
+              height: rem(132);
               padding: rem(10);
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+              }
             }
             .content {
               min-height: rem(111);
               padding: rem(10) rem(12);
-
+              width: calc(100% - rem(101));
               .title {
                 font-size: rem(12);
                 line-height: rem(18);
                 margin: rem(2) 0;
+                height: rem(36);
               }
               .desc {
                 font-size: rem(8);

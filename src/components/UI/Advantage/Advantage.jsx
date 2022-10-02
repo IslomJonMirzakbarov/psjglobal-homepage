@@ -72,8 +72,6 @@ export default function Advantage() {
               color='secondary'
               dangerouslySetInnerHTML={{ __html: item.content }}
             />
-            {/* {item.content} */}
-            {/* </Typography> */}
           </div>
         ))}
         <motion.img
