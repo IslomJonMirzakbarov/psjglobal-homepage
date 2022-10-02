@@ -10,6 +10,7 @@ import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import saveLang from 'utils/saveLang'
 import { parseCookies } from 'nookies'
+import { Toaster } from 'react-hot-toast'
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
@@ -46,6 +47,7 @@ function MyApp({ Component, pageProps }) {
                 color='#0012B0'
               />
               <Component {...pageProps} />
+              <Toaster position='top-center' reverseOrder={false} />
             </Layout>
           </ThemeProvider>
         </PersistGate>
@@ -59,6 +61,7 @@ function MyApp({ Component, pageProps }) {
               color='#0012B0'
             />
             <Component {...pageProps} />
+            <Toaster position='top-center' reverseOrder={false} />
           </Layout>
         </ThemeProvider>
       )}
