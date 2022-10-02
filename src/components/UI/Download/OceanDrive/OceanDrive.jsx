@@ -47,7 +47,7 @@ export default function OceanDrive({ data, items }) {
             transition={{ duration: 1, delay: 0.5 }}
             className={styles.leftElement1}
           >
-            <img src='/images/ocean-drive/left1.png' />
+            <img src='/images/ocean-drive/leftElement1.png' />
           </motion.div>
           <motion.div
             initial={{ scale: 0 }}
@@ -56,7 +56,7 @@ export default function OceanDrive({ data, items }) {
             transition={{ duration: 1, delay: 0.5 }}
             className={styles.leftElement2}
           >
-            <img src='/images/ocean-drive/left2.png' />
+            <img src='/images/ocean-drive/leftElement2.png' />
           </motion.div>
         </div>
         <div className={styles.rightElements}>
@@ -67,7 +67,7 @@ export default function OceanDrive({ data, items }) {
             transition={{ duration: 1, delay: 0.5 }}
             className={styles.rightElement1}
           >
-            <img src='/images/ocean-drive/right1.png' />
+            <img src='/images/ocean-drive/rightElement1.png' />
           </motion.div>
           <motion.div
             initial={{ x: 120 }}
@@ -76,7 +76,7 @@ export default function OceanDrive({ data, items }) {
             transition={{ duration: 1, delay: 0.5 }}
             className={styles.rightElement3}
           >
-            <img src='/images/ocean-drive/right2.png' />
+            <img src='/images/ocean-drive/rightElement2.png' />
           </motion.div>
           <motion.div
             initial={{ scale: 0 }}
@@ -85,7 +85,7 @@ export default function OceanDrive({ data, items }) {
             transition={{ duration: 1, delay: 0.5 }}
             className={styles.rightElement2}
           >
-            <img src='/images/ocean-drive/right3.png' />
+            <img src='/images/ocean-drive/rightElement3.png' />
           </motion.div>
         </div>
         <div className={styles.items}>
@@ -99,15 +99,13 @@ export default function OceanDrive({ data, items }) {
                       val?.attributes?.url
                     }
                     key={val.id}
-                    // objectFit='contain'
-                    alt='apple'
+                    alt={item.title}
                     width={index === 2 ? 70 : 40}
                     height={40}
                   />
                 ))}
               </div>
               <Typography variant='h6' fontWeight='700' color='primary.dark'>
-                {/* {getDataByLang(router.locale, 'title', item)} */}
                 {item.title}
               </Typography>
               <Typography
@@ -116,7 +114,6 @@ export default function OceanDrive({ data, items }) {
                 color='secondary'
               >
                 {getDataByLang(router.locale, 'description', item)}
-                {/* {item.description_en} */}
               </Typography>
               <Button
                 color={!item.active ? 'secondary' : 'primary'}

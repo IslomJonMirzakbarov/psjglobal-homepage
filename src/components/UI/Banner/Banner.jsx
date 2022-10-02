@@ -1,14 +1,7 @@
 import { Container, Typography } from '@mui/material'
 import { NextArrow } from '../Icons'
 import styles from './banner.module.scss'
-import {
-  motion,
-  useAnimation,
-  useTransform,
-  useScroll,
-  useSpring,
-  useMotionValue
-} from 'framer-motion'
+import { motion, useAnimation, useTransform, useScroll } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { useEffect, useRef } from 'react'
 import useTranslation from 'next-translate/useTranslation'
@@ -99,12 +92,6 @@ export default function Banner() {
               style={font}
               dangerouslySetInnerHTML={{ __html: t('banner_description') }}
             />
-            {/* CONUN is a blockchain-based decentralized storage network. <br />
-              It is a service platform that collects world wide storage by{' '}
-              <br />
-              sharing the idle resources of the participants' personal
-              computers.
-            </Typography> */}
             <a href='/file.pdf' target='_blank'>
               <div className={styles.link}>
                 <Typography variant='body1' color='primary'>

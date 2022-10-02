@@ -1,57 +1,18 @@
-import { SwipeableDrawer, Typography } from '@mui/material'
-import { styled } from '@mui/system'
+import { Typography } from '@mui/material'
 import Link from 'next/link'
 import { useState } from 'react'
 import { BurgerMenuIcon, CloseIcon, LanguageIcon } from '../Icons'
 import styles from './burgerMenu.module.scss'
-import MuiAccordion from '@mui/material/Accordion'
-import MuiAccordionSummary from '@mui/material/AccordionSummary'
-import MuiAccordionDetails from '@mui/material/AccordionDetails'
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp'
 import saveLang from 'utils/saveLang'
 import { useRouter } from 'next/router'
 import getDataByLang from 'utils/getDataByLang'
-
-const MuiSwipeableDrawer = styled((props) => <SwipeableDrawer {...props} />)(
-  ({ theme }) => ({
-    '& .MuiPaper-root': {
-      width: '100vw'
-    }
-  })
-)
-
-const Accordion = styled((props) => (
-  <MuiAccordion disableGutters elevation={0} square {...props} />
-))(({ theme }) => ({
-  border: 'none',
-  background: '#F6F6FB',
-  borderRadius: 0,
-  '&::before': {
-    display: 'none'
-  }
-}))
-
-const AccordionSummary = styled((props) => <MuiAccordionSummary {...props} />)(
-  ({ theme }) => ({
-    backgroundColor: 'transparent',
-    padding: '21px 22px',
-    '& .MuiAccordionSummary-content': {
-      margin: 0
-    },
-    '&.Mui-expanded': {
-      boxShadow: '0px 4px 19px rgba(0, 0, 0, 0.25)'
-    },
-    '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
-      transform: 'rotate(90deg)'
-    }
-  })
-)
-
-const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
-  padding: 0,
-  border: 'none'
-}))
+import {
+  AccordionDetails,
+  Accordion,
+  AccordionSummary,
+  MuiSwipeableDrawer
+} from 'components/UI/Header/mui-style'
 
 export default function BurgerMenu({ file }) {
   const [open, setOpen] = useState(false)
