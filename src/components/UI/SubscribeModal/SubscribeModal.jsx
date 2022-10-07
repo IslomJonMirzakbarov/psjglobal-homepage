@@ -8,17 +8,20 @@ import { request } from 'services/http-client'
 import { CloseModalIcon } from '../Icons'
 import styles from './SubscribeModal.module.scss'
 import toast from 'react-hot-toast'
+import { useRouter } from 'next/router'
 export default function SubscribeModal({ open, handleClose }) {
   const { t } = useTranslation('common')
   const font = useFontFamily()
   const [email, setEmail] = useState('')
   const [loader, setLoader] = useState(false)
+
   const onSubmit = (e) => {
     e.preventDefault()
     setLoader(true)
     axios
       .post('/api/email', {
-        email
+        email,
+        text: t('download_text')
       })
       .then((res) => {
         if (res.status === 200) {
@@ -76,7 +79,7 @@ export default function SubscribeModal({ open, handleClose }) {
           required
         />
         <div className={styles.checkbox} style={font}>
-          <BpCheckbox required /> {t('dialog_privacy')}
+          <BpCheckbox /> {t('dialog_privacy')}
         </div>
         <Button type='submit' fullWidth className={styles.button}>
           {loader ? <CircularProgress color='inherit' size={21} /> : 'Confirm'}
