@@ -15,8 +15,8 @@ export default (req, res) => {
   const mailOption = {
     from: process.env.NEXT_PUBLIC_EMAIL,
     to: req.body.email,
-    subject: `test title`,
-    text: `test text`
+    subject: 'Download subscription',
+    html: req.body.text
   }
 
   transporter.sendMail(mailOption, (err, data) => {
