@@ -82,17 +82,19 @@ export default function Roadmap({ roadmaps }) {
             Roadmap
           </Typography>
           <div className={styles.years}>
-            {roadmaps?.map((item) => (
-              <div
-                onClick={() => setTab(item.id)}
-                className={`${styles.item} ${
-                  tab === item.id ? styles.active : ''
-                }`}
-                key={item.id}
-              >
-                {item.attributes.year}
-              </div>
-            ))}
+            {roadmaps
+              ?.sort((a, b) => a.attributes.year - b.attributes.year)
+              ?.map((item) => (
+                <div
+                  onClick={() => setTab(item.id)}
+                  className={`${styles.item} ${
+                    tab === item.id ? styles.active : ''
+                  }`}
+                  key={item.id}
+                >
+                  {item.attributes.year}
+                </div>
+              ))}
           </div>
         </div>
       </Container>
