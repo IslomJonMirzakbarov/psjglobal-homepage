@@ -32,13 +32,13 @@ export default function NewsPage({ news, externalNews, newsItem }) {
 
 export async function getServerSideProps({ query }) {
   const urls = [
-    `external-news?pagination[start]=${
+    `external-news?sort=createdAt:desc&pagination[start]=${
       query.externalNewsPage * 8 || 0
     }&pagination[limit]=8`,
-    `news?sort=order:asc&populate=*&pagination[start]=${
+    `news?sort=createdAt:desc&populate=*&pagination[start]=${
       (query.newsPage * 5 || 0) + 1
     }&pagination[limit]=5`,
-    'news?sort=order:asc&populate=*&pagination[start]=0&pagination[limit]=1'
+    'news?sort=createdAt:desc&populate=*&pagination[start]=0&pagination[limit]=1'
   ]
   const [externalNews, news, newsItem] = await fetchMultipleUrls(urls)
 
