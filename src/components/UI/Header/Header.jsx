@@ -160,7 +160,7 @@ export function Header() {
               </a>
             </Link>
           </div>
-          <div className={styles.border} />
+          {/* <div className={styles.border} />
           <div className={styles.mainnetLive}>
             <div className={styles.circle} />
             <a href='https://conscan.conun.io' target='_blank'>
@@ -173,7 +173,7 @@ export function Header() {
                 Mainnet is live
               </Typography>
             </a>
-          </div>
+          </div> */}
         </div>
         <BurgerMenu file={file} />
       </div>

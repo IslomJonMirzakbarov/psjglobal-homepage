@@ -16,14 +16,14 @@ export default function Products() {
   const { t } = useTranslation('common')
   const data = [
     {
-      title: 'Mainnet',
+      title: 'Cross Chain <br/> Swap',
       text: t('mainnet_description'),
       bgImg: '/images/adventage-bg1.jpg',
       color1: 'primary.dark',
       color2: 'secondary',
       subtitle: t('mainnet_subtitle'),
       icon: <MainnetIcon />,
-      path: 'https://conscan.conun.io'
+      path: '#'
     },
     {
       title: 'Ocean Drive <br/> (Storage)',
@@ -70,7 +70,7 @@ export default function Products() {
       <div className={styles.items}>
         {data.map((val, index) => (
           <Link href={val.path} key={val.title}>
-            <a target={index === 0 ? '_blank' : ''}>
+            <a>
               <div
                 className={styles.item}
                 style={{ backgroundImage: `url(${val.bgImg})` }}

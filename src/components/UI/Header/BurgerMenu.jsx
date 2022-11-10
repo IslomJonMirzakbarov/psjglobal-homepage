@@ -198,7 +198,7 @@ export default function BurgerMenu({ file }) {
                 </a>
               </Link>
             </div>
-            <div className={styles.border} />
+            {/* <div className={styles.border} />
             <div className={styles.mainnetLive}>
               <div className={styles.circle} />
               <a href='https://conscan.conun.io' target='_blank'>
@@ -211,7 +211,7 @@ export default function BurgerMenu({ file }) {
                   Mainnet is live
                 </Typography>
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </MuiSwipeableDrawer>
