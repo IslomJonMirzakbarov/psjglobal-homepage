@@ -23,7 +23,7 @@ export default function Products() {
       color2: 'secondary',
       subtitle: t('mainnet_subtitle'),
       icon: <MainnetIcon />,
-      path: '#'
+      path: 'https://swap.conun.io'
     },
     {
       title: 'Ocean Drive <br/> (Storage)',
@@ -70,7 +70,9 @@ export default function Products() {
       <div className={styles.items}>
         {data.map((val, index) => (
           <Link href={val.path} key={val.title}>
-            <a>
+            <a
+              target={val.path === 'https://swap.conun.io' ? '_blank' : '_self'}
+            >
               <div
                 className={styles.item}
                 style={{ backgroundImage: `url(${val.bgImg})` }}
