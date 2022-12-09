@@ -15,7 +15,7 @@ export default function Dropdown({ links }) {
             className={`${router.pathname === item.link ? styles.active : ''}`}
           >
             <Link href={item.link}>
-              <a>{item.title}</a>
+              <a target={item.target}>{item.title}</a>
             </Link>
           </li>
         ))}

@@ -18,6 +18,11 @@ export function Header() {
   const [file, setFile] = useState(null)
   const products = [
     {
+      title: 'Swap',
+      link: 'https://swap.conun.io',
+      target: '_blank'
+    },
+    {
       title: 'OceanDrive',
       link: '/products/ocean-drive'
     },
