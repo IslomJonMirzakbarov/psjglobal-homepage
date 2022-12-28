@@ -49,20 +49,20 @@ export default function Banner() {
         <div className={styles.banner}>
           <div className={styles.content}>
             <Typography
-              data-text='NFTs'
-              variant='h1'
+              data-text="NFTs"
+              variant="h1"
               className={styles.title}
-              color='white'
+              color="white"
               style={font}
-              dangerouslySetInnerHTML={{ __html: t('product_dexpo_title') }}
+              dangerouslySetInnerHTML={{ __html: t("product_dexpo_title") }}
             />
             <Typography
-              variant='body2'
-              color='white'
+              variant="body2"
+              color="white"
               style={font}
-              dangerouslySetInnerHTML={{ __html: t('product_dexpo_desc') }}
+              dangerouslySetInnerHTML={{ __html: t("product_dexpo_desc") }}
             />
-            <a href='https://testnet.dexpo.world' target='_blank'>
+            <a href="https://dexpo.world/" target="_blank" rel="noreferrer">
               <Button className={styles.btn}>Visit the website</Button>
             </a>
           </div>
@@ -72,47 +72,47 @@ export default function Banner() {
           <motion.div
             style={{
               x: xCircle,
-              y: yCircle
+              y: yCircle,
             }}
             className={styles.element}
           >
-            <img src='/images/products/dexpo-nft/element.png' />
+            <img src="/images/products/dexpo-nft/element.png" />
           </motion.div>
           <motion.div
             style={{
-              scale: scaleElement2
+              scale: scaleElement2,
             }}
             className={styles.element2}
           >
-            <img src='/images/products/dexpo-nft/element2.png' />
+            <img src="/images/products/dexpo-nft/element2.png" />
           </motion.div>
           <motion.div
             style={{
-              scale: scaleElement2
+              scale: scaleElement2,
             }}
             className={styles.element3}
           >
-            <img src='/images/products/dexpo-nft/element3.png' />
+            <img src="/images/products/dexpo-nft/element3.png" />
           </motion.div>
           <motion.div
             style={{
               x: xCircle2,
-              y: yCircle2
+              y: yCircle2,
             }}
             className={styles.element1}
           >
-            <img src='/images/products/dexpo-nft/element1.png' />
+            <img src="/images/products/dexpo-nft/element1.png" />
           </motion.div>
           <motion.div
             style={{
-              scale: scaleElement
+              scale: scaleElement,
             }}
             className={styles.element4}
           >
-            <img src='/images/products/dexpo-nft/element4.png' />
+            <img src="/images/products/dexpo-nft/element4.png" />
           </motion.div>
         </div>
       </Container>
     </div>
-  )
+  );
 }
