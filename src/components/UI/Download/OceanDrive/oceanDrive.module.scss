@@ -1,6 +1,7 @@
-@import 'styles/unit.scss';
+@import "styles/unit.scss";
 
 .box {
+  min-height: calc(100vh - rem(72));
   padding: rem(106) 0 rem(110);
   display: flex;
   align-items: center;
