@@ -4,7 +4,7 @@ import OceanDrive from 'components/UI/Download/OceanDrive/OceanDrive'
 import { fetchMultipleUrls } from 'services/fetchMultipleUrls'
 import useTranslation from 'next-translate/useTranslation'
 
-export default function OceanDrivePage({ oceanDrive }) {
+export default function OceanDrivePage({ oceanDrive, analytic }) {
   const { t } = useTranslation('common')
 
   const data = {
@@ -45,7 +45,11 @@ export default function OceanDrivePage({ oceanDrive }) {
       <SEO />
       <main>
         <div className='download-bg overflow-hidden'>
-          <OceanDrive data={data} items={oceanDrive?.data?.attributes} />
+          <OceanDrive
+            data={data}
+            items={oceanDrive?.data?.attributes}
+            analytic={analytic?.data?.attributes}
+          />
           <Footer />
         </div>
       </main>
@@ -54,12 +58,16 @@ export default function OceanDrivePage({ oceanDrive }) {
 }
 
 export async function getServerSideProps() {
-  const urls = ['ocean-drive-download?populate=*,downloads.logo']
-  const [oceanDrive] = await fetchMultipleUrls(urls)
+  const urls = [
+    'ocean-drive-download?populate=*,downloads.logo',
+    'analytic-downloads-ocea-drive'
+  ]
+  const [oceanDrive, analytic] = await fetchMultipleUrls(urls)
 
   return {
     props: {
-      oceanDrive
+      oceanDrive,
+      analytic
     }
   }
 }

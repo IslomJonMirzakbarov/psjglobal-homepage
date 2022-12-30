@@ -5,13 +5,29 @@ import { useFontFamily } from 'hooks/useFontFamily'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
+import { request } from 'services/http-client'
 import getDataByLang from 'utils/getDataByLang'
 import styles from './oceanDrive.module.scss'
 
-export default function OceanDrive({ data, items }) {
+export default function OceanDrive({ data, items, analytic }) {
   const [open, setOpen] = useState(false)
   const font = useFontFamily()
   const router = useRouter()
+
+  const analyticUpdate = async (type) => {
+    const device = type.toLowerCase().includes('windows')
+      ? 'windows'
+      : type.toLowerCase().includes('mac')
+      ? 'mac'
+      : 'ubuntu'
+    await request.put('analytic-downloads-ocea-drive', {
+      data: {
+        ...analytic,
+        [device]: +analytic[device] + 1
+      }
+    })
+    router.replace(router.asPath)
+  }
   return (
     <Container>
       <div className={styles.box}>
@@ -121,6 +137,7 @@ export default function OceanDrive({ data, items }) {
                   if (!item.is_active) {
                     setOpen((prev) => !prev)
                   } else {
+                    analyticUpdate(item.title)
                     const link = document.createElement('a')
                     link.href = item.link
                     document.body.appendChild(link)
