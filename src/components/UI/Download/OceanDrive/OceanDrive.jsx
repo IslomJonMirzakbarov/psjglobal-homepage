@@ -57,7 +57,7 @@ export default function OceanDrive({ data, items, analytic }) {
           style={font}
         />
         <a
-          href='ocean_drive_user_giude_en.pdf'
+          href='/ocean_drive_user_giude_en.pdf'
           target='_blank'
           className={styles.guide}
         >
@@ -65,7 +65,7 @@ export default function OceanDrive({ data, items, analytic }) {
           <NextArrow />
         </a>
         <a
-          href='ocean_drive_user_giude_ko.pdf'
+          href='/ocean_drive_user_giude_ko.pdf'
           target='_blank'
           className={styles.guide}
         >
