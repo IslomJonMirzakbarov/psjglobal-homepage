@@ -22,6 +22,24 @@
         button {
           margin-top: rem(25);
         }
+        .guide {
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 22px;
+          color: #0012b0;
+          margin-top: 13px;
+          display: flex;
+          align-items: center;
+          column-gap: 12px;
+          &:hover {
+            svg {
+              transform: translateX(3px);
+            }
+          }
+          svg {
+            transition: all 0.2s ease-in-out;
+          }
+        }
       }
 
       .bannerBg {

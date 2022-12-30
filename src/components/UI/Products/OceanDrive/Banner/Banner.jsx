@@ -1,4 +1,5 @@
 import { Button, Container, Typography } from '@mui/material'
+import { NextArrow } from 'components/UI/Icons'
 import SubscribeModal from 'components/UI/SubscribeModal/SubscribeModal'
 import { motion, useAnimation, useScroll, useTransform } from 'framer-motion'
 import { useFontFamily } from 'hooks/useFontFamily'
@@ -80,6 +81,22 @@ export default function Banner() {
             <Button onClick={() => router.push('/ocean-drive')}>
               Download
             </Button>
+            <a
+              href='ocean_drive_user_giude_en.pdf'
+              target='_blank'
+              className={styles.guide}
+            >
+              OceanDrive User Giude_en
+              <NextArrow />
+            </a>
+            <a
+              href='ocean_drive_user_giude_ko.pdf'
+              target='_blank'
+              className={styles.guide}
+            >
+              OceanDrive User Giude_ko
+              <NextArrow />
+            </a>
           </div>
           <div className={styles.bannerBg} />
         </div>

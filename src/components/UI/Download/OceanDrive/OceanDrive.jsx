@@ -1,4 +1,5 @@
 import { Button, Container, Typography } from '@mui/material'
+import { NextArrow } from 'components/UI/Icons'
 import SubscribeModal from 'components/UI/SubscribeModal/SubscribeModal'
 import { motion } from 'framer-motion'
 import { useFontFamily } from 'hooks/useFontFamily'
@@ -55,6 +56,22 @@ export default function OceanDrive({ data, items, analytic }) {
           component='p'
           style={font}
         />
+        <a
+          href='ocean_drive_user_giude_en.pdf'
+          target='_blank'
+          className={styles.guide}
+        >
+          OceanDrive User Giude_en
+          <NextArrow />
+        </a>
+        <a
+          href='ocean_drive_user_giude_ko.pdf'
+          target='_blank'
+          className={styles.guide}
+        >
+          OceanDrive User Giude_ko
+          <NextArrow />
+        </a>
         <div className={styles.leftElements}>
           <motion.div
             initial={{ x: -120 }}
