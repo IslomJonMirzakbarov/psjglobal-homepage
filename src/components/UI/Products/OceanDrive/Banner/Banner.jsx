@@ -3,6 +3,7 @@ import SubscribeModal from 'components/UI/SubscribeModal/SubscribeModal'
 import { motion, useAnimation, useScroll, useTransform } from 'framer-motion'
 import { useFontFamily } from 'hooks/useFontFamily'
 import useTranslation from 'next-translate/useTranslation'
+import { useRouter } from 'next/router'
 import { useState } from 'react'
 import { useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'
@@ -18,6 +19,7 @@ export default function Banner() {
   const [open, setOpen] = useState(false)
   const { t } = useTranslation('common')
   const font = useFontFamily()
+  const router = useRouter()
   const [ref, inView] = useInView()
   const { scrollYProgress } = useScroll()
   const xCloud = useTransform(scrollYProgress, [0.09, 0.06, 0], [500, 50, 100])
@@ -75,8 +77,8 @@ export default function Banner() {
                 __html: t('product_ocean_drive_desc')
               }}
             />
-            <Button onClick={() => setOpen((prev) => !prev)}>
-              Coming soon
+            <Button onClick={() => router.push('/ocean-drive')}>
+              Download
             </Button>
           </div>
           <div className={styles.bannerBg} />

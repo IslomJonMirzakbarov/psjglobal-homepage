@@ -116,14 +116,20 @@ export default function OceanDrive({ data, items }) {
                 {getDataByLang(router.locale, 'description', item)}
               </Typography>
               <Button
-                color={!item.active ? 'secondary' : 'primary'}
+                color={!item.is_active ? 'secondary' : 'primary'}
                 onClick={() => {
-                  if (!item.active) {
+                  if (!item.is_active) {
                     setOpen((prev) => !prev)
+                  } else {
+                    const link = document.createElement('a')
+                    link.href = item.link
+                    document.body.appendChild(link)
+                    link.click()
+                    document.body.removeChild(link)
                   }
                 }}
               >
-                {item.active ? 'Download' : 'Coming soon'}
+                {item.is_active ? 'Download' : 'Coming soon'}
               </Button>
             </div>
           ))}
