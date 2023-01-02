@@ -10,6 +10,7 @@ export default function SEO() {
       />
       <meta charSet='utf-8' />
       <title>CONUN | Connect On New Universal Networks</title>
+
       {/* <meta
         name='description'
         content='Next js template — это коворкинг в г. Ташкент, основанный с целью создать атмосферу, максимально подходящую не только для работы, но и отдыха. Next js template коворкинг-центр позволяет стартаперам, фрилансерам и руководителям небольших компаний экономить на аренде офиса.'
@@ -51,7 +52,10 @@ export default function SEO() {
         name='twitter:image'
         content='https://cdn.rasta.app/rasta/aef8208b-c6fc-4db9-878b-51544ab711be'
       /> */}
-
+      <meta
+        name='naver-site-verification'
+        content='06dec53f28980c6983321de3b4f1807fc8cfb336'
+      />
       <link rel='icon' href='/favicon.png' />
       {/* <link
         href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;600;700&display=swap'
