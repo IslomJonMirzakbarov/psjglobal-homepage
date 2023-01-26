@@ -11,56 +11,44 @@ export default function SEO() {
       <meta charSet='utf-8' />
       <title>CONUN | Connect On New Universal Networks</title>
 
-      {/* <meta
+      <meta
         name='description'
-        content='Next js template — это коворкинг в г. Ташкент, основанный с целью создать атмосферу, максимально подходящую не только для работы, но и отдыха. Next js template коворкинг-центр позволяет стартаперам, фрилансерам и руководителям небольших компаний экономить на аренде офиса.'
-      /> */}
-      {/* <meta
+        content="CONUN is a blockchain-based decentralized storage network. It is a service platform that collects world wide storage by sharing the idle resources of the participants' personal computers."
+      />
+      <meta
         name='keywords'
-        content='Cspace, coworking, co-working, center, tashkent'
+        content='코넌, 오션드라이브, 코넌코리아, 코넌 글로벌, conun, conun korea, oceandrive, ocean drive, conun global'
       />
       <meta property='og:type' content='website' />
       <meta
         property='og:title'
-        content={title || 'Next js template'}
+        content='CONUN | Connect On New Universal Networks'
         key='ogtitle'
       />
       <meta
         property='og:description'
-        content='Next js template — это коворкинг в г. Ташкент, основанный с целью создать атмосферу, максимально подходящую не только для работы, но и отдыха. Next js template коворкинг-центр позволяет стартаперам, фрилансерам и руководителям небольших компаний экономить на аренде офиса.'
+        content="CONUN is a blockchain-based decentralized storage network. It is a service platform that collects world wide storage by sharing the idle resources of the participants' personal computers."
         key='ogdesc'
       />
+      <meta property='og:site_name' content='CONUN' key='ogsitename' />
+      <meta property='og:image' content='/images/seo.jpg' key='ogimage' />
+      <meta name='twitter:card' content='summary_large_image' />
       <meta
-        property='og:site_name'
-        content={title || 'Next js template'}
-        key='ogsitename'
+        name='twitter:title'
+        content='CONUN | Connect On New Universal Networks'
       />
-      <meta
-        property='og:image'
-        content='https://cdn.rasta.app/rasta/aef8208b-c6fc-4db9-878b-51544ab711be'
-        key='ogimage'
-      />
-      <meta name='twitter:card' content='summary' />
-      <meta name='twitter:title' content={title || 'Next js template'} />
       <meta
         name='twitter:description'
-        content='Next js template — это коворкинг в г. Ташкент, основанный с целью создать атмосферу, максимально подходящую не только для работы, но и отдыха. Next js template коворкинг-центр позволяет стартаперам, фрилансерам и руководителям небольших компаний экономить на аренде офиса.'
+        content="CONUN is a blockchain-based decentralized storage network. It is a service platform that collects world wide storage by sharing the idle resources of the participants' personal computers."
       />
-      <meta name='twitter:site' content={title || 'Next js template'} />
-      <meta name='twitter:creator' content='Udevs' />
-      <meta
-        name='twitter:image'
-        content='https://cdn.rasta.app/rasta/aef8208b-c6fc-4db9-878b-51544ab711be'
-      /> */}
+      <meta name='twitter:site' content='CONUN' />
+      <meta name='twitter:creator' content='CONUN' />
+      <meta name='twitter:image' content='/images/seo.jpg' />
       <meta
         name='naver-site-verification'
         content='06dec53f28980c6983321de3b4f1807fc8cfb336'
       />
       <link rel='icon' href='/favicon.png' />
-      {/* <link
-        href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;600;700&display=swap'
-        rel='stylesheet'
-      /> */}
     </Head>
   )
 }
