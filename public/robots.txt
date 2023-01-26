@@ -1,0 +1,6 @@
+Sitemap: https://conun.io/sitemap.xml
+
+User-agent: *
+Allow: /*
+
+Disallow: /api/*
