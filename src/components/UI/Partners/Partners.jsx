@@ -12,7 +12,7 @@ export default function Partners() {
           {[...Array(8).keys()].map((index) => (
             <div className={styles.item}>
               <img
-                src={`/images/partners/partners${index + 1}.svg`}
+                src={`/images/partner/partners${index + 1}.svg`}
                 alt='partner'
               />
             </div>
