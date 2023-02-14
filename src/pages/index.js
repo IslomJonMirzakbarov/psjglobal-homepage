@@ -7,7 +7,7 @@ import Advantage from 'components/UI/Advantage/Advantage'
 import News from 'components/UI/News/News'
 import ExternalNews from 'components/UI/ExternalNews/ExternalNews'
 import { Footer } from 'components/UI/Footer/Footer'
-import Partners from 'components/UI/Partners/Advantage'
+import Partners from 'components/UI/Partners/Partners'
 
 export default function Home({ news, externalNews, roadmaps }) {
   return (
