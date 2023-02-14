@@ -1,5 +1,5 @@
 import { Container, Typography } from '@mui/material'
-import styles from './advantage.module.scss'
+import styles from './partners.module.scss'
 
 export default function Partners() {
   return (
