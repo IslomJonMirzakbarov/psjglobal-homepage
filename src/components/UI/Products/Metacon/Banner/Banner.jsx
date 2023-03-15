@@ -1,14 +1,18 @@
-import { Button, Container, Typography } from '@mui/material'
+import { ArrowForward, ArrowForwardIosRounded } from '@mui/icons-material'
+import { Button, Container, Link, Typography } from '@mui/material'
 import SubscribeModal from 'components/UI/SubscribeModal/SubscribeModal'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useFontFamily } from 'hooks/useFontFamily'
 import useTranslation from 'next-translate/useTranslation'
+import Image from 'next/image'
+import { useRouter } from 'next/router'
 import { useState } from 'react'
 import styles from './banner.module.scss'
 
 export default function Banner() {
   const { scrollYProgress } = useScroll()
   const { t } = useTranslation('common')
+  const router = useRouter()
   const [open, setOpen] = useState(false)
   const font = useFontFamily()
   const scaleElement = useTransform(
@@ -97,29 +101,61 @@ export default function Banner() {
         <div className={styles.banner}>
           <div className={styles.content}>
             <Typography
-              data-text='NFTs'
-              variant='h1'
+              data-text="NFTs"
+              variant="h1"
               className={styles.title}
-              color='primary.dark'
+              color="primary.dark"
               dangerouslySetInnerHTML={{
                 __html: t('product_metacon_title')
               }}
               style={font}
             />
             <Typography
-              variant='body2'
-              color='primary.dark'
+              variant="body2"
+              color="primary.dark"
               dangerouslySetInnerHTML={{
                 __html: t('product_metacon_desc')
               }}
               style={font}
             />
             <Button
-              onClick={() => setOpen((prev) => !prev)}
+              onClick={() => router.push('/metacon')}
+              // onClick={() => setOpen((prev) => !prev)}
               className={styles.btn}
             >
-              Coming soon
+              Dowload Now
             </Button>
+
+            <div className={styles.navigationLinks}>
+              <a
+                href="/metacon-user-guide-en.pdf"
+                className={styles.navLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Metacon User Guide_en
+                <img
+                  src="/icons/arrow-forward-custom.svg"
+                  width={22}
+                  height={22}
+                  alt="arrow"
+                />
+              </a>
+              <a
+                href="/metacon-user-guide-ko.pdf"
+                className={styles.navLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Metacon User Guide_ko
+                <img
+                  src="/icons/arrow-forward-custom.svg"
+                  width={22}
+                  height={22}
+                  alt="arrow"
+                />
+              </a>
+            </div>
           </div>
         </div>
         <div className={styles.bannerBg} />
@@ -132,7 +168,7 @@ export default function Banner() {
             }}
             className={styles.element}
           >
-            <img src='/images/products/metacon/element.png' />
+            <img src="/images/products/metacon/element.png" />
           </motion.div>
           <motion.div
             style={{
@@ -142,7 +178,7 @@ export default function Banner() {
             }}
             className={styles.element2}
           >
-            <img src='/images/products/metacon/element2.png' />
+            <img src="/images/products/metacon/element2.png" />
           </motion.div>
           <motion.div
             style={{
@@ -152,7 +188,7 @@ export default function Banner() {
             }}
             className={styles.element3}
           >
-            <img src='/images/products/metacon/element3.png' />
+            <img src="/images/products/metacon/element3.png" />
           </motion.div>
           <motion.div
             style={{
@@ -160,7 +196,7 @@ export default function Banner() {
             }}
             className={styles.element1}
           >
-            <img src='/images/products/metacon/element1.png' />
+            <img src="/images/products/metacon/element1.png" />
           </motion.div>
           <motion.div
             style={{
@@ -170,7 +206,7 @@ export default function Banner() {
             }}
             className={styles.element4}
           >
-            <img src='/images/products/metacon/element4.png' />
+            <img src="/images/products/metacon/element4.png" />
           </motion.div>
           <motion.div
             style={{
@@ -180,7 +216,7 @@ export default function Banner() {
             }}
             className={styles.element5}
           >
-            <img src='/images/products/metacon/element5.png' />
+            <img src="/images/products/metacon/element5.png" />
           </motion.div>
         </div>
       </Container>

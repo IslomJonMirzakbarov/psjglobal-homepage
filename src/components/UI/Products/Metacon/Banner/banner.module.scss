@@ -20,7 +20,34 @@
         }
         .btn {
           margin-top: rem(25);
-          background: linear-gradient(94.06deg, #4f2dfe 5.14%, #45e3af 105.19%);
+          background: #0001ae;
+        }
+
+        .navigationLinks {
+          display: flex;
+          flex-direction: column;
+          margin-top: 19.61px;
+          gap: 13px;
+
+          img {
+            margin-left: 14px;
+          }
+          
+          .navLink {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 22px;
+            text-align: right;
+            color: #0012b0;
+            
+            &:hover {
+              text-decoration: underline;
+            }
+
+          }
         }
       }
     }
