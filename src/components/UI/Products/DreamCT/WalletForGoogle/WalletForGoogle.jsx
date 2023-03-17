@@ -2,7 +2,6 @@ import { Button, Container, Typography } from '@mui/material'
 import { motion, useAnimation, useScroll, useTransform } from 'framer-motion'
 import { useFontFamily } from 'hooks/useFontFamily'
 import useTranslation from 'next-translate/useTranslation'
-import Link from 'next/link'
 import { useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'
 import styles from './walletForGoogle.module.scss'
@@ -103,9 +102,7 @@ export default function WalletForGoogle() {
             ))}
           </div>
 
-          <Link href="/products/dreamct" passHref>
-            <Button className={styles.btn}>DreamCT</Button>
-          </Link>
+          <Button className={styles.btn}>DreamCT</Button>
         </div>
       </Container>
     </div>

@@ -1,0 +1,72 @@
+@import 'styles/unit.scss';
+.container {
+  background: #FFFFFF;
+  .box {
+    padding: 0 0 rem(67);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .imageColumn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 15px;
+    }
+
+    .rowContainer {
+      display: flex;
+      flex-direction: row;
+      gap: 70px;
+      margin-bottom: 110px;
+
+      .item {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .itemTitle {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 22px;
+          text-align: center;
+          color: #232323;
+          padding-top: 25px;
+        }
+
+        .itemParagraph {
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 25px;
+          text-align: center;
+          color: #484848;
+          padding-top: 8px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    overflow: hidden;
+    .box {
+      padding: rem(65) 0 rem(116);
+
+      .title {
+        line-height: rem(35);
+        br {
+          display: none;
+        }
+      }
+      .desc {
+        margin: rem(10) 0 rem(15);
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+}
