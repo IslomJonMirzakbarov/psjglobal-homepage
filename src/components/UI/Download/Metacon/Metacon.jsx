@@ -138,7 +138,7 @@ export default function Metacon({ data, items }) {
                     setOpen((prev) => !prev)
                   } else {
                     const link = document.createElement('a')
-                    link.href = item.link
+                    link.href = '/metacon.zip'
                     document.body.appendChild(link)
                     link.click()
                     document.body.removeChild(link)
