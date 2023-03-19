@@ -19,6 +19,7 @@
     "dotenv": "^16.0.3",
     "emailjs": "^4.0.1",
     "framer-motion": "^6.5.1",
+    "js-file-download": "^0.4.12",
     "next": "12.1.5",
     "next-translate": "1.4.0",
     "nextjs-progressbar": "0.0.14",
