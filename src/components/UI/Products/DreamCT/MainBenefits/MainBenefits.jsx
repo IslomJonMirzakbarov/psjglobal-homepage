@@ -12,7 +12,7 @@ const texts = [
   '#Your last wallet',
   '#Wallet',
   '#Swap System',
-  '#Easy'
+  '#Easy',
 ]
 
 function ColoredHashText({ text, isRed }) {
@@ -32,17 +32,43 @@ export default function MainBenefits() {
   const font = useFontFamily()
   const itemsData = [
     {
-      description: t('Install Metacon app')
+      description: t('install_metacon_app'),
     },
     {
-      description: t('CYCON swap worth 5,000 KRW')
+      description: t('cycon_swap_worth'),
     },
     {
-      description: t('DreamsCT game every Sunday from 9am to Saturday 6pm')
+      description: t('dreamsct_game_schedule'),
     },
     {
-      description: t('Winner announced every Saturday at 9pm!')
-    }
+      description: t('winner_announcement_time'),
+    },
+  ]
+  const gridItemsData = [
+    {
+      title: t('install_metacon_wallet_app'),
+      paragraph: t('metacon_wallet_app_instruction'),
+    },
+    {
+      title: t('hold_cycon_requirement'),
+      paragraph: t('cycon_wallet_requirement'),
+    },
+    {
+      title: t('phone_verification_requirement'),
+      paragraph: t('phone_verification_instruction'),
+    },
+    {
+      title: t('minors_restriction'),
+      paragraph: t('age_restriction'),
+    },
+    {
+      title: '',
+      paragraph: '',
+    },
+    {
+      title: t('participation_limitation'),
+      paragraph: t('participation_criteria'),
+    },
   ]
 
   return (
@@ -91,51 +117,34 @@ export default function MainBenefits() {
           invited!
         </Typography>
 
-        {/* 
-        
-        create div block, div block margin bottom is 135px:
-        1. It should have title: Participation Criteria
-        its style:  font-weight: 700;
-                    font-size: 70px;
-                    line-height: 70px;
-                    text-align: center;
-                    color: #FFFFFF;
-                    margin-bottom: 35px
-        
-        2. second it has inner grid container, and grid container(should be displayed in 3columns and between first and second, and second and third columns center put the + sign) has 6 elements, gap between child elements is 26px. 5th element is empty shouldn't display anything but reserve corresponding space in the grid, just showing nothing. Each element is display flex and has 3 child elements as column centered horizontally. First child element is svg icon from public folder, second child element is title (style: font-style: normal; font-weight: 700; font-size: 25px; line-height: 38px; text-align: center; color: #FFFFFF);, third child element is paragraph (style: font-weight: 500; font-size: 15px; line-height: 22px; text-align: center; color: #E9EFFF;))
-
-        */}
         <div className={styles.criteriaSection}>
           <Typography className={styles.criteriaTitle}>
             Participation Criteria
           </Typography>
           <div className={styles.gridContainer}>
-            {/* Grid elements */}
-            {Array(6)
-              .fill()
-              .map((_, index) => (
-                <div
-                  key={index}
-                  className={classNames(styles.gridItem, {
-                    [styles.emptyGridItem]: index === 4
-                  })}
-                >
-                  {index !== 4 && (
-                    <>
-                      <img
-                        src={`/images/participation/icon-${index + 1}.svg`}
-                        alt={`Icon ${index + 1}`}
-                      />
-                      <Typography className={styles.gridItemTitle}>
-                        Title {index + 1}
-                      </Typography>
-                      <Typography className={styles.gridItemParagraph}>
-                        Description {index + 1}
-                      </Typography>
-                    </>
-                  )}
-                </div>
-              ))}
+            {gridItemsData.map((item, index) => (
+              <div
+                key={index}
+                className={classNames(styles.gridItem, {
+                  [styles.emptyGridItem]: index === 4,
+                })}
+              >
+                {index !== 4 && (
+                  <>
+                    <img
+                      src={`/images/products/dreamct/participation-icon.svg`}
+                      alt={`Icon ${index + 1}`}
+                    />
+                    <Typography className={styles.gridItemTitle}>
+                      {item.title}
+                    </Typography>
+                    <Typography className={styles.gridItemParagraph}>
+                      {item.paragraph}
+                    </Typography>
+                  </>
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </div>

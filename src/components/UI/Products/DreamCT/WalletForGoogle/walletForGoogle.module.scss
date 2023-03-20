@@ -1,6 +1,6 @@
 @import 'styles/unit.scss';
 .container {
-  background: #FFFFFF;
+  background: #ffffff;
   .box {
     padding: 0 0 rem(67);
     display: flex;
@@ -43,6 +43,92 @@
           text-align: center;
           color: #484848;
           padding-top: 8px;
+        }
+      }
+    }
+
+    .flexContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 1029px;
+      gap: 10px;
+      margin: 0 auto;
+
+      .goldenRoundTitle {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 55px;
+        line-height: 70px;
+        text-align: center;
+        color: #232323;
+        margin-top: 35px;
+      }
+
+      .goldenRoundParagraph {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: #484848;
+        margin-bottom: 31px;
+      }
+
+      .sampleNumbersTitle {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: #232323;
+        margin-bottom: 14px;
+      }
+    }
+
+    .gridContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      width: 735px;
+      max-width: 735px;
+      margin: 0 auto;
+      margin-top: 20px;
+
+      .gridItem {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .itemPair {
+          display: flex;
+          gap: 11px;
+          align-items: flex-start;
+        }
+
+        .gridItemParagraph {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 25px;
+          color: #232323;
+        }
+      }
+    }
+
+    .conclusion {
+      max-width: 920px;
+      margin-top: 80px;
+
+      .conclusionParagraph {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+
+        .concluisonRed {
+          color: #FF003A;
         }
       }
     }
