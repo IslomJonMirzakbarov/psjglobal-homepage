@@ -34,10 +34,10 @@ export default function Products() {
       subtitle: t('ocean_drive_subtitle'),
       icon: (
         <img
-          src='/images/ocean-drive.png'
-          alt='ocean drive'
-          width='41'
-          height='38'
+          src="/images/ocean-drive.png"
+          alt="ocean drive"
+          width="41"
+          height="38"
           style={{ objectFit: 'contain' }}
         />
       ),
@@ -80,21 +80,21 @@ export default function Products() {
                 <div className={styles.icon}>{val.icon}</div>
                 <Typography
                   dangerouslySetInnerHTML={{ __html: val.title }}
-                  variant='h5'
+                  variant="h5"
                   color={val.color1}
                   className={styles.title}
                 />
                 <div>
                   <Typography
-                    variant='body1'
-                    fontWeight='700'
+                    variant="body1"
+                    fontWeight="700"
                     style={font}
                     color={val.color2}
                     dangerouslySetInnerHTML={{ __html: val.subtitle }}
                   />
                   <Typography
                     className={styles.desc}
-                    variant='body3'
+                    variant="body3"
                     style={font}
                     dangerouslySetInnerHTML={{ __html: val.text }}
                     color={val.color2}
@@ -103,8 +103,8 @@ export default function Products() {
                 <div className={styles.next}>
                   <NextArrow
                     fill={index === 0 ? '#232323' : '#fff'}
-                    width='30'
-                    height='30'
+                    width="30"
+                    height="30"
                   />
                 </div>
               </div>

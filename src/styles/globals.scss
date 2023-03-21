@@ -100,9 +100,10 @@ textarea {
   background-position: bottom;
   footer {
     p {
-      color: #fff !important;
+      color: #fff;
     }
   }
+  overflow: hidden;
 }
 
 .overflow-hidden {

@@ -36,51 +36,55 @@ export default function BurgerMenu({ file }) {
       items: [
         {
           title: 'OceanDrive',
-          link: '/products/ocean-drive'
+          link: '/products/ocean-drive',
         },
         {
           title: 'World Art DEXPO NFT',
-          link: '/products/world-art-nft'
+          link: '/products/world-art-nft',
         },
         {
           title: 'Metacon',
-          link: '/products/metacon'
-        }
-      ]
+          link: '/products/metacon',
+        },
+        {
+          title: 'Metacon [DreamsCT]',
+          link: '/products/dreamct',
+        },
+      ],
     },
     {
       title: 'Download',
       items: [
         {
           title: 'OceanDrive',
-          link: '/ocean-drive'
+          link: '/ocean-drive',
         },
         {
           title: 'Metacon',
-          link: '/metacon'
-        }
-      ]
+          link: '/metacon',
+        },
+      ],
     },
     {
       title: 'Community',
       items: [
         {
           title: 'News',
-          link: '/news'
+          link: '/news',
         },
         {
           title: 'FAQ',
-          link: '/faq'
-        }
-      ]
+          link: '/faq',
+        },
+      ],
     },
     {
       title: 'Whitepaper',
       link: file
         ? process.env.NEXT_PUBLIC_IMAGE_BASE_URL +
           getDataByLang(router.locale, 'file', file)?.data.attributes?.url
-        : '#'
-    }
+        : '#',
+    },
   ]
 
   return (

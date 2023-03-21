@@ -3,12 +3,14 @@ import SubscribeModal from 'components/UI/SubscribeModal/SubscribeModal'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useFontFamily } from 'hooks/useFontFamily'
 import useTranslation from 'next-translate/useTranslation'
+import { useRouter } from 'next/router'
 import { useState } from 'react'
 import styles from './banner.module.scss'
 
 export default function Banner() {
   const { scrollYProgress } = useScroll()
   const { t } = useTranslation('common')
+  const router = useRouter()
   const [open, setOpen] = useState(false)
   const font = useFontFamily()
   const scaleElement = useTransform(
@@ -97,29 +99,60 @@ export default function Banner() {
         <div className={styles.banner}>
           <div className={styles.content}>
             <Typography
-              data-text='NFTs'
-              variant='h1'
+              data-text="NFTs"
+              variant="h1"
               className={styles.title}
-              color='primary.dark'
+              color="primary.dark"
               dangerouslySetInnerHTML={{
-                __html: t('product_metacon_title')
+                __html: t('product_metacon_title'),
               }}
               style={font}
             />
             <Typography
-              variant='body2'
-              color='primary.dark'
+              variant="body2"
+              color="primary.dark"
               dangerouslySetInnerHTML={{
-                __html: t('product_metacon_desc')
+                __html: t('product_metacon_desc'),
               }}
               style={font}
             />
             <Button
-              onClick={() => setOpen((prev) => !prev)}
+              onClick={() => router.push('/metacon')}
               className={styles.btn}
             >
-              Coming soon
+              Dowload Now
             </Button>
+
+            <div className={styles.navigationLinks}>
+              <a
+                href="/metacon_user_guide_en.pdf"
+                className={styles.navLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Metacon User Guide_en
+                <img
+                  src="/icons/arrow-forward-custom.svg"
+                  width={22}
+                  height={22}
+                  alt="arrow"
+                />
+              </a>
+              <a
+                href="/metacon_user_guide_ko.pdf"
+                className={styles.navLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Metacon User Guide_ko
+                <img
+                  src="/icons/arrow-forward-custom.svg"
+                  width={22}
+                  height={22}
+                  alt="arrow"
+                />
+              </a>
+            </div>
           </div>
         </div>
         <div className={styles.bannerBg} />
@@ -128,66 +161,62 @@ export default function Banner() {
             style={{
               x: xCircle,
               y: yCircle,
-              opacity: opacityCircle
+              opacity: opacityCircle,
             }}
             className={styles.element}
           >
-            <img src='/images/products/metacon/element.png' />
+            <img src="/images/products/metacon/element.png" alt="Element 1" />
           </motion.div>
           <motion.div
             style={{
               x: xCircle3,
               y: yCircle3,
-              opacity: opacityCircle
+              opacity: opacityCircle,
             }}
             className={styles.element2}
           >
-            <img src='/images/products/metacon/element2.png' />
+            <img src="/images/products/metacon/element2.png" alt="Element 2" />
           </motion.div>
           <motion.div
             style={{
               x: xLock,
               y: yLock,
-              opacity: opacityLock
+              opacity: opacityLock,
             }}
             className={styles.element3}
           >
-            <img src='/images/products/metacon/element3.png' />
+            <img src="/images/products/metacon/element3.png" alt="Element 3" />
           </motion.div>
           <motion.div
             style={{
-              scale: scaleElement
+              scale: scaleElement,
             }}
             className={styles.element1}
           >
-            <img src='/images/products/metacon/element1.png' />
+            <img src="/images/products/metacon/element1.png" alt="Element 4" />
           </motion.div>
           <motion.div
             style={{
               x: xWalet,
               y: yWalet,
-              opacity: opacityWalet
+              opacity: opacityWalet,
             }}
             className={styles.element4}
           >
-            <img src='/images/products/metacon/element4.png' />
+            <img src="/images/products/metacon/element4.png" alt="Element 5" />
           </motion.div>
           <motion.div
             style={{
               x: xCircle2,
               y: yCircle2,
-              opacity: opacityCircle
+              opacity: opacityCircle,
             }}
             className={styles.element5}
           >
-            <img src='/images/products/metacon/element5.png' />
+            <img src="/images/products/metacon/element5.png" alt="Element 6" />
           </motion.div>
         </div>
       </Container>
-      <SubscribeModal
-        open={open}
-        handleClose={() => setOpen((prev) => !prev)}
-      />
     </div>
   )
 }
