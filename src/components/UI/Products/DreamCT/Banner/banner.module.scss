@@ -7,6 +7,10 @@
       padding: rem(100) 0 rem(113);
       position: relative;
       overflow: hidden;
+
+      @media (max-width: 600px) {
+        padding: rem(50) 0;
+      }
       .content {
         position: relative;
         z-index: 9;
@@ -16,6 +20,14 @@
           display: flex;
           justify-content: center;
           width: 100%;
+          padding-left: 40px;
+
+          img {
+            @media (max-width: 600px) {
+              width: 134.17px !important;
+              height: 169.19px !important;
+            }
+          }
         }
 
         .text {
@@ -25,6 +37,11 @@
           margin-top: 27px;
           margin-bottom: 43px;
 
+          @media (max-width: 600px) {
+            margin-bottom: 20px;
+            gap: 10px;
+          }
+
           h2 {
             font-weight: 700;
             font-size: 55px;
@@ -33,17 +50,33 @@
             color: #232323;
             margin: 0;
             padding: 0;
+
+            @media (max-width: 600px) {
+              font-size: 28px;
+              line-height: 35px;
+              white-space: normal;
+              text-align: center;
+              padding: 10px;
+            }
           }
 
           p {
             font-weight: 400;
             font-size: 15px;
             line-height: 25px;
+            max-width: 1153px;
             text-align: center;
             color: #484848;
             margin: 0;
             padding: 0;
-            max-width: 1153px;
+
+            @media (max-width: 600px) {
+              font-weight: 500;
+              font-size: 15px;
+              line-height: 25px;
+              max-width: 328px;
+              margin: auto;
+            }
           }
         }
 
@@ -71,31 +104,6 @@
             &:hover {
               text-decoration: underline;
             }
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 600px) {
-  .box {
-    padding: rem(50) 0 0;
-    height: rem(735);
-    position: relative;
-    .container {
-      position: initial;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      .banner {
-        padding: 0 rem(22);
-        .content {
-          width: 100%;
-          min-height: auto;
-          .icon {
-            width: 100%;
           }
         }
       }

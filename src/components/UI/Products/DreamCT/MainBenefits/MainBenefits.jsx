@@ -75,20 +75,20 @@ export default function MainBenefits() {
     <Container>
       <div className={styles.dexpo}>
         <div className={styles.hashTagBox}>
-          <div className={styles.columnBox}>
+          <div className={classNames(styles.columnBox, styles.hideOnMobile)}>
             {texts.slice(0, 3).map((text, index) => (
               <div key={index} className={styles.textBox}>
                 <ColoredHashText text={text} isRed={index === 2} />
               </div>
             ))}
           </div>
-          <div className={styles.columnBox}>
+          <div className={classNames(styles.columnBox, styles.mobileImg)}>
             <img
               src="/images/products/dreamct/dreamct-in-action.png"
               alt="big-svg"
             />
           </div>
-          <div className={styles.columnBox}>
+          <div className={classNames(styles.columnBox, styles.hideOnMobile)}>
             {texts.slice(3).map((text, index) => (
               <div key={index} className={styles.textBox}>
                 <ColoredHashText text={text} isRed={index === 0} />
@@ -113,7 +113,9 @@ export default function MainBenefits() {
             </div>
           ))}
         </div>
-        <Typography className={styles.rowTitle} style={{ marginBottom: 200 }}>
+        <Typography
+          className={classNames(styles.rowTitle, styles.bottomRowTitle)}
+        >
           invited!
         </Typography>
 

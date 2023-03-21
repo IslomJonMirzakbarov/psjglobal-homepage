@@ -98,6 +98,7 @@ export default function WalletForGoogle() {
           <div className={styles.flexContainer}>
             <div className={styles.item}>
               <img
+                className={styles.imageItemFlex}
                 src="/images/products/dreamct/golden-round.png"
                 alt="Icon 1"
               />
@@ -122,6 +123,7 @@ export default function WalletForGoogle() {
             </div>
             <div className={styles.item}>
               <img
+                className={styles.imageItemFlex2}
                 src="/images/products/dreamct/round-process.png"
                 alt="Icon 2"
               />

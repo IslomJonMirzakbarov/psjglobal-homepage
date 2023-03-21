@@ -6,7 +6,7 @@ import { useFontFamily } from 'hooks/useFontFamily'
 import useTranslation from 'next-translate/useTranslation'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import styles from './banner.module.scss'
 
 export default function Banner() {
@@ -14,6 +14,18 @@ export default function Banner() {
   const { t } = useTranslation('common')
   const router = useRouter()
   const font = useFontFamily()
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    function handleResize() {
+      setIsMobile(window.innerWidth <= 600)
+    }
+    handleResize()
+    window.addEventListener('resize', handleResize)
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
 
   return (
     <div className={styles.box}>
@@ -31,7 +43,8 @@ export default function Banner() {
 
             <div className={styles.text}>
               <h2>
-                {t('metacon_main_service')} <br /> {t('dreamct')}
+                {t('metacon_main_service')} {isMobile ? '' : <br />}{' '}
+                {t('dreamct')}
               </h2>
               <p>{t('dreamsct_description')} </p>
             </div>
