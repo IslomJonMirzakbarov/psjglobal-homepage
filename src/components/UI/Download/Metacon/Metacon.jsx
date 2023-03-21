@@ -1,4 +1,5 @@
 import { Button, Container, Typography } from '@mui/material'
+import { NextArrow } from 'components/UI/Icons'
 import SubscribeModal from 'components/UI/SubscribeModal/SubscribeModal'
 import { motion } from 'framer-motion'
 import { useFontFamily } from 'hooks/useFontFamily'
@@ -40,6 +41,22 @@ export default function Metacon({ data, items }) {
           component='p'
           style={font}
         />
+        <a href='/dtc.pdf' target='_blank' className={styles.guide}>
+          드림시티_게임설명서
+          <NextArrow />
+        </a>
+        <a
+          href='/user_guide_metacon.pdf'
+          target='_blank'
+          className={styles.guide}
+        >
+          드림시티_유저가이드
+          <NextArrow />
+        </a>
+        <a href='/metacon.pdf' target='_blank' className={styles.guide}>
+          드림시티_테스트_일정
+          <NextArrow />
+        </a>
         <div className={styles.leftElements}>
           <motion.div
             initial={{ x: -100 }}
@@ -115,14 +132,20 @@ export default function Metacon({ data, items }) {
                 {getDataByLang(router.locale, 'description', item)}
               </Typography>
               <Button
-                color={!item.active ? 'secondary' : 'primary'}
+                color={!item.is_active ? 'secondary' : 'primary'}
                 onClick={() => {
-                  if (!item.active) {
+                  if (!item.is_active) {
                     setOpen((prev) => !prev)
+                  } else {
+                    const link = document.createElement('a')
+                    link.href = item.link
+                    document.body.appendChild(link)
+                    link.click()
+                    document.body.removeChild(link)
                   }
                 }}
               >
-                {item.active ? 'Download' : 'Coming soon'}
+                {item.is_active ? 'Download' : 'Coming soon'}
               </Button>
             </div>
           ))}

@@ -8,7 +8,7 @@ export default function MetaconPage({ metacon }) {
   const { t } = useTranslation('common')
   const data = {
     title: 'Metacon',
-    img: '/images/metacon.jpg',
+    img: '/images/metacon-v2.jpg',
     desc: t('download_metacon_desc'),
     items: [
       {
