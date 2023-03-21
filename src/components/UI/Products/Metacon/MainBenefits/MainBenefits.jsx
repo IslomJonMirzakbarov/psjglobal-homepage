@@ -1,4 +1,5 @@
 import { Container, Typography } from '@mui/material'
+import classNames from 'classnames'
 import { motion } from 'framer-motion'
 import { useFontFamily } from 'hooks/useFontFamily'
 import useTranslation from 'next-translate/useTranslation'
@@ -11,7 +12,7 @@ const texts = [
   '#Your last wallet',
   '#Wallet',
   '#Swap System',
-  '#Easy'
+  '#Easy',
 ]
 
 function ColoredHashText({ text, isRed }) {
@@ -34,20 +35,20 @@ export default function MainBenefits() {
       title: t('product_metacon_benefits_1'),
       img: '/images/products/metacon/main1.png',
       widthImg: 157,
-      heightImg: 116
+      heightImg: 116,
     },
     {
       title: t('product_metacon_benefits_2'),
       img: '/images/products/metacon/main2.png',
       widthImg: 112,
-      heightImg: 98
+      heightImg: 98,
     },
     {
       title: t('product_metacon_benefits_3'),
       img: '/images/products/metacon/main3.png',
       widthImg: 116,
-      heightImg: 108
-    }
+      heightImg: 108,
+    },
   ]
   return (
     <Container>
@@ -61,23 +62,23 @@ export default function MainBenefits() {
           textAlign="center"
           className={styles.desc}
           dangerouslySetInnerHTML={{
-            __html: t('product_metacon_info')
+            __html: t('product_metacon_info'),
           }}
           style={font}
         />
 
         <div className={styles.hashTagBox}>
-          <div className={styles.columnBox}>
+          <div className={classNames(styles.columnBox, styles.hideOnMobile)}>
             {texts.slice(0, 3).map((text, index) => (
               <div key={index} className={styles.textBox}>
                 <ColoredHashText text={text} isRed={index === 2} />
               </div>
             ))}
           </div>
-          <div className={styles.columnBox}>
+          <div className={classNames(styles.columnBox, styles.mobileImg)}>
             <img src="/icons/main-benefits/big-svg.svg" alt="big-svg" />
           </div>
-          <div className={styles.columnBox}>
+          <div className={classNames(styles.columnBox, styles.hideOnMobile)}>
             {texts.slice(3).map((text, index) => (
               <div key={index} className={styles.textBox}>
                 <ColoredHashText text={text} isRed={index === 0} />
@@ -120,7 +121,7 @@ export default function MainBenefits() {
                 style={{
                   maxWidth: item.widthImg,
                   maxHeight: item.heightImg,
-                  left: `calc(50% - ${rem(item.widthImg / 2)})`
+                  left: `calc(50% - ${rem(item.widthImg / 2)})`,
                 }}
               >
                 <img src={item.img} alt="ocean drive" />

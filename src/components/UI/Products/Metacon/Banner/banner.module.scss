@@ -1,21 +1,68 @@
 @import 'styles/unit.scss';
 .box {
   overflow: hidden;
+
+  @media (max-width: 600px) {
+    padding: rem(50) 0 0;
+    height: rem(735);
+    position: relative;
+  }
+
   .container {
     position: relative;
+
+    @media (max-width: 600px) {
+      position: initial;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media (max-width: 600px) {
+      .bannerBg {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        right: auto;
+        top: auto;
+        height: 50%;
+      }
+    }
     .banner {
       padding: rem(100) 0 rem(113);
       position: relative;
       overflow: hidden;
+
+      @media (max-width: 600px) {
+        padding: 0 rem(22);
+      }
       .content {
         width: rem(700);
         position: relative;
         z-index: 9;
         min-height: rem(413);
+
+        @media (max-width: 600px) {
+          width: 100%;
+          min-height: auto;
+        }
         .title {
           margin-bottom: rem(25);
+
+          @media (max-width: 600px) {
+            margin-bottom: rem(10);
+          }
           span {
             color: #4e3af7;
+          }
+        }
+        @media (max-width: 600px) {
+          button {
+            margin-top: rem(15);
+          }
+          br {
+            display: none;
           }
         }
         .btn {
@@ -32,7 +79,7 @@
           img {
             margin-left: 14px;
           }
-          
+
           .navLink {
             display: flex;
             align-items: center;
@@ -42,11 +89,10 @@
             line-height: 22px;
             text-align: right;
             color: #0012b0;
-            
+
             &:hover {
               text-decoration: underline;
             }
-
           }
         }
       }
@@ -109,54 +155,8 @@
         transition: all 0.8s ease-in-out;
       }
     }
-  }
-  .bannerBg {
-    background-image: url('/images/products/metacon/banner-bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 70%;
-    position: absolute;
-    right: rem(-200);
-    height: rem(800);
-    top: rem(-150);
-  }
-}
 
-@media (max-width: 600px) {
-  .box {
-    padding: rem(50) 0 0;
-    height: rem(735);
-    position: relative;
-    .container {
-      position: initial;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      .bannerBg {
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        right: auto;
-        top: auto;
-        height: 70%;
-      }
-      .banner {
-        padding: 0 rem(22);
-        .content {
-          width: 100%;
-          min-height: auto;
-          .title {
-            margin-bottom: rem(10);
-          }
-          button {
-            margin-top: rem(15);
-          }
-          br {
-            display: none;
-          }
-        }
-      }
+    @media (max-width: 600px) {
       .elements {
         position: relative;
         width: rem(350);
@@ -210,5 +210,15 @@
         }
       }
     }
+  }
+  .bannerBg {
+    background-image: url('/images/products/metacon/banner-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70%;
+    position: absolute;
+    right: rem(-200);
+    height: rem(800);
+    top: rem(-150);
   }
 }

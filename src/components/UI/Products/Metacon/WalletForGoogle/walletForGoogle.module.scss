@@ -1,11 +1,15 @@
 @import 'styles/unit.scss';
 .container {
-  background: #FFFFFF;
+  background: #ffffff;
   .box {
     padding: 0 0 rem(67);
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    @media (max-width: 600px) {
+      padding-top: 50px;
+    }
 
     .imageColumn {
       display: flex;
@@ -13,6 +17,24 @@
       align-items: center;
       justify-content: center;
       margin-top: 15px;
+
+      @media (max-width: 600px) {
+        padding-top: 20px;
+
+        img {
+          &:nth-child(1) {
+            width: 291.27px;
+            height: 132.12px;
+          }
+
+          &:nth-child(2) {
+            margin-top: 50px;
+            margin-bottom: 15px;
+            width: 361.94px;
+            height: 164.47px;
+          }
+        }
+      }
     }
 
     .rowContainer {
@@ -20,6 +42,14 @@
       flex-direction: row;
       gap: 70px;
       margin-bottom: 110px;
+
+      @media (max-width: 600px) {
+        margin-top: 75px;
+        flex-direction: column;
+        max-width: 281px;
+        gap: 40px;
+        margin-bottom: 95px;
+      }
 
       .item {
         flex: 1;
@@ -43,28 +73,6 @@
           text-align: center;
           color: #484848;
           padding-top: 8px;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 600px) {
-  .container {
-    overflow: hidden;
-    .box {
-      padding: rem(65) 0 rem(116);
-
-      .title {
-        line-height: rem(35);
-        br {
-          display: none;
-        }
-      }
-      .desc {
-        margin: rem(10) 0 rem(15);
-        br {
-          display: none;
         }
       }
     }

@@ -1,10 +1,8 @@
-import { ArrowForward, ArrowForwardIosRounded } from '@mui/icons-material'
-import { Button, Container, Link, Typography } from '@mui/material'
+import { Button, Container, Typography } from '@mui/material'
 import SubscribeModal from 'components/UI/SubscribeModal/SubscribeModal'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useFontFamily } from 'hooks/useFontFamily'
 import useTranslation from 'next-translate/useTranslation'
-import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
 import styles from './banner.module.scss'
@@ -106,7 +104,7 @@ export default function Banner() {
               className={styles.title}
               color="primary.dark"
               dangerouslySetInnerHTML={{
-                __html: t('product_metacon_title')
+                __html: t('product_metacon_title'),
               }}
               style={font}
             />
@@ -114,13 +112,12 @@ export default function Banner() {
               variant="body2"
               color="primary.dark"
               dangerouslySetInnerHTML={{
-                __html: t('product_metacon_desc')
+                __html: t('product_metacon_desc'),
               }}
               style={font}
             />
             <Button
               onClick={() => router.push('/metacon')}
-              // onClick={() => setOpen((prev) => !prev)}
               className={styles.btn}
             >
               Dowload Now
@@ -164,66 +161,62 @@ export default function Banner() {
             style={{
               x: xCircle,
               y: yCircle,
-              opacity: opacityCircle
+              opacity: opacityCircle,
             }}
             className={styles.element}
           >
-            <img src="/images/products/metacon/element.png" />
+            <img src="/images/products/metacon/element.png" alt="Element 1" />
           </motion.div>
           <motion.div
             style={{
               x: xCircle3,
               y: yCircle3,
-              opacity: opacityCircle
+              opacity: opacityCircle,
             }}
             className={styles.element2}
           >
-            <img src="/images/products/metacon/element2.png" />
+            <img src="/images/products/metacon/element2.png" alt="Element 2" />
           </motion.div>
           <motion.div
             style={{
               x: xLock,
               y: yLock,
-              opacity: opacityLock
+              opacity: opacityLock,
             }}
             className={styles.element3}
           >
-            <img src="/images/products/metacon/element3.png" />
+            <img src="/images/products/metacon/element3.png" alt="Element 3" />
           </motion.div>
           <motion.div
             style={{
-              scale: scaleElement
+              scale: scaleElement,
             }}
             className={styles.element1}
           >
-            <img src="/images/products/metacon/element1.png" />
+            <img src="/images/products/metacon/element1.png" alt="Element 4" />
           </motion.div>
           <motion.div
             style={{
               x: xWalet,
               y: yWalet,
-              opacity: opacityWalet
+              opacity: opacityWalet,
             }}
             className={styles.element4}
           >
-            <img src="/images/products/metacon/element4.png" />
+            <img src="/images/products/metacon/element4.png" alt="Element 5" />
           </motion.div>
           <motion.div
             style={{
               x: xCircle2,
               y: yCircle2,
-              opacity: opacityCircle
+              opacity: opacityCircle,
             }}
             className={styles.element5}
           >
-            <img src="/images/products/metacon/element5.png" />
+            <img src="/images/products/metacon/element5.png" alt="Element 6" />
           </motion.div>
         </div>
       </Container>
-      <SubscribeModal
-        open={open}
-        handleClose={() => setOpen((prev) => !prev)}
-      />
     </div>
   )
 }
