@@ -176,6 +176,10 @@
       }
     }
 
+    .item:nth-child(3) .itemParagraph {
+      width: 203px;
+    }
+
     .item:not(:first-child)::before {
       content: '';
       position: absolute;
@@ -223,6 +227,7 @@
 
   .bottomRowTitle {
     margin-bottom: 200px;
+    margin-top: -40px;
 
     @media (max-width: 600px) {
       margin-bottom: 55px;
