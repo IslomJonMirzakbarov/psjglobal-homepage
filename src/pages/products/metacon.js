@@ -8,7 +8,7 @@ export default function OceanDrivePage() {
       <SEO />
       <main className="metacon-bg">
         <Metacon />
-        <Footer isWhiteBg={true} />
+        <Footer isWhiteBg />
       </main>
     </>
   )
