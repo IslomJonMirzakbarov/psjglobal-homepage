@@ -62,9 +62,10 @@ export default function WalletForGoogle() {
                 <Typography className={styles.itemTitle}>
                   {item.title}
                 </Typography>
-                <Typography className={styles.itemParagraph}>
-                  {item.description}
-                </Typography>
+                <Typography
+                  className={styles.itemParagraph}
+                  dangerouslySetInnerHTML={{ __html: item.description }}
+                />
               </div>
             ))}
           </div>
