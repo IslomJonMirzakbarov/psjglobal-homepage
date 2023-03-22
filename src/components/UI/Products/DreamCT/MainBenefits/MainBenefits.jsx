@@ -107,9 +107,10 @@ export default function MainBenefits() {
                   alt={`Icon ${index + 1}`}
                 />
               </div>
-              <Typography className={styles.itemParagraph}>
-                {item.description}
-              </Typography>
+              <Typography
+                className={styles.itemParagraph}
+                dangerouslySetInnerHTML={{ __html: item.description }}
+              />
             </div>
           ))}
         </div>
@@ -140,9 +141,12 @@ export default function MainBenefits() {
                     <Typography className={styles.gridItemTitle}>
                       {item.title}
                     </Typography>
-                    <Typography className={styles.gridItemParagraph}>
-                      {item.paragraph}
-                    </Typography>
+                    <Typography
+                      className={styles.gridItemParagraph}
+                      dangerouslySetInnerHTML={{ __html: item.paragraph }}
+                    />
+                    {/* {item.paragraph}
+                    </Typography> */}
                   </>
                 )}
               </div>
