@@ -9,7 +9,7 @@ export default function DreamCTPage() {
       <SEO />
       <main className="metacon-bg">
         <DreamCT />
-        <Footer />
+        <Footer isWhiteBg={true} />
       </main>
     </>
   )
