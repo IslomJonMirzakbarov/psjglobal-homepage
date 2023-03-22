@@ -51,7 +51,7 @@ export default function Banner() {
 
             <div className={styles.navigationLinks}>
               <a
-                href="/dreamct_guide_en.pdf"
+                href="/pdf-viewer/dreamct_user_guide_en"
                 className={styles.navLink}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -65,7 +65,7 @@ export default function Banner() {
                 />
               </a>
               <a
-                href="/dreamct_guide_ko.pdf"
+                href="/pdf-viewer/dreamct_user_guide_ko"
                 className={styles.navLink}
                 target="_blank"
                 rel="noopener noreferrer"
