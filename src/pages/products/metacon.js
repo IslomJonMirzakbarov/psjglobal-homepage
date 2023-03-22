@@ -6,9 +6,9 @@ export default function OceanDrivePage() {
   return (
     <>
       <SEO />
-      <main className='metacon-bg'>
+      <main className="metacon-bg">
         <Metacon />
-        <Footer />
+        <Footer isWhiteBg />
       </main>
     </>
   )

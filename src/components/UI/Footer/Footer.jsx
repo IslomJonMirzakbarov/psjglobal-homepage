@@ -2,9 +2,9 @@ import styles from './Footer.module.scss'
 import Link from 'next/link'
 import { Container } from '@mui/material'
 import { TalkIcon, TelegramIcon, TwitterIcon, YouTubeIcon } from '../Icons'
-export function Footer() {
+export function Footer({ isWhiteBg = false }) {
   return (
-    <footer style={{ background: '#ffffff' }}>
+    <footer style={{ background: isWhiteBg ? '#ffffff' : '' }}>
       <Container>
         <div className={styles.footer}>
           <div className={styles.leftElement}>
