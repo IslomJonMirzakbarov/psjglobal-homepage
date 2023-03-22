@@ -18,6 +18,7 @@ const OceanDriveUserGuideKO = () => {
           bottom: 0,
           right: 0,
           margin: 0,
+          zIndex: 10000,
         }}
       ></iframe>
     </>
