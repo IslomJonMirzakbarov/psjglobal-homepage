@@ -16,7 +16,7 @@ export function Footer({ isWhiteBg = false }) {
           </div>
           <div className={styles.rightElement}>
             <a
-              href="https://open.kakao.com/o/gCsycmhb"
+              href="https://open.kakao.com/o/g5ux462e"
               target="_blank"
               rel="noreferrer"
             >

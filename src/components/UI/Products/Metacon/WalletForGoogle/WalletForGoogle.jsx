@@ -38,7 +38,6 @@ export default function WalletForGoogle() {
             dangerouslySetInnerHTML={{
               __html: t('product_metacon_wallet_title'),
             }}
-            style={font}
           />
 
           <div className={styles.imageColumn}>
@@ -71,7 +70,7 @@ export default function WalletForGoogle() {
           </div>
 
           <Link href="/products/dreamct" passHref>
-            <Button className={styles.btn}>DreamCT</Button>
+            <Button className={styles.btn}>DreamsCT</Button>
           </Link>
         </div>
       </Container>

@@ -54,7 +54,11 @@
             margin-bottom: rem(10);
           }
           span {
+            font-family: 'Poppins';
+          }
+          span :nth-child(2)  {
             color: #0001ae;
+            font-family: 'Poppins';
           }
         }
         @media (max-width: 600px) {
