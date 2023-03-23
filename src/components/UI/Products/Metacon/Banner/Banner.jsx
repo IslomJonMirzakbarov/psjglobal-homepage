@@ -120,7 +120,7 @@ export default function Banner() {
               onClick={() => router.push('/metacon')}
               className={styles.btn}
             >
-              Dowload Now
+              Download Now
             </Button>
 
             <div className={styles.navigationLinks}>
