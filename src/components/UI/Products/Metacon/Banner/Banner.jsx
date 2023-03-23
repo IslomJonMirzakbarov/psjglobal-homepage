@@ -125,7 +125,8 @@ export default function Banner() {
 
             <div className={styles.navigationLinks}>
               <a
-                href="/pdf-viewer/metacon_user_guide_en"
+                href="/metacon_user_guide_en.pdf"
+                // href="/pdf-viewer/metacon_user_guide_en"
                 className={styles.navLink}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -139,7 +140,7 @@ export default function Banner() {
                 />
               </a>
               <a
-                href="/pdf-viewer/metacon_user_guide_ko"
+                href="/metacon_user_guide_ko.pdf"
                 className={styles.navLink}
                 target="_blank"
                 rel="noopener noreferrer"

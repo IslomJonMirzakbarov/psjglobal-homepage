@@ -82,7 +82,7 @@ export default function Banner() {
               Download
             </Button>
             <a
-              href="/pdf-viewer/ocean_drive_user_guide_en"
+              href="/ocean_drive_user_guide_en.pdf"
               target="_blank"
               className={styles.guide}
             >
@@ -90,7 +90,7 @@ export default function Banner() {
               <NextArrow />
             </a>
             <a
-              href="/pdf-viewer/ocean_drive_user_guide_ko"
+              href="/ocean_drive_user_guide_ko.pdf"
               target="_blank"
               className={styles.guide}
             >
