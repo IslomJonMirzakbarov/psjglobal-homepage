@@ -8,10 +8,10 @@ import styles from './mainBenefits.module.scss'
 
 const texts = [
   '#DreamsCT',
-  '#Fun',
+  '#CYCON',
   '#Your last wallet',
-  '#Wallet',
-  '#Swap System',
+  '#Hope',
+  '#Golden Round',
   '#Easy',
 ]
 

@@ -85,11 +85,11 @@
   "participation_limitation": "Participate only once a week",
   "participation_criteria": "Only those who meet the <br/> above four criteria can <br/> participate once a week.​",
   "golden_round_description": "If there is no 1st place winner during the 10th round, there is the 11th round called the Golden Round. In the Golden Round, special rules are applied for there to be an unconditional winner. Only those who have applied at least 6 times out of 10 cumulative times will be given an opportunity to apply for the Golden Round. In this round, 2nd and 3rd places are excluded and there is only 1st place winner. If there are many winners, the CYCON is given to the winners in 1/N.",
-  "winning_condition_1": "If 6 of the 6 numbers applied for are <br/> the same as the winning number.",
-  "winning_condition_2": "If 1) is not applicable: <br/> If 6 numbers you applied for are the <br/> same among 7 numbers, including 6 <br/> winning numbers and 1 bonus number.",
-  "winning_condition_3": "If 1) and 2) are not applicable: <br/> If 5 of the 6 numbers applied for are <br/> the same as the winning number.",
-  "winning_condition_4": "If 1), 2) and 3) are not applicable: <br/> If 5 of the 7 numbers, including 6 <br/> winning numbers and 1 bonus number, <br/> are the same.",
-  "winning_condition_5": "If 1), 2), 3) and 4) are not applicable: <br/> If 4 of the 6 winning numbers are the same.",
-  "winning_condition_6": "If 1), 2), 3), 4) and 5) are not applicable: <br/> If 4 of the 7 numbers, including 6 winning <br/> numbers and 1 bonus number, are the <br/> same.",
+  "winning_condition_1": "If <span>6</span> of the <span>6</span> numbers applied for are <br/> the same as the winning number.",
+  "winning_condition_2": "If 1) is not applicable: <br/> If <span>6</span> numbers you applied for are the <br/> same among <span>7</span> numbers, including <span>6</span> <br/> winning numbers and <span>1</span> bonus number.",
+  "winning_condition_3": "If 1) and 2) are not applicable: <br/> If <span>5</span> of the <span>6</span> numbers applied for are <br/> the same as the winning number.",
+  "winning_condition_4": "If 1), 2) and 3) are not applicable: <br/> If <span>5</span> of the <span>7</span> numbers, including <span>6</span> <br/> winning numbers and <span>1</span> bonus number, <br/> are the same.",
+  "winning_condition_5": "If 1), 2), 3) and 4) are not applicable: <br/> If <span>4</span> of the <span>6</span> winning numbers are the same.",
+  "winning_condition_6": "If 1), 2), 3), 4) and 5) are not applicable: <br/> If <span>4</span> of the <span>7</span> numbers, including <span>6</span> winning <br/> numbers and <span>1</span> bonus number, are the <br/> same.",
   "conclusion_golden_round": "Golden Round application criteria is limited to those who have applied for at least 6 out of 10 cumulative rounds. The contents of this article are limited to the case where the first prize winner does not appear until after 10 rounds. If there is a first prize winner, the enforcement of this article shall be effected in the event that no winner emerges for 10 consecutive rounds. From the round in which the first prize inner does not appear, the 11th round is implemented."
 }

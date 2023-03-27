@@ -9,10 +9,11 @@ export function Footer({ isWhiteBg = false }) {
         <div className={styles.footer}>
           <div className={styles.leftElement}>
             <p>
-              conuncs@conun.co.kr
-              <br />1 Raffles Place #44-01A One Raffles Place Singapore
+              {/* conuncs@conun.co.kr */}
+              <br />
+              23-22, Samseong-ro 76-gil, Seoul, Korea
             </p>
-            <p>ⓒ 2021 CONUN, All Rights Reserved</p>
+            <p>ⓒ 2023 CONUN, All Rights Reserved</p>
           </div>
           <div className={styles.rightElement}>
             <a
