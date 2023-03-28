@@ -20,43 +20,47 @@ export default function Metacon({ data, items }) {
         <div className={styles.img}>
           <Image
             src={data.img}
-            alt='ocean-drive'
+            alt="ocean-drive"
             width={110}
             height={110}
-            objectFit='contain'
+            objectFit="contain"
           />
         </div>
         <Typography
-          color='primary.dark'
-          variant='h2'
-          component='h1'
-          fontWeight='700'
+          color="primary.dark"
+          variant="h2"
+          component="h1"
+          fontWeight="700"
         >
           {data.title}
         </Typography>
         <Typography
           className={styles.text}
           dangerouslySetInnerHTML={{ __html: data.desc }}
-          variant='body2'
-          component='p'
+          variant="body2"
+          component="p"
           style={font}
         />
-        <a href='/dtc.pdf' target='_blank' className={styles.guide}>
-          드림시티_게임설명서
+        <a
+          href="/metacon_user_guide_en.pdf"
+          target="_blank"
+          className={styles.guide}
+        >
+          Metacon User Guide_en
           <NextArrow />
         </a>
         <a
-          href='/user_guide_metacon.pdf'
-          target='_blank'
+          href="/metacon_user_guide_ko.pdf"
+          target="_blank"
           className={styles.guide}
         >
-          드림시티_유저가이드
+          Metacon User Guide_ko
           <NextArrow />
         </a>
-        <a href='/metacon.pdf' target='_blank' className={styles.guide}>
+        {/* <a href='/metacon.pdf' target='_blank' className={styles.guide}>
           드림시티_테스트_일정
           <NextArrow />
-        </a>
+        </a> */}
         <div className={styles.leftElements}>
           <motion.div
             initial={{ x: -100 }}
@@ -65,7 +69,7 @@ export default function Metacon({ data, items }) {
             transition={{ duration: 1, delay: 0.5 }}
             className={styles.leftElement1}
           >
-            <img src='/images/metacon/leftElement1.png' />
+            <img src="/images/metacon/leftElement1.png" />
           </motion.div>
           <motion.div
             initial={{ scale: 0 }}
@@ -74,14 +78,14 @@ export default function Metacon({ data, items }) {
             transition={{ duration: 1, delay: 0.5 }}
             className={styles.leftElement2}
           >
-            <img src='/images/metacon/leftElement2.png' />
+            <img src="/images/metacon/leftElement2.png" />
           </motion.div>
           <motion.div
             animate={{ rotate: 360 }}
             transition={{ ease: 'linear', duration: 4, repeat: Infinity }}
             className={styles.leftElement3}
           >
-            <img src='/images/metacon/leftElement3.png' />
+            <img src="/images/metacon/leftElement3.png" />
           </motion.div>
         </div>
         <div className={styles.rightElements}>
@@ -92,7 +96,7 @@ export default function Metacon({ data, items }) {
             transition={{ duration: 1, delay: 0.5 }}
             className={styles.rightElement1}
           >
-            <img src='/images/metacon/rightElement1.png' />
+            <img src="/images/metacon/rightElement1.png" />
           </motion.div>
           <motion.div
             initial={{ x: 150 }}
@@ -101,7 +105,7 @@ export default function Metacon({ data, items }) {
             transition={{ duration: 1, delay: 0.5 }}
             className={styles.rightElement2}
           >
-            <img src='/images/metacon/rightElement2.png' />
+            <img src="/images/metacon/rightElement2.png" />
           </motion.div>
         </div>
         <div className={styles.items}>
@@ -121,13 +125,13 @@ export default function Metacon({ data, items }) {
                   />
                 ))}
               </div>
-              <Typography variant='h6' fontWeight='700' color='primary.dark'>
+              <Typography variant="h6" fontWeight="700" color="primary.dark">
                 {item.title}
               </Typography>
               <Typography
                 className={styles.desc}
-                variant='body2'
-                color='secondary'
+                variant="body2"
+                color="secondary"
               >
                 {getDataByLang(router.locale, 'description', item)}
               </Typography>
