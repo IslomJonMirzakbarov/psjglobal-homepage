@@ -57,10 +57,22 @@ export default function Metacon({ data, items }) {
           Metacon User Guide_ko
           <NextArrow />
         </a>
-        {/* <a href='/metacon.pdf' target='_blank' className={styles.guide}>
-          드림시티_테스트_일정
+        <a
+          href="/METACON_이체가이드(빗썸).pdf"
+          target="_blank"
+          className={styles.guide}
+        >
+          METACON_이체가이드(빗썸)
           <NextArrow />
-        </a> */}
+        </a>
+        <a
+          href="/LD플레이어_이용 가이드.pdf"
+          target="_blank"
+          className={styles.guide}
+        >
+          LD플레이어_이용 가이드
+          <NextArrow />
+        </a>
         <div className={styles.leftElements}>
           <motion.div
             initial={{ x: -100 }}
