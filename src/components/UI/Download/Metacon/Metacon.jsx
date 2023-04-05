@@ -147,7 +147,7 @@ export default function Metacon({ data, items }) {
               >
                 {getDataByLang(router.locale, 'description', item)}
               </Typography>
-              {/* <Button
+              <Button
                 color={!item.is_active ? 'secondary' : 'primary'}
                 onClick={() => {
                   if (!item.is_active) {
@@ -158,21 +158,6 @@ export default function Metacon({ data, items }) {
                     document.body.appendChild(link)
                     link.click()
                     document.body.removeChild(link)
-                  }
-                }}
-              >
-                {item.is_active ? 'Download' : 'Coming soon'}
-              </Button> */}
-              <Button
-                color={!item.is_active ? 'secondary' : 'primary'}
-                onClick={() => {
-                  if (!item.is_active) {
-                    setOpen((prev) => !prev)
-                  } else {
-                    window.open(
-                      'https://play.google.com/store/apps/details?id=com.metacon',
-                      '_blank'
-                    )
                   }
                 }}
               >
