@@ -56,7 +56,7 @@ export default function Roadmap({ roadmaps }) {
     }
   ]
 
-  const [tab, setTab] = useState(roadmaps ? roadmaps[5].id : null)
+  const [tab, setTab] = useState(roadmaps ? roadmaps[6].id : null)
 
   return (
     <div className={styles.box}>
