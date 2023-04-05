@@ -20,54 +20,54 @@ export default function Metacon({ data, items }) {
         <div className={styles.img}>
           <Image
             src={data.img}
-            alt="ocean-drive"
+            alt='ocean-drive'
             width={110}
             height={110}
-            objectFit="contain"
+            objectFit='contain'
           />
         </div>
         <Typography
-          color="primary.dark"
-          variant="h2"
-          component="h1"
-          fontWeight="700"
+          color='primary.dark'
+          variant='h2'
+          component='h1'
+          fontWeight='700'
         >
           {data.title}
         </Typography>
         <Typography
           className={styles.text}
           dangerouslySetInnerHTML={{ __html: data.desc }}
-          variant="body2"
-          component="p"
+          variant='body2'
+          component='p'
           style={font}
         />
         <a
-          href="/metacon_user_guide_en.pdf"
-          target="_blank"
+          href='/metacon_user_guide_en.pdf'
+          target='_blank'
           className={styles.guide}
         >
           Metacon User Guide_en
           <NextArrow />
         </a>
         <a
-          href="/metacon_user_guide_ko.pdf"
-          target="_blank"
+          href='/metacon_user_guide_ko.pdf'
+          target='_blank'
           className={styles.guide}
         >
           Metacon User Guide_ko
           <NextArrow />
         </a>
         <a
-          href="/METACON_이체가이드(빗썸).pdf"
-          target="_blank"
+          href='/METACON_이체가이드(빗썸).pdf'
+          target='_blank'
           className={styles.guide}
         >
           METACON_이체가이드(빗썸)
           <NextArrow />
         </a>
         <a
-          href="/LD플레이어_이용 가이드.pdf"
-          target="_blank"
+          href='/LD플레이어_이용 가이드.pdf'
+          target='_blank'
           className={styles.guide}
         >
           LD플레이어_이용 가이드
@@ -81,7 +81,7 @@ export default function Metacon({ data, items }) {
             transition={{ duration: 1, delay: 0.5 }}
             className={styles.leftElement1}
           >
-            <img src="/images/metacon/leftElement1.png" />
+            <img src='/images/metacon/leftElement1.png' />
           </motion.div>
           <motion.div
             initial={{ scale: 0 }}
@@ -90,14 +90,14 @@ export default function Metacon({ data, items }) {
             transition={{ duration: 1, delay: 0.5 }}
             className={styles.leftElement2}
           >
-            <img src="/images/metacon/leftElement2.png" />
+            <img src='/images/metacon/leftElement2.png' />
           </motion.div>
           <motion.div
             animate={{ rotate: 360 }}
             transition={{ ease: 'linear', duration: 4, repeat: Infinity }}
             className={styles.leftElement3}
           >
-            <img src="/images/metacon/leftElement3.png" />
+            <img src='/images/metacon/leftElement3.png' />
           </motion.div>
         </div>
         <div className={styles.rightElements}>
@@ -108,7 +108,7 @@ export default function Metacon({ data, items }) {
             transition={{ duration: 1, delay: 0.5 }}
             className={styles.rightElement1}
           >
-            <img src="/images/metacon/rightElement1.png" />
+            <img src='/images/metacon/rightElement1.png' />
           </motion.div>
           <motion.div
             initial={{ x: 150 }}
@@ -117,7 +117,7 @@ export default function Metacon({ data, items }) {
             transition={{ duration: 1, delay: 0.5 }}
             className={styles.rightElement2}
           >
-            <img src="/images/metacon/rightElement2.png" />
+            <img src='/images/metacon/rightElement2.png' />
           </motion.div>
         </div>
         <div className={styles.items}>
@@ -137,17 +137,17 @@ export default function Metacon({ data, items }) {
                   />
                 ))}
               </div>
-              <Typography variant="h6" fontWeight="700" color="primary.dark">
+              <Typography variant='h6' fontWeight='700' color='primary.dark'>
                 {item.title}
               </Typography>
               <Typography
                 className={styles.desc}
-                variant="body2"
-                color="secondary"
+                variant='body2'
+                color='secondary'
               >
                 {getDataByLang(router.locale, 'description', item)}
               </Typography>
-              <Button
+              {/* <Button
                 color={!item.is_active ? 'secondary' : 'primary'}
                 onClick={() => {
                   if (!item.is_active) {
@@ -158,6 +158,21 @@ export default function Metacon({ data, items }) {
                     document.body.appendChild(link)
                     link.click()
                     document.body.removeChild(link)
+                  }
+                }}
+              >
+                {item.is_active ? 'Download' : 'Coming soon'}
+              </Button> */}
+              <Button
+                color={!item.is_active ? 'secondary' : 'primary'}
+                onClick={() => {
+                  if (!item.is_active) {
+                    setOpen((prev) => !prev)
+                  } else {
+                    window.open(
+                      'https://play.google.com/store/apps/details?id=com.metacon',
+                      '_blank'
+                    )
                   }
                 }}
               >
