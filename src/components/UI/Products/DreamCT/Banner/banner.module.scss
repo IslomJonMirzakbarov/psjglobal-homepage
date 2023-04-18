@@ -16,6 +16,80 @@
         z-index: 9;
         min-height: rem(413);
 
+        .containerAccumulation {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-bottom: 190px;
+          gap: 96px;
+          .column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            width: 221px;
+
+            .title {
+              font-style: normal;
+              font-weight: 700;
+              font-size: 55px;
+              line-height: 70px;
+              color: #272727;
+              margin: 0;
+            }
+
+            .paragraph {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 15px;
+              line-height: 22px;
+              color: #232323;
+            }
+          }
+
+          .flexRow {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+            align-items: center;
+
+            .column {
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+
+              .text {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 25px;
+                color: #0012b0;
+              }
+
+              .coinWrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 282.16px;
+                height: 60px;
+                background: #ffffff;
+                border: 1px solid #ededed;
+                box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+                padding: 9px 15px;
+              }
+
+              .number {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 25px;
+              }
+            }
+          }
+        }
+        // lf;ds;alf
+
         .icon {
           display: flex;
           justify-content: center;
