@@ -6,8 +6,9 @@ import { useFontFamily } from 'hooks/useFontFamily'
 import useTranslation from 'next-translate/useTranslation'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import styles from './banner.module.scss'
+import { items } from './bannerUtils'
 
 export default function Banner() {
   const { scrollYProgress } = useScroll()
@@ -15,6 +16,7 @@ export default function Banner() {
   const router = useRouter()
   const font = useFontFamily()
   const [isMobile, setIsMobile] = useState(false)
+  const [balances, setBalances] = useState({})
 
   useEffect(() => {
     function handleResize() {
@@ -27,6 +29,29 @@ export default function Banner() {
     }
   }, [])
 
+  const copyToClipboard = useCallback(async (text) => {
+    try {
+      await navigator.clipboard.writeText(text)
+      console.log('Text copied to clipboard')
+    } catch (err) {
+      console.error('Failed to copy text: ', err)
+    }
+  }, [])
+
+  useEffect(() => {
+    async function fetchBalances() {
+      const newBalances = {}
+      for (const item of items) {
+        newBalances[item.anotherText] = await item.fetchBalance(
+          item.anotherText
+        )
+      }
+      setBalances(newBalances)
+    }
+
+    fetchBalances()
+  }, [])
+
   return (
     <div className={styles.box}>
       <Container className={styles.container}>
@@ -36,7 +61,7 @@ export default function Banner() {
               <div className={styles.column}>
                 <h2 className={styles.title}>
                   쌓이고 <br />
-                  있습니다.
+                  있습니다<span>.</span>
                 </h2>
                 <p className={styles.paragraph}>
                   회차가 끝날때마다 기부,운영,소각
@@ -45,18 +70,32 @@ export default function Banner() {
                 </p>
               </div>
               <div className={styles.flexRow}>
-                {[1, 2, 3].map((item) => (
-                  <div key={item} className={styles.column}>
-                    <p className={styles.text}>Text {item}</p>
-                    <d iv className={styles.coinWrapper}>
-                      <p className={styles.number}>Number</p>
+                {items.map((item) => (
+                  <div key={item.text} className={styles.columnFlex}>
+                    <p className={styles.text}>
+                      {item.text}
+                    </p>
+                    <div className={styles.coinWrapper}>
+                      <p className={styles.number}>
+                        {balances[item.anotherText] || 'Loading...'}
+                      </p>
                       <img
-                        src='/icons/coin-icon.svg'
+                        src='/images/products/dreamct/golden-icon.svg'
                         width={20}
                         height={20}
                         alt='Coin icon'
                       />
-                    </d>
+                    </div>
+                    <div className={styles.textWrapper}>
+                      <p className={styles.text2}>{item.anotherText}</p>
+                      <img
+                        src='/images/products/dreamct/blue-copy.svg'
+                        width={20}
+                        height={20}
+                        alt='Coin icon'
+                        onClick={() => copyToClipboard(item.anotherText)}
+                      />
+                    </div>
                   </div>
                 ))}
               </div>
