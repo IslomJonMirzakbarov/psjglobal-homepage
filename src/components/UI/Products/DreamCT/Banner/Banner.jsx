@@ -37,7 +37,7 @@ export default function Banner() {
       setCopiedItem(text)
       setTimeout(() => {
         setCopiedItem(null)
-      }, 200)
+      }, 500)
     } catch (err) {
       console.error('Failed to copy text: ', err)
     }
@@ -91,16 +91,18 @@ export default function Banner() {
                     </div>
                     <div className={styles.textWrapper}>
                       <p className={styles.text2}>{item.anotherText}</p>
-                      <img
-                        src='/images/products/dreamct/blue-copy.svg'
-                        width={20}
-                        height={20}
-                        alt='Coin icon'
-                        onClick={() => copyToClipboard(item.anotherText)}
-                        className={
-                          copiedItem === item.anotherText ? styles.copied : ''
-                        }
-                      />
+                      <div className={styles.copyTextIcon}>
+                        {copiedItem && copiedItem === item.anotherText && (
+                          <div className={styles.copiedText}>Copied!</div>
+                        )}
+                        <img
+                          src='/images/products/dreamct/blue-copy.svg'
+                          width={20}
+                          height={20}
+                          alt='Coin icon'
+                          onClick={() => copyToClipboard(item.anotherText)}
+                        />
+                      </div>
                     </div>
                   </div>
                 ))}
