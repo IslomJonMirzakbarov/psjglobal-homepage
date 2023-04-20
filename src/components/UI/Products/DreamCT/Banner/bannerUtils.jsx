@@ -1,6 +1,8 @@
+import { ERC20_ABI_FOR_SWAP } from './ERC20_ABI_FOR_SWAP'
 import Web3 from 'web3'
 
-const web3 = new Web3()
+const rpcUrl = 'https://klaytn-mainnet-rpc.allthatnode.com:8551'
+const web3 = new Web3(new Web3.providers.HttpProvider(rpcUrl))
 
 export const getMaintenanceFee = async () => {
   try {
@@ -74,17 +76,17 @@ export const getDonationFee = async () => {
 
 export const items = [
   {
-    text: '기부 10%',
+    text: 'Donation 10%',
     anotherText: '0xd3A9d1d76bC56b176D3308D1952E444385F84f6b',
     fetchBalance: getDonationFee
   },
   {
-    text: '운영 10%',
+    text: 'Operation 10%',
     anotherText: '0xeBd90774127c164d19B6Ab75d6e68E0B7F13dc1e',
     fetchBalance: getMaintenanceFee
   },
   {
-    text: '소각 10%',
+    text: 'Burn 10%',
     anotherText: '0x19Add8Dce4218B9e9da6b256E7F496eC117B1960',
     fetchBalance: getBurnFee
   }

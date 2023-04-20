@@ -17,6 +17,7 @@ export default function Banner() {
   const font = useFontFamily()
   const [isMobile, setIsMobile] = useState(false)
   const [balances, setBalances] = useState({})
+  const [copiedItem, setCopiedItem] = useState(null)
 
   useEffect(() => {
     function handleResize() {
@@ -33,6 +34,10 @@ export default function Banner() {
     try {
       await navigator.clipboard.writeText(text)
       console.log('Text copied to clipboard')
+      setCopiedItem(text)
+      setTimeout(() => {
+        setCopiedItem(null)
+      }, 200)
     } catch (err) {
       console.error('Failed to copy text: ', err)
     }
@@ -42,9 +47,8 @@ export default function Banner() {
     async function fetchBalances() {
       const newBalances = {}
       for (const item of items) {
-        newBalances[item.anotherText] = await item.fetchBalance(
-          item.anotherText
-        )
+        const balance = await item.fetchBalance()
+        newBalances[item.anotherText] = parseFloat(balance).toFixed(2)
       }
       setBalances(newBalances)
     }
@@ -59,22 +63,21 @@ export default function Banner() {
           <div className={styles.content}>
             <div className={styles.containerAccumulation}>
               <div className={styles.column}>
-                <h2 className={styles.title}>
-                  쌓이고 <br />
-                  있습니다<span>.</span>
-                </h2>
-                <p className={styles.paragraph}>
-                  회차가 끝날때마다 기부,운영,소각
-                  <br />
-                  10%씩 싸이콘이 쌓입니다.
-                </p>
+                <h2
+                  className={styles.title}
+                  dangerouslySetInnerHTML={{ __html: t('cycon_accumulate') }}
+                />
+                <p
+                  className={styles.paragraph}
+                  dangerouslySetInnerHTML={{
+                    __html: t('cycon_accumulate_text')
+                  }}
+                />
               </div>
               <div className={styles.flexRow}>
                 {items.map((item) => (
                   <div key={item.text} className={styles.columnFlex}>
-                    <p className={styles.text}>
-                      {item.text}
-                    </p>
+                    <p className={styles.text}>{t(item.text)}</p>
                     <div className={styles.coinWrapper}>
                       <p className={styles.number}>
                         {balances[item.anotherText] || 'Loading...'}
@@ -94,6 +97,9 @@ export default function Banner() {
                         height={20}
                         alt='Coin icon'
                         onClick={() => copyToClipboard(item.anotherText)}
+                        className={
+                          copiedItem === item.anotherText ? styles.copied : ''
+                        }
                       />
                     </div>
                   </div>
