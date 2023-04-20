@@ -90,7 +90,13 @@ export default function Banner() {
                       />
                     </div>
                     <div className={styles.textWrapper}>
-                      <p className={styles.text2}>{item.anotherText}</p>
+                      <a
+                        href={`https://klaytnscope.com/account/${item.anotherText}?tabId=tokenTransfer`}
+                        target='_blank'
+                        className={styles.text2}
+                      >
+                        {item.anotherText}
+                      </a>
                       <div className={styles.copyTextIcon}>
                         {copiedItem && copiedItem === item.anotherText && (
                           <div className={styles.copiedText}>Copied!</div>
