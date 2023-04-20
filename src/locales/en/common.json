@@ -91,5 +91,10 @@
   "winning_condition_4": "If 1), 2) and 3) are not applicable: <br/> If <span>5</span> of the <span>7</span> numbers, including <span>6</span> <br/> winning numbers and <span>1</span> bonus number, <br/> are the same.",
   "winning_condition_5": "If 1), 2), 3) and 4) are not applicable: <br/> If <span>4</span> of the <span>6</span> winning numbers are the same.",
   "winning_condition_6": "If 1), 2), 3), 4) and 5) are not applicable: <br/> If <span>4</span> of the <span>7</span> numbers, including <span>6</span> winning <br/> numbers and <span>1</span> bonus number, are the <br/> same.",
-  "conclusion_golden_round": "Golden Round application criteria is limited to those who have applied for at least 6 out of 10 cumulative rounds. The contents of this article are limited to the case where the first prize winner does not appear until after 10 rounds. If there is a first prize winner, the enforcement of this article shall be effected in the event that no winner emerges for 10 consecutive rounds. From the round in which the first prize inner does not appear, the 11th round is implemented."
+  "conclusion_golden_round": "Golden Round application criteria is limited to those who have applied for at least 6 out of 10 cumulative rounds. The contents of this article are limited to the case where the first prize winner does not appear until after 10 rounds. If there is a first prize winner, the enforcement of this article shall be effected in the event that no winner emerges for 10 consecutive rounds. From the round in which the first prize inner does not appear, the 11th round is implemented.",
+  "Donation 10%": "Donation 10%",
+  "Operation 10%": "Operation 10%",
+  "Burn 10%": "Burn 10%",
+  "cycon_accumulate": "CYCON is <br/> accumulated<span>.</span>",
+  "cycon_accumulate_text": "At the end of each round, 10% of donation, <br/> operation, and burn of CYCON are accumulated."
 }
