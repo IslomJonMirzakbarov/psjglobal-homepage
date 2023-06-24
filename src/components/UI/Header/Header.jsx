@@ -75,9 +75,9 @@ export function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <Link href="/">
+        <Link href='/'>
           <a className={styles.logo}>
-            <img src="/logo.png" alt="logo" />
+            <img src='/logo.png' alt='logo' />
           </a>
         </Link>
         <ul className={styles.links}>
@@ -88,8 +88,8 @@ export function Header() {
                   ? 'primary'
                   : 'primary.dark'
               }
-              variant="body1"
-              component="p"
+              variant='body1'
+              component='p'
             >
               Products ▼
             </Typography>
@@ -103,8 +103,8 @@ export function Header() {
                   ? 'primary'
                   : 'primary.dark'
               }
-              variant="body1"
-              component="p"
+              variant='body1'
+              component='p'
             >
               Download ▼
             </Typography>
@@ -117,8 +117,8 @@ export function Header() {
                   ? 'primary'
                   : 'primary.dark'
               }
-              variant="body1"
-              component="p"
+              variant='body1'
+              component='p'
             >
               Community ▼
             </Typography>
@@ -126,8 +126,8 @@ export function Header() {
           </li>
           <li>
             <Typography
-              variant="body1"
-              component="a"
+              variant='body1'
+              component='a'
               href={
                 file
                   ? process.env.NEXT_PUBLIC_IMAGE_BASE_URL +
@@ -135,34 +135,48 @@ export function Header() {
                       ?.url
                   : '#'
               }
-              target="_blank"
+              target='_blank'
             >
               WhitePaper
             </Typography>
+          </li>
+          <li>
+            <Typography
+              color={
+                router.pathname === '/user-guide' ? 'primary' : 'primary.dark'
+              }
+              variant='body1'
+              component='p'
+            >
+              <Link href='/user-guide'>
+                <a>Docs</a>
+              </Link>
+            </Typography>
+            {/* <Dropdown links={community} /> */}
           </li>
         </ul>
         <div className={styles.rightItem}>
           <div className={styles.langItems}>
             <LanguageIcon />
-            <Link href={router.asPath} locale="en">
+            <Link href={router.asPath} locale='en'>
               <a onClick={() => saveLang('en')}>
                 <Typography
                   className={styles.link}
-                  component="p"
-                  variant="body1"
-                  fontWeight="600"
+                  component='p'
+                  variant='body1'
+                  fontWeight='600'
                 >
                   En
                 </Typography>
               </a>
             </Link>
-            <Link href={router.asPath} locale="kr">
+            <Link href={router.asPath} locale='kr'>
               <a onClick={() => saveLang('kr')}>
                 <Typography
                   className={styles.link}
-                  component=""
-                  variant="body1"
-                  fontWeight="600"
+                  component=''
+                  variant='body1'
+                  fontWeight='600'
                 >
                   Kr
                 </Typography>

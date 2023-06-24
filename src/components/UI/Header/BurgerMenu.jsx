@@ -88,6 +88,10 @@ export default function BurgerMenu({ file }) {
         ? process.env.NEXT_PUBLIC_IMAGE_BASE_URL +
           getDataByLang(router.locale, 'file', file)?.data.attributes?.url
         : '#'
+    },
+    {
+      title: 'Docs',
+      link: '/user-guide'
     }
   ]
 
@@ -138,6 +142,21 @@ export default function BurgerMenu({ file }) {
                     >
                       {item.title}
                     </Typography>
+                  ) : item.link ? (
+                    <Link href={item.link}>
+                      <a
+                        style={{ display: 'block', width: '100%' }}
+                        onClick={() => setOpen(false)}
+                      >
+                        <Typography
+                          variant='body1'
+                          fontWeight='500'
+                          color='secondary.dark'
+                        >
+                          {item.title}
+                        </Typography>
+                      </a>
+                    </Link>
                   ) : (
                     <Typography
                       variant='body1'
