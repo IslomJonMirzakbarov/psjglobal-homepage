@@ -99,7 +99,7 @@ export default function UserGuide() {
   return (
     <Container>
       <div className={styles.guide}>
-        <h1>{t('user_guide')}</h1>
+        <h1 dangerouslySetInnerHTML={{ __html: t('user_guide') }}></h1>
         <div className={styles.list}>
           <div className={styles.items}>
             {items.map((item) => (
