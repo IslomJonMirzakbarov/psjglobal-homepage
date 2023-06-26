@@ -96,5 +96,6 @@
   "Operation 10%": "Operation 10%",
   "Burn 10%": "Burn 10%",
   "cycon_accumulate": "CYCON is <br/> accumulated<span>.</span>",
-  "cycon_accumulate_text": "At the end of each round, 10% of donation, <br/> operation, and burn of CYCON are accumulated."
+  "cycon_accumulate_text": "At the end of each round, 10% of donation, <br/> operation, and burn of CYCON are accumulated.",
+  "user_guide": "Conun Services User Guide"
 }

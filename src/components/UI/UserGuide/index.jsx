@@ -1,6 +1,7 @@
 import { Container } from '@mui/material'
 import styles from './style.module.scss'
 import { NextArrow } from 'components/UI/Icons'
+import useTranslation from 'next-translate/useTranslation'
 
 const items = [
   {
@@ -94,17 +95,23 @@ const items2 = [
 ]
 
 export default function UserGuide() {
+  const { t } = useTranslation('common')
   return (
     <Container>
       <div className={styles.guide}>
-        <h1>Conun Services User Guide</h1>
+        <h1>{t('user_guide')}</h1>
         <div className={styles.list}>
           <div className={styles.items}>
             {items.map((item) => (
               <div className={styles.item} key={item.title}>
                 <h2>{item.title}</h2>
                 {item.values.map((data) => (
-                  <a href={data.path} target='_blank' key={data.label}>
+                  <a
+                    href={data.path}
+                    target='_blank'
+                    key={data.label}
+                    rel='noreferrer'
+                  >
                     {data.label} <NextArrow />
                   </a>
                 ))}
@@ -116,7 +123,12 @@ export default function UserGuide() {
               <div className={styles.item} key={item.title}>
                 <h2>{item.title}</h2>
                 {item.values.map((data) => (
-                  <a href={data.path} target='_blank' key={data.label}>
+                  <a
+                    href={data.path}
+                    target='_blank'
+                    key={data.label}
+                    rel='noreferrer'
+                  >
                     {data.label} <NextArrow />
                   </a>
                 ))}

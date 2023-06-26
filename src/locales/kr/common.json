@@ -96,5 +96,6 @@
   "Operation 10%": "운영 10%",
   "Burn 10%": "소각 10%",
   "cycon_accumulate": "쌓이고 <br/> 있습니다<span>.</span>",
-  "cycon_accumulate_text": "회차가 끝날때마다 기부,운영,소각 <br/> 10%씩 싸이콘이 쌓입니다."
+  "cycon_accumulate_text": "회차가 끝날때마다 기부,운영,소각 <br/> 10%씩 싸이콘이 쌓입니다.",
+  "user_guide": "코넌 서비스 유저가이드"
 }
