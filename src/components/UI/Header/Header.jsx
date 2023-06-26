@@ -136,10 +136,23 @@ export function Header() {
                   : '#'
               }
               target='_blank'
-              style={{ fontSize: '13px' }}
             >
               WhitePaper
             </Typography>
+          </li>
+          <li>
+            <Typography
+              color={
+                router.pathname === '/user-guide' ? 'primary' : 'primary.dark'
+              }
+              variant='body1'
+              component='p'
+            >
+              <Link href='/user-guide'>
+                <a>Docs</a>
+              </Link>
+            </Typography>
+            {/* <Dropdown links={community} /> */}
           </li>
         </ul>
         <div className={styles.rightItem}>

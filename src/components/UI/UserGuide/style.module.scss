@@ -1,0 +1,67 @@
+@import 'styles/unit.scss';
+
+.guide {
+  padding: rem(110) 0 0;
+  display: flex;
+  gap: rem(100);
+  min-height: 100vh;
+  @media (max-width: 700px) {
+    flex-direction: column;
+    padding: rem(30) 0;
+    gap: rem(50);
+  }
+  h1 {
+    min-width: rem(330);
+    max-width: rem(330);
+    margin: 0;
+    font-size: rem(40);
+    line-height: rem(50);
+    @media (max-width: 700px) {
+      width: 100%;
+      font-size: rem(28);
+      line-height: rem(30);
+    }
+  }
+  .list {
+    display: grid;
+    gap: rem(100);
+    grid-template-columns: 3fr 2fr;
+    width: calc(100% - rem(330));
+    @media (max-width: 700px) {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: rem(20);
+    }
+    .items {
+      display: flex;
+      flex-direction: column;
+      gap: rem(20);
+
+      .item {
+        padding-bottom: rem(20);
+        border-bottom: 1px solid #e8e8e8;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        &:last-child {
+          border: none;
+        }
+        h2 {
+          font-size: 20px;
+          line-height: 30px;
+          font-weight: 700;
+          margin: 0;
+        }
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          font-size: 15px;
+          line-height: 22px;
+          color: #0012b0;
+        }
+      }
+    }
+  }
+}
