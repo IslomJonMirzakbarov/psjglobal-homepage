@@ -136,6 +136,7 @@ export function Header() {
                   : '#'
               }
               target='_blank'
+              style={{ fontSize: '13px' }}
             >
               WhitePaper
             </Typography>
