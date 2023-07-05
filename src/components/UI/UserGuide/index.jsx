@@ -91,6 +91,23 @@ const items2 = [
         path: '/user-guide/DreamsCT/DCT_cn.pdf'
       }
     ]
+  },
+  {
+    title: 'Invitation Code',
+    values: [
+      {
+        label: 'Invitation Code User Guide_en',
+        path: '/user-guide/Invitation/ITC_en.pdf'
+      },
+      {
+        label: 'Invitation Code User Guide_kr',
+        path: '/user-guide/Invitation/ITC_kr.pdf'
+      },
+      {
+        label: 'Invitation Code User Guide_cn',
+        path: '/user-guide/Invitation/ITC_cn.pdf'
+      }
+    ]
   }
 ]
 
