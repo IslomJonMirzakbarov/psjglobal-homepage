@@ -1,7 +1,13 @@
 import styles from './Footer.module.scss'
 import Link from 'next/link'
 import { Container } from '@mui/material'
-import { TalkIcon, TelegramIcon, TwitterIcon, YouTubeIcon } from '../Icons'
+import {
+  InstagramIcon,
+  TalkIcon,
+  TelegramIcon,
+  TwitterIcon,
+  YouTubeIcon
+} from '../Icons'
 export function Footer({ isWhiteBg = false }) {
   return (
     <footer style={{ background: isWhiteBg ? '#ffffff' : '' }}>
@@ -17,62 +23,71 @@ export function Footer({ isWhiteBg = false }) {
           </div>
           <div className={styles.rightElement}>
             <a
-              href="https://open.kakao.com/o/g5ux462e"
-              target="_blank"
-              rel="noreferrer"
+              href='https://www.instagram.com/conun_korea/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <div className={styles.item}>
+                <InstagramIcon />
+              </div>
+            </a>
+            <a
+              href='https://open.kakao.com/o/g5ux462e'
+              target='_blank'
+              rel='noreferrer'
             >
               <div className={styles.item}>
                 <TalkIcon />
               </div>
             </a>
             <a
-              href="https://www.youtube.com/channel/UCVbpETcXaPRZkL2HACUXOsA"
-              target="_blank"
-              rel="noreferrer"
+              href='https://www.youtube.com/channel/UCVbpETcXaPRZkL2HACUXOsA'
+              target='_blank'
+              rel='noreferrer'
             >
               <div className={styles.item}>
                 <YouTubeIcon />
               </div>
             </a>
-            <a href="https://t.me/conun_cs" target="_blank" rel="noreferrer">
+            <a href='https://t.me/conun_cs' target='_blank' rel='noreferrer'>
               <div className={styles.item}>
                 <TelegramIcon />
               </div>
             </a>
             <a
-              href="https://www.facebook.com/conunglobal"
-              target="_blank"
-              rel="noreferrer"
+              href='https://www.facebook.com/conunglobal'
+              target='_blank'
+              rel='noreferrer'
             >
               <div className={styles.item}>
-                <img src="/icons/facebook.png" alt="facebook" />
+                <img src='/icons/facebook.png' alt='facebook' />
               </div>
             </a>
             <a
-              href="https://twitter.com/conunkorea"
-              target="_blank"
-              rel="noreferrer"
+              href='https://twitter.com/conunkorea'
+              target='_blank'
+              rel='noreferrer'
             >
               <div className={styles.item}>
                 <TwitterIcon />
               </div>
             </a>
             <a
-              href="https://medium.com/conun-korea"
-              target="_blank"
-              rel="noreferrer"
+              href='https://medium.com/conun-korea'
+              target='_blank'
+              rel='noreferrer'
             >
               <div className={styles.item}>
-                <img src="/icons/medium.png" alt="facebook" />
+                <img src='/icons/medium.png' alt='facebook' />
               </div>
             </a>
             <a
-              href="https://blog.naver.com/conuncs"
-              target="_blank"
-              rel="noreferrer"
+              href='https://blog.naver.com/conuncs'
+              target='_blank'
+              rel='noreferrer'
             >
               <div className={styles.item}>
-                <img src="/icons/blog.png" alt="facebook" />
+                <img src='/icons/blog.png' alt='facebook' />
               </div>
             </a>
           </div>
