@@ -109,3 +109,10 @@ textarea {
 .overflow-hidden {
   overflow: hidden;
 }
+
+div[style*='--webkit-scrollbar-width']::-webkit-scrollbar {
+  width: var(--webkit-scrollbar-width);
+}
+div[style*='--webkit-scrollbar-thumb-color']::-webkit-scrollbar-thumb {
+  background-color: var(--webkit-scrollbar-thumb-color);
+}
