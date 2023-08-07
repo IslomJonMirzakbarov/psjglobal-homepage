@@ -30,7 +30,7 @@ const PromoModal = () => {
         setFirstPopupOpen={handleFirstPopupClose}
         setSecondPopupOpen={setSecondPopupOpen}
         img='/images/first-promo.png'
-        imgMobile='/images/first-promo-mobile.png'
+        imgMobile='/images/first-promo.png'
       />
       <ModalComp
         isFirst={false}
@@ -38,7 +38,7 @@ const PromoModal = () => {
         setFirstPopupOpen={setFirstPopupOpen}
         setSecondPopupOpen={handleSecondPopupClose}
         img='/images/second-promo.png'
-        imgMobile='/images/second-promo-mobile.png'
+        imgMobile='/images/second-promo.png'
       />
     </>
   )
