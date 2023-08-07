@@ -6,14 +6,18 @@ import { persistor, store } from '../store/store'
 import { Provider } from 'react-redux'
 import { PersistGate } from 'redux-persist/integration/react'
 import NextNProgress from 'nextjs-progressbar'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import saveLang from 'utils/saveLang'
 import { parseCookies } from 'nookies'
 import { Toaster } from 'react-hot-toast'
+import PromoModal from 'components/UI/PromoModal'
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
+
+  console.log('routerPathname: ', router)
+
   useEffect(() => {
     const userLang = navigator.language || navigator.userLanguage
     const cookies = parseCookies()
@@ -36,6 +40,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <Provider store={store}>
+      {router.pathname !== '/metacon' && <PromoModal />}
       {typeof window !== 'undefined' ? (
         <PersistGate loading={null} persistor={persistor}>
           <ThemeProvider theme={theme}>
