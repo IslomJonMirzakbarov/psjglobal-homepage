@@ -60,7 +60,8 @@ const ModalComp = ({
           background: 'transparent',
           color: isFirst ? 'black' : 'white',
           fontWeight: 'bold',
-          border: 'none'
+          border: 'none',
+          zIndex: 999999
         }}
         onClick={handleClick}
       >
@@ -93,14 +94,14 @@ const ModalComp = ({
       <style jsx global>{`
         @media (max-width: 600px) {
           .ReactModal__Content {
-            width: 252px !important;
+            width: 317px !important;
           }
           .close-button {
             top: -1px !important;
             right: -1px !important;
           }
           .close-x-img {
-            width: 5px;
+            width: 6px;
           }
         }
       `}</style>
