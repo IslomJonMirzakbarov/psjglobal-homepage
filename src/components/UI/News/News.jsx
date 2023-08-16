@@ -82,7 +82,7 @@ export default function News({ newsItem, isNewsPage = false, news, count }) {
           <div className={styles.list}>
             {firstNews && (
               <Link href='/sns'>
-                <a target='_blank' className={styles.item}>
+                <a className={styles.item}>
                   <div className={styles.img}>
                     {firstNews?.image.data && (
                       <img
