@@ -81,6 +81,26 @@ const items = [
         label: '드림시티 싸이월드 도토리 싸이콘 에어드랍 이벤트',
         path: 'https://blog.naver.com/555lavender/223161262089',
         iconPath: '/images/sns/naver-blog.svg'
+      },
+      {
+        label: '싸이월드 도토리 싸이콘 에어드랍 이벤트 시작',
+        path: 'https://blog.naver.com/sense_andsensibility/223162249222',
+        iconPath: '/images/sns/naver-blog.svg'
+      },
+      {
+        label: '도토리 10개 + 싸이콘 650개 코인 에어드랍!',
+        path: 'https://blog.naver.com/ivovovi/223173314175',
+        iconPath: '/images/sns/naver-blog.svg'
+      },
+      {
+        label: '메타콘 드림시티 이벤트에 참여해보세용',
+        path: 'https://blog.naver.com/sense_andsensibility/223173874425',
+        iconPath: '/images/sns/naver-blog.svg'
+      },
+      {
+        label: '코넌코인 싸이월드 협력 메타콘 신규설치와 휴대폰 ...',
+        path: 'https://blog.naver.com/rypyef6691/223163945495',
+        iconPath: '/images/sns/naver-blog.svg'
       }
     ]
   }
@@ -116,6 +136,18 @@ const items2 = [
           '무료코인 에어드랍 1분컷 이래도 안받으실거에요 ? 도토리 싸이콘 받아가세요!',
         path: 'https://www.youtube.com/watch?v=0YcrA_fLi_8',
         iconPath: '/images/sns/youtube.svg'
+      },
+      {
+        label:
+          '2만원 상당 상장토큰 DTR + CYCON 토큰 에어드랍, 꿀통 오픈합니다.',
+        path: 'https://www.youtube.com/watch?v=v4OBCsRIII8',
+        iconPath: '/images/sns/youtube.svg'
+      },
+      {
+        label:
+          '빨조아야매코인 DTR 도토리 코인 10개.. 16000원가치 MEXC 거래소 상장...',
+        path: 'https://www.youtube.com/watch?v=mHmUby26a-s',
+        iconPath: '/images/sns/youtube.svg'
       }
     ]
   },
@@ -146,6 +178,26 @@ const items2 = [
         label: '코넌코리아에서 메타콘 지갑 이벤트를 합니다.​',
         path: 'https://www.facebook.com/permalink.php?story_fbid=pfbid0JQQq7fP42jDiybH5n1RFJszEZzb2rV1KjTYw7LtdQMr67o3E6ScE9wd3fhCQqpbkl&id=100092721660313',
         iconPath: '/images/sns/facebook.svg'
+      },
+      {
+        label: '메타콘 초대 이벤트 진행​',
+        path: 'https://www.facebook.com/permalink.php?story_fbid=pfbid02GFh73kwAZN7wN8NNFRHm6pSkqQAgEM6F1PmjRi5ZChqfqVzKmRkJURKwMsQse2fNl&id=100092721660313',
+        iconPath: '/images/sns/facebook.svg'
+      },
+      {
+        label: '메타콘 신규 가입 시 500 싸이콘 10 도토리 지급 됩니다.​',
+        path: 'https://www.facebook.com/permalink.php?story_fbid=pfbid0HbESJshK8rzihRwcURFGNoHNNDtCNpUy6sJhu2taF6cUJDEA8uqMHPWJa4RoWtLTl&id=100092721660313',
+        iconPath: '/images/sns/facebook.svg'
+      },
+      {
+        label: '스토어에서 메타콘 검색 신규 가입 시 500 싸이콘 10 도토리 지급​',
+        path: 'https://www.facebook.com/permalink.php?story_fbid=pfbid025ptQWcrP6CiWPpfp6WtsXbherPikt44bzVu4rYvfEtTfNod4HxGh1iWiwrgAoHL6l&id=100092721660313',
+        iconPath: '/images/sns/facebook.svg'
+      },
+      {
+        label: '도토리 & 싸이콘 이벤​',
+        path: 'https://www.facebook.com/permalink.php?story_fbid=pfbid0y7zNLvEwAUZSYsgr6hpUvMDNFayuB23LqQNh4WbVGMqYvbdn2SdwbMEDUHkEdCczl&id=100092721660313',
+        iconPath: '/images/sns/facebook.svg'
       }
     ]
   },
@@ -175,6 +227,11 @@ const items2 = [
       {
         label: '메타콘(METACON) 친구 추천 이벤트에 참여해보세요‼️',
         path: 'https://www.instagram.com/p/CvrJwmXL8ym/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA%3D%3D',
+        iconPath: '/images/sns/instagram.svg'
+      },
+      {
+        label: '메타콘(METACON) 친구 추천 이벤트😀',
+        path: 'https://www.instagram.com/p/CvefGKRLT5J/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA%3D%3D',
         iconPath: '/images/sns/instagram.svg'
       }
     ]
