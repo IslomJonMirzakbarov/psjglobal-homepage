@@ -81,61 +81,63 @@ export default function News({ newsItem, isNewsPage = false, news, count }) {
 
           <div className={styles.list}>
             {firstNews && (
-              <a href={firstNews?.link} target='_blank' className={styles.item}>
-                <div className={styles.img}>
-                  {firstNews?.image.data && (
-                    <img
-                      src={
-                        process.env.NEXT_PUBLIC_IMAGE_BASE_URL +
-                        firstNews?.image?.data?.attributes?.url
-                      }
-                      alt={getDataByLang(router.locale, 'title', firstNews)}
-                      layout='fill'
-                    />
-                  )}
-                </div>
-                <div className={styles.body}>
-                  {isNewsPage ? (
-                    <Typography
-                      className={styles.date}
-                      variant='body2'
-                      color='primary'
-                      fontWeight='700'
-                    >
-                      {format(new Date(firstNews.createdAt), 'yyyy.MM.dd')}
-                    </Typography>
-                  ) : (
-                    <Typography
-                      className={styles.date}
-                      variant='body2'
-                      color='primary'
-                      fontWeight='700'
-                    >
-                      {format(new Date(firstNews.createdAt), 'EEEE').substring(
-                        0,
-                        3
-                      )}{' '}
-                      {format(new Date(firstNews.createdAt), 'LLLL').substring(
-                        0,
-                        3
-                      )}{' '}
-                      {format(new Date(firstNews.createdAt), 'dd yyyy')}
-                    </Typography>
-                  )}
-                  <p className={styles.title}>
-                    {getDataByLang(router.locale, 'title', firstNews)}
-                  </p>
-                  <Typography variant='body1' color='secondary'>
-                    {getDataByLang(router.locale, 'description', firstNews)}
-                  </Typography>
-                  <div className={styles.navigation}>
-                    <div className={styles.postName}>
-                      {getDataByLang(router.locale, 'posted', firstNews)}
-                    </div>
-                    <NextArrow width={rem(35)} height={rem(35)} />
+              <Link href='/sns'>
+                <a target='_blank' className={styles.item}>
+                  <div className={styles.img}>
+                    {firstNews?.image.data && (
+                      <img
+                        src={
+                          process.env.NEXT_PUBLIC_IMAGE_BASE_URL +
+                          firstNews?.image?.data?.attributes?.url
+                        }
+                        alt={getDataByLang(router.locale, 'title', firstNews)}
+                        layout='fill'
+                      />
+                    )}
                   </div>
-                </div>
-              </a>
+                  <div className={styles.body}>
+                    {isNewsPage ? (
+                      <Typography
+                        className={styles.date}
+                        variant='body2'
+                        color='primary'
+                        fontWeight='700'
+                      >
+                        {format(new Date(firstNews.createdAt), 'yyyy.MM.dd')}
+                      </Typography>
+                    ) : (
+                      <Typography
+                        className={styles.date}
+                        variant='body2'
+                        color='primary'
+                        fontWeight='700'
+                      >
+                        {format(
+                          new Date(firstNews.createdAt),
+                          'EEEE'
+                        ).substring(0, 3)}{' '}
+                        {format(
+                          new Date(firstNews.createdAt),
+                          'LLLL'
+                        ).substring(0, 3)}{' '}
+                        {format(new Date(firstNews.createdAt), 'dd yyyy')}
+                      </Typography>
+                    )}
+                    <p className={styles.title}>
+                      {getDataByLang(router.locale, 'title', firstNews)}
+                    </p>
+                    <Typography variant='body1' color='secondary'>
+                      {getDataByLang(router.locale, 'description', firstNews)}
+                    </Typography>
+                    <div className={styles.navigation}>
+                      <div className={styles.postName}>
+                        {getDataByLang(router.locale, 'posted', firstNews)}
+                      </div>
+                      <NextArrow width={rem(35)} height={rem(35)} />
+                    </div>
+                  </div>
+                </a>
+              </Link>
             )}
             <div className={styles.items}>
               {news?.slice(isNewsPage ? 0 : 1).map((item, index) => (
@@ -144,6 +146,7 @@ export default function News({ newsItem, isNewsPage = false, news, count }) {
                   target='_blank'
                   className={styles.card}
                   key={item.id}
+                  rel='noreferrer'
                 >
                   <div className={styles.img}>
                     {item?.attributes?.image?.data && (

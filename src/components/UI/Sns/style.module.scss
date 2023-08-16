@@ -1,0 +1,113 @@
+@import 'styles/unit.scss';
+
+.snsTitle {
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.guide {
+  display: flex;
+  gap: rem(100);
+  min-height: 100vh;
+  @media (max-width: 700px) {
+    flex-direction: column;
+    padding: rem(30) 0;
+    gap: rem(50);
+  }
+  h1 {
+    min-width: rem(330);
+    max-width: rem(330);
+    margin: 0;
+    font-size: rem(40);
+    line-height: rem(50);
+    @media (max-width: 700px) {
+      width: 100%;
+      font-size: rem(28);
+      line-height: rem(30);
+    }
+  }
+  .list {
+    display: grid;
+    gap: rem(100);
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    @media (max-width: 700px) {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: rem(20);
+    }
+    .items {
+      display: flex;
+      flex-direction: column;
+      gap: rem(20);
+
+      .item {
+        padding-bottom: 70px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        .itemValues {
+          min-height: 300.52px;
+          display: flex;
+          flex-direction: column;
+          gap: 12.63px;
+        }
+
+        .moreDiv {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: end;
+          height: 20px;
+        }
+
+        .more {
+          font-family: Poppins;
+          font-size: 12px;
+          font-weight: 700;
+          line-height: 18px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #0012b0;
+          cursor: pointer;
+        }
+
+        &:last-child {
+          border: none;
+        }
+        h2 {
+          font-size: 20px;
+          line-height: 30px;
+          font-weight: 700;
+          margin: 0;
+        }
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          color: #232323;
+          font-size: 13px;
+          font-weight: 700;
+          line-height: 20px;
+          letter-spacing: 0em;
+          text-align: left;
+          padding: 0 12px;
+          height: 50.00000000000027px;
+          border-radius: 10px;
+          border: 1px solid #f0f0f0;
+
+          .labelSpan {
+            display: flex;
+            gap: 11px;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
