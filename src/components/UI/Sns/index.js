@@ -5,7 +5,7 @@ import useTranslation from 'next-translate/useTranslation'
 import { useState } from 'react'
 import { items, items2 } from 'components/UI/Sns/snsItems'
 
-export default function UserGuide() {
+export default function Sns() {
   const { t } = useTranslation('common')
   const [expandedSections, setExpandedSections] = useState({})
 
