@@ -40,7 +40,9 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <Provider store={store}>
-      {router.pathname !== '/metacon' && <PromoModal />}
+      {!(
+        router.pathname === '/metacon' || router.pathname === '/conunkorea'
+      ) && <PromoModal />}
       {typeof window !== 'undefined' ? (
         <PersistGate loading={null} persistor={persistor}>
           <ThemeProvider theme={theme}>
