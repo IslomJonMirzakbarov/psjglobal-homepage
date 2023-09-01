@@ -47,6 +47,7 @@ export default function ExternalNews({
               target='_blank'
               className={styles.item}
               key={item.id}
+              rel='noreferrer'
             >
               <div className={styles.leftElement}>
                 <Typography
