@@ -94,6 +94,7 @@ export default function Banner() {
                         href={`https://klaytnscope.com/account/${item.anotherText}?tabId=tokenTransfer`}
                         target='_blank'
                         className={styles.text2}
+                        rel='noreferrer'
                       >
                         {item.anotherText}
                       </a>
@@ -129,7 +130,9 @@ export default function Banner() {
                 {t('metacon_main_service')} {isMobile ? '' : <br />}{' '}
                 {t('dreamct')}
               </h2>
-              <p>{t('dreamsct_description')} </p>
+              <p
+                dangerouslySetInnerHTML={{ __html: t('dreamsct_description') }}
+              ></p>
             </div>
 
             <div className={styles.navigationLinks}>
