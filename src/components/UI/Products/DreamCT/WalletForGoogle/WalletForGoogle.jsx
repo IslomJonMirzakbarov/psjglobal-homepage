@@ -156,12 +156,12 @@ export default function WalletForGoogle() {
             ))}
           </div>
 
-          <div className={styles.conclusion}>
+          {/* <div className={styles.conclusion}>
             <Typography
               className={styles.conclusionParagraph}
               dangerouslySetInnerHTML={{ __html: t('conclusion_golden_round') }}
             />
-          </div>
+          </div> */}
         </div>
       </Container>
     </div>
