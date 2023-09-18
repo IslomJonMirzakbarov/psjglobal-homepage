@@ -97,5 +97,7 @@
   "Burn 10%": "소각 10%",
   "cycon_accumulate": "쌓이고 <br/> 있습니다<span>.</span>",
   "cycon_accumulate_text": "회차가 끝날때마다 기부,운영,소각 <br/> 10%씩 싸이콘이 쌓입니다.",
-  "user_guide": "코넌 서비스 <br> 유저가이드"
+  "user_guide": "코넌 서비스 <br> 유저가이드",
+  "mainnet_subtitle_blockchain": "빠르고 안전하며 저렴한 <br/> 블록체인",
+  "mainnet_description_blockchain": "코넌의 프라이빗 블록체인 네트워크는 퍼블릭 <br/> 블록체인 사용에 따른 한계에 대한 <br/> 해답입니다..."
 }

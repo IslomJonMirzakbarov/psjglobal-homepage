@@ -5,6 +5,7 @@ import Link from 'next/link'
 import {
   DexpoIcon,
   MainnetIcon,
+  MainnetIconBlockchain,
   MetaconIcon,
   NextArrow,
   OceanDriveIcon
@@ -15,15 +16,25 @@ export default function Products() {
   const font = useFontFamily()
   const { t } = useTranslation('common')
   const data = [
+    // {
+    //   title: 'Cross Chain <br/> Swap',
+    //   text: t('mainnet_description'),
+    //   bgImg: '/images/adventage-bg1.jpg',
+    //   color1: 'primary.dark',
+    //   color2: 'secondary',
+    //   subtitle: t('mainnet_subtitle'),
+    //   icon: <MainnetIcon />,
+    //   path: 'https://swap.conun.io'
+    // },
     {
-      title: 'Cross Chain <br/> Swap',
-      text: t('mainnet_description'),
+      title: 'Mainnet',
+      text: t('mainnet_description_blockchain'),
       bgImg: '/images/adventage-bg1.jpg',
       color1: 'primary.dark',
       color2: 'secondary',
-      subtitle: t('mainnet_subtitle'),
-      icon: <MainnetIcon />,
-      path: 'https://swap.conun.io'
+      subtitle: t('mainnet_subtitle_blockchain'),
+      icon: <MainnetIconBlockchain />,
+      path: ''
     },
     {
       title: 'Ocean Drive <br/> (Storage)',
@@ -34,10 +45,10 @@ export default function Products() {
       subtitle: t('ocean_drive_subtitle'),
       icon: (
         <img
-          src="/images/ocean-drive.png"
-          alt="ocean drive"
-          width="41"
-          height="38"
+          src='/images/ocean-drive.png'
+          alt='ocean drive'
+          width='41'
+          height='38'
           style={{ objectFit: 'contain' }}
         />
       ),
@@ -80,21 +91,21 @@ export default function Products() {
                 <div className={styles.icon}>{val.icon}</div>
                 <Typography
                   dangerouslySetInnerHTML={{ __html: val.title }}
-                  variant="h5"
+                  variant='h5'
                   color={val.color1}
                   className={styles.title}
                 />
                 <div>
                   <Typography
-                    variant="body1"
-                    fontWeight="700"
+                    variant='body1'
+                    fontWeight='700'
                     style={font}
                     color={val.color2}
                     dangerouslySetInnerHTML={{ __html: val.subtitle }}
                   />
                   <Typography
                     className={styles.desc}
-                    variant="body3"
+                    variant='body3'
                     style={font}
                     dangerouslySetInnerHTML={{ __html: val.text }}
                     color={val.color2}
@@ -103,8 +114,8 @@ export default function Products() {
                 <div className={styles.next}>
                   <NextArrow
                     fill={index === 0 ? '#232323' : '#fff'}
-                    width="30"
-                    height="30"
+                    width='30'
+                    height='30'
                   />
                 </div>
               </div>

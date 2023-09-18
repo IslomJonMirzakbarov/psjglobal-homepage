@@ -116,7 +116,27 @@ export default function UserGuide() {
   return (
     <Container>
       <div className={styles.guide}>
-        <h1 dangerouslySetInnerHTML={{ __html: t('user_guide') }}></h1>
+        <div>
+          <h1 dangerouslySetInnerHTML={{ __html: t('user_guide') }}></h1>
+          <div className={styles.list} style={{ marginTop: 20 }}>
+            <div className={styles.items}>
+              <div className={styles.item}>
+                <a
+                  href='/file.pdf'
+                  target='_blank'
+                  rel='noreferrer'
+                  style={{ whiteSpace: 'nowrap' }}
+                >
+                  <span style={{ paddingRight: 6 }}>
+                    CON Token withdrawal verification guide
+                  </span>{' '}
+                  <NextArrow />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className={styles.list}>
           <div className={styles.items}>
             {items.map((item) => (
