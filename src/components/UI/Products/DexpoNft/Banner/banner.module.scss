@@ -79,6 +79,28 @@
         right: rem(150);
         transition: all 1.1s ease-in-out;
       }
+
+      .responsiveCoin {
+        img.coinImage {
+          width: 140px;
+          height: auto;
+        }
+      }
+
+      @media (max-width: 600px) {
+        img.coinImage1 {
+          width: 100px !important;
+          margin-left: -100px;
+          margin-top: -5px;
+        }
+
+        img.coinImage2 {
+          width: 100px !important;
+          margin-left: 30px;
+          margin-top: 30px;
+        }
+      }
+
       .element1 {
         position: absolute;
         width: rem(92);

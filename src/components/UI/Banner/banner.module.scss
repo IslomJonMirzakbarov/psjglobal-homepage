@@ -133,6 +133,34 @@
           right: rem(480);
           transition: all 0.8s ease-in-out;
         }
+
+        .responsiveCoin {
+          img.coinImage {
+            width: 140px;
+            height: auto;
+          }
+        }
+
+        @media (max-width: 600px) {
+          img.coinImage1 {
+            width: 50px !important;
+            margin-left: -250px;
+            margin-top: 200px;
+          }
+
+          img.coinImage2 {
+            width: 50px !important;
+            margin-left: -43px;
+            margin-top: 125px;
+          }
+
+          img.coinImage3 {
+            width: 50px !important;
+            margin-left: 80px;
+            margin-top: 130px;
+          }
+        }
+
         .bannerShutterstock {
           position: absolute;
           bottom: rem(167);

@@ -56,7 +56,7 @@
           span {
             font-family: 'Poppins';
           }
-          span :nth-child(2)  {
+          span :nth-child(2) {
             color: #0001ae;
             font-family: 'Poppins';
           }
@@ -150,6 +150,28 @@
         top: rem(320);
         right: rem(120);
       }
+
+      .responsiveCoin {
+        img.coinImage {
+          width: 140px;
+          height: auto;
+        }
+      }
+
+      @media (max-width: 600px) {
+        img.coinImage1 {
+          width: 100px !important;
+          margin-left: 70px;
+          margin-top: -60px;
+        }
+
+        img.coinImage2 {
+          width: 100px !important;
+          margin-left: 60px;
+          margin-top: 150px;
+        }
+      }
+
       .element {
         position: absolute;
         width: rem(44);
