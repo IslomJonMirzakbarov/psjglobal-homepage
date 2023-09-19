@@ -123,14 +123,11 @@ export default function Banner() {
         <div className={styles.banner}>
           <div className={styles.content}>
             <Typography
-              data-text='CONUN!'
               color='primary.dark'
               variant='h1'
               className={styles.title}
-            >
-              Collect & Share <br /> Storage <br />
-              with CONUN!
-            </Typography>
+              dangerouslySetInnerHTML={{ __html: t('conun_prof_title') }}
+            />
             <Typography
               sx={{ typography: { sm: 'body2', xs: 'body3' } }}
               color='secondary'
