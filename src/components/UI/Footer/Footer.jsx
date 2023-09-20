@@ -23,7 +23,7 @@ export function Footer({ isWhiteBg = false }) {
           </div>
           <div className={styles.rightElement}>
             <a
-              href='https://www.instagram.com/conun_korea/'
+              href='https://www.instagram.com/cycon_and_conun/'
               target='_blank'
               rel='noreferrer'
             >
@@ -55,7 +55,7 @@ export function Footer({ isWhiteBg = false }) {
               </div>
             </a>
             <a
-              href='https://www.facebook.com/conunglobal'
+              href='https://www.facebook.com/cyconandconun/'
               target='_blank'
               rel='noreferrer'
             >
@@ -64,7 +64,7 @@ export function Footer({ isWhiteBg = false }) {
               </div>
             </a>
             <a
-              href='https://twitter.com/conunkorea'
+              href='https://twitter.com/cyconandconun'
               target='_blank'
               rel='noreferrer'
             >

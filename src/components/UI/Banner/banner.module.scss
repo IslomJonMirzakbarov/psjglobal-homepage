@@ -39,6 +39,21 @@
           transition: all 0.2s ease-in-out;
         }
       }
+      .linkd {
+        display: flex;
+        align-items: center;
+        column-gap: rem(10);
+        margin-top: 12px;
+        cursor: pointer;
+        &:hover {
+          svg {
+            transform: translateX(rem(5));
+          }
+        }
+        svg {
+          transition: all 0.2s ease-in-out;
+        }
+      }
     }
 
     .bannerBg {
