@@ -5,9 +5,10 @@ import { useState } from 'react'
 
 export default function TokenInfo() {
   const { t } = useTranslation('common')
-  const [copyStatus, setCopyStatus] = useState('Copy')
+  const [copyStatus, setCopyStatus] = useState('')
   const copyToClipboard = (text) => {
     navigator.clipboard.writeText(text)
+    setCopyStatus('Copied')
   }
 
   return (
@@ -17,11 +18,11 @@ export default function TokenInfo() {
         <div className={styles.iconsContainer}>
           <div className={styles.iconContainer}>
             <img src='/token/logo.png' alt='first' />
-            <p className={styles.textCycon}>CYCON</p>
+            <p className={styles.textCycon}>CONUN</p>
           </div>
           <div className={styles.iconContainer}>
             <img src='/token/cycon.png' alt='second' />
-            <p className={styles.textConun}>CONUN</p>
+            <p className={styles.textConun}>CYCON</p>
           </div>
         </div>
 
@@ -39,21 +40,21 @@ export default function TokenInfo() {
               <td>Contract Address</td>
               <td className={styles.contractAdr}>
                 <div className={styles.desktop}>
-                  0xe4a1bd45cddbbd5d9f605b08ed13a94b6b6ab5aa{' '}
+                  0xe4a1bd45cddbbd5d9f605b08ed13a94b6b6ab5aa
                 </div>
                 <div className={styles.mobile}>0xe4a1bd45c.....b6b6ab5aa</div>
-                <img
-                  src='/token/copy.png'
-                  alt='copy'
+                <div
                   className={styles.copyBtn}
+                  onMouseEnter={() => setCopyStatus('Copy')}
                   onClick={() =>
                     copyToClipboard(
                       '0xe4a1bd45cddbbd5d9f605b08ed13a94b6b6ab5aa'
                     )
                   }
-                  onMouseEnter={() => setCopyStatus('Copy')}
-                  title={copyStatus}
-                />
+                >
+                  <img src='/token/copy.png' alt='copy' />
+                  <div className={styles.tooltip}>{copyStatus}</div>
+                </div>
               </td>
             </tr>
             <tr>
