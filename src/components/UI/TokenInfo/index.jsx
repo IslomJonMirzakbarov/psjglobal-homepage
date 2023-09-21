@@ -15,10 +15,11 @@ export default function TokenInfo() {
       <div className={styles.guide}>
         <h1 className={styles.tokenInfoTitle}>Token Info</h1>
         <div className={styles.iconsContainer}>
-          <div className={styles.iconContainer}>
+          {/* conun logo below for future reference */}
+          {/* <div className={styles.iconContainer}>
             <img src='/token/logo.png' alt='first' />
             <p className={styles.textCycon}>CONUN</p>
-          </div>
+          </div> */}
           <div className={styles.iconContainer}>
             <img src='/token/cycon.png' alt='second' />
             <p className={styles.textConun}>CYCON</p>
