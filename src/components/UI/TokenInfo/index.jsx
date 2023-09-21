@@ -4,7 +4,6 @@ import useTranslation from 'next-translate/useTranslation'
 import { useState } from 'react'
 
 export default function TokenInfo() {
-  const { t } = useTranslation('common')
   const [copyStatus, setCopyStatus] = useState('')
   const copyToClipboard = (text) => {
     navigator.clipboard.writeText(text)
@@ -45,14 +44,24 @@ export default function TokenInfo() {
                 <div className={styles.mobile}>0xe4a1bd45c.....b6b6ab5aa</div>
                 <div
                   className={styles.copyBtn}
-                  onMouseEnter={() => setCopyStatus('Copy')}
+                  onMouseEnter={() => {
+                    if (copyStatus !== 'Copied') setCopyStatus('Copy')
+                  }}
+                  onMouseLeave={() => {
+                    if (copyStatus === 'Copy') setCopyStatus('')
+                  }}
                   onClick={() =>
                     copyToClipboard(
                       '0xe4a1bd45cddbbd5d9f605b08ed13a94b6b6ab5aa'
                     )
                   }
                 >
-                  <img src='/token/copy.png' alt='copy' />
+                  <img
+                    src={
+                      copyStatus ? '/token/copy_colored.png' : '/token/copy.png'
+                    }
+                    alt='copy'
+                  />
                   <div className={styles.tooltip}>{copyStatus}</div>
                 </div>
               </td>

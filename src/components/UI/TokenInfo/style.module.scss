@@ -166,6 +166,10 @@
 
     .copyBtn:hover .tooltip {
       display: block;
+
+      @media (max-width: 600px) {
+        left: -30px;
+      }
     }
 
     @media (max-width: 600px) {
