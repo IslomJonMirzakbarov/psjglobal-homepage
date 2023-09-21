@@ -137,21 +137,43 @@
       align-items: center;
     }
 
-    .contractAdr div {
+    .desktop,
+    .mobile {
       display: none;
-    }
-
-    .contractAdr div.desktop {
-      display: block;
       margin-top: 4px;
     }
 
+    .desktop {
+      display: block;
+    }
+
+    .copyBtn {
+      position: relative;
+      margin-top: 5px;
+    }
+
+    .tooltip {
+      display: none;
+      position: absolute;
+      top: -30px;
+      left: 0;
+      background-color: black;
+      color: white;
+      padding: 4px;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+
+    .copyBtn:hover .tooltip {
+      display: block;
+    }
+
     @media (max-width: 600px) {
-      .contractAdr div.desktop {
+      .desktop {
         display: none;
       }
 
-      .contractAdr div.mobile {
+      .mobile {
         display: block;
         margin-top: 5px;
       }
