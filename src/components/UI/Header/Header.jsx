@@ -155,6 +155,20 @@ export function Header() {
             </Typography>
             {/* <Dropdown links={community} /> */}
           </li>
+          <li>
+            <Typography
+              color={
+                router.pathname === '/token' ? 'primary' : 'primary.dark'
+              }
+              variant='body1'
+              component='p'
+            >
+              <Link href='/token'>
+                <a>Token</a>
+              </Link>
+            </Typography>
+            {/* <Dropdown links={community} /> */}
+          </li>
         </ul>
         <div className={styles.rightItem}>
           <div className={styles.langItems}>

@@ -1,0 +1,160 @@
+@import 'styles/unit.scss';
+
+.guide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  @media (max-width: 600px) {
+    flex-direction: column;
+    padding: rem(30) 0;
+    gap: rem(50);
+  }
+
+  .tokenInfoTitle {
+    color: #232323;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px;
+    padding-top: 60px;
+
+    @media (max-width: 600px) {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 35px;
+      padding-top: 30px;
+    }
+  }
+
+  .iconsContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 33px;
+    height: 170px;
+    margin-bottom: 39px;
+
+    @media (max-width: 600px) {
+      gap: 3px;
+      margin-bottom: 50px;
+    }
+
+    .iconContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+
+      p {
+        font-family: Poppins;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #232323;
+      }
+    }
+  }
+
+  .tokenTable {
+    width: 647.84px;
+    height: 193.77px;
+    background-color: #ffffff;
+    border-collapse: collapse;
+
+    @media (max-width: 600px) {
+      width: 350px;
+      height: 160px;
+    }
+
+    .tRow {
+      height: 48px;
+      border-top: 2px solid #0012b0;
+      border-bottom: 1px solid #e8e8e8;
+      padding: 0 10px;
+      font-family: 'YourFontFamily';
+    }
+
+    tr {
+      height: 48px;
+      border-top: 1px solid #e8e8e8;
+      border-bottom: 1px solid #e8e8e8;
+      padding: 0 10px;
+
+      td:first-child {
+        font-family: Poppins;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #0012b0;
+        width: 186px;
+        border-right: 1px solid #e8e8e8;
+
+        @media (max-width: 600px) {
+          font-size: 12px;
+          font-weight: 700;
+          line-height: 18px;
+          text-align: left;
+          white-space: nowrap;
+        }
+      }
+
+      td:nth-child(2) {
+        font-family: Poppins;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+
+        @media (max-width: 600px) {
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 18px;
+        }
+      }
+    }
+
+    .copyBtn {
+      margin-left: 5px;
+      cursor: pointer;
+    }
+
+    td {
+      padding: 10px;
+    }
+
+    .contractAdr {
+      display: flex;
+      align-items: center;
+    }
+
+    .contractAdr div {
+      display: none;
+    }
+
+    .contractAdr div.desktop {
+      display: block;
+      margin-top: 4px;
+    }
+
+    @media (max-width: 600px) {
+      .contractAdr div.desktop {
+        display: none;
+      }
+
+      .contractAdr div.mobile {
+        display: block;
+        margin-top: 5px;
+      }
+    }
+  }
+}

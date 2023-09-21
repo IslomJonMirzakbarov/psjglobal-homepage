@@ -83,7 +83,7 @@ export default function BurgerMenu({ file }) {
       ]
     },
     {
-      title: 'Whitepaper',
+      title: 'WhitePaper',
       link: file
         ? process.env.NEXT_PUBLIC_IMAGE_BASE_URL +
           getDataByLang(router.locale, 'file', file)?.data.attributes?.url
@@ -92,6 +92,10 @@ export default function BurgerMenu({ file }) {
     {
       title: 'Docs',
       link: '/user-guide'
+    },
+    {
+      title: 'Token',
+      link: '/token'
     }
   ]
 
@@ -133,7 +137,7 @@ export default function BurgerMenu({ file }) {
                     )
                   }
                 >
-                  {item.title === 'Whitepaper' ? (
+                  {item.title === 'WhitePaper' ? (
                     <Typography
                       variant='body1'
                       component='a'
