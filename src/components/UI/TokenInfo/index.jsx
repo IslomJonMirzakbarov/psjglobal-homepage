@@ -4,6 +4,7 @@ import useTranslation from 'next-translate/useTranslation'
 import { useState } from 'react'
 
 export default function TokenInfo() {
+  const { t } = useTranslation('common')
   const [copyStatus, setCopyStatus] = useState('')
   const copyToClipboard = (text) => {
     navigator.clipboard.writeText(text)
@@ -13,7 +14,7 @@ export default function TokenInfo() {
   return (
     <Container>
       <div className={styles.guide}>
-        <h1 className={styles.tokenInfoTitle}>Token Info</h1>
+        <h1 className={styles.tokenInfoTitle}>{t('token_info')}</h1>
         <div className={styles.iconsContainer}>
           {/* conun logo below for future reference */}
           {/* <div className={styles.iconContainer}>
@@ -73,6 +74,28 @@ export default function TokenInfo() {
             </tr>
           </tbody>
         </table>
+
+        <div className={styles.bottomSection}>
+          <h3>{t('enjoy_cycon')}</h3>
+          <div className={styles.iconsContainer}>
+            <div className={styles.iconContainer}>
+              <img src='/token/oceandrive.png' alt='first' />
+              <p className={styles.textCycon}>OceanDrive</p>
+            </div>
+            <div className={styles.iconContainer}>
+              <img src='/token/dexpo.png' alt='second' />
+              <p className={styles.textConun}>World Art DEXPO</p>
+            </div>
+            <div className={styles.iconContainer}>
+              <img src='/token/metacon.png' alt='first' />
+              <p className={styles.textCycon}>Metacon</p>
+            </div>
+            <div className={styles.iconContainer}>
+              <img src='/token/dreamct.png' alt='second' />
+              <p className={styles.textConun}>SWAP</p>
+            </div>
+          </div>
+        </div>
       </div>
     </Container>
   )
