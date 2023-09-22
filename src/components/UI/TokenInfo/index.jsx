@@ -2,6 +2,7 @@ import { Container } from '@mui/material'
 import styles from './style.module.scss'
 import useTranslation from 'next-translate/useTranslation'
 import { useState } from 'react'
+import { bottomSectionItems } from './tokenData'
 
 export default function TokenInfo() {
   const { t } = useTranslation('common')
@@ -16,11 +17,6 @@ export default function TokenInfo() {
       <div className={styles.guide}>
         <h1 className={styles.tokenInfoTitle}>{t('token_info')}</h1>
         <div className={styles.iconsContainer}>
-          {/* conun logo below for future reference */}
-          {/* <div className={styles.iconContainer}>
-            <img src='/token/logo.png' alt='first' />
-            <p className={styles.textCycon}>CONUN</p>
-          </div> */}
           <div className={styles.iconContainer}>
             <img src='/token/cycon.png' alt='second' />
             <p className={styles.textConun}>CYCON</p>
@@ -78,22 +74,12 @@ export default function TokenInfo() {
         <div className={styles.bottomSection}>
           <h3>{t('enjoy_cycon')}</h3>
           <div className={styles.iconsContainer}>
-            <div className={styles.iconContainer}>
-              <img src='/token/oceandrive.png' alt='first' />
-              <p className={styles.textCycon}>OceanDrive</p>
-            </div>
-            <div className={styles.iconContainer}>
-              <img src='/token/dexpo.png' alt='second' />
-              <p className={styles.textConun}>World Art DEXPO</p>
-            </div>
-            <div className={styles.iconContainer}>
-              <img src='/token/metacon.png' alt='first' />
-              <p className={styles.textCycon}>Metacon</p>
-            </div>
-            <div className={styles.iconContainer}>
-              <img src='/token/dreamct.png' alt='second' />
-              <p className={styles.textConun}>SWAP</p>
-            </div>
+            {bottomSectionItems.map((item) => (
+              <div className={styles.iconContainer} key={item.text}>
+                <img src={item.src} alt='first' />
+                <p className={styles.textCycon}>{item.text}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
