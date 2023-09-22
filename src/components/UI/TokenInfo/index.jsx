@@ -72,7 +72,7 @@ export default function TokenInfo() {
         </table>
 
         <div className={styles.bottomSection}>
-          <h3>{t('enjoy_cycon')}</h3>
+          <h3 dangerouslySetInnerHTML={{ __html: t('enjoy_cycon') }} />
           <div className={styles.iconsContainer}>
             {bottomSectionItems.map((item) => (
               <div className={styles.iconContainer} key={item.text}>
