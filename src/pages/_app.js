@@ -16,8 +16,6 @@ import PromoModal from 'components/UI/PromoModal'
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
 
-  console.log('routerPathname: ', router)
-
   useEffect(() => {
     const userLang = navigator.language || navigator.userLanguage
     const cookies = parseCookies()
