@@ -18,7 +18,7 @@ export default function TokenInfo() {
         <h1 className={styles.tokenInfoTitle}>{t('token_info')}</h1>
         <div className={styles.iconsContainer}>
           <div className={styles.iconContainer}>
-            <img src='/token/cycon.png' alt='second' />
+            <img src='/token/cycon.svg' alt='cycon_logo' />
             <p className={styles.textConun}>CYCON</p>
           </div>
         </div>
@@ -76,7 +76,7 @@ export default function TokenInfo() {
           <div className={styles.iconsContainer}>
             {bottomSectionItems.map((item) => (
               <div className={styles.iconContainer} key={item.text}>
-                <img src={item.src} alt='first' />
+                <img src={item.src} alt={item.text} />
                 <p className={styles.textCycon}>{item.text}</p>
               </div>
             ))}
