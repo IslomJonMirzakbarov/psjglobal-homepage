@@ -56,7 +56,12 @@ export default function Roadmap({ roadmaps }) {
     }
   ]
 
-  const [tab, setTab] = useState(roadmaps ? roadmaps[6].id : null)
+  const sortedRoadmaps = roadmaps.sort(
+    (a, b) => a.attributes.year - b.attributes.year
+  )
+  const [tab, setTab] = useState(
+    roadmaps.length > 0 ? sortedRoadmaps[6]?.id : null
+  )
 
   return (
     <div className={styles.box}>
@@ -82,19 +87,17 @@ export default function Roadmap({ roadmaps }) {
             Roadmap
           </Typography>
           <div className={styles.years}>
-            {roadmaps
-              ?.sort((a, b) => a.attributes.year - b.attributes.year)
-              ?.map((item) => (
-                <div
-                  onClick={() => setTab(item.id)}
-                  className={`${styles.item} ${
-                    tab === item.id ? styles.active : ''
-                  }`}
-                  key={item.id}
-                >
-                  {item.attributes.year}
-                </div>
-              ))}
+            {sortedRoadmaps?.map((item) => (
+              <div
+                onClick={() => setTab(item.id)}
+                className={`${styles.item} ${
+                  tab === item.id ? styles.active : ''
+                }`}
+                key={item.id}
+              >
+                {item.attributes.year}
+              </div>
+            ))}
           </div>
         </div>
       </Container>
