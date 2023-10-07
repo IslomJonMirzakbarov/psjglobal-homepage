@@ -48,6 +48,20 @@ export default function SEO() {
         name='naver-site-verification'
         content='06dec53f28980c6983321de3b4f1807fc8cfb336'
       />
+      <script
+        async
+        src='https://www.googletagmanager.com/gtag/js?id=G-DP03G0MJXZ'
+      ></script>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-DP03G0MJXZ');
+                    `
+        }}
+      />
       <link rel='icon' href='/favicon.png' />
     </Head>
   )
