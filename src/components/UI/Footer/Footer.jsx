@@ -39,11 +39,11 @@ export function Footer({ isWhiteBg = false }) {
               <img src='/icons/talk.svg' alt='kakao' />
               <p>DreamsCT</p>
             </a>
-            <a href='https://t.me/conuncycon' target='_blank' rel='noreferrer'>
+            <a href='https://t.me/conun_cs' target='_blank' rel='noreferrer'>
               <img src='/icons/telegram.svg' alt='facebook' />
               <p>Korea</p>
             </a>
-            <a href='https://t.me/conun_cs' target='_blank' rel='noreferrer'>
+            <a href='https://t.me/conuncycon' target='_blank' rel='noreferrer'>
               <div className={styles.item}>
                 <TelegramIcon />
               </div>
@@ -67,7 +67,6 @@ export function Footer({ isWhiteBg = false }) {
                 <YouTubeIcon />
               </div>
             </a>
-
             <a
               href='https://www.facebook.com/cyconandconun/'
               target='_blank'
