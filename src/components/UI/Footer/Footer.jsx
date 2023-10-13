@@ -16,21 +16,11 @@ export function Footer({ isWhiteBg = false }) {
           <div className={styles.leftElement}>
             <p>
               {/* conuncs@conun.co.kr */}
-              <br />
               23-22, Samseong-ro 76-gil, Seoul, Korea
             </p>
             <p>ⓒ 2023 CONUN, All Rights Reserved</p>
           </div>
           <div className={styles.rightElement}>
-            <a
-              href='https://www.instagram.com/cycon_and_conun/'
-              target='_blank'
-              rel='noreferrer'
-            >
-              <div className={styles.item}>
-                <InstagramIcon />
-              </div>
-            </a>
             <a
               href='https://open.kakao.com/o/g5ux462e'
               target='_blank'
@@ -38,6 +28,34 @@ export function Footer({ isWhiteBg = false }) {
             >
               <div className={styles.item}>
                 <TalkIcon />
+              </div>
+              <p>CONUN</p>
+            </a>
+            <a
+              href='https://open.kakao.com/o/ghkPJdff'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <img src='/icons/talk.svg' alt='kakao' />
+              <p>DreamsCT</p>
+            </a>
+            <a href='https://t.me/conuncycon' target='_blank' rel='noreferrer'>
+              <img src='/icons/telegram.svg' alt='facebook' />
+              <p>Korea</p>
+            </a>
+            <a href='https://t.me/conun_cs' target='_blank' rel='noreferrer'>
+              <div className={styles.item}>
+                <TelegramIcon />
+              </div>
+              <p>Global</p>
+            </a>
+            <a
+              href='https://www.instagram.com/cycon_and_conun/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <div className={styles.item}>
+                <InstagramIcon />
               </div>
             </a>
             <a
@@ -49,11 +67,7 @@ export function Footer({ isWhiteBg = false }) {
                 <YouTubeIcon />
               </div>
             </a>
-            <a href='https://t.me/conun_cs' target='_blank' rel='noreferrer'>
-              <div className={styles.item}>
-                <TelegramIcon />
-              </div>
-            </a>
+
             <a
               href='https://www.facebook.com/cyconandconun/'
               target='_blank'

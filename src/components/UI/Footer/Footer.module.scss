@@ -8,33 +8,48 @@
 
   .leftElement {
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
     p {
       font-weight: 300;
       font-size: rem(12);
       line-height: rem(22);
-      &:last-child {
-        margin-left: rem(208);
-      }
+      // &:last-child {
+      //   margin-left: rem(208);
+      // }
       color: #232323;
     }
   }
   .rightElement {
     display: flex;
-    align-items: center;
+    // align-items: center;
     column-gap: rem(12);
-    .item {
-      min-height: rem(46);
-      min-width: rem(46);
-      border-radius: rem(7);
-      background: #f6f6fb;
+    a {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
+      flex-direction: column;
+      p {
+        text-align: center;
+        font-size: 10px;
+        font-weight: 300;
+        line-height: 22px;
+      }
       img {
-        max-width: rem(25);
+        width: 47px;
+        height: 47px;
         object-fit: contain;
+      }
+      .item {
+        min-height: rem(47);
+        min-width: rem(47);
+        border-radius: rem(7);
+        background: #f6f6fb;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        img {
+          max-width: rem(25) !important;
+          object-fit: contain;
+        }
       }
     }
   }
