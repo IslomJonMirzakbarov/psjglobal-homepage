@@ -65,14 +65,14 @@ export default function Metacon({ data, items }) {
           METACON_이체가이드(빗썸)
           <NextArrow />
         </a>
-        <a
+        {/* <a
           href='/LD플레이어_이용 가이드.pdf'
           target='_blank'
           className={styles.guide}
         >
           LD플레이어_이용 가이드
           <NextArrow />
-        </a>
+        </a> */}
         <div className={styles.leftElements}>
           <motion.div
             initial={{ x: -100 }}
