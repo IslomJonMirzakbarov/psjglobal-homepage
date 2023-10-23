@@ -20,7 +20,7 @@ const ModalComp = ({
   const handleClick = () => {
     if (isFirst) {
       setFirstPopupOpen(false)
-      setSecondPopupOpen(true)
+      // setSecondPopupOpen(true)
     } else {
       setSecondPopupOpen(false)
     }
@@ -38,16 +38,17 @@ const ModalComp = ({
           padding: 0,
           border: 'none',
           position: 'relative',
-          width: '600px',
+          width: '476px',
+          height: 'auto',
           left: '50%',
           right: 'auto',
           marginRight: '-50%',
           transform: 'translate(-50%, 0)',
-          height: 'auto',
           overflow: 'hidden',
           marginTop: 60,
           boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
-          zIndex: 299
+          zIndex: 299,
+          borderRadius: 10
         }
       }}
     >
@@ -85,11 +86,81 @@ const ModalComp = ({
           width: '100%'
         }}
       >
-        <img
-          src={isMobile ? imgMobile : img}
-          alt='First Popup'
-          style={{ width: '100%', display: 'block' }}
-        />
+        {/* create the section in the picture (popup contents) here, use  inline styles */}
+        <div
+          style={{
+            padding: '28px 0 0',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            height: '100%',
+            position: 'relative'
+          }}
+        >
+          <p
+            style={{
+              fontSize: '25px',
+              fontWeight: 700,
+              marginBottom: '259px',
+              textAlign: 'center'
+            }}
+            className='description'
+          >
+            SWAP버튼을 잠시 누르
+          </p>
+          <img
+            src='/images/left_hand.svg'
+            alt='Description'
+            className='left-hand-img'
+            style={{
+              position: 'absolute',
+              left: '-40px',
+              top: 108
+            }}
+          />
+          <img
+            src='/images/right_hand.svg'
+            alt='Description'
+            className='right-hand-img'
+            style={{
+              position: 'absolute',
+              right: '-40px',
+              top: 108
+            }}
+          />
+          <div
+            className='description-txt'
+            style={{
+              fontSize: '15px',
+              textAlign: 'center',
+              fontWeight: '400',
+              lineHeight: '25px'
+            }}
+          >
+            사용하기 빠른 이용이 필요하신 서비스를 <br /> 고지 준비했습니다.
+            멤버에 우 두시 안내드립니다. <br /> 이용에 불편을 드린 점
+            죄송합니다.
+          </div>
+          <button
+            onClick={handleClick}
+            style={{
+              marginTop: '45px',
+              padding: '16.5px 0',
+              width: '100%',
+              fontSize: '15px',
+              fontWeight: '700',
+              backgroundColor: '#0012B0',
+              color: 'white',
+              border: 'none',
+              borderRadius: '0 0 10px 10px',
+              cursor: 'pointer',
+              fontFamily: 'Noto Sans KR'
+            }}
+          >
+            확인
+          </button>
+        </div>
       </div>
       <style jsx global>{`
         @media (max-width: 600px) {
@@ -102,6 +173,20 @@ const ModalComp = ({
           }
           .close-x-img {
             width: 6px;
+          }
+          .left-hand-img {
+            width: 65%;
+            top: 88px !important;
+          }
+          .right-hand-img {
+            width: 65%;
+            top: 88px !important;
+          }
+          .description {
+            margin-bottom: 190px !important;
+          }
+          .description-txt {
+            padding: 0 7px;
           }
         }
       `}</style>
