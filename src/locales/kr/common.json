@@ -102,5 +102,8 @@
   "mainnet_description_blockchain": "코넌의 프라이빗 블록체인 네트워크는 퍼블릭 <br/> 블록체인 사용에 따른 한계에 대한 <br/> 해답입니다...",
   "conun_prof_title": "<span>코넌,</span> 싸이콘으로 <br/> 전세계 <br/> <span>스토리지</span><span>를 하나로</span>",
   "token_info": "토큰 정보",
-  "enjoy_cycon": "<span>다양한 콘텐츠</span>를 싸이콘과 함께 사용해보세요!"
+  "enjoy_cycon": "<span>다양한 콘텐츠</span>를 싸이콘과 함께 사용해보세요!",
+  "confirm": "확인",
+  "popup_desc": "사용하기 빠른 이용이 필요하신 서비스를 <br /> 고지 준비했습니다. 멤버에 우 두시 안내드립니다. <br /> 이용에 불편을 드린 점 죄송합니다.",
+  "popup_title": "SWAP서비스 잠시 중단"
 }

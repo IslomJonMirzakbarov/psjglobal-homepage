@@ -102,5 +102,8 @@
   "mainnet_description_blockchain": "CONUN’s Private Blockchain Network is <br/> an answer to the limitations that come <br/> with using a public blockchain...",
   "conun_prof_title": "<span>CONUN,</span> unifying <br/> global <span>storage</span> <br/> with CYCON",
   "token_info": "Token Info",
-  "enjoy_cycon": "Enjoy various contents with CYCON!"
+  "enjoy_cycon": "Enjoy various contents with CYCON!",
+  "confirm": "Confirm",
+  "popup_desc": "Due to the instability in use of rapid <br /> increase of users, service is temporarily <br /> unavailable. We will ensure that there are no <br /> inconveniences in use after the update. <br /> We apologize for the inconvenience.",
+  "popup_title": "SWAP service <br /> temporarily unavailable"
 }

@@ -1,3 +1,4 @@
+import useTranslation from 'next-translate/useTranslation'
 import React, { useEffect, useState } from 'react'
 import Modal from 'react-modal'
 
@@ -9,6 +10,7 @@ const ModalComp = ({
   img,
   imgMobile
 }) => {
+  const { t } = useTranslation('common')
   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
@@ -56,8 +58,8 @@ const ModalComp = ({
         className='close-button'
         style={{
           position: 'absolute',
-          top: 7,
-          right: 7,
+          top: 15,
+          right: 15,
           background: 'transparent',
           color: isFirst ? 'black' : 'white',
           fontWeight: 'bold',
@@ -86,7 +88,6 @@ const ModalComp = ({
           width: '100%'
         }}
       >
-        {/* create the section in the picture (popup contents) here, use  inline styles */}
         <div
           style={{
             padding: '28px 0 0',
@@ -102,13 +103,14 @@ const ModalComp = ({
             style={{
               fontSize: '25px',
               fontWeight: 700,
-              marginBottom: '259px',
+              marginBottom: '249px',
               textAlign: 'center'
             }}
             className='description'
-          >
-            SWAP버튼을 잠시 누르
-          </p>
+            dangerouslySetInnerHTML={{
+              __html: t('popup_title')
+            }}
+          />
           <img
             src='/images/left_hand.svg'
             alt='Description'
@@ -116,7 +118,7 @@ const ModalComp = ({
             style={{
               position: 'absolute',
               left: '-40px',
-              top: 108
+              top: 118
             }}
           />
           <img
@@ -126,7 +128,7 @@ const ModalComp = ({
             style={{
               position: 'absolute',
               right: '-40px',
-              top: 108
+              top: 118
             }}
           />
           <div
@@ -137,11 +139,10 @@ const ModalComp = ({
               fontWeight: '400',
               lineHeight: '25px'
             }}
-          >
-            사용하기 빠른 이용이 필요하신 서비스를 <br /> 고지 준비했습니다.
-            멤버에 우 두시 안내드립니다. <br /> 이용에 불편을 드린 점
-            죄송합니다.
-          </div>
+            dangerouslySetInnerHTML={{
+              __html: t('popup_desc')
+            }}
+          />
           <button
             onClick={handleClick}
             style={{
@@ -157,9 +158,11 @@ const ModalComp = ({
               cursor: 'pointer',
               fontFamily: 'Noto Sans KR'
             }}
-          >
-            확인
-          </button>
+            dangerouslySetInnerHTML={{
+              __html: t('confirm')
+            }}
+            className='confirm_btn'
+          />
         </div>
       </div>
       <style jsx global>{`
@@ -168,25 +171,42 @@ const ModalComp = ({
             width: 317px !important;
           }
           .close-button {
-            top: -1px !important;
-            right: -1px !important;
+            top: 15px !important;
+            right: 15px !important;
           }
           .close-x-img {
-            width: 6px;
+            width:11px;
+            color: #7d8890 !important;
           }
           .left-hand-img {
             width: 65%;
-            top: 88px !important;
+            top: 85px !important;
           }
           .right-hand-img {
             width: 65%;
-            top: 88px !important;
+            top: 85px !important;
           }
           .description {
-            margin-bottom: 190px !important;
+            margin-bottom: 170px !important;
+            font-size: 15px !important;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 22px;
           }
           .description-txt {
             padding: 0 7px;
+            font-size: 12px !important;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 15px;
+          }
+          .confirm_btn {
+            font-size: 12px !important;
+            font-style: normal;
+            font-weight: 600;
+            // line-height: 0px;
+            margin-top: 18px !important;
+            hieght: 45px !important;
           }
         }
       `}</style>
