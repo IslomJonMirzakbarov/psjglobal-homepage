@@ -14,7 +14,7 @@ const PromoModal = () => {
 
   const handleFirstPopupClose = () => {
     setFirstPopupOpen(false)
-    Cookies.set('popupClosed', 'true', { expires: 1 })
+    Cookies.set('popupClosed', 'true', { expires: 1/24 })
     // setSecondPopupOpen(true)
   }
 
