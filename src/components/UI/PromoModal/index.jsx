@@ -14,13 +14,14 @@ const PromoModal = () => {
 
   const handleFirstPopupClose = () => {
     setFirstPopupOpen(false)
-    setSecondPopupOpen(true)
+    Cookies.set('popupClosed', 'true', { expires: 1/24 })
+    // setSecondPopupOpen(true)
   }
 
-  const handleSecondPopupClose = () => {
-    setSecondPopupOpen(false)
-    Cookies.set('popupClosed', 'true', { expires: 1 })
-  }
+  // const handleSecondPopupClose = () => {
+  //   setSecondPopupOpen(false)
+  //   Cookies.set('popupClosed', 'true', { expires: 1 })
+  // }
 
   return (
     <>
@@ -28,18 +29,18 @@ const PromoModal = () => {
         isFirst={true}
         isPopupOpen={isFirstPopupOpen}
         setFirstPopupOpen={handleFirstPopupClose}
-        setSecondPopupOpen={setSecondPopupOpen}
+        // setSecondPopupOpen={setSecondPopupOpen}
         img='/images/first-promo.png'
         imgMobile='/images/first-promo.png'
       />
-      <ModalComp
+      {/* <ModalComp
         isFirst={false}
         isPopupOpen={isSecondPopupOpen}
         setFirstPopupOpen={setFirstPopupOpen}
         setSecondPopupOpen={handleSecondPopupClose}
         img='/images/second-promo.png'
         imgMobile='/images/second-promo.png'
-      />
+      /> */}
     </>
   )
 }
