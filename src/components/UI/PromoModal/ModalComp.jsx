@@ -37,23 +37,56 @@ const ModalComp = ({
           zIndex: 300
         },
         content: {
-          padding: 0,
+          padding: '49px 0px 25px 38px',
           border: 'none',
           position: 'relative',
-          width: '476px',
+          width: '653px',
           height: 'auto',
           left: '50%',
           right: 'auto',
           marginRight: '-50%',
           transform: 'translate(-50%, 0)',
-          overflow: 'hidden',
+          overflow: 'visible',
           marginTop: 60,
           boxShadow: 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
           zIndex: 299,
-          borderRadius: 10
+          borderRadius: 10,
+          marginTop: 200
         }
       }}
     >
+      <img
+        style={{
+          position: 'absolute',
+          top: 8,
+          left: 10
+        }}
+        className='cycon-icon'
+        src={'/icons/cycon_icon.svg'}
+        alt='cycon-icon'
+      />
+      <img
+        style={{
+          position: 'absolute',
+          top: 85,
+          left: 270
+        }}
+        className='dollar'
+        src={'/icons/dollar.svg'}
+        alt='dollar'
+      />
+      <img
+        style={{
+          position: 'absolute',
+          bottom: 27,
+          right: -31.37,
+          zIndex: 999998
+        }}
+        className='cycon-phone'
+        src={'/icons/cycon_phone.svg'}
+        alt='cycon-phone'
+      />
+
       <button
         className='close-button'
         style={{
@@ -88,94 +121,90 @@ const ModalComp = ({
           width: '100%'
         }}
       >
-        <div
+        <p
           style={{
-            padding: '28px 0 0',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            height: '100%',
-            position: 'relative'
+            fontSize: '33px',
+            fontWeight: '700',
+            lineHeight: '40px',
+            marginBottom: '8px'
           }}
+          className='cycon_giveaway_title'
         >
-          <p
-            style={{
-              fontSize: '25px',
-              fontWeight: 700,
-              marginBottom: '249px',
-              textAlign: 'center'
-            }}
-            className='description'
-            dangerouslySetInnerHTML={{
-              __html: t('popup_title')
-            }}
-          />
-          <img
-            src='/images/left_hand.svg'
-            alt='Description'
-            className='left-hand-img'
-            style={{
-              position: 'absolute',
-              left: '-40px',
-              top: 118
-            }}
-          />
-          <img
-            src='/images/right_hand.svg'
-            alt='Description'
-            className='right-hand-img'
-            style={{
-              position: 'absolute',
-              right: '-40px',
-              top: 118
-            }}
-          />
-          <div
-            className='description-txt'
-            style={{
-              fontSize: '15px',
-              textAlign: 'center',
-              fontWeight: '400',
-              lineHeight: '25px'
-            }}
-            dangerouslySetInnerHTML={{
-              __html: t('popup_desc')
-            }}
-          />
-          <button
-            onClick={handleClick}
-            style={{
-              marginTop: '45px',
-              padding: '16.5px 0',
-              width: '100%',
-              fontSize: '15px',
-              fontWeight: '700',
-              backgroundColor: '#0012B0',
-              color: 'white',
-              border: 'none',
-              borderRadius: '0 0 10px 10px',
-              cursor: 'pointer',
-              fontFamily: 'Noto Sans KR'
-            }}
-            dangerouslySetInnerHTML={{
-              __html: t('confirm')
-            }}
-            className='confirm_btn'
-          />
-        </div>
+          <span style={{ color: '#ff7e41' }}>CYCON</span> x{' '}
+          <span style={{ color: '#06d8e5' }}>Bitget</span> <br />
+          EVENT
+        </p>
+
+        <p
+          dangerouslySetInnerHTML={{ __html: t('cycon_giveaway_desc') }}
+          className='cycon_giveaway_desc'
+        />
+
+        <button
+          className='participate-btn'
+          dangerouslySetInnerHTML={{ __html: t('participate_btn') }}
+        />
       </div>
       <style jsx global>{`
+        .participate-btn {
+          width: 180px;
+          height: 55px;
+          border-radius: 10px;
+          background-color: #0012b0;
+          border: none;
+          color: #fff;
+          text-align: center;
+          font-size: 15px;
+          font-weight: 700;
+          font-family: 'Noto Sans KR';
+        }
+        .cycon_giveaway_desc {
+          color: #1a1a1a;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 24px;
+          margin-bottom: 61px;
+        }
+        .cycon_giveaway_desc span {
+          font-size: 16px;
+          font-weight: 700;
+        }
         @media (max-width: 600px) {
           .ReactModal__Content {
-            width: 317px !important;
+            width: 335px !important;
+            padding: 165px 33px 22px !important;
+          }
+          .participate-btn {
+            margin-left: 50px;
+          }
+          .cycon_giveaway_title {
+            text-align: center;
+            font-size: 28px !important;
+            line-height: 30px !important;
+            margin-bottom: 15px !important;
+          }
+          .cycon_giveaway_desc {
+            text-align: center;
+            margin-bottom: 24px;
+            font-size: 14px !important;
+            line-height: 22px !important;
+          }
+          .cycon_giveaway_desc span {
+            font-size: 14px;
+            font-weight: 700;
+          }
+          .cycon-phone {
+            width: 227px;
+            height: 272px;
+            top: -123px;
+            left: 55px;
           }
           .close-button {
             top: 15px !important;
             right: 15px !important;
           }
           .close-x-img {
-            width:11px;
+            width: 11px;
             color: #7d8890 !important;
           }
           .left-hand-img {

@@ -105,5 +105,7 @@
   "enjoy_cycon": "Enjoy various contents with CYCON!",
   "confirm": "Confirm",
   "popup_desc": "Due to the instability in use of rapid <br /> increase of users, service is temporarily <br /> unavailable. We will ensure that there are no <br /> inconveniences in use after the update. <br /> We apologize for the inconvenience.",
-  "popup_title": "SWAP service <br /> temporarily unavailable"
+  "popup_title": "SWAP service <br /> temporarily unavailable",
+  "cycon_giveaway_desc": "Sign up for BitGet now and send <br /> CONUN the information you need to <br />participate in the event!You can <br /> receive up to $60 worth of CYCON.",
+  "participate_btn": "Participate"
 }
