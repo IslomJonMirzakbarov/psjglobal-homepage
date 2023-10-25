@@ -63,6 +63,13 @@ textarea {
   background-size: cover;
 }
 
+.cycon-event-bg {
+  background-image: url('/images/cycon-event-bg.png');
+  background-repeat: no-repeat;
+  background-size: 100% rem(2164);
+  background-position: bottom;
+}
+
 .news-bg {
   background-image: url('/images/roadmap-bg.jpg');
   background-repeat: no-repeat;
