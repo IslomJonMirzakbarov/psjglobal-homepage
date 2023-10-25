@@ -1,4 +1,5 @@
 import useTranslation from 'next-translate/useTranslation'
+import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
 import Modal from 'react-modal'
 
@@ -10,6 +11,7 @@ const ModalComp = ({
   img,
   imgMobile
 }) => {
+  const router = useRouter()
   const { t } = useTranslation('common')
   const [isMobile, setIsMobile] = useState(false)
 
@@ -26,6 +28,12 @@ const ModalComp = ({
     } else {
       setSecondPopupOpen(false)
     }
+  }
+
+  const handleNavigation = () => {
+    handleClick()
+    router.push('/cycon-event')
+    // navigate to cycon-event page
   }
 
   return (
@@ -141,6 +149,7 @@ const ModalComp = ({
         />
 
         <button
+          onClick={handleNavigation}
           className='participate-btn'
           dangerouslySetInnerHTML={{ __html: t('participate_btn') }}
         />
