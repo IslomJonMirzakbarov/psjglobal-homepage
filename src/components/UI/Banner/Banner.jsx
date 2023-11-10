@@ -6,21 +6,23 @@ import { useInView } from 'react-intersection-observer'
 import { useEffect, useRef, useState } from 'react'
 import useTranslation from 'next-translate/useTranslation'
 import { useFontFamily } from 'hooks/useFontFamily'
+import StringRotator from 'components/UI/StringRotator'
 
 const animationVarinat = {
   hidden: { opacity: 0.2 },
   visible: { opacity: 1, transition: { duration: 0.5, delay: 0.2 } }
 }
 
-export default function Banner() {
+export default function Banner({ notifications }) {
   const control = useAnimation()
+  const strings = ['String 1', 'String 2', 'String 3', 'String 4']
   const { t } = useTranslation('common')
   const { lang } = useTranslation()
-  console.log('lang: ', lang)
   const [hrefLink, setHrefLink] = useState('/conun_prof_en.pdf')
   const font = useFontFamily()
   const [ref, inView] = useInView()
   const { scrollYProgress } = useScroll()
+
   const xCloud = useTransform(
     scrollYProgress,
     [0.09, 0.07, 0.05, 0.03, 0.01, 0],
@@ -117,11 +119,19 @@ export default function Banner() {
     }
   }, [lang])
 
+  const notificationsData = notifications.map(
+    (item) => item.attributes[`title_${lang}`]
+  )
+
   return (
     <div className={styles.container}>
       <Container>
         <div className={styles.banner}>
           <div className={styles.content}>
+            <div className={styles.text}>
+              <img src='/icons/notification.svg' alt='notification' />
+              <StringRotator strings={notificationsData} />
+            </div>
             <Typography
               color='primary.dark'
               variant='h1'

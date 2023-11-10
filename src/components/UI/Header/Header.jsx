@@ -59,17 +59,26 @@ export function Header() {
     {
       title: 'FAQ',
       link: '/faq'
+    },
+    {
+      title: 'Notice',
+      link: '/notice'
     }
   ]
 
   useEffect(() => {
-    request.get('white-paper?populate=*').then((res) => {
-      if (res.data.data)
-        setFile({
-          file_en: res.data.data.attributes.file_en,
-          file_kr: res.data.data.attributes.file_kr
-        })
-    })
+    request
+      .get('white-paper?populate=*')
+      .then((res) => {
+        if (res.data.data)
+          setFile({
+            file_en: res.data.data.attributes.file_en,
+            file_kr: res.data.data.attributes.file_kr
+          })
+      })
+      .catch((e) => {
+        console.log(e)
+      })
   }, [])
 
   return (
@@ -157,9 +166,7 @@ export function Header() {
           </li>
           <li>
             <Typography
-              color={
-                router.pathname === '/token' ? 'primary' : 'primary.dark'
-              }
+              color={router.pathname === '/token' ? 'primary' : 'primary.dark'}
               variant='body1'
               component='p'
             >

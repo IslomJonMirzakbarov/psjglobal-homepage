@@ -91,6 +91,16 @@ textarea {
   background-position: bottom;
 }
 
+.visible {
+  transform: translateY(0) !important;
+  opacity: 1;
+}
+
+.hidden {
+  transform: translateY(20px) !important;
+  opacity: 0;
+}
+
 .dexpo-nft-bg {
   background-color: #000;
   footer {
