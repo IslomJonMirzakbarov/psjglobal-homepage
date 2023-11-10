@@ -45,16 +45,17 @@ export default function Notice({ notifications }) {
       setItems(
         notifications.filter(
           (item) =>
-            getDataByLang(router.locale, 'title', item.attributes)
+            (getDataByLang(router.locale, 'title', item.attributes)
               .toLowerCase()
               .includes(search.toLowerCase()) ||
-            getDataByLang(router.locale, 'description', item.attributes)
-              .toLowerCase()
-              .includes(search.toLowerCase())
+              getDataByLang(router.locale, 'description', item.attributes)
+                .toLowerCase()
+                .includes(search.toLowerCase())) &&
+            item.attributes.is_active
         )
       )
     } else {
-      setItems(notifications)
+      setItems(notifications.filter((item) => item.attributes.is_active))
     }
   }, [search, notifications])
 

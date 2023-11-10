@@ -119,9 +119,9 @@ export default function Banner({ notifications }) {
     }
   }, [lang])
 
-  const notificationsData = notifications.map(
-    (item) => item.attributes[`title_${lang}`]
-  )
+  const notificationsData = notifications
+    .filter((data) => data.attributes.is_active)
+    .map((item) => item.attributes[`title_${lang}`])
 
   return (
     <div className={styles.container}>
