@@ -40,6 +40,11 @@ export default function Notice({ notifications }) {
   const [search, setSearch] = useState('')
   const [items, setItems] = useState([])
   const router = useRouter()
+  const [expanded, setExpanded] = useState(false)
+
+  const handleChange = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : false)
+  }
   useEffect(() => {
     if (search) {
       setItems(
@@ -59,6 +64,10 @@ export default function Notice({ notifications }) {
     }
   }, [search, notifications])
 
+  useEffect(() => {
+    if (router.query.index) setExpanded(router.query.index)
+  }, [router.query])
+
   return (
     <Container className={styles.container}>
       <div className={styles.faq}>
@@ -77,8 +86,12 @@ export default function Notice({ notifications }) {
         </div>
         <div className={styles.accordion}>
           {items?.length > 0 ? (
-            items?.map((item) => (
-              <Accordion key={item.id}>
+            items?.map((item, index) => (
+              <Accordion
+                key={item.id}
+                expanded={expanded === `panel${index + 1}`}
+                onChange={handleChange(`panel${index + 1}`)}
+              >
                 <AccordionSummary
                   expandIcon={<ExpandMoreIcon />}
                   aria-controls='panel1a-content'

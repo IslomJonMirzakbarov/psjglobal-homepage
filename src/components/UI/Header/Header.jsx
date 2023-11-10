@@ -57,12 +57,12 @@ export function Header() {
       link: '/news'
     },
     {
-      title: 'FAQ',
-      link: '/faq'
-    },
-    {
       title: 'Notice',
       link: '/notice'
+    },
+    {
+      title: 'FAQ',
+      link: '/faq'
     }
   ]
 

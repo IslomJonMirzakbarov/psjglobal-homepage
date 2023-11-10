@@ -19,7 +19,7 @@ export default function StringRotator({ strings }) {
   }, [strings])
 
   return (
-    <Link href='/notice'>
+    <Link href={`/notice?index=panel${currentStringIndex + 1}`}>
       <a>
         <p className={`${styles.string} ${isVisible ? 'visible' : 'hidden'}`}>
           {strings[currentStringIndex]}
