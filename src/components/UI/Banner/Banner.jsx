@@ -128,10 +128,12 @@ export default function Banner({ notifications }) {
       <Container>
         <div className={styles.banner}>
           <div className={styles.content}>
-            <div className={styles.text}>
-              <img src='/icons/notification.svg' alt='notification' />
-              <StringRotator strings={notificationsData} />
-            </div>
+            {notificationsData?.length > 0 && (
+              <div className={styles.text}>
+                <img src='/icons/notification.svg' alt='notification' />
+                <StringRotator strings={notificationsData} />
+              </div>
+            )}
             <Typography
               color='primary.dark'
               variant='h1'

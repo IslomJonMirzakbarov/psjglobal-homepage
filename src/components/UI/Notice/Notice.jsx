@@ -107,7 +107,7 @@ export default function Notice({ notifications }) {
                     </Typography>
                     <p className={styles.date}>
                       {format(
-                        new Date(item.attributes.createdAt),
+                        new Date(item.attributes.publishedAt),
                         'yyyy.MM.dd'
                       )}
                     </p>
