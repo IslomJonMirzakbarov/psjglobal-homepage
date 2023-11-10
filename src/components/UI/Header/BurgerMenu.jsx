@@ -77,6 +77,10 @@ export default function BurgerMenu({ file }) {
           link: '/news'
         },
         {
+          title: 'Notice',
+          link: '/notice'
+        },
+        {
           title: 'FAQ',
           link: '/faq'
         }

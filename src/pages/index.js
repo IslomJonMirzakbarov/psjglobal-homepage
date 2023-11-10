@@ -9,12 +9,13 @@ import ExternalNews from 'components/UI/ExternalNews/ExternalNews'
 import { Footer } from 'components/UI/Footer/Footer'
 import Partners from 'components/UI/Partners/Partners'
 
-export default function Home({ news, externalNews, roadmaps }) {
+export default function Home({ news, externalNews, roadmaps, notifications }) {
+  console.log('notifications', notifications)
   return (
     <>
       <SEO />
       <main>
-        <Banner />
+        <Banner notifications={notifications?.data} />
         <Products />
         <Advantage />
         <div className='home-bg'>
@@ -36,15 +37,19 @@ export async function getServerSideProps() {
   const urls = [
     'external-news?sort=createdAt:desc&pagination[start]=0&pagination[limit]=8',
     'news?sort=createdAt:desc&populate=*&pagination[start]=0&pagination[limit]=4',
-    'roadmaps?populate=*,quaters.items'
+    'roadmaps?populate=*,quaters.items',
+    'notifications'
   ]
-  const [externalNews, news, roadmaps] = await fetchMultipleUrls(urls)
+  const [externalNews, news, roadmaps, notifications] = await fetchMultipleUrls(
+    urls
+  )
 
   return {
     props: {
       externalNews,
       news,
-      roadmaps
+      roadmaps,
+      notifications
     }
   }
 }
