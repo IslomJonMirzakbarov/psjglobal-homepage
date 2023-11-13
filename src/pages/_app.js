@@ -28,10 +28,6 @@ function MyApp({ Component, pageProps }) {
           router.push(router.asPath, router.asPath, { locale: 'en' })
           saveLang('en')
         }
-      } else {
-        if (cookies.lang) {
-          router.push(router.asPath, router.asPath, { locale: cookies.lang })
-        }
       }
     }
   }, [])
