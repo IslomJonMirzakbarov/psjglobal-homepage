@@ -1,3 +1,11 @@
+import Error from 'components/UI/Error'
+
 export default function Custom500() {
-  return <h1>500 - Server-side error occurred</h1>
+  return (
+    <Error
+      title='Server is being updated'
+      text='Please wait.'
+      img='/images/500.svg'
+    />
+  )
 }
