@@ -33,7 +33,7 @@ export default function Banner() {
   const copyToClipboard = useCallback(async (text) => {
     try {
       await navigator.clipboard.writeText(text)
-      console.log('Text copied to clipboard')
+
       setCopiedItem(text)
       setTimeout(() => {
         setCopiedItem(null)
