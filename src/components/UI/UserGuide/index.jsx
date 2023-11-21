@@ -54,6 +54,19 @@ const items = [
         path: '/user-guide/WAD/WAD_cn.pdf'
       }
     ]
+  },
+  {
+    title: 'Swap',
+    values: [
+      {
+        label: 'Swap User Guide_en',
+        path: '/user-guide/Swap/Swap_en.pdf'
+      },
+      {
+        label: 'Swap User Guide_kr',
+        path: '/user-guide/Swap/Swap_ko.pdf'
+      }
+    ]
   }
 ]
 
