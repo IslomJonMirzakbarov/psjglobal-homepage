@@ -37,7 +37,7 @@ export async function getServerSideProps() {
     'external-news?sort=createdAt:desc&pagination[start]=0&pagination[limit]=8',
     'news?sort=createdAt:desc&populate=*&pagination[start]=0&pagination[limit]=4',
     'roadmaps?populate=*,quaters.items',
-    'notifications'
+    'notifications?sort=createdAt:desc'
   ]
   const [externalNews, news, roadmaps, notifications] = await fetchMultipleUrls(
     urls

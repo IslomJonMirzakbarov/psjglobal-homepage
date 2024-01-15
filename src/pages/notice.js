@@ -16,7 +16,7 @@ export default function NoticePage({ notifications }) {
 }
 
 export async function getServerSideProps({ query }) {
-  const urls = ['notifications']
+  const urls = ['notifications?sort=createdAt:desc']
   const [notifications] = await fetchMultipleUrls(urls)
 
   return {
