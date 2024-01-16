@@ -13,7 +13,7 @@ const items = [
       },
       {
         label: 'OceanDrive User Guide_kr',
-        path: '/user-guide/OceanDrive/OceanDrive_ko.pdf'
+        path: '/user-guide/OceanDrive/OceanDrive_ko1.pdf'
       },
       {
         label: 'OceanDrive User Guide_cn',

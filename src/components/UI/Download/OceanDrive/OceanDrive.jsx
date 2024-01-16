@@ -65,7 +65,7 @@ export default function OceanDrive({ data, items, analytic }) {
           <NextArrow />
         </a>
         <a
-          href='/ocean_drive_user_guide_ko.pdf'
+          href='/ocean_drive_guide_ko.pdf'
           target='_blank'
           className={styles.guide}
         >
