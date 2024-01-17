@@ -129,5 +129,6 @@
   "same_phone_number": "전화번호. <span>[4번 캡처 화면의 전화번호와 동일해야 합니다.] </span>",
   "same_wallet_address": "BitGet 싸이콘 지갑주소. <span>[4번 캡처 화면의 주소와 동일해야 합니다.]</span>",
   "same_email_event": "BitGet에서 사용한 것과 동일한 이메일 주소를 사용해서 <b>이메일을 보내주세요.</b> <span>[event@conun.io]</span>",
-  "see_on_bitget": "Bitget에서 만나요!"
+  "see_on_bitget": "Bitget에서 만나요!",
+  "oceanDrive_open_beta": "오션드라이브 오픈 베타 리포트 양식"
 }
