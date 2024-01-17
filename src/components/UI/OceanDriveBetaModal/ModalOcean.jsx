@@ -182,7 +182,7 @@ const ModalOcean = ({
             <span style={{ fontWeight: '700' }}>✈️ {t('send_here')} ✈️</span>{' '}
             <br />
             <span style={{ fontWeight: '600' }} className='google_link'>
-              <img src={'/images/google.svg'} alt='logo' /> Goolge Forms:
+              <img src={'/images/google.svg'} alt='logo' style={{marginRight: 2}} /> Goolge Forms:
             </span>{' '}
             <a
               href='https://forms.gle/Rx8zUrXCvy8p3z4W7'
@@ -223,7 +223,10 @@ const ModalOcean = ({
                 textDecoration: 'underline',
                 cursor: 'pointer'
               }}
-              onClick={() => router.push('/ocean-drive')}
+              onClick={() => {
+                handleClick()
+                router.push('/ocean-drive')
+              }}
             >
               Download-Ocean Drive
             </span>{' '}
