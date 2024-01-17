@@ -129,5 +129,9 @@
   "same_phone_number": "전화번호. <span>[4번 캡처 화면의 전화번호와 동일해야 합니다.] </span>",
   "same_wallet_address": "BitGet 싸이콘 지갑주소. <span>[4번 캡처 화면의 주소와 동일해야 합니다.]</span>",
   "same_email_event": "BitGet에서 사용한 것과 동일한 이메일 주소를 사용해서 <b>이메일을 보내주세요.</b> <span>[event@conun.io]</span>",
-  "see_on_bitget": "Bitget에서 만나요!"
+  "see_on_bitget": "Bitget에서 만나요!",
+  "feedback_prompt": "문제점, 개선사항, 건의사항을 <span style='color: #0e42e5;'>아래의 링크를 통해</span> 보내주세요.",
+  "send_here": "보내실 곳",
+  "please_refer_to": "이메일 제출용 양식은",
+  "for_email_submission_form": "를 참조해주세요."
 }

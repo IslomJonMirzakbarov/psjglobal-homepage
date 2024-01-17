@@ -12,6 +12,7 @@ import saveLang from 'utils/saveLang'
 import { parseCookies } from 'nookies'
 import { Toaster } from 'react-hot-toast'
 import PromoModal from 'components/UI/PromoModal'
+import OceanDriveBetaModal from 'components/UI/OceanDriveBetaModal'
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
@@ -37,6 +38,7 @@ function MyApp({ Component, pageProps }) {
       {/* {!(
         router.pathname === '/metacon' || router.pathname === '/conunkorea'
       ) && <PromoModal />} */}
+      {!(router.pathname === '/oceandrive') && <OceanDriveBetaModal />}
       {typeof window !== 'undefined' ? (
         <PersistGate loading={null} persistor={persistor}>
           <ThemeProvider theme={theme}>

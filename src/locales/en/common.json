@@ -129,5 +129,9 @@
   "same_phone_number": "Phone number. <span>[Must be the same phone number as screenshot in number 4.]</span>",
   "same_wallet_address": "BitGet CYCON wallet address. <span>[Must be the same address as screenshot in number 4.]</span>",
   "same_email_event": "Please <b>email us</b> using the same email address you used on BitGet. <span>[event@conun.io]</span>",
-  "see_on_bitget": "See you on Bitget!"
+  "see_on_bitget": "See you on Bitget!",
+  "feedback_prompt": "Please send it through the link below the <br /> problems, improvements, and suggestions",
+  "send_here": "Send Here",
+  "please_refer_to": "Please refer to",
+  "for_email_submission_form": "for the form for email submission"
 }
