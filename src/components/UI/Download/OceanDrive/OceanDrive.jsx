@@ -9,11 +9,13 @@ import { useState } from 'react'
 import { request } from 'services/http-client'
 import getDataByLang from 'utils/getDataByLang'
 import styles from './oceanDrive.module.scss'
+import useTranslation from 'next-translate/useTranslation'
 
 export default function OceanDrive({ data, items, analytic }) {
   const [open, setOpen] = useState(false)
   const font = useFontFamily()
   const router = useRouter()
+  const { t } = useTranslation('common')
 
   const analyticUpdate = async (type) => {
     const device = type.toLowerCase().includes('windows')
@@ -70,6 +72,14 @@ export default function OceanDrive({ data, items, analytic }) {
           className={styles.guide}
         >
           OceanDrive User Giude_ko
+          <NextArrow />
+        </a>
+        <a
+          href='/OceanDrive_Open_Beta_Report_Form.pdf'
+          target='_blank'
+          className={styles.guide}
+        >
+          {t('oceanDrive_open_beta')}
           <NextArrow />
         </a>
         <div className={styles.leftElements}>
