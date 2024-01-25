@@ -134,5 +134,19 @@
   "feedback_prompt": "Please send it through the link below the <br /> problems, improvements, and suggestions",
   "send_here": "Send Here",
   "please_refer_to": "Please refer to",
-  "for_email_submission_form": "for the form for email submission"
+  "for_email_submission_form": "for the form for email submission",
+  "event_review": "Please share your review after use OceanDrive. <br/><b>Gift-card or CYCON</b> will be given through a lottery <br/>during the review. (select one)",
+  "comment1": "How to use?",
+  "comment2": "Easy to use!",
+  "comment3": "Have some error!",
+  "how_to_join": "ㅣHow to Joinㅣ",
+  "step_1": "Download OceanDrive at Conun H.P",
+  "step2": "<b>Refer OceanDrive user-guide</b> to install.",
+  "step3": "After use OceanDrive, <b>send your review with <br/>Goolge form(<a href='https://forms.gle/Rx8zUrXCvy8p3z4W7' target='_blank'>https://forms.gle/Rx8zUrXCvy8p3z4W7<a/>) <br/>After that,</b> participation in the event is completed.",
+  "prize": "ㅣPrizeㅣ",
+  "people": "People",
+  "prize_1": "10,000(KRW) </br>value of <b>CYCON</b>",
+  "prize_2": "<b>10,000(KRW)</b> </br>Giftcard(Starbucks)",
+  "notice": "📣Notice📣",
+  "notice_text": "- Please send it by entering your personal information (name, wallet address) </br> accurately through the official Google form. <br>- If you participate in the event in an abnormal way, the win will be canceled.</br>- Winners will be announced on the Conun website and official SNS channel. </br>(The date of announcement of the winner may be delayed depending on our </br> circumstances.) </br>- We will not be responsible for the cancellation of the win due to incorrect input. </br>- You can only apply for the event once per e-mail. </br>- Contined for end of Ocean Drive Open Beta"
 }

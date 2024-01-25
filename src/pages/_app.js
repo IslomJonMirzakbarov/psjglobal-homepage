@@ -35,10 +35,8 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <Provider store={store}>
-      {/* {!(
-        router.pathname === '/metacon' || router.pathname === '/conunkorea'
-      ) && <PromoModal />} */}
       {!(router.pathname === '/oceandrive') && <OceanDriveBetaModal />}
+
       {typeof window !== 'undefined' ? (
         <PersistGate loading={null} persistor={persistor}>
           <ThemeProvider theme={theme}>
