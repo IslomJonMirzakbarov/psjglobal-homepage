@@ -139,7 +139,7 @@ const ModalOcean = ({
             }}
             className='oceandrive_title'
           >
-            <span style={{ color: '#232323' }}>Ocean Drive</span> <br />
+            <span style={{ color: '#232323' }}>OceanDrive</span> <br />
             <span style={{ color: '#0e42e5' }}>Open Beta</span>
           </p>
 
@@ -182,7 +182,12 @@ const ModalOcean = ({
             <span style={{ fontWeight: '700' }}>✈️ {t('send_here')} ✈️</span>{' '}
             <br />
             <span style={{ fontWeight: '600' }} className='google_link'>
-              <img src={'/images/google.svg'} alt='logo' style={{marginRight: 2}} /> Goolge Forms:
+              <img
+                src={'/images/google.svg'}
+                alt='logo'
+                style={{ marginRight: 2 }}
+              />{' '}
+              Goolge Forms:
             </span>{' '}
             <a
               href='https://forms.gle/Rx8zUrXCvy8p3z4W7'

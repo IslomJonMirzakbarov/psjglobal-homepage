@@ -99,7 +99,7 @@ const EventModal = ({ open, handleClose }) => {
                 <b>50</b>
                 {t('people')}
               </span>
-              <img src='/images/prize1.svg' />
+              <img src='/images/prize1.png' />
               <p dangerouslySetInnerHTML={{ __html: t('prize_1') }}></p>
             </div>
             <p className={cls.or}>or</p>
