@@ -35,8 +35,16 @@ export default function BurgerMenu({ file }) {
       title: 'Products',
       items: [
         {
-          title: 'ConunEdu',
+          title: 'CONUN EDU',
           link: '/products/conun-edu'
+        },
+        {
+          title: '하이큐시스템',
+          link: 'https://www.hiqsystem.co.kr/'
+        },
+        {
+          title: '태안비상에듀',
+          link: 'https://visang365.com/'
         },
         {
           title: 'Swap',
