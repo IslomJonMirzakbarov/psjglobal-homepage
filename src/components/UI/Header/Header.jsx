@@ -18,6 +18,10 @@ export function Header() {
   const [file, setFile] = useState(null)
   const products = [
     {
+      title: 'ConunEdu',
+      link: '/products/conun-edu'
+    },
+    {
       title: 'Swap',
       link: 'https://swap.conun.io',
       target: '_blank'
