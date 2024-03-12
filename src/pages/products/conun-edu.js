@@ -6,11 +6,11 @@ export default function ConunEduPage() {
   return (
     <>
       <SEO />
-      <div className='conun-edu'>
+      <div className='conun-edu home-bg'>
         <main className='content-wrap'>
           <ConunEdu />
         </main>
-        <Footer isWhiteBg />
+        <Footer />
       </div>
     </>
   )

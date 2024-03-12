@@ -34,6 +34,7 @@ export default function ConunEdu() {
                 borderRadius='10px'
                 border='1px solid #ddd'
                 position='relative'
+                backgroundColor='#fff'
                 className={styles.edu}
               >
                 <Box
