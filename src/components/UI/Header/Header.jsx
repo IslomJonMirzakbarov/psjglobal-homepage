@@ -18,8 +18,18 @@ export function Header() {
   const [file, setFile] = useState(null)
   const products = [
     {
-      title: 'ConunEdu',
+      title: 'CONUN EDU',
       link: '/products/conun-edu'
+    },
+    {
+      title: '하이큐시스템',
+      link: 'https://www.hiqsystem.co.kr/',
+      target: '_blank'
+    },
+    {
+      title: '태안비상에듀',
+      link: 'https://visang365.com/',
+      target: '_blank'
     },
     {
       title: 'Swap',
