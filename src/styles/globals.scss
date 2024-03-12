@@ -123,6 +123,16 @@ textarea {
   overflow: hidden;
 }
 
+.conun-edu {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 70px);
+}
+
+.content-wrap {
+  flex: 1;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
