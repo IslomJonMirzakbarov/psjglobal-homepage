@@ -1,0 +1,23 @@
+.eduContainer {
+  :hover {
+  }
+  @media (max-width: 600px) {
+    flex-direction: column;
+    margin-bottom: 150px;
+    padding-top: 40px;
+
+    .edu {
+      width: 331px;
+
+      .eduIcon {
+        margin: auto;
+        margin-top: 42px;
+      }
+    }
+  }
+}
+
+.eduContainer .edu:hover {
+  box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}

@@ -35,6 +35,10 @@ export default function BurgerMenu({ file }) {
       title: 'Products',
       items: [
         {
+          title: 'ConunEdu',
+          link: '/products/conun-edu'
+        },
+        {
           title: 'Swap',
           link: 'https://swap.conun.io'
         },
