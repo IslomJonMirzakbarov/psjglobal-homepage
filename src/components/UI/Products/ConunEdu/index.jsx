@@ -10,7 +10,7 @@ const edus = [
   },
   {
     eduImg: '/images/products/conun-edu/hiq_system.png',
-    linkTitle: '정상어학원',
+    linkTitle: '하이큐시스템',
     link: 'https://www.hiqsystem.co.kr/'
   }
 ]
