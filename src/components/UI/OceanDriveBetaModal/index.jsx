@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Cookies from 'js-cookie'
 import ModalOcean from 'components/UI/OceanDriveBetaModal/ModalOcean'
 import EventModal from 'components/UI/OceanDriveEventModal/EventModal'
+import EventModalFirst from 'components/UI/OceanDriveEventModalFirst/EventModalFirst'
 
 const OceanDriveBetaModal = () => {
   const [isFirstPopupOpen, setFirstPopupOpen] = useState(false)
@@ -34,12 +35,16 @@ const OceanDriveBetaModal = () => {
 
   return (
     <>
-      <ModalOcean
+      {/* <ModalOcean
         isFirst={true}
         isPopupOpen={isFirstPopupOpen}
         setFirstPopupOpen={handleFirstPopupClose}
+      /> */}
+      <EventModalFirst
+        open={isFirstPopupOpen}
+        handleClose={handleFirstPopupClose}
       />
-      <EventModal open={open} handleClose={handleClose} />
+      {/* <EventModal open={open} handleClose={handleClose} /> */}
     </>
   )
 }
