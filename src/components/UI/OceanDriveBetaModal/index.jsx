@@ -3,6 +3,7 @@ import Cookies from 'js-cookie'
 import ModalOcean from 'components/UI/OceanDriveBetaModal/ModalOcean'
 import EventModal from 'components/UI/OceanDriveEventModal/EventModal'
 import EventModalFirst from 'components/UI/OceanDriveEventModalFirst/EventModalFirst'
+import EventModalSecond from 'components/UI/OceanDriveEventModalSecond/EventModalSecond'
 
 const OceanDriveBetaModal = () => {
   const [isFirstPopupOpen, setFirstPopupOpen] = useState(false)
@@ -11,12 +12,14 @@ const OceanDriveBetaModal = () => {
   useEffect(() => {
     if (!Cookies.get('popupClosed')) {
       setFirstPopupOpen(true)
+      setOpen(false)
     }
   }, [])
 
   useEffect(() => {
     if (Cookies.get('popupClosed') && !Cookies.get('oceandriveEvent')) {
       setOpen(true)
+      setFirstPopupOpen(false)
     }
   }, [])
 
@@ -44,6 +47,7 @@ const OceanDriveBetaModal = () => {
         open={isFirstPopupOpen}
         handleClose={handleFirstPopupClose}
       />
+      <EventModalSecond open={open} handleClose={handleClose} />
       {/* <EventModal open={open} handleClose={handleClose} /> */}
     </>
   )
