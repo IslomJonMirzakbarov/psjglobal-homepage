@@ -139,14 +139,22 @@
   "comment1": "How to use?",
   "comment2": "Easy to use!",
   "comment3": "Have some error!",
-  "how_to_join": "ㅣHow to Joinㅣ",
+  "how_to_join": "How to Join",
   "step_1": "Download OceanDrive at Conun H.P",
   "step2": "<b>Refer OceanDrive user-guide</b> to install.",
   "step3": "After use OceanDrive, <b>send your review with <br/>Goolge form(<a href='https://forms.gle/Rx8zUrXCvy8p3z4W7' target='_blank'>https://forms.gle/Rx8zUrXCvy8p3z4W7<a/>) <br/>After that,</b> participation in the event is completed.",
-  "prize": "ㅣPrizeㅣ",
+  "prize": "Prize",
   "people": "People",
   "prize_1": "10,000(KRW) </br>value of <b>CYCON</b>",
   "prize_2": "<b>10,000(KRW)</b> </br>Giftcard(Starbucks)",
-  "notice": "📣Notice📣",
-  "notice_text": "- Please send it by entering your personal information (name, wallet address) </br> accurately through the official Google form. <br>- If you participate in the event in an abnormal way, the win will be canceled.</br>- Winners will be announced on the Conun website and official SNS channel. </br>(The date of announcement of the winner may be delayed depending on our </br> circumstances.) </br>- We will not be responsible for the cancellation of the win due to incorrect input. </br>- You can only apply for the event once per e-mail. </br>- Contined for end of Ocean Drive Open Beta"
+  "notice": "Notice",
+
+  "ocean_drive_notice": "If you install Ocean Drive and follow CONUN's official Twitter, the first <span>50,000 people</span> will receive <span>800 CYCON!</span>",
+  "ocean_drive_installation": "OceanDrive Installation <span>(300 CYCON)</span>",
+  "follow_conun_twitter": "Follow CONUN official Twitter <span>(300 CYCON)</span>",
+  "retweet_event_like": "Retweet the event post + Like <span>(200 CYCON)</span>",
+  "submit_google_form": "Submit Google form <br /><a target='_blank' href='https://forms.gle/Efi42eRh4K4fJfuh7'>https://forms.gle/Efi42eRh4K4fJfuh7</a>",
+  "earn_by_participating": "Earn <b>800 CYCON</b> by participating <br /> in all stages <br /> (1,000 KRW)",
+  "notice_title": "Notice",
+  "notice_text": "<ul><li>Please send it by entering your personal information (name, wallet address) <br />accurately through the official Google form.</li><li>If you participate in the event in an abnormal way, the win will be canceled.</li><li>We will not be responsible for the cancellation of the win due to incorrect input.</li></ul>"
 }
