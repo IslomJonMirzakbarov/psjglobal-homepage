@@ -152,9 +152,9 @@
   "ocean_drive_notice": "오션드라이브 설치하고 <span>CONUN</span> 공식 트위터 팔로우하면 <br /> <span>5만</span>만 명에게 <span>800 CYCON</span>을 드려요!",
   "ocean_drive_installation": "오션드라이브 설치 <span>(300 CYCON)</span>",
   "follow_conun_twitter": "코넌 공식 트위터 팔로우 <span>(300 CYCON)</span>",
-  "retweet_event_like": "이벤트 게시글 리트위 + 좋아요 <span>(200 CYCON)</span>",
+  "retweet_event_like": "이벤트 게시글 리트윗 + 좋아요 <span>(200 CYCON)</span>",
   "submit_google_form": "구글 양식폼 제출 <br /><a target='_blank' href='https://forms.gle/Efi42eRh4K4fJfuh7'>https://forms.gle/Efi42eRh4K4fJfuh7</a>",
-  "earn_by_participating": "단계별로 모두 참여 시 <br /> <b>800 CYCON</b> 지급! <br /> (1,000 KRW)",
+  "earn_by_participating": "단계별로 모두 참여 시 <br /> <b>800 CYCON</b> 지급!",
   "notice_title": "주의사항",
   "notice_text": "<ul><li>공식 구글폼을 통해 개인정보(이름, 지갑주소)를 정확하게 입력하여 보내주세요. </li><li>비정상적인 방법으로 이벤트에 참여하실 경우 당첨이 취소됩니다. </li><li>잘못된 입력으로 인한 당첨 취소에 대해서는 책임을 지지 않습니다. </li><li>CYCON 소진시 이벤트가 종료됩니다.</li></ul>"
 }

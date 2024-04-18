@@ -130,7 +130,7 @@
   "same_wallet_address": "BitGet CYCON wallet address. <span>[Must be the same address as screenshot in number 4.]</span>",
   "same_email_event": "Please <b>email us</b> using the same email address you used on BitGet. <span>[event@conun.io]</span>",
   "see_on_bitget": "See you on Bitget!",
-  "oceanDrive_open_beta": "OceanDrive Open Beta Report Form",
+  "oceanDrive_open_beta": "OceanDrive Bug Report Form",
   "feedback_prompt": "Please send it through the link below the <br /> problems, improvements, and suggestions",
   "send_here": "Send Here",
   "please_refer_to": "Please refer to",
@@ -154,7 +154,7 @@
   "follow_conun_twitter": "Follow CONUN official Twitter <span>(300 CYCON)</span>",
   "retweet_event_like": "Retweet the event post + Like <span>(200 CYCON)</span>",
   "submit_google_form": "Submit Google form <br /><a target='_blank' href='https://forms.gle/Efi42eRh4K4fJfuh7'>https://forms.gle/Efi42eRh4K4fJfuh7</a>",
-  "earn_by_participating": "Earn <b>800 CYCON</b> by participating <br /> in all stages <br /> (1,000 KRW)",
+  "earn_by_participating": "Earn <b>800 CYCON</b> by participating <br /> in all stages",
   "notice_title": "Notice",
   "notice_text": "<ul><li>Please send it by entering your personal information (name, wallet address) <br />accurately through the official Google form.</li><li>If you participate in the event in an abnormal way, the win will be canceled.</li><li>We will not be responsible for the cancellation of the win due to incorrect input.</li></ul>"
 }
