@@ -12,13 +12,13 @@ const OceanDriveBetaModal = () => {
   useEffect(() => {
     if (!Cookies.get('popupClosed')) {
       setFirstPopupOpen(true)
-      setOpen(false)
+      // setOpen(false)
     }
   }, [])
 
   useEffect(() => {
     if (Cookies.get('popupClosed') && !Cookies.get('oceandriveEvent')) {
-      setOpen(true)
+      // setOpen(true)
       setFirstPopupOpen(false)
     }
   }, [])
@@ -47,7 +47,7 @@ const OceanDriveBetaModal = () => {
         open={isFirstPopupOpen}
         handleClose={handleFirstPopupClose}
       />
-      <EventModalSecond open={open} handleClose={handleClose} />
+      {/* <EventModalSecond open={open} handleClose={handleClose} /> */}
       {/* <EventModal open={open} handleClose={handleClose} /> */}
     </>
   )
