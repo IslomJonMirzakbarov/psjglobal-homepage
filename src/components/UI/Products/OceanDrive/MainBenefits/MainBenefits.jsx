@@ -90,7 +90,7 @@ export default function MainBenefits() {
           <iframe
             width='100%'
             height='100%'
-            src='https://www.youtube.com/embed/rfp3lldo9dg'
+            src='https://www.youtube.com/embed/G7S4WKXob-Y'
           />
         </div>
       </div>
