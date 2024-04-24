@@ -191,7 +191,7 @@ export default function Banner() {
             <img src='/images/products/ocean-drive/element5.png' />
           </motion.div>
 
-          <motion.div
+          {/* <motion.div
             style={{
               x: xCoin1,
               y: yCoin1
@@ -202,8 +202,8 @@ export default function Banner() {
               src='/images/products/ocean-drive/element7.png'
               className={`${styles.coinImage1} ${styles.coinImage}`}
             />
-          </motion.div>
-          <motion.div
+          </motion.div> */}
+          {/* <motion.div
             style={{
               x: xCoin2,
               y: yCoin2
@@ -214,7 +214,7 @@ export default function Banner() {
               src='/images/products/ocean-drive/element8.png'
               className={`${styles.coinImage2} ${styles.coinImage}`}
             />
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </Container>
       <SubscribeModal
