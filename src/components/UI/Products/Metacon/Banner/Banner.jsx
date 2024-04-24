@@ -241,7 +241,7 @@ export default function Banner() {
             <img src='/images/products/metacon/element5.png' alt='Element 6' />
           </motion.div>
 
-          <motion.div
+          {/* <motion.div
             style={{
               x: xCoin1,
               y: yCoin1,
@@ -254,8 +254,8 @@ export default function Banner() {
               alt='Element 7'
               className={`${styles.coinImage1} ${styles.coinImage}`}
             />
-          </motion.div>
-          <motion.div
+          </motion.div> */}
+          {/* <motion.div
             style={{
               x: xCoin2,
               y: yCoin2,
@@ -268,7 +268,7 @@ export default function Banner() {
               alt='Element 8'
               className={`${styles.coinImage2} ${styles.coinImage}`}
             />
-          </motion.div>
+          </motion.div> */}
         </div>
       </Container>
     </div>

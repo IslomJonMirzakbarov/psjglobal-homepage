@@ -136,7 +136,7 @@ export default function Banner() {
             <img src='/images/products/dexpo-nft/element4.png' />
           </motion.div>
 
-          <motion.div
+          {/* <motion.div
             style={{
               x: xCoin1,
               y: yCoin1
@@ -147,8 +147,8 @@ export default function Banner() {
               src='/images/products/dexpo-nft/element5.png'
               className={`${styles.coinImage1} ${styles.coinImage}`}
             />
-          </motion.div>
-          <motion.div
+          </motion.div> */}
+          {/* <motion.div
             style={{
               x: xCoin2,
               y: yCoin2
@@ -159,7 +159,7 @@ export default function Banner() {
               src='/images/products/dexpo-nft/element6.png'
               className={`${styles.coinImage2} ${styles.coinImage}`}
             />
-          </motion.div>
+          </motion.div> */}
         </div>
       </Container>
     </div>

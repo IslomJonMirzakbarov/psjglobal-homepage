@@ -255,7 +255,7 @@ export default function Banner({ notifications }) {
                 <img src='/images/banner-circle-blue-bg.png' alt='rocket' />
               </motion.div>
 
-              <motion.div
+              {/* <motion.div
                 style={{ x: xCoin1, y: yCoin1 }}
                 className={`${styles.bannerBgBlueCircle} ${styles.responsiveCoin}`}
               >
@@ -264,8 +264,8 @@ export default function Banner({ notifications }) {
                   alt='coin'
                   className={`${styles.coinImage1} ${styles.coinImage}`}
                 />
-              </motion.div>
-              <motion.div
+              </motion.div> */}
+              {/* <motion.div
                 style={{ x: xCoin2, y: yCoin2 }}
                 className={`${styles.bannerBgBlueCircle} ${styles.responsiveCoin}`}
               >
@@ -284,7 +284,7 @@ export default function Banner({ notifications }) {
                   alt='coin'
                   className={`${styles.coinImage3} ${styles.coinImage}`}
                 />
-              </motion.div>
+              </motion.div> */}
 
               <div className={styles.bannerShutterstock}>
                 <img src='/images/banner-shutterstock-bg.png' alt='rocket' />
