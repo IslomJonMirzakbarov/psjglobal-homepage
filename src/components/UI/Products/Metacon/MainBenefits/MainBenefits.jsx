@@ -12,7 +12,7 @@ const texts = [
   '#Your last wallet',
   '#Wallet',
   '#Swap System',
-  '#Easy',
+  '#Easy'
 ]
 
 function ColoredHashText({ text, isRed }) {
@@ -35,34 +35,34 @@ export default function MainBenefits() {
       title: t('product_metacon_benefits_1'),
       img: '/images/products/metacon/main1.png',
       widthImg: 157,
-      heightImg: 116,
+      heightImg: 116
     },
     {
       title: t('product_metacon_benefits_2'),
       img: '/images/products/metacon/main2.png',
       widthImg: 112,
-      heightImg: 98,
+      heightImg: 98
     },
     {
       title: t('product_metacon_benefits_3'),
       img: '/images/products/metacon/main3.png',
       widthImg: 116,
-      heightImg: 108,
-    },
+      heightImg: 108
+    }
   ]
   return (
     <Container>
       <div className={styles.dexpo}>
-        <Typography variant="h2" color="primary.dark" textAlign="center">
+        <Typography variant='h2' color='primary.dark' textAlign='center'>
           Metacon
         </Typography>
         <Typography
-          variant="body2"
-          color="secondary"
-          textAlign="center"
+          variant='body2'
+          color='secondary'
+          textAlign='center'
           className={styles.desc}
           dangerouslySetInnerHTML={{
-            __html: t('product_metacon_info'),
+            __html: t('product_metacon_info')
           }}
           style={font}
         />
@@ -76,7 +76,7 @@ export default function MainBenefits() {
             ))}
           </div>
           <div className={classNames(styles.columnBox, styles.mobileImg)}>
-            <img src="/icons/main-benefits/big-svg.svg" alt="big-svg" />
+            <img src='/icons/main-benefits/big-svg.svg' alt='big-svg' />
           </div>
           <div className={classNames(styles.columnBox, styles.hideOnMobile)}>
             {texts.slice(3).map((text, index) => (
@@ -94,13 +94,13 @@ export default function MainBenefits() {
           transition={{ duration: 0.3 }}
           className={styles.starImg}
         >
-          <img src="/images/star.png" />
+          <img src='/images/star.png' />
         </motion.div>
         <Typography
           className={styles.title}
-          variant="h2"
-          color="secondary.dark"
-          textAlign="center"
+          variant='h2'
+          color='secondary.dark'
+          textAlign='center'
         >
           Main Contents
         </Typography>
@@ -121,18 +121,18 @@ export default function MainBenefits() {
                 style={{
                   maxWidth: item.widthImg,
                   maxHeight: item.heightImg,
-                  left: `calc(50% - ${rem(item.widthImg / 2)})`,
+                  left: `calc(50% - ${rem(item.widthImg / 2)})`
                 }}
               >
-                <img src={item.img} alt="ocean drive" />
+                <img src={item.img} alt='ocean drive' />
               </motion.div>
               <Typography
                 className={styles.subTitle}
-                variant="body1"
-                fontWeight="700"
-                color="primary.dark"
+                variant='body1'
+                fontWeight='700'
+                color='primary.dark'
                 style={font}
-                textAlign="center"
+                textAlign='center'
                 dangerouslySetInnerHTML={{ __html: item.title }}
               />
             </div>
@@ -151,8 +151,8 @@ export default function MainBenefits() {
 
           <div className={styles.image}>
             <img
-              src="/images/products/metacon/phone-main.png"
-              alt="Image description"
+              src='/images/products/metacon/phone-main.png'
+              alt='Image description'
             />
           </div>
 

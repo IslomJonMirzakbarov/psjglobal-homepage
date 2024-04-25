@@ -12,7 +12,7 @@ const texts = [
   '#Your last wallet',
   '#Hope',
   '#Golden Round',
-  '#Easy',
+  '#Easy'
 ]
 
 function ColoredHashText({ text, isRed }) {
@@ -32,43 +32,43 @@ export default function MainBenefits() {
   const font = useFontFamily()
   const itemsData = [
     {
-      description: t('install_metacon_app'),
+      description: t('install_metacon_app')
     },
     {
-      description: t('cycon_swap_worth'),
+      description: t('cycon_swap_worth')
     },
     {
-      description: t('dreamsct_game_schedule'),
+      description: t('dreamsct_game_schedule')
     },
     {
-      description: t('winner_announcement_time'),
-    },
+      description: t('winner_announcement_time')
+    }
   ]
   const gridItemsData = [
     {
       title: t('install_metacon_wallet_app'),
-      paragraph: t('metacon_wallet_app_instruction'),
+      paragraph: t('metacon_wallet_app_instruction')
     },
     {
       title: t('hold_cycon_requirement'),
-      paragraph: t('cycon_wallet_requirement'),
+      paragraph: t('cycon_wallet_requirement')
     },
     {
       title: t('phone_verification_requirement'),
-      paragraph: t('phone_verification_instruction'),
+      paragraph: t('phone_verification_instruction')
     },
     {
       title: t('minors_restriction'),
-      paragraph: t('age_restriction'),
+      paragraph: t('age_restriction')
     },
     {
       title: '',
-      paragraph: '',
+      paragraph: ''
     },
     {
       title: t('participation_limitation'),
-      paragraph: t('participation_criteria'),
-    },
+      paragraph: t('participation_criteria')
+    }
   ]
 
   return (
@@ -84,8 +84,8 @@ export default function MainBenefits() {
           </div>
           <div className={classNames(styles.columnBox, styles.mobileImg)}>
             <img
-              src="/images/products/dreamct/dreamct-in-action.png"
-              alt="big-svg"
+              src='/images/products/dreamct/dreamct-in-action.png'
+              alt='big-svg'
             />
           </div>
           <div className={classNames(styles.columnBox, styles.hideOnMobile)}>
@@ -129,7 +129,7 @@ export default function MainBenefits() {
               <div
                 key={index}
                 className={classNames(styles.gridItem, {
-                  [styles.emptyGridItem]: index === 4,
+                  [styles.emptyGridItem]: index === 4
                 })}
               >
                 {index !== 4 && (
