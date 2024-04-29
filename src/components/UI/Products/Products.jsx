@@ -88,7 +88,16 @@ export default function Products() {
                 className={styles.item}
                 style={{ backgroundImage: `url(${val.bgImg})` }}
               >
-                <div className={styles.icon}>{val.icon}</div>
+                <div className={styles.icon}>
+                  {val.title === 'Mainnet' ? (
+                    <img
+                      src='/images/mainnet_icon_blockchain.svg'
+                      alt='metacon_icon_cycon'
+                    />
+                  ) : (
+                    val.icon
+                  )}
+                </div>
                 <Typography
                   dangerouslySetInnerHTML={{ __html: val.title }}
                   variant='h5'

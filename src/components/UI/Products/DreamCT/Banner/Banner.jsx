@@ -83,9 +83,9 @@ export default function Banner() {
                         {balances[item.anotherText] || 'Loading...'}
                       </p>
                       <img
-                        src='/images/products/dreamct/golden-icon.svg'
-                        width={20}
-                        height={20}
+                        src='/images/products/dreamct/golden-icon.png'
+                        // width={22}
+                        // height={22}
                         alt='Coin icon'
                       />
                     </div>

@@ -40,7 +40,7 @@ export default function WorldDexpoArt() {
         />
         <div className={styles.list}>
           {data.map((item) => (
-            <div className={styles.item}>
+            <div className={styles.item} key={item.title}>
               <motion.div
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}

@@ -9,20 +9,20 @@ export default function WalletForGoogle() {
   const itemsData = [
     {
       title: t('item_title_1'),
-      description: t('item_description_1'),
+      description: t('item_description_1')
     },
     {
       title: t('item_title_2'),
-      description: t('item_description_2'),
+      description: t('item_description_2')
     },
     {
       title: t('item_title_3'),
-      description: t('item_description_3'),
+      description: t('item_description_3')
     },
     {
       title: t('item_title_4'),
-      description: t('item_description_4'),
-    },
+      description: t('item_description_4')
+    }
   ]
   const font = useFontFamily()
 
@@ -32,22 +32,22 @@ export default function WalletForGoogle() {
         <div className={styles.box}>
           <Typography
             className={styles.title}
-            variant="h2"
-            color="primary.dark"
-            textAlign="center"
+            variant='h2'
+            color='primary.dark'
+            textAlign='center'
             dangerouslySetInnerHTML={{
-              __html: t('product_metacon_wallet_title'),
+              __html: t('product_metacon_wallet_title')
             }}
           />
 
           <div className={styles.imageColumn}>
             <img
-              src="/images/products/metacon/dream-city.png"
-              alt="Image 1 description"
+              src='/images/products/metacon/dream-city.png'
+              alt='Image 1 description'
             />
             <img
-              src="/images/products/metacon/metacon-showcase.png"
-              alt="Image 2 description"
+              src='/images/products/metacon/metacon-showcase.png'
+              alt='Image 2 description'
             />
           </div>
 
@@ -69,7 +69,7 @@ export default function WalletForGoogle() {
             ))}
           </div>
 
-          <Link href="/products/dreamct" passHref>
+          <Link href='/products/dreamct' passHref>
             <Button className={styles.btn}>DreamsCT</Button>
           </Link>
         </div>
