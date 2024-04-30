@@ -18,13 +18,23 @@
       padding: 0 rem(65);
     }
 
+    // .logo {
+    //   display: flex;
+    //   align-items: center;
+    //   width: rem(130);
+    //   img {
+    //     width: 100%;
+    //     height: auto;
+    //   }
+    // }
+
     .logo {
       display: flex;
       align-items: center;
       width: rem(130);
       img {
-        width: 100%;
-        height: auto;
+        max-height: rem(68);
+        width: auto;
       }
     }
 
