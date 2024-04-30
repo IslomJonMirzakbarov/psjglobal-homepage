@@ -3,9 +3,9 @@ const items = [
     title: 'LINKS',
     values: [
       {
-        label: 'CONUN KOREA | 코넌코리아',
+        label: 'PSJ GLOBAL | PSJ 글로벌',
         path: 'https://conun.io/kr',
-        iconPath: '/images/conun-korea/conun-logo.svg'
+        iconPath: '/images/conun-korea/conun-logo2.svg'
       },
       {
         label: 'Metacon | 메타콘',

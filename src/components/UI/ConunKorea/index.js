@@ -11,13 +11,13 @@ export default function ConunKorea() {
     <Container>
       <div className={styles.titleDiv}>
         <img
-          src='/images/conun-korea/conun-korea.svg'
-          width={92}
-          height={46}
+          src='/images/conun-korea/conun-korea2.svg'
+          width='91.44px'
+          height='81.05px'
           alt=''
         />
-        <p>@conunkorea</p>
-        <h1 className={styles.snsTitle}>CONUN KOREA</h1>
+        {/* <p>@conunkorea</p> */}
+        <h1 className={styles.snsTitle}>PSJ GLOBAL</h1>
       </div>
       <div className={styles.guide}>
         <div className={styles.list}>
