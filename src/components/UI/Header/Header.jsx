@@ -16,6 +16,7 @@ export function Header() {
   const router = useRouter()
   // const { t } = useTranslation('common')
   const [file, setFile] = useState(null)
+  const [logoHover, setLogoHover] = useState(false)
   const products = [
     {
       title: 'CONUN EDU',
@@ -99,8 +100,12 @@ export function Header() {
     <header className={styles.header}>
       <div className={styles.container}>
         <Link href='/'>
-          <a className={styles.logo}>
-            <img src='/logo.png' alt='logo' />
+          <a
+            className={styles.logo}
+            onMouseEnter={() => setLogoHover(true)}
+            onMouseLeave={() => setLogoHover(false)}
+          >
+            <img src={logoHover ? '/logo_hover.svg' : '/logo.svg'} alt='logo' />
           </a>
         </Link>
         <ul className={styles.links}>

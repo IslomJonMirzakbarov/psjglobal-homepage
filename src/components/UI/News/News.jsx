@@ -51,14 +51,12 @@ export default function News({ newsItem, isNewsPage = false, news, count }) {
     ? news[0]?.attributes
     : null
 
-
-
   return (
     <div className={styles.section} id='news'>
       <Container>
         <div className={`${styles.news} ${isNewsPage ? styles.newsPage : ''}`}>
           <Typography align='center' variant='h2' color='primary.dark'>
-            CONUN News
+            PSG GLOBAL News
           </Typography>
           {!isNewsPage && (
             <>
