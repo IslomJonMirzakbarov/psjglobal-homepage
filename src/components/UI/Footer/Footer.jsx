@@ -1,13 +1,7 @@
 import styles from './Footer.module.scss'
 import Link from 'next/link'
 import { Container } from '@mui/material'
-import {
-  InstagramIcon,
-  TalkIcon,
-  TelegramIcon,
-  TwitterIcon,
-  YouTubeIcon
-} from '../Icons'
+
 export function Footer({ isWhiteBg = false }) {
   return (
     <footer style={{ background: isWhiteBg ? '#ffffff' : '' }}>
@@ -18,7 +12,7 @@ export function Footer({ isWhiteBg = false }) {
               {/* conuncs@conun.co.kr */}
               23-22, Samseong-ro 76-gil, Seoul, Korea
             </p>
-            <p>ⓒ 2023 CONUN, All Rights Reserved</p>
+            <p>ⓒ 2023 PSJ GLOBAL,, All Rights Reserved</p>
           </div>
           <div className={styles.rightElement}>
             <a
@@ -27,7 +21,7 @@ export function Footer({ isWhiteBg = false }) {
               rel='noreferrer'
             >
               <div className={styles.item}>
-                <TalkIcon />
+                <img src='/icons/talk_conun.svg' alt='kakao_conun' />
               </div>
               <p>CONUN</p>
             </a>
@@ -40,12 +34,12 @@ export function Footer({ isWhiteBg = false }) {
               <p>DreamsCT</p>
             </a>
             <a href='https://t.me/conun_cs' target='_blank' rel='noreferrer'>
-              <img src='/icons/telegram.svg' alt='facebook' />
+              <img src='/icons/telegram.svg' alt='telegram' />
               <p>Korea</p>
             </a>
             <a href='https://t.me/conuncycon' target='_blank' rel='noreferrer'>
               <div className={styles.item}>
-                <TelegramIcon />
+                <img src='/icons/telegram_global.svg' alt='telegram_global' />
               </div>
               <p>Global</p>
             </a>
@@ -55,7 +49,7 @@ export function Footer({ isWhiteBg = false }) {
               rel='noreferrer'
             >
               <div className={styles.item}>
-                <InstagramIcon />
+                <img src='/icons/instagram.svg' alt='instagram' />
               </div>
             </a>
             <a
@@ -64,7 +58,7 @@ export function Footer({ isWhiteBg = false }) {
               rel='noreferrer'
             >
               <div className={styles.item}>
-                <YouTubeIcon />
+                <img src='/icons/youtube.svg' alt='youtube' />
               </div>
             </a>
             <a
@@ -82,7 +76,7 @@ export function Footer({ isWhiteBg = false }) {
               rel='noreferrer'
             >
               <div className={styles.item}>
-                <TwitterIcon />
+                <img src='/icons/twitter.svg' alt='twitter' />
               </div>
             </a>
             <a
