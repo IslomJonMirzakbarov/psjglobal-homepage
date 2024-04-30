@@ -12,7 +12,7 @@ export function Footer({ isWhiteBg = false }) {
               {/* conuncs@conun.co.kr */}
               23-22, Samseong-ro 76-gil, Seoul, Korea
             </p>
-            <p>ⓒ 2023 PSJ GLOBAL,, All Rights Reserved</p>
+            <p>ⓒ 2024 PSJ GLOBAL, All Rights Reserved</p>
           </div>
           <div className={styles.rightElement}>
             <a
