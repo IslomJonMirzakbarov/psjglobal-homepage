@@ -23,7 +23,7 @@ export function Footer({ isWhiteBg = false }) {
               <div className={styles.item}>
                 <img src='/icons/talk_conun.svg' alt='kakao_conun' />
               </div>
-              <p>CONUN</p>
+              <p>PSJGlobal</p>
             </a>
             <a
               href='https://open.kakao.com/o/ghkPJdff'

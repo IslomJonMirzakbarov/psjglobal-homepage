@@ -19,7 +19,7 @@ export function Header() {
   const [logoHover, setLogoHover] = useState(false)
   const products = [
     {
-      title: 'CONUN EDU',
+      title: 'PSJGlobal EDU',
       link: '/products/conun-edu'
     },
     {
