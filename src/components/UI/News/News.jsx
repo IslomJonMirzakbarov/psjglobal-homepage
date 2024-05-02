@@ -56,7 +56,7 @@ export default function News({ newsItem, isNewsPage = false, news, count }) {
       <Container>
         <div className={`${styles.news} ${isNewsPage ? styles.newsPage : ''}`}>
           <Typography align='center' variant='h2' color='primary.dark'>
-            PSG GLOBAL News
+            PSJ GLOBAL News
           </Typography>
           {!isNewsPage && (
             <>
