@@ -162,7 +162,7 @@ export default function Banner({ notifications }) {
             <a href={hrefLink} target='_blank' rel='noreferrer'>
               <div className={styles.linkd}>
                 <Typography variant='body1' color='primary'>
-                  CONUN Company Introduction
+                  PSJGlobal Company Introduction
                 </Typography>
                 <NextArrow />
               </div>

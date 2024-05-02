@@ -35,7 +35,7 @@ export default function BurgerMenu({ file }) {
       title: 'Products',
       items: [
         {
-          title: 'CONUN EDU',
+          title: 'PSJGlobal EDU',
           link: '/products/conun-edu'
         },
         {
