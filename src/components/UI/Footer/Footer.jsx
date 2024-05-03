@@ -44,7 +44,7 @@ export function Footer({ isWhiteBg = false }) {
               <p>Global</p>
             </a>
             <a
-              href='https://www.instagram.com/cycon_and_conun/'
+              href='https://www.instagram.com/cycon_and_psjglobal/'
               target='_blank'
               rel='noreferrer'
             >
@@ -53,7 +53,7 @@ export function Footer({ isWhiteBg = false }) {
               </div>
             </a>
             <a
-              href='https://www.youtube.com/channel/UCVbpETcXaPRZkL2HACUXOsA'
+              href='https://www.youtube.com/@CYCON-AND-PSJGLOBAL'
               target='_blank'
               rel='noreferrer'
             >
@@ -62,7 +62,7 @@ export function Footer({ isWhiteBg = false }) {
               </div>
             </a>
             <a
-              href='https://www.facebook.com/cyconandconun/'
+              href='https://www.facebook.com/cyconandpsjglobal'
               target='_blank'
               rel='noreferrer'
             >
