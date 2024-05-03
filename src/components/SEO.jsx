@@ -9,40 +9,40 @@ export default function SEO() {
         content='width=device-width, initial-scale=1  maximum-scale=1, user-scalable=0'
       />
       <meta charSet='utf-8' />
-      <title>CONUN | Connect On New Universal Networks</title>
+      <title>PSJGlobal | Connect On New Universal Networks</title>
 
       <meta
         name='description'
-        content="CONUN is a blockchain-based decentralized storage network. It is a service platform that collects world wide storage by sharing the idle resources of the participants' personal computers."
+        content="PSJGlobal is a blockchain-based decentralized storage network. It is a service platform that collects world wide storage by sharing the idle resources of the participants' personal computers."
       />
       <meta
         name='keywords'
-        content='코넌, 오션드라이브, 코넌코리아, 코넌 글로벌, conun, conun korea, oceandrive, ocean drive, conun global'
+        content='피에스제이글로벌, 오션드라이브, 피에스제이글로벌코리아, 피에스제이글로벌 글로벌, PSJGlobal, PSJGlobal korea, oceandrive, ocean drive, PSJGlobal global'
       />
       <meta property='og:type' content='website' />
       <meta
         property='og:title'
-        content='CONUN | Connect On New Universal Networks'
+        content='PSJGlobal | Connect On New Universal Networks'
         key='ogtitle'
       />
       <meta
         property='og:description'
-        content="CONUN is a blockchain-based decentralized storage network. It is a service platform that collects world wide storage by sharing the idle resources of the participants' personal computers."
+        content="PSJGlobal is a blockchain-based decentralized storage network. It is a service platform that collects world wide storage by sharing the idle resources of the participants' personal computers."
         key='ogdesc'
       />
-      <meta property='og:site_name' content='CONUN' key='ogsitename' />
+      <meta property='og:site_name' content='PSJGlobal' key='ogsitename' />
       <meta property='og:image' content='/images/seo.jpg' key='ogimage' />
       <meta name='twitter:card' content='summary_large_image' />
       <meta
         name='twitter:title'
-        content='CONUN | Connect On New Universal Networks'
+        content='PSJGlobal | Connect On New Universal Networks'
       />
       <meta
         name='twitter:description'
-        content="CONUN is a blockchain-based decentralized storage network. It is a service platform that collects world wide storage by sharing the idle resources of the participants' personal computers."
+        content="PSJGlobal is a blockchain-based decentralized storage network. It is a service platform that collects world wide storage by sharing the idle resources of the participants' personal computers."
       />
-      <meta name='twitter:site' content='CONUN' />
-      <meta name='twitter:creator' content='CONUN' />
+      <meta name='twitter:site' content='PSJGlobal' />
+      <meta name='twitter:creator' content='PSJGlobal' />
       <meta name='twitter:image' content='/images/seo.jpg' />
       <meta
         name='naver-site-verification'
@@ -62,7 +62,7 @@ export default function SEO() {
                     `
         }}
       />
-      <link rel='icon' href='/favicon.png' />
+      <link rel='icon' href='/favicon2.png' />
     </Head>
   )
 }

@@ -27,7 +27,7 @@ export default function TokenInfo() {
           <tbody>
             <tr className={styles.tRow}>
               <td>Token Name</td>
-              <td>PSJGlobal</td>
+              <td>CONUN</td>
             </tr>
             <tr>
               <td>Token Symbol</td>
