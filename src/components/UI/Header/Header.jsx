@@ -34,7 +34,7 @@ export function Header() {
     },
     {
       title: 'Swap',
-      link: 'https://swap.conun.io',
+      link: 'https://swap.psjglobal.io/',
       target: '_blank'
     },
     {

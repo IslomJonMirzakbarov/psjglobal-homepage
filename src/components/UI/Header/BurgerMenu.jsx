@@ -48,7 +48,7 @@ export default function BurgerMenu({ file }) {
         },
         {
           title: 'Swap',
-          link: 'https://swap.conun.io'
+          link: 'https://swap.psjglobal.io/'
         },
         {
           title: 'OceanDrive',
