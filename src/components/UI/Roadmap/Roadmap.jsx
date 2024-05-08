@@ -60,7 +60,7 @@ export default function Roadmap({ roadmaps }) {
     (a, b) => a.attributes.year - b.attributes.year
   )
   const [tab, setTab] = useState(
-    roadmaps?.length > 0 ? sortedRoadmaps[6]?.id : null
+    roadmaps?.length > 0 ? sortedRoadmaps[roadmaps?.length - 1]?.id : null
   )
 
   return (
