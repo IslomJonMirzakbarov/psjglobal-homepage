@@ -9,6 +9,8 @@ import ExternalNews from 'components/UI/ExternalNews/ExternalNews'
 import { Footer } from 'components/UI/Footer/Footer'
 import Partners from 'components/UI/Partners/Partners'
 
+// pipeline test1
+
 export default function Home({ news, externalNews, roadmaps, notifications }) {
   return (
     <>
