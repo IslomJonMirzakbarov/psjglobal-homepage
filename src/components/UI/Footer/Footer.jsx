@@ -37,7 +37,11 @@ export function Footer({ isWhiteBg = false }) {
               <img src='/icons/telegram.svg' alt='telegram' />
               <p>Korea</p>
             </a>
-            <a href='https://t.me/conuncycon' target='_blank' rel='noreferrer'>
+            <a
+              href='https://t.me/PSJGLOBALCYCON'
+              target='_blank'
+              rel='noreferrer'
+            >
               <div className={styles.item}>
                 <img src='/icons/telegram_global.svg' alt='telegram_global' />
               </div>
@@ -71,7 +75,7 @@ export function Footer({ isWhiteBg = false }) {
               </div>
             </a>
             <a
-              href='https://twitter.com/cyconandconun'
+              href='https://twitter.com/PSJGLOBALCYCON'
               target='_blank'
               rel='noreferrer'
             >
@@ -89,7 +93,7 @@ export function Footer({ isWhiteBg = false }) {
               </div>
             </a>
             <a
-              href='https://blog.naver.com/conuncs'
+              href='https://blog.naver.com/cyconandpsjglobal'
               target='_blank'
               rel='noreferrer'
             >
