@@ -3,7 +3,7 @@
 .guide {
   padding: rem(110) 0 0;
   display: flex;
-  gap: rem(100);
+  gap: rem(70);
   min-height: 100vh;
   @media (max-width: 700px) {
     flex-direction: column;
@@ -60,6 +60,14 @@
           font-size: 15px;
           line-height: 22px;
           color: #0012b0;
+        }
+      }
+
+      .bitgetItem {
+        min-width: 295px;
+
+        @media (max-width: 600px) {
+          min-width: none;
         }
       }
     }
