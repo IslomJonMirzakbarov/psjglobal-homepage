@@ -72,6 +72,10 @@ export function Header() {
       link: '/news'
     },
     {
+      title: 'YOUTUBE',
+      link: '/youtube'
+    },
+    {
       title: 'Notice',
       link: '/notice'
     },

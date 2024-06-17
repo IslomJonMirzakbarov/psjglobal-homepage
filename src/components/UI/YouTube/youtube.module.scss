@@ -1,0 +1,97 @@
+@import 'styles/unit.scss';
+
+.container {
+  min-height: calc(100vh - rem(72));
+
+  .youtube {
+    padding: rem(90) 0 rem(110);
+    max-width: max-content;
+    margin: 0 auto;
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: rem(15);
+      margin-top: 50px;
+
+      @media (max-width: 600px) {
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+      }
+
+      .card {
+        background: #fff;
+        border-radius: rem(10);
+        overflow: hidden;
+        border: 1px solid #e8e8e8;
+        cursor: pointer;
+        width: 400px;
+        height: 310px;
+
+        @media (max-width: 600px) {
+          width: 100%;
+        }
+
+        .image {
+          width: 100%;
+          height: rem(224);
+          object-fit: cover;
+        }
+
+        .content {
+          padding: rem(15);
+          width: 100%;
+          height: 86px;
+          position: relative;
+
+          .title {
+            font-size: rem(15);
+            font-weight: 700;
+            color: #333;
+            line-height: 20px;
+            margin-bottom: rem(10);
+
+            @media (max-width: 600px) {
+              font-size: rem(13);
+            }
+          }
+
+          .iconHolder {
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            transition: bottom 0.3s ease;
+
+            @media (max-width: 600px) {
+              img {
+                width: 25px !important;
+                height: 25px !important;
+              }
+            }
+          }
+        }
+
+        &:hover {
+          .iconHolder {
+            bottom: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    min-height: auto;
+
+    .youtube {
+      padding: rem(50) 0 rem(30);
+      max-width: none;
+
+      h2 {
+        text-align: left;
+      }
+    }
+  }
+}
