@@ -89,6 +89,10 @@ export default function BurgerMenu({ file }) {
           link: '/news'
         },
         {
+          title: 'YOUTUBE',
+          link: '/youtube'
+        },
+        {
           title: 'Notice',
           link: '/notice'
         },
