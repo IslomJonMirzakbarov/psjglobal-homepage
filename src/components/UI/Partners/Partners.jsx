@@ -9,7 +9,7 @@ export default function Partners() {
           Partners
         </Typography>
         <div className={styles.items}>
-          {[...Array(8).keys()].map((index) => (
+          {[...Array(14).keys()].map((index) => (
             <div className={styles.item} key={index}>
               <img
                 src={`/images/partner/partners${index + 1}.svg`}
