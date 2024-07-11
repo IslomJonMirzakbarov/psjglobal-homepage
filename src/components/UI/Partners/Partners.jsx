@@ -1,5 +1,6 @@
 import { Container, Typography } from '@mui/material'
 import styles from './partners.module.scss'
+// test new url: psjglobal
 
 export default function Partners() {
   return (
