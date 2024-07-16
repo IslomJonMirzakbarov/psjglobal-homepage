@@ -1,4 +1,3 @@
-import React from 'react'
 import Head from 'next/head'
 
 export default function SEO() {
@@ -31,7 +30,11 @@ export default function SEO() {
         key='ogdesc'
       />
       <meta property='og:site_name' content='PSJGlobal' key='ogsitename' />
-      <meta property='og:image' content='/images/seo.jpg' key='ogimage' />
+      <meta
+        property='og:image'
+        content='https://psjglobal.io/images/seo.jpg'
+        key='ogimage'
+      />
       <meta name='twitter:card' content='summary_large_image' />
       <meta
         name='twitter:title'
