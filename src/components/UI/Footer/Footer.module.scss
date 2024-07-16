@@ -9,6 +9,9 @@
   .leftElement {
     display: flex;
     flex-direction: column;
+    p:first-child {
+      cursor: pointer;
+    }
     p {
       font-weight: 300;
       font-size: rem(12);
@@ -17,6 +20,10 @@
       //   margin-left: rem(208);
       // }
       color: #232323;
+    }
+
+    .emailTxt {
+      font-weight: 600;
     }
   }
   .rightElement {
