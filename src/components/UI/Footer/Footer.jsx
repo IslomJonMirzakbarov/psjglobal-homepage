@@ -1,6 +1,5 @@
-import styles from './Footer.module.scss'
-import Link from 'next/link'
 import { Container } from '@mui/material'
+import styles from './Footer.module.scss'
 
 export function Footer({ isWhiteBg = false }) {
   return (
@@ -8,7 +7,11 @@ export function Footer({ isWhiteBg = false }) {
       <Container>
         <div className={styles.footer}>
           <div className={styles.leftElement}>
-            <p>
+            <p className={styles.emailTxt}>
+              email:{' '}
+              <a href='mailto:contact@psjglobal.io'>contact@psjglobal.io</a>
+            </p>
+            <p className={styles.emailTxt}>
               {/* conuncs@conun.co.kr */}
               23-22, Samseong-ro 76-gil, Seoul, Korea
             </p>
