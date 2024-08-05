@@ -1,7 +1,8 @@
-import { ERC20_ABI_FOR_SWAP } from './ERC20_ABI_FOR_SWAP'
 import Web3 from 'web3'
+import { ERC20_ABI_FOR_SWAP } from './ERC20_ABI_FOR_SWAP'
 
-const rpcUrl = 'https://klaytn-mainnet-rpc.allthatnode.com:8551'
+// const rpcUrl = 'https://klaytn-mainnet-rpc.allthatnode.com:8551'
+const rpcUrl = 'https://public-en-cypress.klaytn.net'
 const web3 = new Web3(new Web3.providers.HttpProvider(rpcUrl))
 
 export const getMaintenanceFee = async () => {
