@@ -28,14 +28,14 @@ export function Footer({ isWhiteBg = false }) {
               </div>
               <p>PSJGlobal</p>
             </a>
-            <a
+            {/* <a
               href='https://open.kakao.com/o/ghkPJdff'
               target='_blank'
               rel='noreferrer'
             >
               <img src='/icons/talk.svg' alt='kakao' />
               <p>DreamsCT</p>
-            </a>
+            </a> */}
             <a href='https://t.me/conun_cs' target='_blank' rel='noreferrer'>
               <img src='/icons/telegram.svg' alt='telegram' />
               <p>Korea</p>
