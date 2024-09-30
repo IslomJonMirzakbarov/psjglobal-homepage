@@ -35,7 +35,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <Provider store={store}>
-      {!(router.pathname === '/oceandrive') && <OceanDriveBetaModal />}
+      {/* {!(router.pathname === '/oceandrive') && <OceanDriveBetaModal />} */}
 
       {typeof window !== 'undefined' ? (
         <PersistGate loading={null} persistor={persistor}>
