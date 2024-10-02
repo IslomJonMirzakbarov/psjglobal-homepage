@@ -13,7 +13,7 @@ export function Footer({ isWhiteBg = false }) {
             </p>
             <p className={styles.emailTxt}>
               {/* conuncs@conun.co.kr */}
-              23-22, Samseong-ro 76-gil, Seoul, Korea
+              701, 6, Samseong-ro 96-gil, Seoul, Korea
             </p>
             <p>ⓒ 2024 PSJ GLOBAL, All Rights Reserved</p>
           </div>
