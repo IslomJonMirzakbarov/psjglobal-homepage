@@ -14,7 +14,7 @@ const GateioFirst = ({ open, handleClose }) => {
       aria-labelledby='alert-dialog-title'
       aria-describedby='alert-dialog-description'
       style={{
-        overflow: 'auto'
+        overflow: 'hidden'
       }}
       PaperProps={{
         className: cls.modal,
