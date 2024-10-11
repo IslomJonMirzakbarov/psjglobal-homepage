@@ -1,7 +1,6 @@
 .modal {
-  top: 400px;
+  overflow: hidden;
   @media (max-width: 600px) {
-    top: 300px;
     overflow-x: hidden;
   }
 }
@@ -14,19 +13,17 @@
   .header {
     position: relative;
     height: max-content;
-    background: #001a21;
-    padding: 23px 28px;
-    padding-bottom: 0;
+    background: #010920;
+    padding: 13px 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     @media (max-width: 600px) {
       height: max-content;
     }
     .top {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-end;
       width: 100%;
       svg {
         color: #fff;
@@ -34,243 +31,34 @@
         cursor: pointer;
       }
     }
-    .reviewEventImage {
-      @media (max-width: 600px) {
-        width: 70%;
-        margin-top: 15px;
-      }
-    }
     .betContainer {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 6px;
-      border-top: 0.5px solid #fff;
-      border-bottom: 0.5px solid #fff;
-      width: 313px;
-      margin-top: 16px;
+      padding-left: 20px;
       .betService {
-        color: #ddc6e7;
-        font-size: 18px;
+        font-size: 40px;
         font-weight: 700;
-        text-align: center;
-        @media (max-width: 600px) {
-          width: 100%;
-          font-size: 16px;
-        }
-      }
-    }
-    .text {
-      color: #fff;
-      text-align: center;
-      font-size: 15px;
-      line-height: 22.5px;
-      font-weight: 300;
-      margin: 23px 0;
-      max-width: 441px;
+        line-height: 50px;
+        text-align: left;
+        color: #ffffff;
+        text-decoration: underline;
+        cursor: pointer;
 
-      span {
-        font-weight: 700;
-      }
-      @media (max-width: 600px) {
-        font-size: 10px;
-        line-height: 20px;
-        br {
-          display: none;
+        @media (max-width: 600px) {
+          font-size: 23px;
+          font-weight: 700;
+          line-height: 30px;
+          text-align: left;
         }
       }
     }
     .laptop {
+      width: max-content;
+      margin-left: -30px;
+      margin-bottom: -30px;
+      overflow-x: hidden;
       @media (max-width: 600px) {
-        width: 270px;
-        background-size: cover;
-      }
-      a {
-        color: #fff;
-        text-align: center;
-        font-size: 14px;
-        margin-bottom: 32px;
-        text-decoration: underline;
-        @media (max-width: 600px) {
-          margin-bottom: 15px;
-        }
-      }
-    }
-  }
-  .body {
-    background-color: #802fcb;
-    margin-top: -100px;
-    padding-top: 126px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    @media (max-width: 600px) {
-      padding-top: 120px;
-    }
-    .titleDiv {
-      position: relative;
-      width: 450px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      .line {
-        position: absolute;
-        height: 0.5px;
-        background-color: #fff;
-        width: 100%;
-        top: 50%;
-
-        @media (max-width: 600px) {
-          display: none;
-        }
-      }
-
-      .titleContainer {
-        z-index: 2;
-        background-color: #271445 !important;
-        width: 163px !important;
-        border-radius: 100px !important;
-        padding: 4px;
-        .title {
-          color: #fff !important;
-          text-align: center !important;
-          font-size: 18px !important;
-          font-weight: 700 !important;
-          line-height: 27px !important;
-          @media (max-width: 600px) {
-            font-size: 16px !important;
-          }
-        }
-      }
-    }
-    .items {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      margin-bottom: 46px;
-      margin-top: 15px;
-      @media (max-width: 600px) {
-        padding: 0 15px;
-        width: 100%;
-        gap: 8;
-      }
-      .item {
-        display: flex;
-        gap: 16px;
-        p {
-          &:first-child {
-            padding: 4px 19px;
-            color: #fff;
-            text-align: center;
-            font-size: 16px;
-            font-weight: 700;
-            line-height: 24px;
-            border-radius: 100px;
-            background: #532188;
-            height: fit-content;
-            @media (max-width: 600px) {
-              font-size: 12px;
-              padding: 2px 10px;
-              min-width: 60px;
-            }
-          }
-          &:last-child {
-            color: #fff;
-            font-size: 14px;
-            line-height: 21px;
-            font-weight: 400px;
-            margin-top: 8px;
-
-            span {
-              font-weight: 700;
-            }
-
-            a {
-              text-decoration: underline;
-              color: inherit;
-            }
-
-            @media (max-width: 600px) {
-              font-size: 11px;
-              margin-top: 0;
-              width: calc(100% - 60px);
-              br {
-                display: none;
-              }
-              a {
-                display: inline-block;
-              }
-            }
-            b {
-              color: #0e42e5;
-            }
-          }
-        }
-      }
-    }
-
-    .prizes {
-      display: flex;
-      align-items: center;
-      gap: 32px;
-      @media (max-width: 600px) {
-        gap: 14px;
-        padding-left: 35px;
-      }
-      .prize {
-        position: relative;
-        @media (max-width: 600px) {
-          img {
-            width: 80px;
-          }
-        }
-        p {
-          color: #fff;
-          font-size: 14px;
-          margin-top: 15px;
-          font-weight: 400;
-          line-height: 21px;
-          width: 240px;
-          @media (max-width: 600px) {
-            font-size: 11px;
-          }
-        }
-      }
-    }
-
-    .notice {
-      background: #271445;
-      padding: 21px 33px;
-      margin-top: 28px;
-      width: 100%;
-      @media (max-width: 600px) {
-        margin-top: 30px;
-        padding: 14px 15px;
-        padding-left: 30px;
-      }
-      h4 {
-        display: flex;
-        align-items: center;
-        gap: 4px;
-        color: #fff;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 27px;
-        margin: 0;
-        @media (max-width: 600px) {
-          font-size: 16px;
-        }
-      }
-      .text {
-        color: #fff;
-        font-size: 12px;
-        line-height: 17px;
-        margin-top: 6px;
-
-        @media (max-width: 600px) {
-          font-size: 11px;
-        }
+        width: 350px;
+        margin-left: -20px;
+        margin-bottom: -20px;
       }
     }
   }
