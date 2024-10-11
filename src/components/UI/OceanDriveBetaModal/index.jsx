@@ -1,9 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import GateioFirst from 'components/UI/OceanDriveEventModalFirst/GateioFirst'
+import GateioModal from 'components/UI/OceanDriveEventModalSecond/GateioModal'
 import Cookies from 'js-cookie'
-import ModalOcean from 'components/UI/OceanDriveBetaModal/ModalOcean'
-import EventModal from 'components/UI/OceanDriveEventModal/EventModal'
-import EventModalFirst from 'components/UI/OceanDriveEventModalFirst/EventModalFirst'
-import EventModalSecond from 'components/UI/OceanDriveEventModalSecond/EventModalSecond'
+import { useEffect, useState } from 'react'
 
 const OceanDriveBetaModal = () => {
   const [isFirstPopupOpen, setFirstPopupOpen] = useState(false)
@@ -12,13 +10,11 @@ const OceanDriveBetaModal = () => {
   useEffect(() => {
     if (!Cookies.get('popupClosed')) {
       setFirstPopupOpen(true)
-      // setOpen(false)
     }
   }, [])
 
   useEffect(() => {
     if (Cookies.get('popupClosed') && !Cookies.get('oceandriveEvent')) {
-      // setOpen(true)
       setFirstPopupOpen(false)
     }
   }, [])
@@ -38,17 +34,11 @@ const OceanDriveBetaModal = () => {
 
   return (
     <>
-      {/* <ModalOcean
-        isFirst={true}
-        isPopupOpen={isFirstPopupOpen}
-        setFirstPopupOpen={handleFirstPopupClose}
-      /> */}
-      <EventModalFirst
+      <GateioFirst
         open={isFirstPopupOpen}
         handleClose={handleFirstPopupClose}
       />
-      {/* <EventModalSecond open={open} handleClose={handleClose} /> */}
-      {/* <EventModal open={open} handleClose={handleClose} /> */}
+      <GateioModal open={open} handleClose={handleClose} />
     </>
   )
 }
