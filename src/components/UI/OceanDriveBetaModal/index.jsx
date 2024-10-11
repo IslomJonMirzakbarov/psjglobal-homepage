@@ -8,28 +8,27 @@ const OceanDriveBetaModal = () => {
   const [open, setOpen] = useState(false)
 
   useEffect(() => {
-    if (!Cookies.get('popupClosed')) {
-      setFirstPopupOpen(true)
-    }
-  }, [])
+    const isPopupClosed = Cookies.get('popupClosed')
+    const isEventClosed = Cookies.get('oceandriveEvent')
 
-  useEffect(() => {
-    if (Cookies.get('popupClosed') && !Cookies.get('oceandriveEvent')) {
-      setFirstPopupOpen(false)
+    // Open the first modal if the user has not closed it
+    if (!isPopupClosed) {
+      setFirstPopupOpen(true)
+    } else if (!isEventClosed) {
+      // Open the second modal if the first modal was closed, but second was not
+      setOpen(true)
     }
   }, [])
 
   const handleFirstPopupClose = () => {
     setFirstPopupOpen(false)
-    if (!Cookies.get('oceandriveEvent')) {
-      setOpen(true)
-    }
-    Cookies.set('popupClosed', 'true', { expires: 1 / 144 })
+    setOpen(true) // Open the second modal
+    Cookies.set('popupClosed', 'true', { expires: 1 / 144 }) // Set short expiration time for testing
   }
 
   const handleClose = () => {
-    Cookies.set('oceandriveEvent', 'true', { expires: 1 / 144 })
     setOpen(false)
+    Cookies.set('oceandriveEvent', 'true', { expires: 1 / 144 }) // Prevent second modal from reopening
   }
 
   return (
