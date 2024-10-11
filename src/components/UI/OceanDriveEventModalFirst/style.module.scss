@@ -3,6 +3,7 @@
   @media (max-width: 600px) {
     overflow-x: hidden;
     overflow: hidden !important;
+    width: 355px !important;
   }
 }
 
@@ -10,7 +11,7 @@
   width: 600px;
   max-height: 100%;
   @media (max-width: 600px) {
-    width: 100%;
+    width: 355px !important;
   }
   .header {
     position: relative;
@@ -31,6 +32,10 @@
         color: #fff;
         font-size: 20px;
         cursor: pointer;
+      }
+
+      @media (max-width: 375px) {
+        padding-right: 10px;
       }
     }
     .betContainer {
@@ -56,12 +61,31 @@
       width: max-content;
       margin-left: -30px;
       margin-bottom: -30px;
+      object-fit: contain;
       overflow-x: hidden;
       overflow-y: hidden;
-      @media (max-width: 600px) {
-        width: 350px;
+      @media (min-width: 391px) and (max-width: 600px) {
+        width: 340px !important;
+        margin-left: -10px;
+        margin-bottom: 0px;
+        padding: 0 !important;
+        margin-bottom: -10px;
+      }
+
+      @media (max-width: 375px) {
+        width: 340px !important;
         margin-left: -20px;
-        margin-bottom: -20px;
+        margin-bottom: 0px;
+        padding: 0 !important;
+        margin-bottom: -10px;
+      }
+
+      @media (min-width: 376px) and (max-width: 390px) {
+        width: 340px !important;
+        margin-left: -13px;
+        margin-bottom: 0px;
+        padding: 0 !important;
+        margin-bottom: -10px;
       }
     }
   }
