@@ -3,6 +3,8 @@ import { Dialog } from '@mui/material'
 import useTranslation from 'next-translate/useTranslation'
 import cls from './style.module.scss'
 
+// testing ci/cd
+
 const GateioModal = ({ open, handleClose }) => {
   const { t, lang } = useTranslation('common')
   const imageSrc =
